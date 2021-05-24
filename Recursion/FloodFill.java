@@ -15,10 +15,10 @@ class Solution
         if (r < 0 || r >= m.m.length || c < 0 || c >= m.m[0].length || m.m[r][c] != oldCol)
             return;
         m.m[r][c] = newCol;
-        flood(m,r-1,c,oldCol,newCol);
-        flood(m,r,c-1,oldCol,newCol);
-        flood(m,r+1,c,oldCol,newCol);
-        flood(m,r,c+1,oldCol,newCol);
+        flood(m,r-1,c,oldCol,newCol); //up
+        flood(m,r,c-1,oldCol,newCol); //left
+        flood(m,r+1,c,oldCol,newCol); //down
+        flood(m,r,c+1,oldCol,newCol); //right
         return;
     }
 }

@@ -1,5 +1,6 @@
 /*https://practice.geeksforgeeks.org/problems/maximum-product-subarray3604/1*/
 
+//chindi and smart solution
 class Solution {
     long maxProduct(int[] arr, int n) {
         long maxProduct = 0, currProduct = 1, prevProduct = 0;
@@ -66,15 +67,46 @@ class Solution {
     }
 }
 
-//efficient solution
+//another chindi and smart solution
 class Solution {
     long maxProduct(int[] arr, int n) {
-        long maxProduct = 0, currProduct = 1, minProduct = 1;
+        long maxProduct = Long.MIN_VALUE, currProduct = 1;
+        for (int i = 0; i < n; ++i)
+        {
+            currProduct *= arr[i];
+            if (currProduct > maxProduct)
+                maxProduct = currProduct;
+            if (currProduct == 0)
+                currProduct = 1;
+        }
+        currProduct = 1;
+        for (int i = n-1; i >= 0; --i)
+        {
+            currProduct *= arr[i];
+            if (currProduct > maxProduct)
+                maxProduct = currProduct;
+            if (currProduct == 0)
+                currProduct = 1;
+        }
+        return maxProduct;
+    }
+}
+
+//standard solution
+class Solution {
+    long maxProduct(int[] arr, int n) {
+        if (arr.length == 1) return arr[0];
+        long maxProduct = Long.MIN_VALUE, currProduct = 1, minProduct = 1;
+        //flag indicates existence of positive elements
+        //edge indicates existence of only -1 and 0
+        boolean flag = false, edge = true;
         for (int i = 0; i < n; ++i)
         {
             //if the current element is positive
             if (arr[i] > 0)
             {
+                edge = false;
+                flag = true;
                 //mulitply directly to the maximum product till this point
                 currProduct *= arr[i];
                 //update minimum product till this point
@@ -90,6 +122,7 @@ class Solution {
             //if it is negative
             else
             {
+                if (arr[i] != -1) edge = false;
                 //hold the maximum product till this point
                 long temp = currProduct;
                 //update maximum product till this point if the minimum product is still negative
@@ -99,6 +132,14 @@ class Solution {
             }
             //update the maximum product
             maxProduct = Math.max(maxProduct,currProduct);
+        }
+        //if no positive elements exist and maximum product is 1
+        if (!flag && maxProduct == 1)
+        {
+        	//if only 0 and -1 exist, return 1
+            if (edge) return 1;
+            //else return 0
+            else return 0;
         }
         return maxProduct;
     }

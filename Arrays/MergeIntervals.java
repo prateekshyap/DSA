@@ -44,12 +44,14 @@ class Solution {
             
             //extract root
             Element polled = pq.poll();
+
             //for all elements added to the result list
             for (int j = 0; j < list.size(); ++j)
             {
                 Element old = list.get(j);
+
                 //if the ranges overlap
-                if ((old.end <= polled.end && old.end >= polled.start) || (polled.end <= old.end && polled.end >= old.start) || (old.start <= polled.start && old.end >= polled.end) || (polled.start <= old.start && polled.end >= old.end))
+                if (!(old.start <= old.end && old.end < polled.start && polled.start <= polled.end) && !(polled.start <= polled.end && polled.end < old.start && old.start <= old.end))
                 {
                     //set the new range and store
                     old.start = (polled.start <= old.start) ? polled.start : old.start;

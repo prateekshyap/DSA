@@ -45,25 +45,35 @@ class Solution{
         while (iterator <= noOfBits)
         {
         	//find out the repetition pattern size
-            int setSize = (int)Math.pow(2,iterator);
+            int blockSize = (int)Math.pow(2,iterator);
 
-            //find out how many such complete patterns are there till n
-            int sets = n/setSize;
+            //find out how many such complete pattern blocks are there till n
+            int blocks = n/blockSize;
 
-            //since in each pattern we have equal number of 0s and 1s
-            //add half of the pattern size for every pattern
-            count += sets*(setSize/2);
+            /*
+            since in each block we have equal number of 0s and 1s,
+            add half of the block size for every block
+            */
 
-            //find out the last incomplete pattern size
-            int rem = n-(sets*setSize);
+            count += blocks*(blockSize/2);
 
-            //since the first half of every pattern contains only zero
-            //if the incomplete pattern size is greater than first half size
-            if (rem >= (setSize/2))
+            //find out the last incomplete block size
+            int rem = n-(blocks*blockSize);
 
-            	//add required number of 1s
-            	//+1 because we start from 0 and not 1
-                count += (rem-(setSize/2))+1;
+            /*
+            since the first half of every block contains only 0s,
+            if the incomplete block size is greater than half of the block size
+            */
+
+            if (rem >= (blockSize/2)) {
+
+                /*
+            	add required number of 1s,
+            	+1 because we start from 0 and not 1
+                */
+
+                count += (rem-(blockSize/2))+1;
+            }
 
             //go for next more significant bit
             ++iterator;

@@ -17,10 +17,10 @@
 * 1 0 1 0 - 10
 * 1 0 1 1 - 11
 * 1 1 0 0 - 12
-...
-* For LSB -  0 1 0 1 ..... (repitition pattern is 0 1)
-* For next MSB - 0 0 1 1 0 0 1 1 0 ..... (repitition pattern is 0 0 1 1)
-* For next MSB - 0 0 0 0 1 1 1 1 0 0 0 .... (repitition pattern is 0 0 0 0 1 1 1 1)
+* ...
+* For LSB -  0 1 0 1 ..... (repetition pattern is 0 1)
+* For next MSB - 0 0 1 1 0 0 1 1 0 ..... (repetition pattern is 0 0 1 1)
+* For next MSB - 0 0 0 0 1 1 1 1 0 0 0 .... (repetition pattern is 0 0 0 0 1 1 1 1)
 * and so on.
 */
 
@@ -44,7 +44,7 @@ class Solution{
         //run towards MSB and for every column repeat
         while (iterator <= noOfBits)
         {
-        	//find out the repitition pattern size
+        	//find out the repetition pattern size
             int setSize = (int)Math.pow(2,iterator);
 
             //find out how many such complete patterns are there till n

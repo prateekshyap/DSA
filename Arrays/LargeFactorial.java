@@ -1,5 +1,6 @@
 /*https://practice.geeksforgeeks.org/problems/factorials-of-large-numbers2508/1*/
 
+/*Prateekshya's Submission*/
 class Solution {
     static ArrayList<Integer> factorial(int N){
         ArrayList<Integer> fact = new ArrayList<Integer>();
@@ -50,5 +51,32 @@ class Solution {
             fact.add(carry%10);
             carry /= 10;
         }
+    }
+}
+
+/*Pratik's Submission*/
+
+
+class Solution {
+    static ArrayList<Integer> factorial(int N){
+        ArrayList<Integer> al = new ArrayList<Integer>();
+        al.add(1);
+        int carry = 0;
+        for(int i=2;i<=N;i++)
+        {
+            for(int j=0;j<al.size();j++)
+            {
+                int mul = al.get(j)*i+carry;
+                al.set(j,mul%10);
+                carry = mul/10;
+            }
+            while(carry!=0)
+            {
+                al.add(carry%10);
+                carry/=10;
+            }
+        }
+        Collections.reverse(al);
+        return a
     }
 }

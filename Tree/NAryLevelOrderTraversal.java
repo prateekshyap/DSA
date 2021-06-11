@@ -1,12 +1,12 @@
-/*https://leetcode.com/problems/binary-tree-level-order-traversal/*/
+/*https://leetcode.com/problems/n-ary-tree-level-order-traversal/*/
 
 class Solution {
-    public List<List<Integer>> levelOrder(TreeNode root) {
+    public List<List<Integer>> levelOrder(Node root) {
         //edge case
         if (root == null) return new ArrayList<List<Integer>>();
-        
+
         List<List<Integer>> list = new ArrayList<List<Integer>>();
-        Queue<TreeNode> queue = new LinkedList<>();
+        Queue<Node> queue = new LinkedList<>();
         
         //add root to queue
         queue.add(root);
@@ -19,21 +19,21 @@ class Solution {
 
             List<Integer> temp = new ArrayList<Integer>();
             
-            //for each element in current level
+            //for every element
             for (int i = 0; i < len; ++i)
             {
                 //remove from queue
-                TreeNode node = queue.remove();
+                Node node = queue.remove();
 
-                //add its children to the queue
-                if (node.left != null) queue.add(node.left);
-                if (node.right != null) queue.add(node.right);
+                //add all its children to queue
+                for (int j = 0; j < node.children.size(); ++j)
+                    queue.add(node.children.get(j));
 
-                //add removed node to the temporary list
+                //add removed node to temporary list
                 temp.add(node.val);
             }
 
-            //add the temporary list to result
+            //add temporary list to result
             list.add(temp);
         }
         

@@ -1,5 +1,6 @@
 /*https://leetcode.com/problems/number-of-good-ways-to-split-a-string/*/
 
+/*Prateekshya's Solution*/
 class Solution {
     public int numSplits(String s) {
         if (s.length() <= 1) return 0;
@@ -44,5 +45,46 @@ class Solution {
                 ++goodSplitCount;
         }
         return goodSplitCount;
+    }
+}
+
+/*Pratik's Solution*/
+
+class Solution {
+    public int numSplits(String s) {
+        HashMap<Character,Integer> mapP = new HashMap<Character,Integer>();
+        HashMap<Character,Integer> mapQ = new HashMap<Character,Integer>();
+        int count = 0;
+        for(int i=0;i<s.length();i++)
+        {
+            if(mapQ.containsKey(s.charAt(i)))
+            {
+                mapQ.put(s.charAt(i),mapQ.get(s.charAt(i))+1);
+            }
+            else
+            {
+                mapQ.put(s.charAt(i),1);
+            }
+        }
+        int i = 0;
+        while(mapQ.size()!=0)
+        {
+            if(mapP.size()==mapQ.size())count++;
+            if(mapP.containsKey(s.charAt(i)))
+            {
+                mapP.put(s.charAt(i),mapP.get(s.charAt(i))+1);
+            }
+            else
+            {
+                mapP.put(s.charAt(i),1);
+            }
+            mapQ.put(s.charAt(i),mapQ.get(s.charAt(i))-1);
+            if(mapQ.get(s.charAt(i))==0)
+            {
+                mapQ.remove(s.charAt(i));
+            }
+            i++;
+        }
+        return count;
     }
 }

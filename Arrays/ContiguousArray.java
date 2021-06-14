@@ -1,5 +1,5 @@
 /*https://leetcode.com/problems/contiguous-array/*/
-
+/*Prateekshya's Solution*/
 class Solution {
     public int findMaxLength(int[] nums) {
         int len = 0;
@@ -22,5 +22,32 @@ class Solution {
                 map.put(sum,i);
         }
         return len;
+    }
+}
+
+/*Pratik's Solution*/
+class Solution {
+    public int findMaxLength(int[] nums) 
+    {
+        int n = nums.length;
+        int max = 0;
+        HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
+        map.put(0,0);
+        nums[0] = (nums[0]==0?-1:1);
+        map.put(nums[0],1);
+        for(int i=1;i<n;i++)
+        {
+            nums[i] = nums[i-1]+(nums[i]==0?-1:1);
+            if(!map.containsKey(nums[i]))
+            {
+                map.put(nums[i],i+1);
+            }
+            else
+            {
+                max = Math.max(max,i+1-map.get(nums[i]));
+            }
+            System.out.println(nums[i]+" "+map.get(nums[i]));
+        }
+        return max;
     }
 }

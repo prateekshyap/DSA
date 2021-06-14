@@ -1,5 +1,7 @@
 /*https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/*/
 
+/*Prateekshya's Solution*/
+
 class Solution {
     public boolean canThreePartsEqualSum(int[] arr) {
         int totSum = 0, currSum = 0;
@@ -33,6 +35,28 @@ class Solution {
             }
         }
 
+        return false;
+    }
+}
+
+/*Pratik's Solution*/
+
+class Solution {
+    public boolean canThreePartsEqualSum(int[] arr) 
+    {
+        int n = arr.length;
+        int sum = 0;
+        for(int i=1;i<n;i++)
+        {
+            arr[i]+=arr[i-1];
+        }
+        if(arr[n-1]%3!=0)return false;
+        int count = 0 , reqSum = arr[n-1]/3;
+        for(int i=0;i<n;i++)
+        {
+            if(arr[i]-(count*reqSum)==reqSum)count++;
+            if(count==3)return true;
+        }
         return false;
     }
 }

@@ -1,5 +1,7 @@
 /*https://leetcode.com/problems/count-and-say/*/
 
+/*Prateekshya's Solution*/
+
 class Solution {
     public String countAndSay(int n) {
         if (n == 1) return "1";
@@ -47,5 +49,46 @@ class Solution {
             --n;
         }
         return new String(str);
+    }
+}
+
+/*Pratik's Solution*/
+
+class Solution {
+    public String countAndSay(int n) 
+    {
+        if(n==1)return "1";
+        if(n==2)return "11";
+        return count(countAndSay(n-1));
+    }
+    public String count(String s)
+    {
+        int count = 1;
+        String res = new String();
+        for(int i=0;i<s.length()-1;i++)
+        {
+            if(s.charAt(i)==s.charAt(i+1))
+            {
+                count++;
+            }
+            else
+            {
+                String c = String.valueOf(count);
+                res+=c;
+                res+=s.charAt(i);
+                count = 1;
+            }
+        }
+        if(s.charAt(s.length()-1)==s.charAt(s.length()-2))
+        {
+            res+=String.valueOf(count);
+            res+=s.charAt(s.length()-1);
+        }
+        else
+        {
+            res+='1';
+            res+=s.charAt(s.length()-1);
+        }
+        return res;
     }
 }

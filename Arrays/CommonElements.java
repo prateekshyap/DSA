@@ -1,5 +1,7 @@
 /*https://practice.geeksforgeeks.org/problems/common-elements1132/1*/
 
+/*Prattekshya's Solution*/
+
 class Solution
 {
     ArrayList<Integer> commonElements(int A[], int B[], int C[], int n1, int n2, int n3) 
@@ -35,5 +37,33 @@ class Solution
         }
         Collections.sort(list);
         return list;
+    }
+}
+
+/* Pratik's Solution */
+class Solution
+{
+    ArrayList<Integer> commonElements(int A[], int B[], int C[], int n1, int n2, int n3) 
+    {
+        // code here 
+        ArrayList<Integer> al = new ArrayList<Integer>();
+        HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
+        for(int i=0;i<n1;i++)
+        {
+            if(!map.containsKey(A[i]))map.put(A[i],1);
+        }
+        for(int i=0;i<n2;i++)
+        {
+            if(map.containsKey(B[i]))map.put(B[i],2);
+        }
+        for(int i=0;i<n3;i++)
+        {
+            if(map.containsKey(C[i]) && map.get(C[i])==2)
+            {
+                map.put(C[i],3);
+                al.add(C[i]);
+            }
+        }
+        return al;
     }
 }

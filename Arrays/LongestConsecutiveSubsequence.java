@@ -101,3 +101,37 @@ class Solution {
         return Math.max(maxLen, currLen);
     }
 }
+
+/*Pratik's Solution*/
+class Solution
+{   
+	static int findLongestConseqSubseq(int arr[], int N)
+	{
+	   HashSet<Integer> set = new HashSet<Integer>();
+	   for(int i=0;i<N;i++)
+	   {
+	       if(!set.contains(arr[i]))set.add(arr[i]);
+	   }
+	   int cur = 0, max = 0;
+	   for(int i=0;i<N;i++)
+	   {
+	       cur = 0;
+	       int j = arr[i];
+	       int k = arr[i]-1;
+	       while(set.contains(j))
+	       {
+	           set.remove(j);
+	           j++;
+	           cur++;
+	       }
+	       while(set.contains(k))
+	       {
+	           set.remove(k);
+	           k--;
+	           cur++;
+	       }
+	       max = Math.max(cur,max);
+	   }
+	   return max;
+	}
+}

@@ -13,8 +13,12 @@ public class NextRound
 		tokens = br.readLine().trim().split(" +");
 		int threshold = Integer.parseInt(tokens[k-1]);
 		int index = 0;
+
+		//if the kth player's score is 0, find the previous positive number index
 		if (threshold != 0)
 			index = findLastIndex(tokens,threshold,0,tokens.length-1);
+
+		//otherwise find the last index of the kth player's score
 		else
 			index = findLastIndex(tokens,0,tokens.length-1);
 		System.out.println(index+1);

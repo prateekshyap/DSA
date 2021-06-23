@@ -1,5 +1,51 @@
 /*https://practice.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1*/
 
+/*Pratik's Solution*/
+
+class Solution
+{
+    //Function to find the shortest distance of all the vertices
+    //from the source vertex S.
+    static int[] dijkstra(int V, ArrayList<ArrayList<ArrayList<Integer>>> adj, int S)
+    {
+        HashSet<Integer> sptSet = new HashSet<Integer>();
+        int[] dist = new int[V];
+        for(int i=0;i<V;i++)dist[i] = Integer.MAX_VALUE;
+        dist[S] = 0;
+        while(sptSet.size()<V)
+        {
+            int u = getMin(sptSet,dist);
+            ArrayList<ArrayList<Integer>> adjU = adj.get(u);
+            for(int i = 0;i<adjU.size();i++)
+            {
+                int distU = dist[u];
+                int distUI = adjU.get(i).get(1);
+                int distI = dist[adjU.get(i).get(0)];
+                if(distI>(distU+distUI))
+                {
+                    dist[adjU.get(i).get(0)] = distU+distUI;
+                }
+            }
+            sptSet.add(u);
+        }
+        return dist;
+    }
+    static int getMin(HashSet<Integer> sptSet,int[] dist)
+    {
+        int minWeight = Integer.MAX_VALUE;
+        int u = -1;
+        for(int i=0;i<dist.length;i++)
+        {
+            if(!sptSet.contains(i) && dist[i]<minWeight)
+            {
+                minWeight = dist[i];
+                u = i;
+            }
+        }
+        return u;
+    }
+}
+
 /*Prateekshya's Solution*/
 class Solution
 {
@@ -48,51 +94,5 @@ class Solution
         if (pathCosts[destination] > pathCosts[source]+weight)
             pathCosts[destination] = pathCosts[source]+weight;
         return pathCosts;
-    }
-}
-
-/*Pratik's Solution*/
-
-class Solution
-{
-    //Function to find the shortest distance of all the vertices
-    //from the source vertex S.
-    static int[] dijkstra(int V, ArrayList<ArrayList<ArrayList<Integer>>> adj, int S)
-    {
-        HashSet<Integer> sptSet = new HashSet<Integer>();
-        int[] dist = new int[V];
-        for(int i=0;i<V;i++)dist[i] = Integer.MAX_VALUE;
-        dist[S] = 0;
-        while(sptSet.size()<V)
-        {
-            int u = getMin(sptSet,dist);
-            ArrayList<ArrayList<Integer>> adjU = adj.get(u);
-            for(int i = 0;i<adjU.size();i++)
-            {
-                int distU = dist[u];
-                int distUI = adjU.get(i).get(1);
-                int distI = dist[adjU.get(i).get(0)];
-                if(distI>(distU+distUI))
-                {
-                    dist[adjU.get(i).get(0)] = distU+distUI;
-                }
-            }
-            sptSet.add(u);
-        }
-        return dist;
-    }
-    static int getMin(HashSet<Integer> sptSet,int[] dist)
-    {
-        int minWeight = Integer.MAX_VALUE;
-        int u = -1;
-        for(int i=0;i<dist.length;i++)
-        {
-            if(!sptSet.contains(i) && dist[i]<minWeight)
-            {
-                minWeight = dist[i];
-                u = i;
-            }
-        }
-        return u;
     }
 }

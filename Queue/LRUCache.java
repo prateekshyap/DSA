@@ -1,4 +1,4 @@
-/**/
+/*https://leetcode.com/problems/lru-cache/*/
 
 //LinkedHashMap implementation
 class LRUCache {
@@ -160,5 +160,28 @@ class LRUCache {
             if (cache.isOverflow())
                 cache.removeLRU();
         }
+    }
+}
+
+/*https://practice.geeksforgeeks.org/problems/page-faults-in-lru5603/1*/
+
+/*almost same kind of cache and node implementation
+along with this solution class*/
+
+class Solution{
+    static int pageFaults(int N, int C, int pages[]){
+        Cache cache = new Cache(C);
+        int faults = 0;
+        for (int key : pages)
+        {
+            if (cache.isPresent(key)) cache.bubbleUp(key);
+            else
+            {
+                cache.add(key);
+                if (cache.isOverflow()) cache.removeLRU();
+                ++faults;
+            }
+        }
+        return faults;
     }
 }

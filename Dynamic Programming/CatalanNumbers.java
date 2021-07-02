@@ -37,3 +37,21 @@ class Solution
         return dp[n];
     }
 }
+
+/* O(N) solution */
+class Solution
+{
+    //Function to find the nth catalan number.
+    public static BigInteger findCatalan(int n)
+    {
+        //Your code here
+        BigInteger ans = new BigInteger("1");
+        for(int i=n;i>=1;i--)
+        {
+            ans = ans.multiply(new BigInteger(Integer.toString(n+i)));
+            ans = ans.divide(new BigInteger(Integer.toString(n-i+1)));
+        }
+        ans = ans.divide(new BigInteger(Integer.toString(n+1)));
+        return ans;
+    }
+}

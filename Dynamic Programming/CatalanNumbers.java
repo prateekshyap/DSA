@@ -1,5 +1,5 @@
 /*https://practice.geeksforgeeks.org/problems/nth-catalan-number0817/1/*/
-
+/*Prateekshya's Solution*/
 class Solution
 {
     public static BigInteger findCatalan(int n)
@@ -14,5 +14,26 @@ class Solution
             table[i] = sum;
         }
         return table[n];
+    }
+}
+/*Pratik's Solution*/
+class Solution
+{
+    //Function to find the nth catalan number.
+    public static BigInteger findCatalan(int n)
+    {
+        //Your code here
+        BigInteger dp[] = new BigInteger[n+1];
+        dp[0] = new BigInteger("1");
+        for(int i=1;i<=n;i++)
+        {
+            BigInteger res = new BigInteger("0");
+            for(int j=0;j<i;j++)
+            {
+                res = res.add(dp[j].multiply(dp[i-j-1]));
+            }
+            dp[i] = res;
+        }
+        return dp[n];
     }
 }

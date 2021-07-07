@@ -14,3 +14,30 @@ class Solution{
         return dp[W];
     }
 }
+
+/*Pratik's Solution*/
+
+class Solution{
+    static int knapSack(int N, int W, int val[], int wt[])
+    {
+        // code here
+        int dp[][] = new int[N+1][W+1];
+        return computeKS(N,W,val,wt,dp);
+    }
+    static int computeKS(int N,int W,int[] val,int[] wt,int[][] dp)
+    {
+        if(N==0||W==0)return 0;
+        if(dp[N][W]!=0)return dp[N][W];
+        if(wt[N-1]>W)
+        {
+            return dp[N][W] = computeKS(N-1,W,val,wt,dp);
+        }
+        else
+        {
+            return dp[N][W] = Math.max(
+                computeKS(N-1,W,val,wt,dp),
+                val[N-1]+computeKS(N,W-wt[N-1],val,wt,dp)
+                );
+        }
+    }
+}

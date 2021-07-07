@@ -17,3 +17,20 @@ class Solution
         return 0;
     }
 }
+
+/*https://practice.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/1/*/
+
+class Solution
+{
+    static int[] bellman_ford(int V, ArrayList<ArrayList<Integer>> adj, int S)
+    {
+        int[] d = new int[V];
+        for (int i = 0; i < V; ++i)
+            if (i != S) d[i] = 100000000;
+        for (int i = 0; i < V-1; ++i)
+            for (ArrayList<Integer> edge : adj)
+                if(d[edge.get(0)] != Integer.MAX_VALUE && d[edge.get(0)]+edge.get(2) < d[edge.get(1)])
+                    d[edge.get(1)] = d[edge.get(0)]+edge.get(2);
+        return d;
+    }
+}

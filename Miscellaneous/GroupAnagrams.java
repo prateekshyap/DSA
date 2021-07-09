@@ -1,5 +1,5 @@
 /*https://leetcode.com/problems/group-anagrams/*/
-
+/*Prateekshya's Solution*/
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
         List<List<String>> l = new ArrayList<List<String>>();
@@ -68,5 +68,54 @@ class Solution {
             l.add(temp);
         }
         return l;
+    }
+}
+
+/*Pratik's Solution*/
+
+class Solution {
+    public List<List<String>> Anagrams(String[] string_list) {
+        
+        // Your Code here
+        int n = string_list.length;
+        List<List<String>> list = new ArrayList<List<String>>();
+        for(int i=0;i<n;i++)
+        {
+            String s = string_list[i];
+            int m = findPos(list,s);
+            if(m==-1)
+            {
+                List<String> li = new ArrayList<String>();
+                li.add(s);
+                list.add(li);
+            }
+            else
+            {
+                List<String> li = list.get(m);
+                li.add(s);
+                list.remove(m);
+                list.add(li);
+            }
+        }
+        return list;
+    }
+    public int findPos(List<List<String>> list,String s)
+    {
+        char c[] = s.toCharArray();
+        Arrays.sort(c);
+        s = new String(c);
+        for(int i=0;i<list.size();i++)
+        {
+            String temp = list.get(i).get(0);
+            if(temp.length()!=s.length())continue;
+            char t[] = temp.toCharArray();
+            Arrays.sort(t);
+            temp = new String(t);
+            if(s.equals(temp))
+            {
+                return i;
+            }
+        }
+        return -1;
     }
 }

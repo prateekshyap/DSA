@@ -34,3 +34,8 @@ class Solution{
         return table[r];
     }
 }
+
+/*For Permutation Coefficient:-
+                        
+                        P(n,k) = P(n-1,k)+k*P(n-1,k-1)
+*/

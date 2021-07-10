@@ -1,5 +1,5 @@
 /*https://practice.geeksforgeeks.org/problems/diagonal-morning-assembly0028/1/*/
-
+/*Prateekshya's Solution*/
 class Solution
 {
     void diagonalSort(int matrix[][], int n, int m)
@@ -42,6 +42,67 @@ class Solution
                 --rStart;
             else
                 ++cStart;
+        }
+    }
+}
+/*Pratik's Solution*/
+class Solution
+{
+    void diagonalSort(int matrix[][], int n, int m)
+    {
+        // code here 
+        int i = n-1, j = 0, diff = n-1 ;
+        PriorityQueue<Integer> pq;
+        while(diff!=(1-m))
+        {
+            if(diff==0)
+            {
+                i = 0;
+                j += 1;
+                diff--;
+            }
+            else if(diff>0)
+            {
+                pq = new PriorityQueue<Integer>(Collections.reverseOrder());
+                while(i<n && j<m)
+                {
+                    pq.add(matrix[i][j]);
+                    i++;
+                    j++;
+                }
+                i--;
+                j--;
+                while(!pq.isEmpty())
+                {
+                    matrix[i][j] = pq.poll();
+                    i--;
+                    j--;
+                }
+                diff--;
+                i = diff;
+                j = 0;
+            }
+            else
+            {
+                pq = new PriorityQueue<Integer>();
+                while(i<n && j<m)
+                {
+                    pq.add(matrix[i][j]);
+                    i++;
+                    j++;
+                }
+                i--;
+                j--;
+                while(!pq.isEmpty())
+                {
+                    matrix[i][j] = pq.poll();
+                    i--;
+                    j--;
+                }
+                diff--;
+                i = 0;
+                j = Math.abs(diff);
+            }
         }
     }
 }

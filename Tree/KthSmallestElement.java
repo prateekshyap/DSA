@@ -1,5 +1,6 @@
 /*https://leetcode.com/problems/kth-smallest-element-in-a-bst/*/
 
+//kth smallest
 class Solution {
     int count;
     int res;
@@ -37,6 +38,46 @@ class Solution {
 
         //if result is found, return
         if (sol.res != -1)
+            return;
+    }
+}
+
+/*https://practice.geeksforgeeks.org/problems/kth-largest-element-in-bst/1*/
+
+//kth largest
+class Solution
+{
+    int count = 0;
+    int res = -1;
+    public int kthLargest(Node root,int K)
+    {
+        traverseInOrder(root,K);
+        return res;
+    }
+    public void traverseInOrder(Node root, int k) {
+        //if root is not null and result is not yet found
+        if (root != null && res == -1)
+        {
+            //recursion call for right subtree
+            traverseInOrder(root.right,k);
+
+            //increase the visit count
+            ++count;
+
+            //if count becomes equal to k and result is -1
+            if (count == k && res == -1)
+            {
+                //store the result and return
+                res = root.data;
+                return;
+            }
+
+            //recursion call for left subtree
+            traverseInOrder(root.left,k);
+        }
+
+        //if result is found, return
+        if (res != -1)
             return;
     }
 }

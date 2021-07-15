@@ -1,0 +1,59 @@
+/*https://practice.geeksforgeeks.org/problems/minimum-swaps/1*/
+
+class Solution
+{
+    public int minSwaps(int nums[])
+    {
+        int swapCount = 0;
+
+        //add the element to index mappings to hashtable
+        HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
+        for (int i = 0; i < nums.length; ++i)
+            map.put(nums[i],i);
+
+        //sort the array
+        Arrays.sort(nums);
+
+        //create a graph where edges are directed from old indices to new indices for each element
+        ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
+        for (int i = 0; i < nums.length; ++i)
+            graph.add(new ArrayList<Integer>());
+        for (int i = 0; i < nums.length; ++i)
+            if (i != (Integer)map.get(nums[i])) //avoid adding self loops
+                graph.get((Integer)map.get(nums[i])).add(i);
+
+        //create a visited array
+        boolean[] visited = new boolean[nums.length];
+
+        //for each element
+        for (int i = 0; i < nums.length; ++i)
+        {
+        	//mark as visited if it is already at its correct index
+            if (graph.get(i).size() == 0) visited[i] = true;
+
+            //otherwise if it is not already visited
+            else if (!visited[i])
+            {
+            	//find the cycle size
+                int cycleSize = 0;
+                visited[i] = true;
+                int src = (Integer)graph.get(i).get(0);
+                ++cycleSize;
+                visited[src] = true;
+                int temp = (Integer)graph.get(src).get(0);
+                ++cycleSize;
+                while ((Integer)graph.get(temp).get(0) != src)
+                {
+                    ++cycleSize;
+                    visited[temp] = true;
+                    temp = (Integer)graph.get(temp).get(0);
+                }
+
+                //add to the swap count
+                swapCount += (cycleSize-1);
+            }
+        }
+        
+        return swapCount;
+    }
+}

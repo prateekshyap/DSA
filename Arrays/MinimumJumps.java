@@ -2,6 +2,7 @@
 
 class Solution{
     static int minJumps(int[] arr){
+        /*if (nums.length == 1) return 0;*/ //leetcode
         int n = arr.length;
         int reach = 0, jumps = 0, steps = 0;
         if (arr[0] == 0) return -1;

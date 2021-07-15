@@ -41,3 +41,43 @@ class Solution
         return count;
     }
 }
+/*Pratik's Solution*/
+
+class Activity implements Comparable<Activity>
+{
+    int start;
+    int end;
+    Activity(int start,int end)
+    {
+        this.start = start;
+        this.end = end;
+    }
+    public int compareTo(Activity a)
+    {
+        return this.end-a.end;
+    }
+}
+
+class Solution 
+{
+    //Function to find the maximum number of meetings that can
+    //be performed in a meeting room.
+    
+    public static int maxMeetings(int start[], int end[], int n)
+    {
+        // add your code here
+        PriorityQueue<Activity> heap = new PriorityQueue<Activity>();
+        for(int i=0;i<n;i++)
+        {
+            heap.add(new Activity(start[i],end[i]));
+        }
+        int k=0;
+        while(!heap.isEmpty())
+        {
+            Activity cur = heap.poll();
+            k++;
+            while(!heap.isEmpty()&&heap.peek().start<=cur.end)heap.poll();
+        }
+        return k;
+    }
+}

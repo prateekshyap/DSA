@@ -40,3 +40,26 @@ class Solution{
         return dp[0][N-2];
     }
 }
+
+/*Recursion+Tabulation*/
+class Solution{
+    static int matrixMultiplication(int N, int arr[])
+    {
+        // code here
+        int i = 1,j = N-1;
+        int dp[][] = new int[N][N];
+        for(int m=0;m<N;m++)
+        Arrays.fill(dp[m],Integer.MAX_VALUE);
+        return solve(arr,i,j,dp);
+    }
+    static int solve(int arr[],int i,int j,int[][] dp)
+    {
+        if(i>=j)return 0;
+        if(dp[i][j]!=Integer.MAX_VALUE)return dp[i][j];
+        for(int k = i;k<j;k++)
+        {
+            dp[i][j] = Math.min(dp[i][j],solve(arr,i,k,dp)+solve(arr,k+1,j,dp)+arr[i-1]*arr[k]*arr[j]);
+        }
+        return dp[i][j];
+    }
+}

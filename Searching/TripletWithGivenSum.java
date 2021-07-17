@@ -1,13 +1,14 @@
-/*https://leetcode.com/problems/3sum/*/
+/*https://practice.geeksforgeeks.org/problems/triplet-sum-in-array-1587115621/1*/
 
-class Solution {
-    public List<List<Integer>> threeSum(int[] nums) {
-        List<List<Integer>> list = new ArrayList<>();
-        if (nums.length < 3) return list;
+class Solution
+{
+    public static boolean find3Numbers(int nums[], int n, int x)
+    {
+        if (nums.length < 3) return false;
         Arrays.sort(nums);
         for (int i = 0; i < nums.length-2; ++i)
         {
-        	//do not consider same elements
+            //do not consider same elements
             if (i > 0 && nums[i] == nums[i-1])
                 continue;
 
@@ -16,24 +17,15 @@ class Solution {
             int end = nums.length-1;
             while (start < end)
             {
-            	//get the sum
+                //get the sum
                 int sum = nums[i]+nums[start]+nums[end];
 
-                //if sum is 0
-                if (sum == 0)
-                {
-                	//add the numbers
-                    list.add(Arrays.asList(nums[i],nums[start],nums[end]));
-                    
-                    //do not consider same elements
-                    int currStart = nums[start];
-                    int currEnd = nums[end];
-                    while (start < end && nums[start] == currStart) ++start;
-                    while (start < end && nums[end] == currEnd) --end;
-                }
+                //if sum is x return true
+                if (sum == x)
+                    return true;
 
                 //if sum is positive, move left
-                else if (sum > 0)
+                else if (sum > x)
                     --end;
 
                 //else move right
@@ -41,6 +33,6 @@ class Solution {
                     ++start;
             }
         }
-        return list;
+        return false;
     }
 }

@@ -21,3 +21,25 @@ class Solution
         return -1;
     }
 }
+
+/*https://leetcode.com/problems/sqrtx/*/
+
+class Solution {
+    int x;
+    public int mySqrt(int x) {
+        if (x == 0) return 0;
+        this.x = x;
+        return findSqrt(1,x);
+    }
+    int findSqrt(int low, int high)
+    {
+        if (low <= high)
+        {
+            int mid = low+(high-low)/2;
+            if (mid == x/mid) return mid;
+            if (mid < x/mid) return findSqrt(mid+1,high);
+            return findSqrt(low,mid-1);
+        }
+        return high;
+    }
+}

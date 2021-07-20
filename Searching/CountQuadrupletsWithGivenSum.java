@@ -1,10 +1,9 @@
-/*https://practice.geeksforgeeks.org/problems/four-elements2452/1*/
+/*https://leetcode.com/problems/4sum/*/
 
-class Compute
-{
-    boolean find4Numbers(int nums[], int n, int target) 
-    {
-        if (nums.length < 4) return false;
+class Solution {
+    public List<List<Integer>> fourSum(int[] nums, int target) {
+        List<List<Integer>> list = new ArrayList<List<Integer>>();
+        if (nums.length < 4) return list;
         Arrays.sort(nums);
         for (int i = 0; i < nums.length-3; ++i)
         {
@@ -20,7 +19,7 @@ class Compute
                 int minTwoSum = nums[j+1] + nums[j+2];
                 int maxTwoSum = nums[nums.length - 1] + nums[nums.length - 2];
                 int twoSumTarget = target - nums[i] - nums[j];
-                if (twoSumTarget < minTwoSum || twoSumTarget > maxTwoSum) continue;
+                if(twoSumTarget < minTwoSum || twoSumTarget > maxTwoSum) continue;
                 
                 //set two pointers after the fixed pointers
                 int start = j+1;
@@ -31,16 +30,28 @@ class Compute
                     int sum = nums[i]+nums[j]+nums[start]+nums[end];
 
                     //if sum is equal to target
-                    if (sum == target) return true;
+                    if (sum == target)
+                    {
+                        //add the numbers
+                        list.add(Arrays.asList(nums[i],nums[j],nums[start],nums[end]));
+
+                        //do not consider same elements
+                        int currStart = nums[start];
+                        int currEnd = nums[end];
+                        while (start < end && nums[start] == currStart) ++start;
+                        while (start < end && nums[end] == currEnd) --end;
+                    }
 
                     //if sum is positive, move left
-                    else if (sum > target) --end;
+                    else if (sum > target)
+                        --end;
 
                     //else move right
-                    else ++start;
+                    else
+                        ++start;
                 }
             }
         }
-        return false;
+        return list;
     }
 }

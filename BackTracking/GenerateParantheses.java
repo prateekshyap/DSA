@@ -1,3 +1,57 @@
+/*https://leetcode.com/problems/generate-parentheses/*/
+
+/*prateekshya's solution*/
+
+class Solution {
+    Set<String> h;
+    Solution()
+    {
+        h = new HashSet<String>();
+    }
+    public List<String> generateParenthesis(int n) {
+        Solution s = new Solution();
+        s.generateParentheses(n-1,new StringBuilder("()"));
+        return new ArrayList<String>(s.h);
+    }
+    public void generateParentheses(int rem, StringBuilder curr)
+    {
+        if (rem == 0)
+        {
+            h.add(new String(curr));
+            return;
+        }
+        for (int i = 0; i <= curr.length()/2; ++i)
+        {
+            StringBuilder newStr = new StringBuilder(curr.substring(0,i));
+            newStr.append("()");
+            newStr.append(curr.substring(i));
+            generateParentheses(rem-1,newStr);
+        }
+    }
+}
+
+//better solution
+class Solution {
+    public List<String> generateParenthesis(int n) {
+        List<String> list = new ArrayList<String>();
+        generate(n,0,0,list,"");
+        return list;
+    }
+    public void generate(int n, int l, int r, List<String> list, String s)
+    {
+        if (s.length() == 2*n)
+        {
+            list.add(s);
+            return;
+        }
+
+        if (l<n) generate(n,l+1,r,list,s+"(");
+        if (r<l) generate(n,l,r+1,list,s+")");
+    }
+}
+
+/*pratik's solution*/
+
 import java.io.*;
 import java.util.*;
 

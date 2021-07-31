@@ -61,3 +61,44 @@ class GfG
         return result;
     }
 }
+
+/*Pratik's Code*/
+
+class GfG
+{
+    public static ArrayList<ArrayList<Integer>> uniqueRow(int a[][],int r, int c)
+    {
+        //add code here.
+        TrieNode root = new TrieNode();
+        ArrayList<ArrayList<Integer>> aList = new ArrayList<ArrayList<Integer>>();
+        for(int i=0;i<r;i++)
+        {
+            TrieNode temp = root;
+            ArrayList<Integer> al = new ArrayList<Integer>();
+            for(int j=0;j<c;j++)
+            {
+                al.add(a[i][j]);
+                if(temp.arr[a[i][j]]==null)
+                {
+                    TrieNode newNode = new TrieNode();
+                    temp.arr[a[i][j]] = newNode;
+                }
+                temp = temp.arr[a[i][j]];
+            }
+            if(temp.isEndOfRow==false)
+            {
+                aList.add(al);
+                temp.isEndOfRow = true;
+            }
+        }
+        return aList;
+    }
+}
+class TrieNode
+{
+    TrieNode arr[] = new TrieNode[2];
+    boolean isEndOfRow;
+    TrieNode(){
+        isEndOfRow = false;
+    }
+}

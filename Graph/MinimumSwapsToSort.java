@@ -1,5 +1,5 @@
 /*https://practice.geeksforgeeks.org/problems/minimum-swaps/1*/
-
+/*Prateekshya's Solution*/
 class Solution
 {
     public int minSwaps(int nums[])
@@ -55,5 +55,50 @@ class Solution
         }
         
         return swapCount;
+    }
+}
+
+/*Pratik's Solution*/
+class Solution
+{
+    //Function to find the minimum number of swaps required to sort the array.
+    public int minSwaps(int nums[])
+    {
+        // Code here
+        int graph[][] = new int[nums.length][2];
+        for(int i=0;i<nums.length;i++)
+        {
+            graph[i][0] = nums[i];
+            graph[i][1] = i;
+        }
+        Arrays.sort(graph,(a,b)->a[0]-b[0]);
+        boolean visited[] = new boolean[nums.length];
+        int len = 1;
+        int index = graph[0][1];
+        int rem = nums.length-1;
+        int count = 0;
+        visited[index] = true;
+        while(rem>0)
+        {
+            index = graph[index][1];
+            if(visited[index]==true)
+            {
+                count+=(len-1);
+                len = 1;
+                while(visited[index]!=false)
+                {
+                    index = (index+1)%nums.length;
+                }
+                visited[index] = true;
+            }
+            else
+            {
+                len++;
+                visited[index] = true;
+            }
+            rem--;
+        }
+        count+=(len-1);
+        return count;
     }
 }

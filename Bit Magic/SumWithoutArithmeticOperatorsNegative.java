@@ -18,29 +18,13 @@ class Solution {
         //if one of them is negative, subtract the smaller from the bigger and put sign accordingly
         if (a < 0)
         {
-            if (Math.abs(a) > b)
-            {
-                sum = subtract(Math.abs(a),b);
-                return sum*(-1);
-            }
-            else
-            {
-                sum = subtract(b,Math.abs(a));
-                return sum;
-            }
+            sum = Math.abs(a) > b ? subtract(Math.abs(a),b) : subtract(b,Math.abs(a));
+            return Math.abs(a) > b ? sum*(-1) : sum;
         }
         if (b < 0)
         {
-            if (Math.abs(b) > a)
-            {
-                sum = subtract(Math.abs(b),a);
-                return sum*(-1);
-            }
-            else
-            {
-                sum = subtract(a,Math.abs(b));
-                return sum;
-            }
+            sum = Math.abs(b) > a ? subtract(Math.abs(b),a) : subtract(a,Math.abs(b));
+            return Math.abs(b) > a ? sum*(-1) : sum;
         }
 
         //for two positive numbers, simply add them
@@ -48,44 +32,54 @@ class Solution {
     }
     public int add(int a, int b)
     {
-        int sum = 0, carry = 0, power = 0;
+    	//base cases
+        if (a == 0 && b == 0) return 0;
+        if ((a == 0 && b == 1) || (a == 1 && b == 0)) return 1;
+        if ((a|b) == (a^b)) return a^b; //For the cases like (7,8),(15,16),(31,32) //might cover some additional cases as well
+        
+        int sum = 0, carry = 0, pos = 1;
 
         //till the numbers are not exhausted
         while (a > 0 || b > 0)
         {
-        	//get the rightmost bits
+        	//extract the rightmost bits
             int bit1 = a&1; a >>= 1;
             int bit2 = b&1; b >>= 1;
 
-            //get the sum and carry
+            /*get the sum and carry
+            put the formula of addition of three bits*/
             int currSum = bit1^bit2;
-            currSum += carry;
-            carry = bit1&bit2;
-            currSum *= Math.pow(2,power);
-            ++power;
+            currSum ^= carry;
+            
+            int prevCarry = carry;
+            carry = bit2&prevCarry;
+            carry |= bit1&(bit2^prevCarry);
+            
+            currSum *= pos;
+            pos <<= 1;
 
             //add it to the sum
-            sum += currSum;
+            sum = add(sum, currSum);
         }
 
         //add the carry, if any
         if (carry > 0)
         {
-            carry *= Math.pow(2,power);
-            sum += carry;
+            carry *= pos;
+            sum ^= carry;
         }
         
         return sum;
     }
     public int subtract(int a, int b)
     {
-        int diff = 0, borrow = 0, power = 0;
+        int diff = 0, borrow = 0, pos = 1;
         boolean isBorrowed = false;
 
         //till the numbers are not exhausted
         while (a > 0 || b > 0)
         {
-        	//get the rightmost bits
+        	//extract the rightmost bits
             int bit1 = a&1; a >>= 1;
             int bit2 = b&1; b >>= 1;
             
@@ -106,13 +100,15 @@ class Solution {
             //get the difference and borrow
             int currDiff = bit1^bit2;
             borrow = (~bit1)&bit2;
+
+            //if borrow bit is non-zero, mark it
             if (borrow != 0) isBorrowed = true;
             
-            currDiff *= Math.pow(2,power);
-            ++power;
+            currDiff *= pos;
+            pos <<= 1;
             
             //add it to the difference
-            diff += currDiff;
+            diff = add(diff, currDiff);
         }
 
         return diff;

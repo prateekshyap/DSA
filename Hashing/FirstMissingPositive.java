@@ -2,6 +2,8 @@
 
 /*Prateekshya*/
 
+/*Modifying the existing array*/
+
 class Solution {
     public int firstMissingPositive(int[] nums) {
         int n = nums.length;

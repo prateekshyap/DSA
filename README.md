@@ -36,7 +36,7 @@ Number of Problems Solved (16-oct-21)
 | [Heap](https://github.com/prateekshyap/DSA#heap) | 9 |  0 |
 | [Linked List](https://github.com/prateekshyap/DSA#linked-list) | 34 |  3 |
 | [Matrix](https://github.com/prateekshyap/DSA#matrix) | 14 | 0 |
-| [Miscellaneous](https://github.com/prateekshyap/DSA#miscellaneous) | 8 |  1 |
+| [Miscellaneous](https://github.com/prateekshyap/DSA#miscellaneous) | 9 |  1 |
 | [Queue](https://github.com/prateekshyap/DSA#queue) | 4 | 0 |
 | [Recursion](https://github.com/prateekshyap/DSA#recursion) | 10 |  1 |
 | [Search](https://github.com/prateekshyap/DSA#searching) | 20 |  0 |
@@ -45,8 +45,8 @@ Number of Problems Solved (16-oct-21)
 | [Stack](https://github.com/prateekshyap/DSA#stack) | 16 |  0 |
 | [String](https://github.com/prateekshyap/DSA#string) | 17 |  1 |
 | [Tree](https://github.com/prateekshyap/DSA#tree) | 57 |  5 |
-| [Trie](https://github.com/prateekshyap/DSA#trie) | 6 |  0 |
-| Total | 399 | 34|
+| [Trie](https://github.com/prateekshyap/DSA#trie) | 7 |  0 |
+| Total | 384 | 34|
 <!-- 
 | [Simulation](https://github.com/prateekshyap/DSA#simulation) | |
 | [Design](https://github.com/prateekshyap/DSA#design) | |

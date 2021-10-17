@@ -30,11 +30,11 @@ Number of Problems Solved (16-oct-21)
 | [Bit Manipulation](https://github.com/prateekshyap/DSA#bit-manipulation) | 17 |  2 |
 | [Disjoint Set](https://github.com/prateekshyap/DSA#disjoint-set) | 0 |  0 |
 | [Dynamic Programming](https://github.com/prateekshyap/DSA#dynamic-programming) | 43 |  1 |
-| [Graph](https://github.com/prateekshyap/DSA#graph) | 23 |  6 |
+| [Graph](https://github.com/prateekshyap/DSA#graph) | 23 |  8 |
 | [Greedy](https://github.com/prateekshyap/DSA#greedy) | 15 |  0 |
 | [Hash Table](https://github.com/prateekshyap/DSA#hash-table) | 14 |  0 |
 | [Heap](https://github.com/prateekshyap/DSA#heap) | 9 |  0 |
-| [Linked List](https://github.com/prateekshyap/DSA#linked-list) | 34 |  2 |
+| [Linked List](https://github.com/prateekshyap/DSA#linked-list) | 34 |  3 |
 | [Matrix](https://github.com/prateekshyap/DSA#matrix) | 14 | 0 |
 | [Miscellaneous](https://github.com/prateekshyap/DSA#miscellaneous) | 8 |  1 |
 | [Queue](https://github.com/prateekshyap/DSA#queue) | 4 | 0 |
@@ -43,10 +43,10 @@ Number of Problems Solved (16-oct-21)
 | [Segment Tree](https://github.com/prateekshyap/DSA#segment-tree) | 0 |  0 |
 | [Sorting](https://github.com/prateekshyap/DSA#sort) | 7 | 0 |
 | [Stack](https://github.com/prateekshyap/DSA#stack) | 16 |  0 |
-| [String](https://github.com/prateekshyap/DSA#string) | 17 |  0 |
+| [String](https://github.com/prateekshyap/DSA#string) | 17 |  1 |
 | [Tree](https://github.com/prateekshyap/DSA#tree) | 57 |  5 |
 | [Trie](https://github.com/prateekshyap/DSA#trie) | 6 |  0 |
-| Total | 399 | 30|
+| Total | 399 | 34|
 <!-- 
 | [Simulation](https://github.com/prateekshyap/DSA#simulation) | |
 | [Design](https://github.com/prateekshyap/DSA#design) | |

@@ -1,6 +1,6 @@
 # GFG-LeetCode-Topicwise-Solutions
 
-Solutions to the algorithmic problems in [leetcode](https://leetcode.com/problemset/algorithms/) & [GeeksForGeeks](https://practice.geeksforgeeks.org/explore/?problemType=full&page=1)written in **C++** and **JAVA**
+Solutions to the algorithmic problems in [LeetCode](https://leetcode.com/problemset/algorithms/) & [GeeksForGeeks](https://practice.geeksforgeeks.org/explore/?problemType=full&page=1)written in **C++** and **JAVA**
 
 ## What you can find in this repository
 
@@ -22,29 +22,29 @@ We have solved quite a number of problems from several topics. See the below tab
 
 
 ## Algorithms
-| Topic Name| Number of Problems Solved| 
+| Topic Name| Problems Solved (Java,CPP) (16-oct-21)| 
 |  :--------: |  :--------: | 
-| [Array](https://github.com/prateekshyap/DSA#array) | x |
-| [Backtracking](https://github.com/prateekshyap/DSA#backtracking) | x |
-| [Bit Manipulation](https://github.com/prateekshyap/DSA#bit-manipulation) | x |
-| [Disjoint Set](https://github.com/prateekshyap/DSA#disjoint-set) | x |
-| [Dynamic Programming](https://github.com/prateekshyap/DSA#dynamic-programming) | x |
-| [Graph](https://github.com/prateekshyap/DSA#graph) | x |
-| [Greedy](https://github.com/prateekshyap/DSA#greedy) | x |
-| [Hash Table](https://github.com/prateekshyap/DSA#hash-table) | x |
-| [Heap](https://github.com/prateekshyap/DSA#heap) | x |
-| [Linked List](https://github.com/prateekshyap/DSA#linked-list) | x |
-| [Matrix](https://github.com/prateekshyap/DSA#matrix) | x |
-| [Miscellaneous](https://github.com/prateekshyap/DSA#miscellaneous) | x |
-| [Queue](https://github.com/prateekshyap/DSA#queue) | x |
-| [Recursion](https://github.com/prateekshyap/DSA#recursion) | x |
-| [Search](https://github.com/prateekshyap/DSA#searching) | x |
-| [Segment Tree](https://github.com/prateekshyap/DSA#segment-tree) | x |
-| [Sorting](https://github.com/prateekshyap/DSA#sort) | x |
-| [Stack](https://github.com/prateekshyap/DSA#stack) | x |
-| [String](https://github.com/prateekshyap/DSA#string) | x |
-| [Tree](https://github.com/prateekshyap/DSA#tree) | x |
-| [Trie](https://github.com/prateekshyap/DSA#trie) | x |
+| [Array](https://github.com/prateekshyap/DSA#array) | 56, 12 |
+| [Backtracking](https://github.com/prateekshyap/DSA#backtracking) | 12, 0 |
+| [Bit Manipulation](https://github.com/prateekshyap/DSA#bit-manipulation) | 17, 2 |
+| [Disjoint Set](https://github.com/prateekshyap/DSA#disjoint-set) | 0, 0 |
+| [Dynamic Programming](https://github.com/prateekshyap/DSA#dynamic-programming) | 43, 1 |
+| [Graph](https://github.com/prateekshyap/DSA#graph) | 23, 6 |
+| [Greedy](https://github.com/prateekshyap/DSA#greedy) | 15, 0 |
+| [Hash Table](https://github.com/prateekshyap/DSA#hash-table) | 14, 0 |
+| [Heap](https://github.com/prateekshyap/DSA#heap) | 9, 0 |
+| [Linked List](https://github.com/prateekshyap/DSA#linked-list) | 34, 2 |
+| [Matrix](https://github.com/prateekshyap/DSA#matrix) | 14, 0 |
+| [Miscellaneous](https://github.com/prateekshyap/DSA#miscellaneous) | 8, 1 |
+| [Queue](https://github.com/prateekshyap/DSA#queue) | 4, 0 |
+| [Recursion](https://github.com/prateekshyap/DSA#recursion) | 10, 1 |
+| [Search](https://github.com/prateekshyap/DSA#searching) | 20, 0 |
+| [Segment Tree](https://github.com/prateekshyap/DSA#segment-tree) | 0, 0 |
+| [Sorting](https://github.com/prateekshyap/DSA#sort) | 7, 0 |
+| [Stack](https://github.com/prateekshyap/DSA#stack) | 16, 0 |
+| [String](https://github.com/prateekshyap/DSA#string) | 17, 0 |
+| [Tree](https://github.com/prateekshyap/DSA#tree) | 57, 5 |
+| [Trie](https://github.com/prateekshyap/DSA#trie) | 6, 0 |
 <!-- 
 | [Simulation](https://github.com/prateekshyap/DSA#simulation) | |
 | [Design](https://github.com/prateekshyap/DSA#design) | |

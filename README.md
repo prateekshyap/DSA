@@ -71,8 +71,8 @@ Number of Problems Solved (16-oct-21)
 ## Array
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
-GFG | [Equilibrium Point](https://practice.geeksforgeeks.org/problems/equilibrium-point-1587115620/1)         | [C++](./GFG_ARR_EquilibriumPoints.cpp) [JAVA]()       | _O(n)_       | _O(1)_          | Easy         || Prefix Sum 
-724 | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)         | [C++](./LC_ARR_EquilibriumPoints.cpp) [JAVA](./EquilibriumPoint.java)       | _O(n)_       | _O(1)_          | Easy         || Prefix Sum
+GFG | [Equilibrium Point](https://practice.geeksforgeeks.org/problems/equilibrium-point-1587115620/1)         | [C++](./Arrays/GFG_ARR_EquilibriumPoints.cpp) [JAVA]()       | _O(n)_       | _O(1)_          | Easy         || Prefix Sum 
+724 | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)         | [C++](./Arrays/LC_ARR_EquilibriumPoints.cpp) [JAVA](./Arrays/EquilibriumPoint.java)       | _O(n)_       | _O(1)_          | Easy         || Prefix Sum
 
 
 ## Backtracking

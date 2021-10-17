@@ -46,6 +46,7 @@ Number of Problems Solved (16-oct-21)
 | [String](https://github.com/prateekshyap/DSA#string) | 17 |  0 |
 | [Tree](https://github.com/prateekshyap/DSA#tree) | 57 |  5 |
 | [Trie](https://github.com/prateekshyap/DSA#trie) | 6 |  0 |
+| Total | 399 | 30|
 <!-- 
 | [Simulation](https://github.com/prateekshyap/DSA#simulation) | |
 | [Design](https://github.com/prateekshyap/DSA#design) | |

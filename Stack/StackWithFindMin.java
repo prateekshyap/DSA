@@ -1,4 +1,5 @@
 /*https://practice.geeksforgeeks.org/problems/special-stack/1*/
+/*https://leetcode.com/problems/min-stack/*/
 
 class GfG{
    public void push(int a,Stack<Integer> s)
@@ -32,4 +33,42 @@ class GfG{
       //add code here.
       return s.isEmpty();
    }
+}
+
+class MinStack {
+    int[] stack, minElem;
+    int top;
+
+    public MinStack() {
+        stack = new int[30000];
+        minElem = new int[30000];
+        top = -1;
+    }
+    
+    public void push(int val) {
+        if (top == -1)
+        {
+            ++top;
+            stack[top] = val;
+            minElem[top] = val;
+        }
+        else
+        {
+            ++top;
+            stack[top] = val;
+            minElem[top] = Math.min(stack[top],minElem[top-1]);
+        }
+    }
+    
+    public void pop() {
+        --top;
+    }
+    
+    public int top() {
+        return stack[top];
+    }
+    
+    public int getMin() {
+        return minElem[top];
+    }
 }

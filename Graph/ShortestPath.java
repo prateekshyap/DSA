@@ -96,3 +96,152 @@ class Solution
         return pathCosts;
     }
 }
+
+/*Using heap from scratch*/
+
+class Node
+{
+    private int vertex, cost, index;
+    Node(int v, int c, int i)
+    {
+        vertex = v;
+        cost = c;
+        index = i;
+    }
+    public void setCost(int c) { cost = c; }
+    public int getCost() { return cost; }
+    public int getVertex() { return vertex; }
+    public void setIndex(int i){ index = i; }
+    public int getIndex() { return index; }
+}
+
+class Heap
+{
+    private Node[] pointers;
+    private Node[] pathCosts;
+    private int heapSize;
+    Heap(int V, int S)
+    {
+        pointers = new Node[V];
+        pathCosts = new Node[V];
+        heapSize = V;
+        for (int i = 0; i < V; ++i)
+        {
+            if (i != S)
+            {
+                pathCosts[i] = new Node(i, Integer.MAX_VALUE, i);
+                pointers[i] = pathCosts[i];
+            }
+            else
+            {
+                pathCosts[i] = new Node(i, 0, i);
+                pointers[i] = pathCosts[i];
+            }
+        }
+        buildHeap();
+    }
+    private int left(int root) { return (2*root)+1; }
+    private int right(int root) { return (2*root)+2; }
+    private int parent(int root) { return (root-1)/2; }
+    private void buildHeap()
+    {
+        for (int i = (heapSize/2)-1; i >= 0; --i)
+            minHeapify(i);
+    }
+    private void minHeapify(int root)
+    {
+        int min = root;
+        if (left(root) < heapSize && pathCosts[left(root)].getCost() < pathCosts[min].getCost())
+            min = left(root);
+        if (right(root) < heapSize && pathCosts[right(root)].getCost() < pathCosts[min].getCost())
+            min = right(root);
+        if (min != root)
+        {
+            Node temp = pathCosts[min];
+            pathCosts[min] = pathCosts[root];
+            pathCosts[root] = temp;
+            pointers[pathCosts[min].getVertex()] = pathCosts[min];
+            pointers[pathCosts[root].getVertex()] = pathCosts[root];
+            pathCosts[min].setIndex(min);
+            pathCosts[root].setIndex(root);
+            minHeapify(min);
+        }
+    }
+    public Node extractRoot()
+    {
+        Node temp = pathCosts[0];
+        pathCosts[0] = pathCosts[heapSize-1];
+        pointers[temp.getVertex()] = null;
+        pathCosts[0].setIndex(0);
+        pointers[pathCosts[0].getVertex()] = pathCosts[0];
+        --heapSize;
+        minHeapify(0);
+        return temp;
+    }
+    public void decreaseKey(int i, int newCost)
+    {
+        Node destination = pointers[i];
+        destination.setCost(newCost);
+        int index = destination.getIndex();
+        int parent = parent(index);
+        while (index != 0)
+        {
+            if (pathCosts[index].getCost() < pathCosts[parent].getCost())
+            {
+                Node temp = pathCosts[index];
+                pathCosts[index] = pathCosts[parent];
+                pathCosts[parent] = temp;
+                pointers[pathCosts[index].getVertex()] = pathCosts[index];
+                pointers[pathCosts[parent].getVertex()] = pathCosts[parent];
+                pathCosts[index].setIndex(index);
+                pathCosts[parent].setIndex(parent);
+                index = parent;
+                parent = parent(parent);
+            }
+            else break;
+        }
+    }
+}
+
+class Solution
+{
+    static int[] costs;
+    static int[] dijkstra(int V, ArrayList<ArrayList<ArrayList<Integer>>> adj, int S)
+    {
+        costs = new int[V];
+        Heap heap = new Heap(V,S);
+        
+        //initialize all path costs to infinity except the source
+        for (int i = 0; i < V; ++i)
+            if (i != S)
+                costs[i] = Integer.MAX_VALUE;
+                
+        for (int count = 1; count < V; ++count)
+        {
+            //extract minimum from the unchecked vertices and mark it checked
+            Node minVertex = heap.extractRoot();
+            //costs[minVertex.getVertex()] = minVertex.getCost();
+
+            //get the adjacent nodes
+            ArrayList<ArrayList<Integer>> adjacentNodes = adj.get(minVertex.getVertex());
+            
+            //relax all the adjacent edges
+            for (ArrayList<Integer> edge : adjacentNodes)
+                costs = relaxEdge(heap, minVertex.getVertex(), (Integer)edge.get(0), (Integer)edge.get(1));
+        }
+        
+        return costs;
+    }
+    
+    static int[] relaxEdge(Heap heap, int source, int destination, int weight)
+    {
+        //update the path cost
+        if (costs[destination] > costs[source]+weight)
+        {
+            costs[destination] = costs[source]+weight;
+            heap.decreaseKey(destination, costs[destination]);
+        }
+        return costs;
+    }
+}
+

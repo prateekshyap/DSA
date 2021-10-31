@@ -87,3 +87,33 @@ class GfG
 	    return root;
     }
 }
+
+/*https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/*/
+
+class Solution {
+    public Node flatten(Node head) {
+        if (head == null) return null;
+        
+        Node newHead = head, temp = head;
+        
+        while (temp != null)
+        {
+            while (temp.child == null && temp.next != null)
+                temp = temp.next;
+
+            if (temp.child == null) return head;
+
+            Node rest = temp.next;
+            temp.next = flatten(temp.child);
+            temp.next.prev = temp;
+            temp.child = null;
+            while (temp.next != null)
+                temp = temp.next;
+            temp.next = rest;
+            if (rest != null)
+                rest.prev = temp;
+        }
+        
+        return newHead;
+    }
+}

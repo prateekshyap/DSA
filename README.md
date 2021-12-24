@@ -21,7 +21,7 @@ We have solved quite a number of problems from several topics. See the below tab
 
 ## Algorithms
 
-Number of Problems Solved (24-Dec-2021 16:00:03)
+Number of Problems Solved (24-Dec-2021 17:15:06)
 
 | Topic Name | Java | CPP | 
 | :--------: | :--------: | :--------: | 

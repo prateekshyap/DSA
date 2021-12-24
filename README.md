@@ -25,7 +25,7 @@ We have solved quite a number of problems from several topics. See the below tab
 Number of Problems Solved (16-oct-21)
 | Topic Name|  Java | CPP | 
 |  :--------: |  :--------: | :--------: | 
-| [Array](https://github.com/prateekshyap/DSA#array) | 56 | 12 |
+| [Array](https://github.com/prateekshyap/DSA#arrays) | 56 | 12 |
 | [Backtracking](https://github.com/prateekshyap/DSA#backtracking) | 12 | 0 |
 | [Bit Manipulation](https://github.com/prateekshyap/DSA#bit-manipulation) | 17 |  2 |
 | [Disjoint Set](https://github.com/prateekshyap/DSA#disjoint-set) | 0 |  0 |
@@ -68,7 +68,7 @@ Number of Problems Solved (16-oct-21)
 * JAVA
     * [Time Complexity](to-be-updated)
     
-## Array
+## Arrays
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
 GFG | [Equilibrium Point](https://practice.geeksforgeeks.org/problems/equilibrium-point-1587115620/1)         | [C++](./Arrays/GFG_ARR_EquilibriumPoints.cpp) [JAVA]()       | _O(n)_       | _O(1)_          | Easy         || Prefix Sum 

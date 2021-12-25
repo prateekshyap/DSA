@@ -1,6 +1,6 @@
 /*https://practice.geeksforgeeks.org/problems/minimum-cost-to-fill-given-weight-in-a-bag1956/1*/
 
-//unbounded knapsack variation - https://practice.geeksforgeeks.org/problems/knapsack-with-duplicate-items4201/1
+/*unbounded knapsack variation (knapsack-with-duplicate-items4201 in GFG)*/
 class Solution
 {
 	public int minimumCost(int cost[], int N,int W)
@@ -14,7 +14,7 @@ class Solution
 	}
 }
 
-//rod cutting variation - https://practice.geeksforgeeks.org/problems/cutted-segments1642/1/
+/*rod cutting variation(cutted-segments1642 in GFG)*/
 class Solution
 {
     public int minimumCost(int cost[], int N,int W)

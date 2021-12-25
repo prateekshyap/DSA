@@ -43,20 +43,22 @@ class Questions
 			this.solutionLinks.put("CPP",sLink);
 	}
 
-	public void printQuestion()
+	public void printQuestion(BufferedWriter writer) throws IOException
 	{
-		System.out.println(questionKey);
+		writer.write("Question-"+questionKey); writer.newLine();
 		Iterator linkIterator = questionLinks.entrySet().iterator();
+		writer.write("Question links-"); writer.newLine();
 		while (linkIterator.hasNext())
 		{
 			Map.Entry questionLink = (Map.Entry)linkIterator.next();
-			System.out.println(questionLink.getKey());
+			writer.write((String)questionLink.getKey()); writer.newLine();
 		}
 		linkIterator = solutionLinks.entrySet().iterator();
+		writer.write("Solution links-"); writer.newLine();
 		while (linkIterator.hasNext())
 		{
 			Map.Entry solutionLink = (Map.Entry)linkIterator.next();
-			System.out.println(solutionLink.getValue());
+			writer.write((String)solutionLink.getValue()); writer.newLine();
 		}
 	}
 }
@@ -87,6 +89,8 @@ class Topics
 	public String getTopicName() { return this.topic; }
 	public int getJavaCount() { return this.javaCount; }
 	public int getCppCount() { return this.cppCount; }
+	public HashMap<String,Integer> getQuestionIndexMap() { return this.questionIndexMap; }
+	public Questions[] getIndexDetailsMap() { return this.indexDetailsMap; }
 
 	//methods for adding questions
 	public void addQuestion(HashMap<String,Integer> links, String topic, String program)
@@ -156,12 +160,12 @@ class Topics
 		}
 	}
 
-	public void printTopic()
+	public void printTopic(BufferedWriter writer) throws IOException
 	{
-		System.out.println("TOPIC NAME: "+this.topic);
-		System.out.println("Java files: "+this.javaCount);
-		System.out.println("CPP files: "+this.cppCount);
-		System.out.println("---------------------------------------------------------------------------------");
+		writer.write("TOPIC NAME: "+this.topic); writer.newLine();
+		writer.write("Java files: "+this.javaCount); writer.newLine();
+		writer.write("CPP files: "+this.cppCount); writer.newLine();
+		writer.write("---------------------------------------------------------------------------------"); writer.newLine();
 		Iterator linkIterator = this.questionIndexMap.entrySet().iterator();
 		int bullet = 1;
 		while (linkIterator.hasNext())
@@ -169,9 +173,9 @@ class Topics
 			Map.Entry questionAndIndex = (Map.Entry)linkIterator.next();
 			int index = (Integer)questionAndIndex.getValue();
 			Questions question = indexDetailsMap[index];
-			System.out.println((bullet++)+".");
-			question.printQuestion();
-			System.out.println();
+			writer.write((bullet++)+"."); writer.newLine();
+			question.printQuestion(writer);
+			writer.newLine();
 		}
 	}
 }
@@ -251,12 +255,20 @@ class UpdateReadme
 			}
 		}
 
+		File outputFile = new File("ConsoleOutput.txt");
+		if (!outputFile.exists()) outputFile.createNewFile();
+		BufferedWriter outputFileWriter = new BufferedWriter(new FileWriter(outputFile, true));
+		DateTimeFormatter currentDateAndTime = DateTimeFormatter.ofPattern("dd-MMM-yyyy HH:mm:ss");
+		LocalDateTime now = LocalDateTime.now();
+		outputFileWriter.write("("+currentDateAndTime.format(now)+")"); outputFileWriter.newLine(); outputFileWriter.newLine();
 		for (Topics topic : topicDetails)
 		{
-			topic.printTopic();
-			System.out.println("====================================================================================");
-			System.out.println("====================================================================================");
+			topic.printTopic(outputFileWriter);
+			outputFileWriter.write("=================================================================================================="); outputFileWriter.newLine();
+			outputFileWriter.write("=================================================================================================="); outputFileWriter.newLine();
+			outputFileWriter.newLine();			outputFileWriter.newLine();
 		}
+		outputFileWriter.newLine();		outputFileWriter.newLine();		outputFileWriter.newLine();		outputFileWriter.close();
 
 		//write folder wise counts
 		fileWriter.write("| Topic Name | Java | CPP | "); fileWriter.newLine();
@@ -272,7 +284,69 @@ class UpdateReadme
 		//write next fixed segment
 		printFixedMessage(fileWriter,2);
 
+		int bullet = 1;
+		//write question and solution details
+		for (Topics topic : topicDetails)
+		{
+			fileWriter.write("## "+topic.getTopicName()); fileWriter.newLine(); fileWriter.newLine();
+			fileWriter.write("|  #  | Title           |  Links          |  Solution       |"); fileWriter.newLine();
+			fileWriter.write("|-----|---------------- | --------------- | --------------- |"); fileWriter.newLine();
+
+			HashMap<String,Integer> questionIndexMap = topic.getQuestionIndexMap();
+			Questions[] indexDetailsMap = topic.getIndexDetailsMap();
+
+			Iterator questionIndexMapIterator = questionIndexMap.entrySet().iterator();
+			while (questionIndexMapIterator.hasNext())
+			{
+				fileWriter.write("|  "+(bullet++)+"  |");
+				int questionIndex = (Integer)((Map.Entry)questionIndexMapIterator.next()).getValue();
+				Questions currentQuestion = indexDetailsMap[questionIndex];
+				fileWriter.write(currentQuestion.getQuestionKey()+"|");
+
+				HashMap<String,Integer> currentQuestionLinks = currentQuestion.getQuestionLinks();
+				Iterator questionLinkIterator = currentQuestionLinks.entrySet().iterator();
+				HashMap<String,String> currentSolutionLinks = currentQuestion.getSolutionLinks();
+				Iterator solutionLinkIterator = currentSolutionLinks.entrySet().iterator();
+				//System.out.println(topic.getTopicName()+" - "+currentQuestion.getQuestionKey());
+				int questionLinkCount = 1;
+				while (questionLinkIterator.hasNext())
+				{
+					String currentQuestionLink = (String)((Map.Entry)questionLinkIterator.next()).getKey();
+					currentQuestionLink = extractProperLink(currentQuestionLink);
+					fileWriter.write("["+(questionLinkCount++)+"]("+currentQuestionLink+") ");
+				}
+				fileWriter.write("|");
+				while (solutionLinkIterator.hasNext())
+				{
+					Map.Entry solutionLink = (Map.Entry)solutionLinkIterator.next();
+					fileWriter.write("["+(String)solutionLink.getKey()+"]("+(String)solutionLink.getValue()+") ");
+				}
+				fileWriter.write("|");
+				fileWriter.newLine();
+			}
+
+			bullet = 1;
+		}
+
 		fileWriter.close();
+	}
+
+	public static String extractProperLink(String str)
+	{
+		StringBuilder buffer = new StringBuilder(str);
+		if (buffer.charAt(0) == '/')
+		{
+			buffer.deleteCharAt(0);
+			buffer.deleteCharAt(0);
+		}
+		else if (buffer.charAt(0) == '*')
+			buffer.deleteCharAt(0);
+		if (buffer.charAt(buffer.length()-2) == '*' && buffer.charAt(buffer.length()-1) == '/')
+		{
+			buffer.deleteCharAt(buffer.length()-1);
+			buffer.deleteCharAt(buffer.length()-1);
+		}
+		return buffer.toString().trim();
 	}
 
 	public static int isALink(String str)

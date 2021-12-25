@@ -1,4 +1,5 @@
 /*https://leetcode.com/problems/restore-ip-addresses/*/
+/*https://practice.geeksforgeeks.org/problems/generate-ip-addresses/1*/
 
 class Combinations
 {

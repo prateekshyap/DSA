@@ -1,4 +1,4 @@
-/**/
+/*https://practice.geeksforgeeks.org/problems/populate-inorder-successor-for-all-nodes/1*/
 
 class Solution{
     Node dummy = null; //this holds the previous node in inorder sequence

@@ -9,13 +9,56 @@ import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;
 
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 class Questions
 {
 	private String questionKey;
-	//private 
+	private HashMap<String,Integer> questionLinks;
+	private HashMap<String,String> solutionLinks;
 
-	//private
+	Questions(String key, HashMap<String,Integer> qLinks, String sLink)
+	{
+		this.questionKey = key;
+		this.questionLinks = qLinks;
+		this.solutionLinks = new HashMap<String,String>();
+		if (sLink.charAt(sLink.length()-1) == 'a')
+			this.solutionLinks.put("Java",sLink);
+		else if (sLink.charAt(sLink.length()-1) == 'p')
+			this.solutionLinks.put("CPP",sLink);
+	}
+
+	//getter methods
+	public String getQuestionKey() { return this.questionKey; }
+	public HashMap<String,Integer> getQuestionLinks() { return this.questionLinks; }
+	public HashMap<String,String> getSolutionLinks() { return this.solutionLinks; }
+
+	//solution link updation
+	public void addSolutionLink(String sLink)
+	{
+		if (sLink.charAt(sLink.length()-1) == 'a')
+			this.solutionLinks.put("Java",sLink);
+		else if (sLink.charAt(sLink.length()-1) == 'p')
+			this.solutionLinks.put("CPP",sLink);
+	}
+
+	public void printQuestion()
+	{
+		System.out.println(questionKey);
+		Iterator linkIterator = questionLinks.entrySet().iterator();
+		while (linkIterator.hasNext())
+		{
+			Map.Entry questionLink = (Map.Entry)linkIterator.next();
+			System.out.println(questionLink.getKey());
+		}
+		linkIterator = solutionLinks.entrySet().iterator();
+		while (linkIterator.hasNext())
+		{
+			Map.Entry solutionLink = (Map.Entry)linkIterator.next();
+			System.out.println(solutionLink.getValue());
+		}
+	}
 }
 
 class Topics
@@ -25,13 +68,15 @@ class Topics
 	private int cppCount; //total number of .cpp files
 	private HashMap<String,Integer> questionIndexMap; //stores the question key and the index of indexDetailsMap array
 	private Questions[] indexDetailsMap; //stores the details for each question in an array
-	
+	private int qIndex;
+
 	Topics(String topic, int noq)
 	{
 		this.topic = topic;
 		javaCount = cppCount = 0;
 		questionIndexMap = new HashMap<String,Integer>();
 		indexDetailsMap = new Questions[noq];
+		qIndex = 0;
 	}
 
 	//setter methods
@@ -42,6 +87,93 @@ class Topics
 	public String getTopicName() { return this.topic; }
 	public int getJavaCount() { return this.javaCount; }
 	public int getCppCount() { return this.cppCount; }
+
+	//methods for adding questions
+	public void addQuestion(HashMap<String,Integer> links, String topic, String program)
+	{
+		String link = "";
+		int nameIndex = -1;
+		Iterator linkIterator = links.entrySet().iterator();
+		if (linkIterator.hasNext())
+		{
+			Map.Entry linkDetails = (Map.Entry)linkIterator.next();
+			link = (String)linkDetails.getKey();
+			nameIndex = (Integer)linkDetails.getValue();
+		}
+		String[] tokens = link.split("/");
+		String questionKey = "";
+		if (nameIndex < 0)
+		{
+			questionKey += tokens[Math.abs(nameIndex)];
+			questionKey += "-";
+			questionKey += tokens[Math.abs(nameIndex)+1];
+		}
+		else
+		{
+			questionKey += tokens[nameIndex];
+		}
+		String solutionLink = "./";
+		solutionLink += topic;
+		solutionLink += "/";
+		solutionLink += program;
+
+		//check existence of the current question
+		boolean exists = false;
+		String existingQuestionKey = "";
+		Iterator questionIndexMapIterator = questionIndexMap.entrySet().iterator();
+		while (questionIndexMapIterator.hasNext())
+		{
+			int questionIndex = (Integer)((Map.Entry)questionIndexMapIterator.next()).getValue();
+			Questions currentQuestion = indexDetailsMap[questionIndex];
+			HashMap<String,Integer> currentQuestionLinks = currentQuestion.getQuestionLinks();
+			Iterator questionLinkIterator = currentQuestionLinks.entrySet().iterator();
+			while (questionLinkIterator.hasNext())
+			{
+				String currentQuestionLink = (String)((Map.Entry)questionLinkIterator.next()).getKey();
+				String[] currentTokens = currentQuestionLink.split("/");
+				for (String currentToken : currentTokens)
+				{
+					if (currentToken.equals(questionKey))
+					{
+						exists = true;
+						existingQuestionKey = currentQuestion.getQuestionKey();
+					}
+				}
+			}
+		}
+
+		if (exists)
+		{
+			int questionIndex = (Integer)questionIndexMap.get(existingQuestionKey);
+			indexDetailsMap[questionIndex].addSolutionLink(solutionLink);
+		}
+		else
+		{
+			Questions question = new Questions(questionKey,links,solutionLink);
+			indexDetailsMap[qIndex] = question;
+			questionIndexMap.put(questionKey,qIndex);
+			++qIndex;
+		}
+	}
+
+	public void printTopic()
+	{
+		System.out.println("TOPIC NAME: "+this.topic);
+		System.out.println("Java files: "+this.javaCount);
+		System.out.println("CPP files: "+this.cppCount);
+		System.out.println("---------------------------------------------------------------------------------");
+		Iterator linkIterator = this.questionIndexMap.entrySet().iterator();
+		int bullet = 1;
+		while (linkIterator.hasNext())
+		{
+			Map.Entry questionAndIndex = (Map.Entry)linkIterator.next();
+			int index = (Integer)questionAndIndex.getValue();
+			Questions question = indexDetailsMap[index];
+			System.out.println((bullet++)+".");
+			question.printQuestion();
+			System.out.println();
+		}
+	}
 }
 
 class UpdateReadme
@@ -90,6 +222,7 @@ class UpdateReadme
 				//store java and cpp counts
 				for (String program : programs)
 				{
+					if (program.equals("dummy.txt")) continue;
 					if (program.charAt(program.length()-1) == 'p') ++cppCount;
 					if (program.charAt(program.length()-1) == 'a') ++javaCount;
 					
@@ -100,11 +233,14 @@ class UpdateReadme
 					BufferedReader reader = new BufferedReader(new FileReader(codeFile));
 
 					String nextLine = "";
+					HashMap<String,Integer> questionLinks = new HashMap<String,Integer>();
 					while ((nextLine = reader.readLine()) != null)
 					{
-						if (isALink(nextLine))
-						{}
+						int nameIndex = isALink(nextLine);
+						if (nameIndex != -1)
+							questionLinks.put(nextLine,nameIndex);
 					}
+					topicDetails[index].addQuestion(questionLinks,topic,program);
 
 					reader.close();
 				}
@@ -115,6 +251,12 @@ class UpdateReadme
 			}
 		}
 
+		for (Topics topic : topicDetails)
+		{
+			topic.printTopic();
+			System.out.println("====================================================================================");
+			System.out.println("====================================================================================");
+		}
 
 		//write folder wise counts
 		fileWriter.write("| Topic Name | Java | CPP | "); fileWriter.newLine();
@@ -133,9 +275,18 @@ class UpdateReadme
 		fileWriter.close();
 	}
 
-	public static boolean isALink(String str)
+	public static int isALink(String str)
 	{
-		return false;
+		String[] tokens = str.split("/");
+		for (int i = 0; i < tokens.length; ++i)
+		{
+			String token = tokens[i];
+			if (token.equals("leetcode.com") || token.equals("practice.geeksforgeeks.org") || token.equals("www.hackerrank.com") || token.equals("www.interviewbit.com"))
+				return i+2;
+			else if (token.equals("codeforces.com"))
+				return (i+3)*(-1);
+		}
+		return -1;
 	}
 
 	public static boolean containsDot(String str)
@@ -151,8 +302,8 @@ class UpdateReadme
 		switch(trigger)
 		{
 		case 1:
-			writer.write("# GFG-LeetCode-Topicwise-Solutions"); writer.newLine(); writer.newLine();
-			writer.write("Solutions to the algorithmic problems in [LeetCode](https://leetcode.com/problemset/algorithms/) & [GeeksForGeeks](https://practice.geeksforgeeks.org/explore/?problemType=full&page=1) written in **C++** and **JAVA**"); writer.newLine(); writer.newLine();
+			writer.write("# Topicwise-Solutions-To-Coding-Questions"); writer.newLine(); writer.newLine();
+			writer.write("Solutions to the algorithmic problems in [LeetCode](https://leetcode.com/problemset/algorithms/), [GeeksForGeeks](https://practice.geeksforgeeks.org/explore/?problemType=full&page=1), [Hackerrank](https://www.hackerrank.com/domains/algorithms?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=problem-solving), [Interviewbit](https://www.interviewbit.com/courses/programming/) and [Codeforces](https://codeforces.com/problemset) written in **C++** and **JAVA**"); writer.newLine(); writer.newLine();
 			writer.write("## What you can find in this repository"); writer.newLine(); writer.newLine();
 			writer.write("We have solved quite a number of problems from several topics. See the below table for further details."); writer.newLine(); writer.newLine();
 			writer.write("## How to contribute?"); writer.newLine(); writer.newLine();

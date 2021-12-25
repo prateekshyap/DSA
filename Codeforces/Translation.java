@@ -1,3 +1,5 @@
+/*https://codeforces.com/problemset/problem/41/A*/
+
 import java.io.*;
 public class Translation
 {

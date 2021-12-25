@@ -1,6 +1,6 @@
-# GFG-LeetCode-Topicwise-Solutions
+# Topicwise-Solutions-To-Coding-Questions
 
-Solutions to the algorithmic problems in [LeetCode](https://leetcode.com/problemset/algorithms/) & [GeeksForGeeks](https://practice.geeksforgeeks.org/explore/?problemType=full&page=1) written in **C++** and **JAVA**
+Solutions to the algorithmic problems in [LeetCode](https://leetcode.com/problemset/algorithms/), [GeeksForGeeks](https://practice.geeksforgeeks.org/explore/?problemType=full&page=1), [Hackerrank](https://www.hackerrank.com/domains/algorithms?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=problem-solving), [Interviewbit](https://www.interviewbit.com/courses/programming/) and [Codeforces](https://codeforces.com/problemset) written in **C++** and **JAVA**
 
 ## What you can find in this repository
 
@@ -21,11 +21,11 @@ We have solved quite a number of problems from several topics. See the below tab
 
 ## Algorithms
 
-Number of Problems Solved (25-Dec-2021 16:43:36)
+Number of Problems Solved (25-Dec-2021 18:48:42)
 
 | Topic Name | Java | CPP | 
 | :--------: | :--------: | :--------: | 
-| [Arrays](https://github.com/prateekshyap/DSA#arrays) | 58 | 12 |
+| [Arrays](https://github.com/prateekshyap/DSA#arrays) | 57 | 12 |
 | [BackTracking](https://github.com/prateekshyap/DSA#backtracking) | 15 | 0 |
 | [Bit-Magic](https://github.com/prateekshyap/DSA#bit-magic) | 19 | 3 |
 | [Codeforces](https://github.com/prateekshyap/DSA#codeforces) | 22 | 0 |
@@ -39,7 +39,7 @@ Number of Problems Solved (25-Dec-2021 16:43:36)
 | [Matrix](https://github.com/prateekshyap/DSA#matrix) | 16 | 1 |
 | [Miscellaneous](https://github.com/prateekshyap/DSA#miscellaneous) | 15 | 1 |
 | [Queue](https://github.com/prateekshyap/DSA#queue) | 5 | 0 |
-| [Recursion](https://github.com/prateekshyap/DSA#recursion) | 13 | 1 |
+| [Recursion](https://github.com/prateekshyap/DSA#recursion) | 12 | 1 |
 | [Searching](https://github.com/prateekshyap/DSA#searching) | 24 | 0 |
 | [Segment-Tree](https://github.com/prateekshyap/DSA#segment-tree) | 0 | 0 |
 | [Sorting](https://github.com/prateekshyap/DSA#sorting) | 8 | 0 |
@@ -47,7 +47,7 @@ Number of Problems Solved (25-Dec-2021 16:43:36)
 | [Strings](https://github.com/prateekshyap/DSA#strings) | 25 | 2 |
 | [Tree](https://github.com/prateekshyap/DSA#tree) | 68 | 5 |
 | [Trie](https://github.com/prateekshyap/DSA#trie) | 10 | 0 |
-| Total | 478 | 39 |
+| Total | 476 | 39 |
 
 ## Reference
 

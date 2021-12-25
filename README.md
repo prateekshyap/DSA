@@ -1,6 +1,6 @@
 # GFG-LeetCode-Topicwise-Solutions
 
-Solutions to the algorithmic problems in [LeetCode](https://leetcode.com/problemset/algorithms/) & [GeeksForGeeks](https://practice.geeksforgeeks.org/explore/?problemType=full&page=1)written in **C++** and **JAVA**
+Solutions to the algorithmic problems in [LeetCode](https://leetcode.com/problemset/algorithms/) & [GeeksForGeeks](https://practice.geeksforgeeks.org/explore/?problemType=full&page=1) written in **C++** and **JAVA**
 
 ## What you can find in this repository
 
@@ -21,7 +21,7 @@ We have solved quite a number of problems from several topics. See the below tab
 
 ## Algorithms
 
-Number of Problems Solved (24-Dec-2021 17:15:06)
+Number of Problems Solved (25-Dec-2021 16:43:36)
 
 | Topic Name | Java | CPP | 
 | :--------: | :--------: | :--------: | 
@@ -30,7 +30,7 @@ Number of Problems Solved (24-Dec-2021 17:15:06)
 | [Bit-Magic](https://github.com/prateekshyap/DSA#bit-magic) | 19 | 3 |
 | [Codeforces](https://github.com/prateekshyap/DSA#codeforces) | 22 | 0 |
 | [Disjoint-Set](https://github.com/prateekshyap/DSA#disjoint-set) | 0 | 0 |
-| [Dynamic-Programming](https://github.com/prateekshyap/DSA#dynamic-programming) | 50 | 1 |
+| [Dynamic-Programming](https://github.com/prateekshyap/DSA#dynamic-programming) | 51 | 1 |
 | [Graph](https://github.com/prateekshyap/DSA#graph) | 27 | 10 |
 | [Greedy](https://github.com/prateekshyap/DSA#greedy) | 15 | 0 |
 | [Hashing](https://github.com/prateekshyap/DSA#hashing) | 20 | 1 |
@@ -47,14 +47,14 @@ Number of Problems Solved (24-Dec-2021 17:15:06)
 | [Strings](https://github.com/prateekshyap/DSA#strings) | 25 | 2 |
 | [Tree](https://github.com/prateekshyap/DSA#tree) | 68 | 5 |
 | [Trie](https://github.com/prateekshyap/DSA#trie) | 10 | 0 |
-| Total | 477 | 39 |
+| Total | 478 | 39 |
 
 ## Reference
 
 * C++
-    * [STL Time Complexity (Detailed)](http://www.cplusplus.com/reference/stl/)
-    * [STL Time Complexity (Summary)](http://john-ahlgren.blogspot.com/2013/10/stl-container-performance.html)
-    * [Data Structure and Algorithms Cheat Sheet](https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%20Algorithms.md)
+	* [STL Time Complexity (Detailed)](http://www.cplusplus.com/reference/stl/)
+	* [STL Time Complexity (Summary)](http://john-ahlgren.blogspot.com/2013/10/stl-container-performance.html)
+	* [Data Structure and Algorithms Cheat Sheet](https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%20Algorithms.md)
 * JAVA
-* [Time Complexity](to-be-updated)
+	* [Time Complexity](to-be-updated)
 

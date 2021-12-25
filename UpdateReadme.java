@@ -93,9 +93,9 @@ class UpdateReadme
 					if (program.charAt(program.length()-1) == 'p') ++cppCount;
 					if (program.charAt(program.length()-1) == 'a') ++javaCount;
 					
-					String codeFileName = new String(topicPath);
+					String codeFileName = new String(topicPathStr);
 					codeFileName += "\\";
-					codeFileName += "program";
+					codeFileName += program;
 					File codeFile = new File(codeFileName);
 					BufferedReader reader = new BufferedReader(new FileReader(codeFile));
 
@@ -135,7 +135,7 @@ class UpdateReadme
 
 	public static boolean isALink(String str)
 	{
-
+		return false;
 	}
 
 	public static boolean containsDot(String str)

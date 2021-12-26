@@ -17,6 +17,30 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+class OnlineInfo
+{
+	HashMap<String,String> questionDifficultyMap;
+	OnlineInfo()
+	{
+		questionDifficultyMap = new HashMap<String,String>();
+		try{
+		BufferedReader reader = new BufferedReader(new FileReader("OnlineInfo.csv"));
+		String nextLine = "";
+		while ((nextLine = reader.readLine()) != null)
+		{
+			String[] tokens = nextLine.split(",");
+			this.questionDifficultyMap.put(tokens[0],tokens[1]);
+		}
+		reader.close();
+		}
+		catch(IOException ie)
+		{}
+	}
+
+	//getter methods
+	public HashMap<String,String> getQuestionDifficultyMap() { return this.questionDifficultyMap; }
+}
+
 class Questions
 {
 	private String questionKey;
@@ -80,6 +104,9 @@ class Topics
 	private Questions[] indexDetailsMap; //stores the details for each question in an array
 	private int qIndex;
 
+	Topics()
+	{}
+
 	Topics(String topic, int noq)
 	{
 		this.topic = topic;
@@ -100,18 +127,8 @@ class Topics
 	public HashMap<String,Integer> getQuestionIndexMap() { return this.questionIndexMap; }
 	public Questions[] getIndexDetailsMap() { return this.indexDetailsMap; }
 
-	//methods for adding questions
-	public void addQuestion(HashMap<String,Integer> links, String topic, String program, String difficulty)
+	public String getQuestionKey(String link, int nameIndex)
 	{
-		String link = "";
-		int nameIndex = -1;
-		Iterator linkIterator = links.entrySet().iterator(); //iterator for question links
-		if (linkIterator.hasNext()) //for the first entry in links
-		{
-			Map.Entry linkDetails = (Map.Entry)linkIterator.next(); //get the entry
-			link = (String)linkDetails.getKey(); //get the link
-			nameIndex = (Integer)linkDetails.getValue(); //get the index of the question in the array splitted by "/"
-		}
 		String[] tokens = link.split("/"); //split by "/"
 		String questionKey = "";
 		if (nameIndex < 0) //for codeforces, attach two elements
@@ -124,6 +141,22 @@ class Topics
 		{
 			questionKey += tokens[nameIndex];
 		}
+		return questionKey;
+	}
+
+	//methods for adding questions
+	public void addQuestion(HashMap<String,Integer> links, String topic, String program, String difficulty)
+	{
+		String link = "";
+		int nameIndex = -1;
+		Iterator linkIterator = links.entrySet().iterator(); //iterator for question links
+		if (linkIterator.hasNext()) //for the first entry in links
+		{
+			Map.Entry linkDetails = (Map.Entry)linkIterator.next(); //get the entry
+			link = (String)linkDetails.getKey(); //get the link
+			nameIndex = (Integer)linkDetails.getValue(); //get the index of the question in the array splitted by "/"
+		}
+		String questionKey = getQuestionKey(link,nameIndex);
 
 		//get the solution link
 		String solutionLink = "./";
@@ -199,6 +232,10 @@ class UpdateReadme
 		File mainPath = new File(mainPathStr);
 		Topics[] topicDetails; //main arrat that stores all the details of the folder
 
+		//read online information
+		OnlineInfo onlineInfo = new OnlineInfo();
+		HashMap<String,String> questionDifficultyMap = onlineInfo.getQuestionDifficultyMap();
+
 		//get the list of folders i.e. the topics
 		String[] topics = mainPath.list();
 		
@@ -259,6 +296,8 @@ class UpdateReadme
 							nextLine = extractProperLink(nextLine);
 							nameIndex = isALink(nextLine);
 							questionLinks.put(nextLine,nameIndex); //add to map
+							/*
+							// one time full online updation done, no need to uncomment
 							if (getLinkName(nextLine) == 2) //for GFG links
 							{
 								System.out.println(nextLine);
@@ -271,6 +310,10 @@ class UpdateReadme
 									if (strong.attr("class").equals("problem-tab__problem-level"))
 									difficulty = strong.text();
 								}
+							}*/
+							if (getLinkName(nextLine) == 2) //for GFG links
+							{
+								difficulty = questionDifficultyMap.get(new Topics().getQuestionKey(nextLine,nameIndex));
 							}
 						}
 

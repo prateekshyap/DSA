@@ -352,7 +352,7 @@ class UpdateReadme
 		for (String token : tokens)
 		{
 			char firstChar = token.charAt(0);
-			firstChar = (char)(((int)firstChar)-32);
+			if (firstChar >= 'a' && firstChar <= 'z') firstChar = (char)(((int)firstChar)-32);
 			temp = new StringBuffer(Character.toString(firstChar));
 			temp.append(token.substring(1));
 			question.append(temp);

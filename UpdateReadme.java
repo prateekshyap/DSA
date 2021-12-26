@@ -12,21 +12,28 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
 class Questions
 {
 	private String questionKey;
 	private HashMap<String,Integer> questionLinks;
 	private HashMap<String,String> solutionLinks;
+	private String difficulty;
 
 	Questions(String key, HashMap<String,Integer> qLinks, String sLink)
 	{
 		this.questionKey = key;
 		this.questionLinks = qLinks;
 		this.solutionLinks = new HashMap<String,String>();
-		if (sLink.charAt(sLink.length()-1) == 'a')
+		if (sLink.charAt(sLink.length()-1) == 'a') //java
 			this.solutionLinks.put("Java",sLink);
-		else if (sLink.charAt(sLink.length()-1) == 'p')
+		else if (sLink.charAt(sLink.length()-1) == 'p') //cpp
 			this.solutionLinks.put("CPP",sLink);
+		this.difficulty = "";
 	}
 
 	//getter methods
@@ -37,28 +44,28 @@ class Questions
 	//solution link updation
 	public void addSolutionLink(String sLink)
 	{
-		if (sLink.charAt(sLink.length()-1) == 'a')
+		if (sLink.charAt(sLink.length()-1) == 'a') //java
 			this.solutionLinks.put("Java",sLink);
-		else if (sLink.charAt(sLink.length()-1) == 'p')
+		else if (sLink.charAt(sLink.length()-1) == 'p') //cpp
 			this.solutionLinks.put("CPP",sLink);
 	}
 
 	public void printQuestion(BufferedWriter writer) throws IOException
 	{
 		writer.write("Question-"+questionKey); writer.newLine();
-		Iterator linkIterator = questionLinks.entrySet().iterator();
+		Iterator linkIterator = questionLinks.entrySet().iterator(); //question links iterator
 		writer.write("Question links-"); writer.newLine();
-		while (linkIterator.hasNext())
+		while (linkIterator.hasNext()) //for each entry
 		{
-			Map.Entry questionLink = (Map.Entry)linkIterator.next();
-			writer.write((String)questionLink.getKey()); writer.newLine();
+			Map.Entry questionLink = (Map.Entry)linkIterator.next(); //get the entry
+			writer.write((String)questionLink.getKey()); writer.newLine(); //write the link
 		}
-		linkIterator = solutionLinks.entrySet().iterator();
+		linkIterator = solutionLinks.entrySet().iterator(); //solution links iterator
 		writer.write("Solution links-"); writer.newLine();
-		while (linkIterator.hasNext())
+		while (linkIterator.hasNext()) //for each entry
 		{
-			Map.Entry solutionLink = (Map.Entry)linkIterator.next();
-			writer.write((String)solutionLink.getValue()); writer.newLine();
+			Map.Entry solutionLink = (Map.Entry)linkIterator.next(); //get the entry
+			writer.write((String)solutionLink.getValue()); writer.newLine(); //write the link
 		}
 	}
 }
@@ -97,25 +104,27 @@ class Topics
 	{
 		String link = "";
 		int nameIndex = -1;
-		Iterator linkIterator = links.entrySet().iterator();
-		if (linkIterator.hasNext())
+		Iterator linkIterator = links.entrySet().iterator(); //iterator for question links
+		if (linkIterator.hasNext()) //for the first entry in links
 		{
-			Map.Entry linkDetails = (Map.Entry)linkIterator.next();
-			link = (String)linkDetails.getKey();
-			nameIndex = (Integer)linkDetails.getValue();
+			Map.Entry linkDetails = (Map.Entry)linkIterator.next(); //get the entry
+			link = (String)linkDetails.getKey(); //get the link
+			nameIndex = (Integer)linkDetails.getValue(); //get the index of the question in the array splitted by "/"
 		}
-		String[] tokens = link.split("/");
+		String[] tokens = link.split("/"); //split by "/"
 		String questionKey = "";
-		if (nameIndex < 0)
+		if (nameIndex < 0) //for codeforces, attach two elements
 		{
 			questionKey += tokens[Math.abs(nameIndex)];
 			questionKey += "-";
 			questionKey += tokens[Math.abs(nameIndex)+1];
 		}
-		else
+		else //for others, attach one element
 		{
 			questionKey += tokens[nameIndex];
 		}
+
+		//get the solution link
 		String solutionLink = "./";
 		solutionLink += topic;
 		solutionLink += "/";
@@ -124,23 +133,23 @@ class Topics
 		//check existence of the current question
 		boolean exists = false;
 		String existingQuestionKey = "";
-		Iterator questionIndexMapIterator = questionIndexMap.entrySet().iterator();
-		while (questionIndexMapIterator.hasNext())
+		Iterator questionIndexMapIterator = questionIndexMap.entrySet().iterator(); //question to index map iterator
+		while (questionIndexMapIterator.hasNext()) //for each entry in the map
 		{
-			int questionIndex = (Integer)((Map.Entry)questionIndexMapIterator.next()).getValue();
-			Questions currentQuestion = indexDetailsMap[questionIndex];
-			HashMap<String,Integer> currentQuestionLinks = currentQuestion.getQuestionLinks();
-			Iterator questionLinkIterator = currentQuestionLinks.entrySet().iterator();
-			while (questionLinkIterator.hasNext())
+			int questionIndex = (Integer)((Map.Entry)questionIndexMapIterator.next()).getValue(); //get the current question index
+			Questions currentQuestion = indexDetailsMap[questionIndex]; //get the current question
+			HashMap<String,Integer> currentQuestionLinks = currentQuestion.getQuestionLinks(); //get the question links
+			Iterator questionLinkIterator = currentQuestionLinks.entrySet().iterator(); //question links iterator
+			while (questionLinkIterator.hasNext()) //for each entry in the question links
 			{
-				String currentQuestionLink = (String)((Map.Entry)questionLinkIterator.next()).getKey();
-				String[] currentTokens = currentQuestionLink.split("/");
-				for (String currentToken : currentTokens)
+				String currentQuestionLink = (String)((Map.Entry)questionLinkIterator.next()).getKey(); //get the link
+				String[] currentTokens = currentQuestionLink.split("/"); //split by "/"
+				for (String currentToken : currentTokens) //for each token
 				{
-					if (currentToken.equals(questionKey))
+					if (currentToken.equals(questionKey)) //if the current token matches with the question key created above
 					{
-						exists = true;
-						existingQuestionKey = currentQuestion.getQuestionKey();
+						exists = true; //mark exists
+						existingQuestionKey = currentQuestion.getQuestionKey(); //get the current question key and store
 					}
 				}
 			}
@@ -148,15 +157,15 @@ class Topics
 
 		if (exists)
 		{
-			int questionIndex = (Integer)questionIndexMap.get(existingQuestionKey);
-			indexDetailsMap[questionIndex].addSolutionLink(solutionLink);
+			int questionIndex = (Integer)questionIndexMap.get(existingQuestionKey); //get the existing question index
+			indexDetailsMap[questionIndex].addSolutionLink(solutionLink); //add new solution to the existing question
 		}
-		else
+		else //if question does not exist
 		{
-			Questions question = new Questions(questionKey,links,solutionLink);
-			indexDetailsMap[qIndex] = question;
-			questionIndexMap.put(questionKey,qIndex);
-			++qIndex;
+			Questions question = new Questions(questionKey,links,solutionLink); //create a new question with all data provided
+			indexDetailsMap[qIndex] = question; //store in index to details map
+			questionIndexMap.put(questionKey,qIndex); //add the index to question to index map
+			++qIndex; //increase index
 		}
 	}
 
@@ -166,15 +175,15 @@ class Topics
 		writer.write("Java files: "+this.javaCount); writer.newLine();
 		writer.write("CPP files: "+this.cppCount); writer.newLine();
 		writer.write("---------------------------------------------------------------------------------"); writer.newLine();
-		Iterator linkIterator = this.questionIndexMap.entrySet().iterator();
+		Iterator linkIterator = this.questionIndexMap.entrySet().iterator(); //question to index map iterator
 		int bullet = 1;
-		while (linkIterator.hasNext())
+		while (linkIterator.hasNext()) //for each entry in the map
 		{
-			Map.Entry questionAndIndex = (Map.Entry)linkIterator.next();
-			int index = (Integer)questionAndIndex.getValue();
-			Questions question = indexDetailsMap[index];
-			writer.write((bullet++)+"."); writer.newLine();
-			question.printQuestion(writer);
+			Map.Entry questionAndIndex = (Map.Entry)linkIterator.next(); //get the current entry
+			int index = (Integer)questionAndIndex.getValue(); //get the index
+			Questions question = indexDetailsMap[index]; //get the current question
+			writer.write((bullet++)+"."); writer.newLine(); //print a number
+			question.printQuestion(writer); //print the current question
 			writer.newLine();
 		}
 	}
@@ -245,7 +254,11 @@ class UpdateReadme
 					{
 						int nameIndex = isALink(nextLine); //get the index of the question
 						if (nameIndex != -1) //if the index is not -1
+						{
+							nextLine = extractProperLink(nextLine);
+							nameIndex = isALink(nextLine);
 							questionLinks.put(nextLine,nameIndex); //add to map
+						}
 
 						//add time complexity and space complexity logic here
 					}
@@ -321,7 +334,7 @@ class UpdateReadme
 				while (questionLinkIterator.hasNext()) //for each question link
 				{
 					String currentQuestionLink = (String)((Map.Entry)questionLinkIterator.next()).getKey(); //get the link
-					currentQuestionLink = extractProperLink(currentQuestionLink); //trim the link
+					//currentQuestionLink = extractProperLink(currentQuestionLink); //trim the link
 					questionLinkCount = getLinkName(currentQuestionLink); //get the platform name
 					fileWriter.write("["+(questionLinkCount == 1 ? "LC" :
 											questionLinkCount == 2 ? "GFG" :

@@ -91347,3 +91347,7333 @@ Solution links-
 
 
 
+(26-Dec-2021 16:14:36)
+
+TOPIC NAME: Arrays
+Java files: 57
+CPP files: 12
+---------------------------------------------------------------------------------
+1.
+Question-find-missing-observations
+Question links-
+/*https://leetcode.com/problems/find-missing-observations/*/
+Solution links-
+./Arrays/FindMissingObservations.java
+
+2.
+Question-sort-an-array-of-0s-1s-and-2s4231
+Question links-
+/* https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1#
+Solution links-
+./Arrays/GFG_ARR_ArraySort0_1_2.cpp
+
+3.
+Question-subarray-with-0-sum-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/subarray-with-0-sum-1587115621/1*/
+Solution links-
+./Arrays/SubarrayWithZeroSum.java
+
+4.
+Question-plus-one
+Question links-
+/*https://practice.geeksforgeeks.org/problems/plus-one/1/*/
+Solution links-
+./Arrays/AddOne.java
+
+5.
+Question-kth-smallest-element5635
+Question links-
+/* https://practice.geeksforgeeks.org/problems/kth-smallest-element5635/1#
+Solution links-
+./Arrays/GFG_ARR_KthSmallestElement.cpp
+
+6.
+Question-next-permutation
+Question links-
+/*https://leetcode.com/problems/next-permutation/*/
+Solution links-
+./Arrays/NextPermutation.java
+
+7.
+Question-maximum-difference-of-zeros-and-ones-in-binary-string4111
+Question links-
+/*https://practice.geeksforgeeks.org/problems/maximum-difference-of-zeros-and-ones-in-binary-string4111/1*/
+Solution links-
+./Arrays/MaximumDifferenceInBinaryString.java
+
+8.
+Question-subarray-with-given-sum-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/subarray-with-given-sum-1587115621/1*/
+Solution links-
+./Arrays/SubarrayWithGivenSum.java
+
+9.
+Question-smallest-subarray-with-sum-greater-than-x5651
+Question links-
+/*https://practice.geeksforgeeks.org/problems/smallest-subarray-with-sum-greater-than-x5651/1*/
+Solution links-
+./Arrays/SmallestSubarrayGreaterThanX.java
+
+10.
+Question-next-higher-palindromic-number-using-the-same-set-of-digits5859
+Question links-
+/*https://practice.geeksforgeeks.org/problems/next-higher-palindromic-number-using-the-same-set-of-digits5859/1*/
+Solution links-
+./Arrays/NextGreaterPalindrome.java
+
+11.
+Question-number-of-good-ways-to-split-a-string
+Question links-
+/*https://leetcode.com/problems/number-of-good-ways-to-split-a-string/*/
+Solution links-
+./Arrays/NumberOfGoodSplits.java
+
+12.
+Question-palindrome-string0817
+Question links-
+ https://practice.geeksforgeeks.org/problems/palindrome-string0817/1
+Solution links-
+./Arrays/GFG_STR_PalindromeString.cpp
+
+13.
+Question-circular-linked-list
+Question links-
+/* https://practice.geeksforgeeks.org/problems/circular-linked-list/1#
+Solution links-
+./Arrays/GFG_ARR_UnionTwoArrays.cpp
+
+14.
+Question-find-the-duplicate-number
+Question links-
+/*https://leetcode.com/problems/find-the-duplicate-number/*/
+Solution links-
+./Arrays/FindDuplicate.java
+
+15.
+Question-remove-duplicates-from-sorted-array
+Question links-
+/*https://leetcode.com/problems/remove-duplicates-from-sorted-array/*/
+Solution links-
+./Arrays/RemoveDuplicatesFromSortedArray.java
+
+16.
+Question-large-factorial4721
+Question links-
+/*https://practice.geeksforgeeks.org/problems/large-factorial4721/1/*/
+Solution links-
+./Arrays/LargeFactorialArray.java
+
+17.
+Question-reverse-an-array
+Question links-
+ 	https://practice.geeksforgeeks.org/problems/reverse-an-array/0
+Solution links-
+./Arrays/ReverseArray.java
+./Arrays/GFG_ARR_ReverseArray.cpp
+
+18.
+Question-three-way-partitioning
+Question links-
+/*https://practice.geeksforgeeks.org/problems/three-way-partitioning/1*/
+Solution links-
+./Arrays/ThreeWayPartitioning.java
+
+19.
+Question-merge-intervals
+Question links-
+/*https://leetcode.com/problems/merge-intervals/*/
+Solution links-
+./Arrays/MergeIntervals.java
+
+20.
+Question-minimum-number-of-jumps-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/minimum-number-of-jumps-1587115620/1*/
+Solution links-
+./Arrays/MinimumJumps.java
+
+21.
+Question-replace-elements-with-greatest-element-on-right-side
+Question links-
+/*https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/*/
+Solution links-
+./Arrays/ReplaceWithLargestOnRight.java
+
+22.
+Question-longest-consecutive-sequence
+Question links-
+/*https://leetcode.com/problems/longest-consecutive-sequence/*/
+Solution links-
+./Arrays/LongestConsecutiveSubsequence.java
+
+23.
+Question-sort-colors
+Question links-
+/*https://leetcode.com/problems/sort-colors/*/
+Solution links-
+./Arrays/ZeroOneTwoSort.java
+
+24.
+Question-minimum-size-subarray-sum
+Question links-
+/*https://leetcode.com/problems/minimum-size-subarray-sum/*/
+Solution links-
+./Arrays/MinimumSizeSubarraySum.java
+
+25.
+Question-trapping-rain-water
+Question links-
+/*https://leetcode.com/problems/trapping-rain-water/*/
+Solution links-
+./Arrays/TrappingRainWater.java
+
+26.
+Question-find-pivot-index
+Question links-
+/*https://leetcode.com/problems/find-pivot-index/*/
+Solution links-
+./Arrays/EquilibriumPoint.java
+./Arrays/LC_724_ARR_EquilibriumPoints.cpp
+
+27.
+Question-maximum-subarray
+Question links-
+/*https://leetcode.com/problems/maximum-subarray/*/
+Solution links-
+./Arrays/MaximumSumSubarray.java
+
+28.
+Question-factorials-of-large-numbers2508
+Question links-
+/*https://practice.geeksforgeeks.org/problems/factorials-of-large-numbers2508/1*/
+Solution links-
+./Arrays/LargeFactorial.java
+
+29.
+Question-array-of-alternate-ve-and-ve-nos1401
+Question links-
+/*https://practice.geeksforgeeks.org/problems/array-of-alternate-ve-and-ve-nos1401/1*/
+Solution links-
+./Arrays/AlternatePositiveNegative.java
+
+30.
+Question-insert-interval
+Question links-
+/*https://leetcode.com/problems/insert-interval/*/
+Solution links-
+./Arrays/InsertNewInterval.java
+
+31.
+Question-intersection-of-two-arrays2404
+Question links-
+/*https://practice.geeksforgeeks.org/problems/intersection-of-two-arrays2404/1*/
+/*https://leetcode.com/problems/intersection-of-two-arrays/*/
+/*https://leetcode.com/problems/intersection-of-two-arrays-ii/*/
+Solution links-
+./Arrays/IntersectionArrays.java
+
+32.
+Question-stock-buy-and-sell-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/stock-buy-and-sell-1587115621/1*/
+Solution links-
+./Arrays/StockBuyAndSell.java
+
+33.
+Question-inversion-of-array-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/inversion-of-array-1587115620/1*/
+Solution links-
+./Arrays/InversionCount.java
+
+34.
+Question-jump-game
+Question links-
+/*https://practice.geeksforgeeks.org/problems/jump-game/1/#*/
+Solution links-
+./Arrays/JumpGame.java
+
+35.
+Question-maximum-product-subarray3604
+Question links-
+/*https://practice.geeksforgeeks.org/problems/maximum-product-subarray3604/1*/
+Solution links-
+./Arrays/MaximumProductSubarray.java
+
+36.
+Question-stickler-theif-1587115621
+Question links-
+/* https://practice.geeksforgeeks.org/problems/stickler-theif-1587115621/1#
+Solution links-
+./Arrays/GFG_ARR_MaxSumNonAdj_SticklerThief.cpp
+
+37.
+Question-partition-array-into-three-parts-with-equal-sum
+Question links-
+ 	https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/
+Solution links-
+./Arrays/ThreeParts.java
+./Arrays/LC_1013_ARR_ThreeEqualParts.cpp
+
+38.
+Question-leaders-in-an-array-1587115620
+Question links-
+ 	https://practice.geeksforgeeks.org/problems/leaders-in-an-array-1587115620/1
+Solution links-
+./Arrays/LeadersInArray.java
+./Arrays/GFG_ARR_LeadersInArray.cpp
+
+39.
+Question-common-elements1132
+Question links-
+/*https://practice.geeksforgeeks.org/problems/common-elements1132/1*/
+Solution links-
+./Arrays/CommonElements.java
+
+40.
+Question-rotate-array
+Question links-
+ 	https://leetcode.com/problems/rotate-array/
+Solution links-
+./Arrays/RotateArray.java
+./Arrays/LC_189_ARR_RotateArray.cpp
+
+41.
+Question-shortest-unsorted-continuous-subarray
+Question links-
+/*https://leetcode.com/problems/shortest-unsorted-continuous-subarray/*/
+Solution links-
+./Arrays/ShortestUnsortedContinuousSubarray.java
+
+42.
+Question-union-of-two-sorted-arrays
+Question links-
+/*https://practice.geeksforgeeks.org/problems/union-of-two-sorted-arrays/1*/
+Solution links-
+./Arrays/UnionSortedArrays.java
+
+43.
+Question-union-of-two-arrays3538
+Question links-
+/*https://practice.geeksforgeeks.org/problems/union-of-two-arrays3538/1*/
+Solution links-
+./Arrays/UnionArrays.java
+
+44.
+Question-move-zeroes
+Question links-
+/*https://leetcode.com/problems/move-zeroes/*/
+Solution links-
+./Arrays/MoveZeros.java
+
+45.
+Question-contiguous-array
+Question links-
+/*https://leetcode.com/problems/contiguous-array/*/
+Solution links-
+./Arrays/ContiguousArray.java
+
+46.
+Question-move-all-negative-elements-to-end1813
+Question links-
+/*https://practice.geeksforgeeks.org/problems/move-all-negative-elements-to-end1813/1*/
+Solution links-
+./Arrays/SegregateNegativePositive.java
+
+47.
+Question-max-sum-subarray-of-size-k5313
+Question links-
+ 	https://practice.geeksforgeeks.org/problems/max-sum-subarray-of-size-k5313/1
+Solution links-
+./Arrays/MaximumSumSubarrayOfSizeK.java
+./Arrays/GFG_ARR_MaximumSumSubarrayOfSizeK.cpp
+
+48.
+Question-subarray-sum-equals-k
+Question links-
+/*https://leetcode.com/problems/subarray-sum-equals-k/submissions/*/
+Solution links-
+./Arrays/TotalSubarrays.java
+
+49.
+Question-majority-element
+Question links-
+/*https://leetcode.com/problems/majority-element/*/
+Solution links-
+./Arrays/MajorityElement.java
+
+50.
+Question-count-the-subarrays-having-product-less-than-k1708
+Question links-
+/*https://practice.geeksforgeeks.org/problems/count-the-subarrays-having-product-less-than-k1708/1*/
+Solution links-
+./Arrays/CountSubArrays.java
+
+51.
+Question-count-subarrays-with-equal-number-of-1s-and-0s-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/count-subarrays-with-equal-number-of-1s-and-0s-1587115620/1*/
+Solution links-
+./Arrays/TotalSubarraysWithEqualZerosAndOnes.java
+
+52.
+Question-maximize-number-of-1s0905
+Question links-
+/*https://practice.geeksforgeeks.org/problems/maximize-number-of-1s0905/1*/
+Solution links-
+./Arrays/MaximizeOnes.java
+
+53.
+Question-remove-duplicates-from-sorted-array-ii
+Question links-
+/*https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/*/
+Solution links-
+./Arrays/RemoveDuplicatesFromSortedArray2.java
+
+54.
+Question-cyclically-rotate-an-array-by-one2614
+Question links-
+/*https://practice.geeksforgeeks.org/problems/cyclically-rotate-an-array-by-one2614/1*/
+Solution links-
+./Arrays/SingleCyclicRotation.java
+
+55.
+Question-zero-sum-subarrays1825
+Question links-
+/*https://practice.geeksforgeeks.org/problems/zero-sum-subarrays1825/1*/
+Solution links-
+./Arrays/TotalZeroSumSubarrays.java
+
+56.
+Question-equilibrium-point-1587115620
+Question links-
+ 	https://practice.geeksforgeeks.org/problems/equilibrium-point-1587115620/1
+Solution links-
+./Arrays/GFG_ARR_EquilibriumPoints.cpp
+
+57.
+Question-count-pairs-with-given-sum5022
+Question links-
+/*https://practice.geeksforgeeks.org/problems/count-pairs-with-given-sum5022/1*/
+Solution links-
+./Arrays/CountPairSum.java
+
+58.
+Question-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold
+Question links-
+/*https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/*/
+Solution links-
+./Arrays/SubArrayAvgMoreThanThreshold.java
+
+59.
+Question-chocolate-distribution-problem3825
+Question links-
+/*https://practice.geeksforgeeks.org/problems/chocolate-distribution-problem3825/1*/
+Solution links-
+./Arrays/ChocolateDistribution.java
+
+60.
+Question-product-of-array-except-self
+Question links-
+/*https://leetcode.com/problems/product-of-array-except-self/*/
+Solution links-
+./Arrays/ProductPuzzle.java
+
+61.
+Question-majority-element-ii
+Question links-
+/* https://leetcode.com/problems/majority-element-ii/ */
+Solution links-
+./Arrays/MajorityElement-ii.java
+
+62.
+Question-merge-two-sorted-arrays5135
+Question links-
+/*https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays5135/1*/
+Solution links-
+./Arrays/MergeWithoutExtraSpace.java
+
+63.
+Question-pairs-of-songs-with-total-durations-divisible-by-60
+Question links-
+/*https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/*/
+Solution links-
+./Arrays/SongSelect.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: BackTracking
+Java files: 15
+CPP files: 0
+---------------------------------------------------------------------------------
+1.
+Question-word-break-part-23249
+Question links-
+/*https://practice.geeksforgeeks.org/problems/word-break-part-23249/1*/
+Solution links-
+./BackTracking/WordBreak.java
+
+2.
+Question-word-search
+Question links-
+/*https://leetcode.com/problems/word-search/*/
+Solution links-
+./BackTracking/WordSearch.java
+
+3.
+Question-generate-parentheses
+Question links-
+/*https://leetcode.com/problems/generate-parentheses/*/
+Solution links-
+./BackTracking/GenerateParantheses.java
+
+4.
+Question-n-queens
+Question links-
+/*https://leetcode.com/problems/n-queens/*/
+Solution links-
+./BackTracking/NQueenSolver.java
+
+5.
+Question-permutations-of-a-given-string-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/permutations-of-a-given-string-1587115620/1*/
+/*https://leetcode.com/problems/permutations/*/
+Solution links-
+./BackTracking/Permutation.java
+
+6.
+Question-combination-sum-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/combination-sum-1587115620/1*/
+Solution links-
+./BackTracking/CombinationSum.java
+
+7.
+Question-rat-in-a-maze-problem
+Question links-
+/*http://practice.geeksforgeeks.org/problems/rat-in-a-maze-problem/1*/
+Solution links-
+./BackTracking/RatInMaze.java
+
+8.
+Question-largest-number-in-k-swaps-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/largest-number-in-k-swaps-1587115620/1*/
+Solution links-
+./BackTracking/LargestNumberInKSwaps.java
+
+9.
+Question-palindrome-partitioning-ii
+Question links-
+/*https://leetcode.com/problems/palindrome-partitioning-ii/*/
+Solution links-
+./BackTracking/MinimumNumberOfPartitions.java
+
+10.
+Question-solve-the-sudoku-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/solve-the-sudoku-1587115621/1*/
+Solution links-
+./BackTracking/SudokuSolver.java
+
+11.
+Question-palindrome-partitioning
+Question links-
+/*https://leetcode.com/problems/palindrome-partitioning/*/
+Solution links-
+./BackTracking/PalindromicPartition.java
+
+12.
+Question-number-of-paths0926
+Question links-
+/*https://practice.geeksforgeeks.org/problems/number-of-paths0926/1*/
+Solution links-
+./BackTracking/PossiblePaths.java
+
+13.
+Question-design-add-and-search-words-data-structure
+Question links-
+/*https://leetcode.com/problems/design-add-and-search-words-data-structure/*/
+Solution links-
+./BackTracking/AddSearchWord.java
+
+14.
+Question-permutations-ii
+Question links-
+/*https://leetcode.com/problems/permutations-ii/*/
+Solution links-
+./BackTracking/IntegersWithDuplicatesPermutation.java
+
+15.
+Question-word-search-ii
+Question links-
+/*https://leetcode.com/problems/word-search-ii/*/
+Solution links-
+./BackTracking/WordSearch2.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Bit-Magic
+Java files: 19
+CPP files: 3
+---------------------------------------------------------------------------------
+1.
+Question-ugly-number
+Question links-
+/*https://leetcode.com/problems/ugly-number/*/
+Solution links-
+./Bit-Magic/UglyNumber.java
+
+2.
+Question-ugly-number-ii
+Question links-
+/*https://leetcode.com/problems/ugly-number-ii/*/
+Solution links-
+./Bit-Magic/UglyNumber2.java
+
+3.
+Question-count-total-set-bits-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/count-total-set-bits-1587115620/1*/
+Solution links-
+./Bit-Magic/CountSetBitsInARange.java
+
+4.
+Question-trailing-zeroes-in-factorial5134
+Question links-
+/*https://practice.geeksforgeeks.org/problems/trailing-zeroes-in-factorial5134/1*/
+Solution links-
+./Bit-Magic/TrailingZeroes.java
+
+5.
+Question-single-number-iii
+Question links-
+/*https://leetcode.com/problems/single-number-iii/*/
+Solution links-
+./Bit-Magic/TwoOddOccurringElements.java
+
+6.
+Question-number-of-1-bits
+Question links-
+/*https://leetcode.com/problems/number-of-1-bits/*/
+Solution links-
+./Bit-Magic/NoOfOneBits.java
+
+7.
+Question-find-position-of-set-bit3706
+Question links-
+/*https://practice.geeksforgeeks.org/problems/find-position-of-set-bit3706/1*/
+Solution links-
+./Bit-Magic/OnlySetBit.java
+
+8.
+Question-sum-of-two-numbers-without-using-arithmetic-operators
+Question links-
+/* https://practice.geeksforgeeks.org/problems/sum-of-two-numbers-without-using-arithmetic-operators/1/#
+Solution links-
+./Bit-Magic/SumWithoutArithmeticOperators.java
+./Bit-Magic/GFG_SumWithoutArithmeticOperators.cpp
+
+9.
+Question-longest-consecutive-1s-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/longest-consecutive-1s-1587115620/1*/
+Solution links-
+./Bit-Magic/LongestConsecutiveOnes.java
+
+10.
+Question-permutation-sequence
+Question links-
+/*https://leetcode.com/problems/permutation-sequence/*/
+Solution links-
+./Bit-Magic/PermutationSequence.java
+
+11.
+Question-bit-difference-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/bit-difference-1587115620/1*/
+Solution links-
+./Bit-Magic/BitDifference.java
+
+12.
+Question-sum-of-two-integers
+Question links-
+/* https://leetcode.com/problems/sum-of-two-integers/
+Solution links-
+./Bit-Magic/SumWithoutArithmeticOperatorsNegative.java
+./Bit-Magic/LC_371_SumWithoutArithmeticOperatorsNegative.cpp
+
+13.
+Question-reverse-bits-1611130171
+Question links-
+/*https://practice.geeksforgeeks.org/problems/reverse-bits-1611130171/1/*/
+/*https://leetcode.com/problems/reverse-bits/*/
+Solution links-
+./Bit-Magic/ReverseBits.java
+
+14.
+Question-missing-number-in-array1416
+Question links-
+/*https://practice.geeksforgeeks.org/problems/missing-number-in-array1416/1*/
+Solution links-
+./Bit-Magic/FindMissingNumber.java
+
+15.
+Question-nth-natural-number
+Question links-
+/*https://practice.geeksforgeeks.org/problems/nth-natural-number/1*/
+Solution links-
+./Bit-Magic/NthNaturalNumber.java
+
+16.
+Question-check-whether-k-th-bit-is-set-or-not-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/check-whether-k-th-bit-is-set-or-not-1587115620/1*/
+Solution links-
+./Bit-Magic/CheckKthBit.java
+
+17.
+Question-add-binary
+Question links-
+/*https://leetcode.com/problems/add-binary/*/
+Solution links-
+./Bit-Magic/AddBinary.java
+
+18.
+Question-single-number
+Question links-
+/*https://leetcode.com/problems/single-number/*/
+Solution links-
+./Bit-Magic/FindOddOccuringNumber.java
+./Bit-Magic/LC_136_Bit_SingleNumber.cpp
+
+19.
+Question-power-of-two
+Question links-
+/*https://leetcode.com/problems/power-of-two/*/
+Solution links-
+./Bit-Magic/PowerOfTwo.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Codeforces
+Java files: 22
+CPP files: 0
+---------------------------------------------------------------------------------
+1.
+Question-158-A*
+Question links-
+/*https://codeforces.com/problemset/problem/158/A*/
+Solution links-
+./Codeforces/NextRound.java
+
+2.
+Question-432-A*
+Question links-
+/*https://codeforces.com/problemset/problem/432/A*/
+Solution links-
+./Codeforces/ChoosingTeams.java
+
+3.
+Question-71-A*
+Question links-
+/*https://codeforces.com/problemset/problem/71/A*/
+Solution links-
+./Codeforces/WayTooLongWords.java
+
+4.
+Question-112-A*
+Question links-
+/*https://codeforces.com/problemset/problem/112/A*/
+Solution links-
+./Codeforces/PetyaAndStrings.java
+
+5.
+Question-263-A*
+Question links-
+/*https://codeforces.com/problemset/problem/263/A*/
+Solution links-
+./Codeforces/BeautifulMatrix.java
+
+6.
+Question-677-A*
+Question links-
+/*https://codeforces.com/problemset/problem/677/A*/
+Solution links-
+./Codeforces/VanyaAndFence.java
+
+7.
+Question-266-B*
+Question links-
+/*https://codeforces.com/problemset/problem/266/B*/
+Solution links-
+./Codeforces/QueueAtSchool.java
+
+8.
+Question-41-A*
+Question links-
+/*https://codeforces.com/problemset/problem/41/A*/
+Solution links-
+./Codeforces/Translation.java
+
+9.
+Question-617-A*
+Question links-
+/*https://codeforces.com/problemset/problem/617/A*/
+Solution links-
+./Codeforces/Elephant.java
+
+10.
+Question-339-A*
+Question links-
+/*https://codeforces.com/problemset/problem/339/A*/
+Solution links-
+./Codeforces/HelpfulMaths.java
+
+11.
+Question-200-B*
+Question links-
+/*https://codeforces.com/problemset/problem/200/B*/
+Solution links-
+./Codeforces/Drinks.java
+
+12.
+Question-469-A*
+Question links-
+/*https://codeforces.com/problemset/problem/469/A*/
+Solution links-
+./Codeforces/IWannaBeTheGuy.java
+
+13.
+Question-231-A*
+Question links-
+/*https://codeforces.com/problemset/problem/231/A*/
+Solution links-
+./Codeforces/Team.java
+
+14.
+Question-282-A*
+Question links-
+/*https://codeforces.com/problemset/problem/282/A*/
+Solution links-
+./Codeforces/BitParser.java
+
+15.
+Question-148-A*
+Question links-
+/*https://codeforces.com/problemset/problem/148/A*/
+Solution links-
+./Codeforces/InsomniaCure.java
+
+16.
+Question-1607-H*
+Question links-
+/*https://codeforces.com/problemset/problem/1607/H*/
+Solution links-
+./Codeforces/BanquetPreparation.java
+
+17.
+Question-59-A*
+Question links-
+/*https://codeforces.com/problemset/problem/59/A*/
+Solution links-
+./Codeforces/Word.java
+
+18.
+Question-1343-B*
+Question links-
+/*https://codeforces.com/problemset/problem/1343/B*/
+Solution links-
+./Codeforces/BalancedArray.java
+
+19.
+Question-546-A*
+Question links-
+/*https://codeforces.com/problemset/problem/546/A*/
+Solution links-
+./Codeforces/SoldierAndBananas.java
+
+20.
+Question-50-A*
+Question links-
+/*https://codeforces.com/problemset/problem/50/A*/
+Solution links-
+./Codeforces/DominoPiling.java
+
+21.
+Question-4-A*
+Question links-
+/*https://codeforces.com/problemset/problem/4/A*/
+Solution links-
+./Codeforces/Watermelon.java
+
+22.
+Question-236-A*
+Question links-
+/*https://codeforces.com/problemset/problem/236/A*/
+Solution links-
+./Codeforces/BoyOrGirl.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Disjoint-Set
+Java files: 0
+CPP files: 0
+---------------------------------------------------------------------------------
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Dynamic-Programming
+Java files: 51
+CPP files: 1
+---------------------------------------------------------------------------------
+1.
+Question-decode-ways
+Question links-
+/*https://leetcode.com/problems/decode-ways/*/
+Solution links-
+./Dynamic-Programming/DecodeWays.java
+
+2.
+Question-longest-increasing-subsequence-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence-1587115620/1*/
+Solution links-
+./Dynamic-Programming/LongestIncreasingSubsequence.java
+
+3.
+Question-longest-palindromic-substring
+Question links-
+/*https://leetcode.com/problems/longest-palindromic-substring/*/
+Solution links-
+./Dynamic-Programming/LongestPalindromicSubstring.java
+
+4.
+Question-count-ways-to-reach-the-nth-stair-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/count-ways-to-reach-the-nth-stair-1587115620/1*/
+/*https://leetcode.com/problems/climbing-stairs/*/
+Solution links-
+./Dynamic-Programming/CountWaysToNthStair.java
+
+5.
+Question-cutted-segments1642
+Question links-
+/*https://practice.geeksforgeeks.org/problems/cutted-segments1642/1/*/
+Solution links-
+./Dynamic-Programming/MaximizeCuts.java
+
+6.
+Question-arithmetic-slices
+Question links-
+/*https://leetcode.com/problems/arithmetic-slices/*/
+Solution links-
+./Dynamic-Programming/ArithmeticSlices.java
+
+7.
+Question-longest-common-subsequence-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/longest-common-subsequence-1587115620/1*/
+Solution links-
+./Dynamic-Programming/LCS.java
+
+8.
+Question-bbt-counter4914
+Question links-
+/*https://practice.geeksforgeeks.org/problems/bbt-counter4914/1*/
+Solution links-
+./Dynamic-Programming/BBTCounter.java
+
+9.
+Question-min-cost-climbing-stairs
+Question links-
+/*https://leetcode.com/problems/min-cost-climbing-stairs/*/
+Solution links-
+./Dynamic-Programming/MinCostStairs.java
+
+10.
+Question-coin-change2448
+Question links-
+/*https://practice.geeksforgeeks.org/problems/coin-change2448/1/*/
+/*https://leetcode.com/problems/coin-change/*/
+Solution links-
+./Dynamic-Programming/CoinChange.java
+
+11.
+Question-number-of-coins1824
+Question links-
+/*https://practice.geeksforgeeks.org/problems/number-of-coins1824/1*/
+Solution links-
+./Dynamic-Programming/MinimumCoins.java
+
+12.
+Question-subset-sum-problem2014
+Question links-
+/*https://practice.geeksforgeeks.org/problems/subset-sum-problem2014/1*/
+Solution links-
+./Dynamic-Programming/PartitionArray.java
+
+13.
+Question-friends-pairing-problem5425
+Question links-
+/*https://practice.geeksforgeeks.org/problems/friends-pairing-problem5425/1/*/
+Solution links-
+./Dynamic-Programming/FriendsPairing.java
+
+14.
+Question-minimum-path-sum
+Question links-
+/*https://leetcode.com/problems/minimum-path-sum/*/
+Solution links-
+./Dynamic-Programming/MinimumPathSum.java
+
+15.
+Question-lcs-of-three-strings0028
+Question links-
+/*https://practice.geeksforgeeks.org/problems/lcs-of-three-strings0028/1*/
+Solution links-
+./Dynamic-Programming/LCS3.java
+
+16.
+Question-minimum-cost-for-tickets
+Question links-
+/*https://leetcode.com/problems/minimum-cost-for-tickets/*/
+Solution links-
+./Dynamic-Programming/MinimumCostForTickets.java
+
+17.
+Question-painting-the-fence3727
+Question links-
+/*https://practice.geeksforgeeks.org/problems/painting-the-fence3727/1/*/
+Solution links-
+./Dynamic-Programming/PaintTheFence.java
+
+18.
+Question-minimum-falling-path-sum-ii
+Question links-
+/*https://leetcode.com/problems/minimum-falling-path-sum-ii/*/
+Solution links-
+./Dynamic-Programming/MinimumFallingPathSum2.java
+
+19.
+Question-longest-palindromic-subsequence-1612327878
+Question links-
+/*https://practice.geeksforgeeks.org/problems/longest-palindromic-subsequence-1612327878/1*/
+Solution links-
+./Dynamic-Programming/LongestPalindromicSubsequence.java
+
+20.
+Question-word-break1352
+Question links-
+/*https://practice.geeksforgeeks.org/problems/word-break1352/1*/
+Solution links-
+./Dynamic-Programming/WordBreak.java
+
+21.
+Question-n-th-tribonacci-number
+Question links-
+/*https://leetcode.com/problems/n-th-tribonacci-number/*/
+Solution links-
+./Dynamic-Programming/NthTribonacci.java
+
+22.
+Question-house-robber
+Question links-
+/*https://leetcode.com/problems/house-robber/*/
+Solution links-
+./Dynamic-Programming/HouseRobber.java
+
+23.
+Question-edit-distance3702
+Question links-
+/*https://practice.geeksforgeeks.org/problems/edit-distance3702/1*/
+Solution links-
+./Dynamic-Programming/EditDistance.java
+
+24.
+Question-subset-sum-problem-1611555638
+Question links-
+/*https://practice.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1*/
+Solution links-
+./Dynamic-Programming/SubsetSum.java
+
+25.
+Question-largest-square-formed-in-a-matrix0806
+Question links-
+/*https://practice.geeksforgeeks.org/problems/largest-square-formed-in-a-matrix0806/1*/
+Solution links-
+./Dynamic-Programming/MaxSquareOfOnes.java
+
+26.
+Question-unique-paths-ii
+Question links-
+/*https://leetcode.com/problems/unique-paths-ii/*/
+Solution links-
+./Dynamic-Programming/UniquePathsWithObstacles.java
+
+27.
+Question-longest-repeating-subsequence2004
+Question links-
+/*https://practice.geeksforgeeks.org/problems/longest-repeating-subsequence2004/1*/
+Solution links-
+./Dynamic-Programming/LongestRepeatingSubsequence.java
+
+28.
+Question-count-square-submatrices-with-all-ones
+Question links-
+/*https://leetcode.com/problems/count-square-submatrices-with-all-ones/*/
+Solution links-
+./Dynamic-Programming/CountCompleteSquaresInMatrix.java
+./Dynamic-Programming/LC_1277_CountSquareSubmatricesAllOnes.cpp
+
+29.
+Question-path-in-matrix3805
+Question links-
+/*https://practice.geeksforgeeks.org/problems/path-in-matrix3805/1*/
+Solution links-
+./Dynamic-Programming/MaxPathSum.java
+
+30.
+Question-knapsack-with-duplicate-items4201
+Question links-
+/*https://practice.geeksforgeeks.org/problems/knapsack-with-duplicate-items4201/1*/
+Solution links-
+./Dynamic-Programming/UnboundedKnapsack.java
+
+31.
+Question-wiggle-subsequence
+Question links-
+/*https://leetcode.com/problems/wiggle-subsequence/*/
+Solution links-
+./Dynamic-Programming/WiggleSubsequence.java
+
+32.
+Question-stickler-theif-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/stickler-theif-1587115621/1/*/
+Solution links-
+./Dynamic-Programming/SticklerThief.java
+
+33.
+Question-minimum-cost-to-fill-given-weight-in-a-bag1956
+Question links-
+/*https://practice.geeksforgeeks.org/problems/minimum-cost-to-fill-given-weight-in-a-bag1956/1*/
+Solution links-
+./Dynamic-Programming/BuyOranges.java
+
+34.
+Question-gold-mine-problem2608
+Question links-
+/*https://practice.geeksforgeeks.org/problems/gold-mine-problem2608/1/*/
+Solution links-
+./Dynamic-Programming/GoldMine.java
+
+35.
+Question-nth-catalan-number0817
+Question links-
+/*https://practice.geeksforgeeks.org/problems/nth-catalan-number0817/1/*/
+Solution links-
+./Dynamic-Programming/CatalanNumbers.java
+
+36.
+Question-matrix-chain-multiplication0303
+Question links-
+/*https://practice.geeksforgeeks.org/problems/matrix-chain-multiplication0303/1*/
+Solution links-
+./Dynamic-Programming/MatrixChainMultiplication.java
+
+37.
+Question-minimum-falling-path-sum
+Question links-
+/*https://leetcode.com/problems/minimum-falling-path-sum/*/
+Solution links-
+./Dynamic-Programming/MinimumFallingPathSum.java
+
+38.
+Question-maximum-profit-in-job-scheduling
+Question links-
+/*https://leetcode.com/problems/maximum-profit-in-job-scheduling/*/
+Solution links-
+./Dynamic-Programming/WeightedIntervalScheduling.java
+
+39.
+Question-wildcard-pattern-matching
+Question links-
+/*https://practice.geeksforgeeks.org/problems/wildcard-pattern-matching/1*/
+Solution links-
+./Dynamic-Programming/WildcardMatching.java
+
+40.
+Question-unique-paths
+Question links-
+/*https://leetcode.com/problems/unique-paths/*/
+Solution links-
+./Dynamic-Programming/UniquePaths.java
+
+41.
+Question-maximum-length-of-repeated-subarray
+Question links-
+/*https://leetcode.com/problems/maximum-length-of-repeated-subarray/*/
+Solution links-
+./Dynamic-Programming/MaxLengthRepeatedSubarray.java
+
+42.
+Question-counting-bits
+Question links-
+/*https://leetcode.com/problems/counting-bits/*/
+Solution links-
+./Dynamic-Programming/CountBitsInEachNumber.java
+
+43.
+Question-ncr1019
+Question links-
+/*https://practice.geeksforgeeks.org/problems/ncr1019/1*/
+Solution links-
+./Dynamic-Programming/BinomialCoefficients.java
+
+44.
+Question-egg-dropping-puzzle-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/egg-dropping-puzzle-1587115620/1*/
+Solution links-
+./Dynamic-Programming/EggDrop.java
+
+45.
+Question-longest-common-substring1452
+Question links-
+/*https://practice.geeksforgeeks.org/problems/longest-common-substring1452/1*/
+Solution links-
+./Dynamic-Programming/LongestCommonSubstring.java
+
+46.
+Question-reach-a-given-score-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/reach-a-given-score-1587115621/1*/
+Solution links-
+./Dynamic-Programming/ReachAGivenScore.java
+
+47.
+Question-house-robber-ii
+Question links-
+/*https://leetcode.com/problems/house-robber-ii/*/
+Solution links-
+./Dynamic-Programming/HouseRobber2.java
+
+48.
+Question-0-1-knapsack-problem0945
+Question links-
+/*https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1*/
+Solution links-
+./Dynamic-Programming/BinaryKnapsack.java
+
+49.
+Question-get-minimum-squares0538
+Question links-
+/*https://practice.geeksforgeeks.org/problems/get-minimum-squares0538/1*/
+Solution links-
+./Dynamic-Programming/MinimumSquaresSum.java
+
+50.
+Question-maximum-sum-increasing-subsequence4749
+Question links-
+/*https://practice.geeksforgeeks.org/problems/maximum-sum-increasing-subsequence4749/1*/
+Solution links-
+./Dynamic-Programming/MaximumSumIncreasingSubsequence.java
+
+51.
+Question-count-palindromic-subsequences
+Question links-
+/*https://practice.geeksforgeeks.org/problems/count-palindromic-subsequences/1*/
+Solution links-
+./Dynamic-Programming/CountLongestPalindromicSubsequences.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Graph
+Java files: 27
+CPP files: 10
+---------------------------------------------------------------------------------
+1.
+Question-implementing-dijkstra-set-1-adjacency-matrix
+Question links-
+/* https://practice.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1#
+Solution links-
+./Graph/ShortestPath.java
+./Graph/GFG_Graph_ShortestDistance_Dijkstra.cpp
+
+2.
+Question-clone-graph
+Question links-
+/*https://leetcode.com/problems/clone-graph/*/
+Solution links-
+./Graph/CloneGraph.java
+./Graph/LC_133_Graph_CloneGraph.cpp
+
+3.
+Question-topological-sort
+Question links-
+/* https://practice.geeksforgeeks.org/problems/topological-sort/1#
+Solution links-
+./Graph/TopologicalSort.java
+./Graph/GFG_Graph_TopologicalSort.cpp
+
+4.
+Question-find-the-number-of-islands
+Question links-
+/* https://practice.geeksforgeeks.org/problems/find-the-number-of-islands/1#
+Solution links-
+./Graph/NumberOfIslands.java
+./Graph/GFG_Graph_Numof_Islands.cpp
+
+5.
+Question-print-adjacency-list-1587115620
+Question links-
+/* https://practice.geeksforgeeks.org/problems/print-adjacency-list-1587115620/1#
+Solution links-
+./Graph/GFG_Graph_AdjListPrint.cpp
+
+6.
+Question-depth-first-traversal-for-a-graph
+Question links-
+/*https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1*/
+Solution links-
+./Graph/DFS.java
+./Graph/GFG_Graph_DFSTraversal.cpp
+
+7.
+Question-journey-to-the-moon
+Question links-
+/*https://www.hackerrank.com/challenges/journey-to-the-moon/problem*/
+Solution links-
+./Graph/JourneyToMoon.java
+
+8.
+Question-strongly-connected-component-tarjanss-algo-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/strongly-connected-component-tarjanss-algo-1587115621/1/*/
+Solution links-
+./Graph/Tarjan.java
+
+9.
+Question-detect-cycle-in-a-directed-graph
+Question links-
+/*https://practice.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1*/
+Solution links-
+./Graph/DetectCycleInDirectedGraph.java
+./Graph/GFG_Graph_CycleDetectionDirected.cpp
+
+10.
+Question-cheapest-flights-within-k-stops
+Question links-
+/*https://leetcode.com/problems/cheapest-flights-within-k-stops/*/
+Solution links-
+./Graph/CheapestFlightWithinKStops.java
+
+11.
+Question-strongly-connected-components-kosarajus-algo
+Question links-
+/* https://practice.geeksforgeeks.org/problems/strongly-connected-components-kosarajus-algo/1#
+Solution links-
+./Graph/Kosaraju.java
+./Graph/GFG_Graph_StronglyConnectedComp(Kosaraju).cpp
+
+12.
+Question-269f61832b146dd5e6d89b4ca18cbd2a2654ebbe
+Question links-
+/*https://practice.geeksforgeeks.org/problems/269f61832b146dd5e6d89b4ca18cbd2a2654ebbe/1/*/
+Solution links-
+./Graph/CovidSpread.java
+
+13.
+Question-word-ladder
+Question links-
+/*https://leetcode.com/problems/word-ladder/*/
+Solution links-
+./Graph/WordLadder.java
+
+14.
+Question-detect-cycle-in-an-undirected-graph
+Question links-
+/*https://practice.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1*/
+Solution links-
+./Graph/DetectCycleInUndirectedGraph.java
+./Graph/GFG_Graph_CycleDetectionUnDirected.cpp
+
+15.
+Question-length-of-largest-region-of-1s-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/length-of-largest-region-of-1s-1587115620/1*/
+Solution links-
+./Graph/MaxAreaOfOnes.java
+
+16.
+Question-rotting-oranges
+Question links-
+/*https://leetcode.com/problems/rotting-oranges/*/
+Solution links-
+./Graph/RottenOranges.java
+
+17.
+Question-bridge-edge-in-graph
+Question links-
+/*https://practice.geeksforgeeks.org/problems/bridge-edge-in-graph/1#*/
+Solution links-
+./Graph/CheckIfBridge.java
+
+18.
+Question-prerequisite-tasks
+Question links-
+/*https://practice.geeksforgeeks.org/problems/prerequisite-tasks/1/*/
+Solution links-
+./Graph/PrerequisiteTasks.java
+
+19.
+Question-number-of-operations-to-make-network-connected
+Question links-
+/*https://leetcode.com/problems/number-of-operations-to-make-network-connected/*/
+Solution links-
+./Graph/ConnectNetwork.java
+
+20.
+Question-employee-importance
+Question links-
+/*https://leetcode.com/problems/employee-importance/*/
+Solution links-
+./Graph/EmployeeImportance.java
+
+21.
+Question-find-the-town-judge
+Question links-
+/*https://leetcode.com/problems/find-the-town-judge/*/
+Solution links-
+./Graph/FindTownJudge.java
+
+22.
+Question-minimum-spanning-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/minimum-spanning-tree/1*/
+Solution links-
+./Graph/MinimumSpanningTree.java
+
+23.
+Question-bfs-traversal-of-graph
+Question links-
+/*https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1*/
+Solution links-
+./Graph/BFS.java
+./Graph/GFG_Graph_BFSTraversal.cpp
+
+24.
+Question-circle-of-strings4530
+Question links-
+/*https://practice.geeksforgeeks.org/problems/circle-of-strings4530/1*/
+Solution links-
+./Graph/CircleOfStrings.java
+
+25.
+Question-bipartite-graph
+Question links-
+/*https://practice.geeksforgeeks.org/problems/bipartite-graph/1*/
+Solution links-
+./Graph/CheckIfBipartite.java
+
+26.
+Question-minimum-swaps
+Question links-
+/*https://practice.geeksforgeeks.org/problems/minimum-swaps/1*/
+Solution links-
+./Graph/MinimumSwapsToSort.java
+
+27.
+Question-implementing-floyd-warshall2042
+Question links-
+/*https://practice.geeksforgeeks.org/problems/implementing-floyd-warshall2042/1*/
+Solution links-
+./Graph/FloydWarshall.java
+
+28.
+Question-distance-from-the-source-bellman-ford-algorithm
+Question links-
+/*https://practice.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/1/*/
+/*https://practice.geeksforgeeks.org/problems/negative-weight-cycle3504/1*/
+Solution links-
+./Graph/BellmanFord.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Greedy
+Java files: 15
+CPP files: 0
+---------------------------------------------------------------------------------
+1.
+Question-largest-number-with-given-sum-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/largest-number-with-given-sum-1587115620/1*/
+Solution links-
+./Greedy/LargestNumberPossible.java
+
+2.
+Question-fractional-knapsack-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1*/
+Solution links-
+./Greedy/FractionalKnapsack.java
+
+3.
+Question-maximize-toys0331
+Question links-
+/*https://practice.geeksforgeeks.org/problems/maximize-toys0331/1*/
+Solution links-
+./Greedy/MaximizeToys.java
+
+4.
+Question-maximize-sum-after-k-negations1149
+Question links-
+/*https://practice.geeksforgeeks.org/problems/maximize-sum-after-k-negations1149/1*/
+Solution links-
+./Greedy/MaximumSumAfterKOps.java
+
+5.
+Question-minimum-cost-of-ropes-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/minimum-cost-of-ropes-1587115620/1*/
+Solution links-
+./Greedy/MinimumCostRope.java
+
+6.
+Question-shop-in-candy-store1145
+Question links-
+/*https://practice.geeksforgeeks.org/problems/shop-in-candy-store1145/1*/
+Solution links-
+./Greedy/BuyCandies.java
+
+7.
+Question-coin-piles5152
+Question links-
+/*https://practice.geeksforgeeks.org/problems/coin-piles5152/1/*/
+Solution links-
+./Greedy/CoinPiles.java
+
+8.
+Question-job-sequencing-problem-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1/*/
+Solution links-
+./Greedy/JobScheduling.java
+
+9.
+Question-task-scheduler
+Question links-
+/*https://leetcode.com/problems/task-scheduler/*/
+Solution links-
+./Greedy/TaskScheduler.java
+
+10.
+Question-water-connection-problem5822
+Question links-
+/*https://practice.geeksforgeeks.org/problems/water-connection-problem5822/1*/
+Solution links-
+./Greedy/WaterConnection.java
+
+11.
+Question-chocolate-distribution-problem3825
+Question links-
+/*https://practice.geeksforgeeks.org/problems/chocolate-distribution-problem3825/1*/
+Solution links-
+./Greedy/ChocolateDistribution.java
+
+12.
+Question-n-meetings-in-one-room-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1/*/
+Solution links-
+./Greedy/ActivitySelectionProblem.java
+
+13.
+Question-pairs-with-specific-difference1533
+Question links-
+/*https://practice.geeksforgeeks.org/problems/pairs-with-specific-difference1533/1*/
+Solution links-
+./Greedy/SumOfPairsWithSpecificDifference.java
+
+14.
+Question-max-length-chain
+Question links-
+/*https://practice.geeksforgeeks.org/problems/max-length-chain/1*/
+Solution links-
+./Greedy/MaxLengthChain.java
+
+15.
+Question-huffman-encoding3345
+Question links-
+/*https://practice.geeksforgeeks.org/problems/huffman-encoding3345/1/*/
+Solution links-
+./Greedy/HuffmanCoding.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Hashing
+Java files: 20
+CPP files: 1
+---------------------------------------------------------------------------------
+1.
+Question-uncommon-words-from-two-sentences
+Question links-
+/*https://leetcode.com/problems/uncommon-words-from-two-sentences/*/
+Solution links-
+./Hashing/UncommonWords.java
+
+2.
+Question-most-common-word
+Question links-
+/*https://leetcode.com/problems/most-common-word/*/
+Solution links-
+./Hashing/MostFrequentStringIgnoringBannedOnes.java
+
+3.
+Question-unique-number-of-occurrences
+Question links-
+/* https://leetcode.com/problems/unique-number-of-occurrences/
+Solution links-
+./Hashing/LC_1207_HT_UniqueNumOfOccurrences.cpp
+
+4.
+Question-group-anagrams
+Question links-
+/*https://leetcode.com/problems/group-anagrams/*/
+Solution links-
+./Hashing/GroupAnagrams.java
+
+5.
+Question-find-all-numbers-disappeared-in-an-array
+Question links-
+/*https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/*/
+Solution links-
+./Hashing/FindDisappearedNumbers.java
+
+6.
+Question-longest-subarray-with-sum-divisible-by-k1259
+Question links-
+/*https://practice.geeksforgeeks.org/problems/longest-subarray-with-sum-divisible-by-k1259/1*/
+Solution links-
+./Hashing/LongestSubarrayWithSumDivisibleByK.java
+
+7.
+Question-most-frequent-word-in-an-array-of-strings3528
+Question links-
+/*https://practice.geeksforgeeks.org/problems/most-frequent-word-in-an-array-of-strings3528/1*/
+Solution links-
+./Hashing/MostFrequentString.java
+
+8.
+Question-in-first-but-second5423
+Question links-
+/*https://practice.geeksforgeeks.org/problems/in-first-but-second5423/1*/
+Solution links-
+./Hashing/FindMissingInSecondArray.java
+
+9.
+Question-first-missing-positive
+Question links-
+/*https://leetcode.com/problems/first-missing-positive/*/
+Solution links-
+./Hashing/FirstMissingPositive.java
+
+10.
+Question-find-unique-binary-string
+Question links-
+/*https://leetcode.com/problems/find-unique-binary-string/*/
+Solution links-
+./Hashing/FindMissingBinaryString.java
+
+11.
+Question-design-hashset
+Question links-
+/*https://leetcode.com/problems/design-hashset/*/
+Solution links-
+./Hashing/HashSetDesign.java
+
+12.
+Question-length-of-the-longest-substring3036
+Question links-
+/*https://practice.geeksforgeeks.org/problems/length-of-the-longest-substring3036/1*/
+/*https://leetcode.com/problems/longest-substring-without-repeating-characters/*/
+Solution links-
+./Hashing/LongestUniqueSubstring.java
+
+13.
+Question-top-k-frequent-elements-in-array
+Question links-
+/*https://practice.geeksforgeeks.org/problems/top-k-frequent-elements-in-array/1*/
+Solution links-
+./Hashing/TopK.java
+
+14.
+Question-design-hashmap
+Question links-
+/*https://leetcode.com/problems/design-hashmap/*/
+Solution links-
+./Hashing/HashMapDesign.java
+
+15.
+Question-count-good-meals
+Question links-
+/*https://leetcode.com/problems/count-good-meals/*/
+Solution links-
+./Hashing/CountGoodMeals.java
+
+16.
+Question-check-if-a-string-contains-all-binary-codes-of-size-k
+Question links-
+/*https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/*/
+Solution links-
+./Hashing/CheckAllBinaryCodesPresence.java
+
+17.
+Question-first-non-repeating-character-in-a-stream1216
+Question links-
+/*https://practice.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1*/
+Solution links-
+./Hashing/FindFirstNonRepeatingCharacter.java
+
+18.
+Question-find-common-characters
+Question links-
+/*https://leetcode.com/problems/find-common-characters/*/
+Solution links-
+./Hashing/FindCommonCharacters.java
+
+19.
+Question-top-k-frequent-words
+Question links-
+/*https://leetcode.com/problems/top-k-frequent-words/*/
+Solution links-
+./Hashing/TopKFrequentWords.java
+
+20.
+Question-unique-email-addresses
+Question links-
+/*https://leetcode.com/problems/unique-email-addresses/*/
+Solution links-
+./Hashing/UniqueEmailAddresses.java
+
+21.
+Question-find-all-duplicates-in-an-array
+Question links-
+/*https://leetcode.com/problems/find-all-duplicates-in-an-array/*/
+Solution links-
+./Hashing/FindDuplicates.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Heap
+Java files: 11
+CPP files: 0
+---------------------------------------------------------------------------------
+1.
+Question-find-smallest-range-containing-elements-from-k-lists
+Question links-
+/*https://practice.geeksforgeeks.org/problems/find-smallest-range-containing-elements-from-k-lists/1*/
+Solution links-
+./Heap/SmallestRangeFromKArrays.java
+
+2.
+Question-kth-largest-element-in-an-array
+Question links-
+/*https://leetcode.com/problems/kth-largest-element-in-an-array/*/
+Solution links-
+./Heap/KthLargest.java
+
+3.
+Question-merge-k-sorted-arrays
+Question links-
+/*https://practice.geeksforgeeks.org/problems/merge-k-sorted-arrays/1*/
+Solution links-
+./Heap/MergeKSortedArrays.java
+
+4.
+Question-k-closest-points-to-origin
+Question links-
+/*https://leetcode.com/problems/k-closest-points-to-origin/*/
+Solution links-
+./Heap/KClosestPointsToOrigin.java
+
+5.
+Question-merge-k-sorted-lists
+Question links-
+/*https://leetcode.com/problems/merge-k-sorted-lists/*/
+Solution links-
+./Heap/MergeKSortedLists.java
+
+6.
+Question-find-median-from-data-stream
+Question links-
+/*https://leetcode.com/problems/find-median-from-data-stream/*/
+Solution links-
+./Heap/MedianOfAStream.java
+
+7.
+Question-minimum-sum4058
+Question links-
+/*https://practice.geeksforgeeks.org/problems/minimum-sum4058/1/*/
+Solution links-
+./Heap/MinimumSum.java
+
+8.
+Question-kth-largest-element-in-a-stream
+Question links-
+/*https://leetcode.com/problems/kth-largest-element-in-a-stream/*/
+Solution links-
+./Heap/KthLargestFromStream.java
+
+9.
+Question-minimum-cost-of-ropes-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/minimum-cost-of-ropes-1587115620/1*/
+Solution links-
+./Heap/MinCostOfRopes.java
+
+10.
+Question-find-nearest-point-that-has-the-same-x-or-y-coordinate
+Question links-
+/*https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/*/
+Solution links-
+./Heap/NearestPoint.java
+
+11.
+Question-is-binary-tree-heap
+Question links-
+/*https://practice.geeksforgeeks.org/problems/is-binary-tree-heap/1/*/
+Solution links-
+./Heap/IsHeap.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Linked-List
+Java files: 38
+CPP files: 2
+---------------------------------------------------------------------------------
+1.
+Question-add-two-numbers-represented-by-linked-lists
+Question links-
+/* https://practice.geeksforgeeks.org/problems/add-two-numbers-represented-by-linked-lists/1
+* https://leetcode.com/problems/add-two-numbers-ii/ */
+Solution links-
+./Linked-List/AddLists2.java
+
+2.
+Question-rotate-a-linked-list
+Question links-
+/*https://practice.geeksforgeeks.org/problems/rotate-a-linked-list/1*/
+Solution links-
+./Linked-List/RotateList.java
+
+3.
+Question-intersection-of-two-sorted-linked-lists
+Question links-
+/*https://practice.geeksforgeeks.org/problems/intersection-of-two-sorted-linked-lists/1*/
+Solution links-
+./Linked-List/IntersectionOfSortedLists.java
+
+4.
+Question-swap-nodes-in-pairs
+Question links-
+/*https://leetcode.com/problems/swap-nodes-in-pairs/*/
+Solution links-
+./Linked-List/SwapNodesInPairs.java
+
+5.
+Question-partition-a-linked-list-around-a-given-value
+Question links-
+/*https://practice.geeksforgeeks.org/problems/partition-a-linked-list-around-a-given-value/1/*/
+Solution links-
+./Linked-List/Partition.java
+
+6.
+Question-sort-a-linked-list
+Question links-
+/*https://practice.geeksforgeeks.org/problems/sort-a-linked-list/1*/
+Solution links-
+./Linked-List/MergeSort.java
+
+7.
+Question-remove-loop-in-linked-list
+Question links-
+/*https://practice.geeksforgeeks.org/problems/remove-loop-in-linked-list/1*/
+Solution links-
+./Linked-List/RemoveCycle.java
+
+8.
+Question-middle-of-the-linked-list
+Question links-
+/*https://leetcode.com/problems/middle-of-the-linked-list/*/
+Solution links-
+./Linked-List/FindMiddleNode.java
+
+9.
+Question-delete-n-nodes-after-m-nodes-of-a-linked-list
+Question links-
+/*https://practice.geeksforgeeks.org/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/1*/
+Solution links-
+./Linked-List/LinkDelete.java
+
+10.
+Question-add-1-to-a-number-represented-as-linked-list
+Question links-
+/*https://practice.geeksforgeeks.org/problems/add-1-to-a-number-represented-as-linked-list/1/*/
+Solution links-
+./Linked-List/AddOne.java
+
+11.
+Question-union-of-two-arrays3538
+Question links-
+/* https://practice.geeksforgeeks.org/problems/union-of-two-arrays3538/1#
+Solution links-
+./Linked-List/GFG_LinkedL_CheckCircularLinkedList.cpp
+
+12.
+Question-remove-duplicates-from-sorted-list-ii
+Question links-
+/*https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/*/
+Solution links-
+./Linked-List/RemoveDuplicates2.java
+
+13.
+Question-linked-list-cycle
+Question links-
+/*https://leetcode.com/problems/linked-list-cycle/*/
+Solution links-
+./Linked-List/DetectCycle.java
+
+14.
+Question-quick-sort-on-linked-list
+Question links-
+/*https://practice.geeksforgeeks.org/problems/quick-sort-on-linked-list/1*/
+Solution links-
+./Linked-List/QuickSort.java
+
+15.
+Question-given-a-linked-list-of-0s-1s-and-2s-sort-it
+Question links-
+/*https://practice.geeksforgeeks.org/problems/given-a-linked-list-of-0s-1s-and-2s-sort-it/1*/
+Solution links-
+./Linked-List/ZeroOneTwo.java
+
+16.
+Question-circular-linked-list
+Question links-
+/*https://practice.geeksforgeeks.org/problems/circular-linked-list/1*/
+Solution links-
+./Linked-List/CheckIfCircular.java
+
+17.
+Question-deletion-and-reverse-in-linked-list
+Question links-
+/*https://practice.geeksforgeeks.org/problems/deletion-and-reverse-in-linked-list/1*/
+Solution links-
+./Linked-List/DeleteAndReverseCircular.java
+
+18.
+Question-intersection-of-two-linked-list
+Question links-
+/*https://practice.geeksforgeeks.org/problems/intersection-of-two-linked-list/1*/
+Solution links-
+./Linked-List/IntersectionOfLists.java
+
+19.
+Question-reverse-a-doubly-linked-list
+Question links-
+/*https://practice.geeksforgeeks.org/problems/reverse-a-doubly-linked-list/1*/
+Solution links-
+./Linked-List/ReverseDoublyLinkedList.java
+
+20.
+Question-remove-nth-node-from-end-of-list
+Question links-
+/*https://leetcode.com/problems/remove-nth-node-from-end-of-list/*/
+Solution links-
+./Linked-List/NthNodeFromEnd.java
+
+21.
+Question-given-a-linked-list-reverse-alternate-nodes-and-append-at-the-end
+Question links-
+/*https://practice.geeksforgeeks.org/problems/given-a-linked-list-reverse-alternate-nodes-and-append-at-the-end/*/
+Solution links-
+./Linked-List/ReverseAlternateNodes.java
+
+22.
+Question-check-if-linked-list-is-pallindrome
+Question links-
+/*https://practice.geeksforgeeks.org/problems/check-if-linked-list-is-pallindrome/1*/
+Solution links-
+./Linked-List/CheckPalindrome.java
+
+23.
+Question-merge-two-sorted-lists
+Question links-
+/*https://leetcode.com/problems/merge-two-sorted-lists/submissions/*/
+Solution links-
+./Linked-List/MergeTwoSortedLists.java
+
+24.
+Question-multiply-two-linked-lists
+Question links-
+/*https://practice.geeksforgeeks.org/problems/multiply-two-linked-lists/1*/
+Solution links-
+./Linked-List/MultiplyLists.java
+
+25.
+Question-remove-linked-list-elements
+Question links-
+/*https://leetcode.com/problems/remove-linked-list-elements/*/
+Solution links-
+./Linked-List/RemoveLinkedListElements.java
+
+26.
+Question-delete-middle-of-linked-list
+Question links-
+/*https://practice.geeksforgeeks.org/problems/delete-middle-of-linked-list/1*/
+Solution links-
+./Linked-List/DeleteMiddleNode.java
+
+27.
+Question-add-two-numbers
+Question links-
+/*https://leetcode.com/problems/add-two-numbers/*/
+Solution links-
+./Linked-List/AddLists.java
+
+28.
+Question-flatten-a-multilevel-doubly-linked-list
+Question links-
+/*https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/*/
+/*https://practice.geeksforgeeks.org/problems/flattening-a-linked-list/1*/
+Solution links-
+./Linked-List/FlattenLinkedList.java
+
+29.
+Question-odd-even-linked-list
+Question links-
+/*https://leetcode.com/problems/odd-even-linked-list/*/
+Solution links-
+./Linked-List/OddEven.java
+
+30.
+Question-delete-nodes-having-greater-value-on-right
+Question links-
+/*https://practice.geeksforgeeks.org/problems/delete-nodes-having-greater-value-on-right/1*/
+Solution links-
+./Linked-List/FindLeaders.java
+
+31.
+Question-convert-binary-number-in-a-linked-list-to-integer
+Question links-
+/*https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/*/
+Solution links-
+./Linked-List/ConvertToDecimal.java
+
+32.
+Question-reverse-nodes-in-k-group
+Question links-
+/*https://leetcode.com/problems/reverse-nodes-in-k-group/*/
+Solution links-
+./Linked-List/ReverseInGroups.java
+
+33.
+Question-split-a-circular-linked-list-into-two-halves
+Question links-
+/*http://practice.geeksforgeeks.org/problems/split-a-circular-linked-list-into-two-halves/1*/
+Solution links-
+./Linked-List/DivideCircularList.java
+
+34.
+Question-reverse-linked-list-ii
+Question links-
+/*https://leetcode.com/problems/reverse-linked-list-ii/*/
+Solution links-
+./Linked-List/ReverseLinkedList2.java
+
+35.
+Question-remove-duplicates-from-sorted-list
+Question links-
+/*https://leetcode.com/problems/remove-duplicates-from-sorted-list/*/
+Solution links-
+./Linked-List/RemoveDuplicates.java
+
+36.
+Question-clone-a-linked-list-with-next-and-random-pointer
+Question links-
+/*https://practice.geeksforgeeks.org/problems/clone-a-linked-list-with-next-and-random-pointer/1*/
+Solution links-
+./Linked-List/CloneList.java
+
+37.
+Question-reverse-linked-list
+Question links-
+/* https://leetcode.com/problems/reverse-linked-list/
+Solution links-
+./Linked-List/ReverseList.java
+./Linked-List/LC_206_LinkedL_ReverseLinkedList.cpp
+
+38.
+Question-linked-list-cycle-ii
+Question links-
+/*https://leetcode.com/problems/linked-list-cycle-ii/*/
+Solution links-
+./Linked-List/LocateCycle.java
+
+39.
+Question-partition-list
+Question links-
+/*https://leetcode.com/problems/partition-list/*/
+Solution links-
+./Linked-List/PartitionList.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Matrix
+Java files: 16
+CPP files: 1
+---------------------------------------------------------------------------------
+1.
+Question-prettyprint
+Question links-
+/*https://www.interviewbit.com/problems/prettyprint/*/
+Solution links-
+./Matrix/PrettyPrint.java
+
+2.
+Question-search-a-2d-matrix
+Question links-
+/*https://leetcode.com/problems/search-a-2d-matrix/*/
+Solution links-
+./Matrix/SearchMatrix.java
+
+3.
+Question-transpose-matrix
+Question links-
+/*https://leetcode.com/problems/transpose-matrix/*/
+Solution links-
+./Matrix/Transpose.java
+
+4.
+Question-spiral-matrix-ii
+Question links-
+/*https://leetcode.com/problems/spiral-matrix-ii/*/
+Solution links-
+./Matrix/SpiralStorage.java
+
+5.
+Question-set-matrix-zeroes
+Question links-
+/*https://leetcode.com/problems/set-matrix-zeroes/*/
+Solution links-
+./Matrix/FillMatrixWithZero.java
+
+6.
+Question-valid-sudoku
+Question links-
+/*https://leetcode.com/problems/valid-sudoku/*/
+Solution links-
+./Matrix/IsValidSudoku.java
+
+7.
+Question-find-nth-element-of-spiral-matrix
+Question links-
+/*https://practice.geeksforgeeks.org/problems/find-nth-element-of-spiral-matrix/1*/
+Solution links-
+./Matrix/NthSpiralElement.java
+
+8.
+Question-search-a-2d-matrix-ii
+Question links-
+/*https://leetcode.com/problems/search-a-2d-matrix-ii/*/
+Solution links-
+./Matrix/SearchMatrix2.java
+
+9.
+Question-row-with-max-1s0023
+Question links-
+/*https://practice.geeksforgeeks.org/problems/row-with-max-1s0023/1*/
+Solution links-
+./Matrix/MaximumOnes.java
+
+10.
+Question-diagonal-morning-assembly0028
+Question links-
+/*https://practice.geeksforgeeks.org/problems/diagonal-morning-assembly0028/1/*/
+Solution links-
+./Matrix/SortDiagonally.java
+
+11.
+Question-flood-fill
+Question links-
+/* https://leetcode.com/problems/flood-fill/
+Solution links-
+./Matrix/LC_733_Mat_FloodFill.cpp
+
+12.
+Question-rotate-image
+Question links-
+/*https://leetcode.com/problems/rotate-image/*/
+Solution links-
+./Matrix/RotateImage.java
+
+13.
+Question-spiral-matrix
+Question links-
+/*https://leetcode.com/problems/spiral-matrix/*/
+Solution links-
+./Matrix/SpiralTraversal.java
+
+14.
+Question-count-servers-that-communicate
+Question links-
+/*https://leetcode.com/problems/count-servers-that-communicate/*/
+Solution links-
+./Matrix/CountServers.java
+
+15.
+Question-boolean-matrix-problem-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/boolean-matrix-problem-1587115620/1*/
+Solution links-
+./Matrix/BooleanMatrixFlooding.java
+
+16.
+Question-kth-element-in-matrix
+Question links-
+/*https://practice.geeksforgeeks.org/problems/kth-element-in-matrix/1*/
+Solution links-
+./Matrix/kthSmallestElement.java
+
+17.
+Question-game-of-life
+Question links-
+/*https://leetcode.com/problems/game-of-life/*/
+Solution links-
+./Matrix/LifeGame.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Miscellaneous
+Java files: 15
+CPP files: 1
+---------------------------------------------------------------------------------
+1.
+Question-shortest-subarray-to-be-removed-to-make-array-sorted
+Question links-
+/*https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/submissions/*/
+Solution links-
+./Miscellaneous/RemoveShortesSubarray.java
+
+2.
+Question-basic-calculator
+Question links-
+/*https://leetcode.com/problems/basic-calculator/*/
+Solution links-
+./Miscellaneous/BasicCalculator.java
+
+3.
+Question-insert-delete-getrandom-o1
+Question links-
+/*https://leetcode.com/problems/insert-delete-getrandom-o1/*/
+Solution links-
+./Miscellaneous/InsertDeleteRandom.java
+
+4.
+Question-minimum-depth-of-binary-tree
+Question links-
+/*https://leetcode.com/problems/minimum-depth-of-binary-tree/*/
+Solution links-
+./Miscellaneous/MinDepth.java
+
+5.
+Question-zigzag-conversion
+Question links-
+/*https://leetcode.com/problems/zigzag-conversion/*/
+Solution links-
+./Miscellaneous/ZigzagConversion.java
+
+6.
+Question-smallest-factorial-number5929
+Question links-
+/* https://practice.geeksforgeeks.org/problems/smallest-factorial-number5929/1
+Solution links-
+./Miscellaneous/GFG_SmallestFactorialNum.cpp
+
+7.
+Question-design-underground-system
+Question links-
+/*https://leetcode.com/problems/design-underground-system/*/
+Solution links-
+./Miscellaneous/UnderGroundSystemDesign.java
+
+8.
+Question-letter-combinations-of-a-phone-number
+Question links-
+/*https://leetcode.com/problems/letter-combinations-of-a-phone-number/*/
+Solution links-
+./Miscellaneous/LetterCombinations.java
+
+9.
+Question-basic-calculator-ii
+Question links-
+/*https://leetcode.com/problems/basic-calculator-ii/*/
+Solution links-
+./Miscellaneous/BasicCalculator2.java
+
+10.
+Question-unique-morse-code-words
+Question links-
+/*https://leetcode.com/problems/unique-morse-code-words/*/
+Solution links-
+./Miscellaneous/MorseCodeParsing.java
+
+11.
+Question-minimum-operations-to-reduce-x-to-zero
+Question links-
+/*https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/*/
+Solution links-
+./Miscellaneous/MinOpsToReduceXToZero.java
+
+12.
+Question-substring-with-concatenation-of-all-words
+Question links-
+/*https://leetcode.com/problems/substring-with-concatenation-of-all-words/*/
+Solution links-
+./Miscellaneous/SubstringWithConcatenationOfAllWords.java
+
+13.
+Question-get-watched-videos-by-your-friends
+Question links-
+/*https://leetcode.com/problems/get-watched-videos-by-your-friends/*/
+Solution links-
+./Miscellaneous/GetWatchedVideosByYourFriends.java
+
+14.
+Question-array-of-doubled-pairs
+Question links-
+/*https://leetcode.com/problems/array-of-doubled-pairs/*/
+Solution links-
+./Miscellaneous/ArrayOfDoubledPairs.java
+
+15.
+Question-integer-to-english-words
+Question links-
+/*https://leetcode.com/problems/integer-to-english-words/*/
+Solution links-
+./Miscellaneous/IntegerToEnglishWords.java
+
+16.
+Question-sum-of-square-numbers
+Question links-
+/*https://leetcode.com/problems/sum-of-square-numbers/*/
+Solution links-
+./Miscellaneous/SumOfSquareNumbers.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Queue
+Java files: 5
+CPP files: 0
+---------------------------------------------------------------------------------
+1.
+Question-maximum-of-all-subarrays-of-size-k3101
+Question links-
+/*https://practice.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k3101/1*/
+Solution links-
+./Queue/MaximumOfAllSubarrays.java
+
+2.
+Question-sliding-window-maximum
+Question links-
+/*https://leetcode.com/problems/sliding-window-maximum/*/
+Solution links-
+./Queue/SlidingWindowMaximum.java
+
+3.
+Question-page-faults-in-lru5603
+Question links-
+/*https://practice.geeksforgeeks.org/problems/page-faults-in-lru5603/1*/
+/*https://leetcode.com/problems/lru-cache/*/
+Solution links-
+./Queue/LRUCache.java
+
+4.
+Question-implement-queue-using-stacks
+Question links-
+/*https://leetcode.com/problems/implement-queue-using-stacks/*/
+Solution links-
+./Queue/QueueUsingStack.java
+
+5.
+Question-circular-tour-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/circular-tour-1587115620/1*/
+Solution links-
+./Queue/CircularTour.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Recursion
+Java files: 12
+CPP files: 1
+---------------------------------------------------------------------------------
+1.
+Question-josephus-problem
+Question links-
+/*https://practice.geeksforgeeks.org/problems/josephus-problem/1*/
+Solution links-
+./Recursion/Josephus.java
+
+2.
+Question-letter-case-permutation
+Question links-
+/*https://leetcode.com/problems/letter-case-permutation/*/
+Solution links-
+./Recursion/LetterCasePermutations.java
+
+3.
+Question-pascals-triangle-ii
+Question links-
+/*https://leetcode.com/problems/pascals-triangle-ii/*/
+Solution links-
+./Recursion/PascalsTriangle2.java
+
+4.
+Question-combinations
+Question links-
+/*https://leetcode.com/problems/combinations/*/
+Solution links-
+./Recursion/Combinations.java
+
+5.
+Question-restore-ip-addresses
+Question links-
+/*https://leetcode.com/problems/restore-ip-addresses/*/
+/*https://practice.geeksforgeeks.org/problems/generate-ip-addresses/1*/
+Solution links-
+./Recursion/RestoreIPAddresses.java
+
+6.
+Question-palindrome-string0817
+Question links-
+ https://practice.geeksforgeeks.org/problems/palindrome-string0817/1
+Solution links-
+./Recursion/PalindromeString.java
+./Recursion/GFG_STR_PalindromeString.cpp
+
+7.
+Question-number-of-paths0926
+Question links-
+/*https://practice.geeksforgeeks.org/problems/number-of-paths0926/1*/
+Solution links-
+./Recursion/NumberOfPaths.java
+
+8.
+Question-gray-code
+Question links-
+/*https://leetcode.com/problems/gray-code/*/
+Solution links-
+./Recursion/generateGrayCode.java
+
+9.
+Question-pascals-triangle
+Question links-
+/*https://leetcode.com/problems/pascals-triangle/*/
+Solution links-
+./Recursion/PascalsTriangle.java
+
+10.
+Question-tower-of-hanoi-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/tower-of-hanoi-1587115621/1*/
+Solution links-
+./Recursion/TOH.java
+
+11.
+Question-flood-fill-algorithm1856
+Question links-
+/*https://practice.geeksforgeeks.org/problems/flood-fill-algorithm1856/1*/
+Solution links-
+./Recursion/FloodFill.java
+
+12.
+Question-subsets
+Question links-
+/*https://leetcode.com/problems/subsets/*/
+Solution links-
+./Recursion/Subsets.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Searching
+Java files: 24
+CPP files: 0
+---------------------------------------------------------------------------------
+1.
+Question-3sum
+Question links-
+/*https://leetcode.com/problems/3sum/*/
+Solution links-
+./Searching/FindTripletsWithGivenSum.java
+
+2.
+Question-guess-number-higher-or-lower
+Question links-
+/*https://leetcode.com/problems/guess-number-higher-or-lower/*/
+Solution links-
+./Searching/GuessHigherLower.java
+
+3.
+Question-find-missing-and-repeating2512
+Question links-
+/*https://practice.geeksforgeeks.org/problems/find-missing-and-repeating2512/1*/
+Solution links-
+./Searching/FindRepeatingMissing.java
+
+4.
+Question-two-sum-ii-input-array-is-sorted
+Question links-
+/*https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/*/
+Solution links-
+./Searching/PairWithSumInSortedArray.java
+
+5.
+Question-find-pair-given-difference1559
+Question links-
+/*https://practice.geeksforgeeks.org/problems/find-pair-given-difference1559/1*/
+Solution links-
+./Searching/FindPairWithGivenDifference.java
+
+6.
+Question-k-diff-pairs-in-an-array
+Question links-
+/*https://leetcode.com/problems/k-diff-pairs-in-an-array/*/
+Solution links-
+./Searching/CountKDiffUniquePairs.java
+
+7.
+Question-triplet-sum-in-array-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/triplet-sum-in-array-1587115621/1*/
+Solution links-
+./Searching/TripletWithGivenSum.java
+
+8.
+Question-first-bad-version
+Question links-
+/*https://leetcode.com/problems/first-bad-version/*/
+Solution links-
+./Searching/FirstBadVersion.java
+
+9.
+Question-3sum-closest
+Question links-
+/*https://leetcode.com/problems/3sum-closest/*/
+Solution links-
+./Searching/TripletWithSumClosestToGivenSum.java
+
+10.
+Question-4sum
+Question links-
+/*https://leetcode.com/problems/4sum/*/
+Solution links-
+./Searching/CountQuadrupletsWithGivenSum.java
+
+11.
+Question-find-first-and-last-position-of-element-in-sorted-array
+Question links-
+/*https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/*/
+Solution links-
+./Searching/FirstAndLastPositions.java
+
+12.
+Question-triplets-with-sum-with-given-range
+Question links-
+/*https://practice.geeksforgeeks.org/problems/triplets-with-sum-with-given-range/1/*/
+Solution links-
+./Searching/CountTripletsWithSumInRange.java
+
+13.
+Question-four-elements2452
+Question links-
+/*https://practice.geeksforgeeks.org/problems/four-elements2452/1*/
+Solution links-
+./Searching/QuadrupletsWithGivenSum.java
+
+14.
+Question-search-insert-position-of-k-in-a-sorted-array
+Question links-
+/*https://practice.geeksforgeeks.org/problems/search-insert-position-of-k-in-a-sorted-array/1/*/
+Solution links-
+./Searching/SearchInsertPosition.java
+
+15.
+Question-arithmetic-number2815
+Question links-
+/*https://practice.geeksforgeeks.org/problems/arithmetic-number2815/1*/
+Solution links-
+./Searching/FindPresenceInAP.java
+
+16.
+Question-pair-with-given-sum-in-a-sorted-array4940
+Question links-
+/*https://practice.geeksforgeeks.org/problems/pair-with-given-sum-in-a-sorted-array4940/1*/
+Solution links-
+./Searching/CountPairSumInSortedArray.java
+
+17.
+Question-find-k-closest-elements
+Question links-
+/*https://leetcode.com/problems/find-k-closest-elements/*/
+Solution links-
+./Searching/FindKClosestElements.java
+
+18.
+Question-kth-smallest-number-in-multiplication-table
+Question links-
+/*https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/*/
+Solution links-
+./Searching/KthSmallestInMultiplicationTable.java
+
+19.
+Question-count-possible-triangles-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/count-possible-triangles-1587115620/1/*/
+Solution links-
+./Searching/CountTriangles.java
+
+20.
+Question-3d27d4683c121c1f152ee8f41279255dc4430cf6
+Question links-
+/*https://practice.geeksforgeeks.org/problems/3d27d4683c121c1f152ee8f41279255dc4430cf6/1/*/
+Solution links-
+./Searching/TernarySearch.java
+
+21.
+Question-search-in-rotated-sorted-array
+Question links-
+/*https://leetcode.com/problems/search-in-rotated-sorted-array/*/
+Solution links-
+./Searching/SortedRotatedArraySearch.java
+
+22.
+Question-square-root
+Question links-
+/*https://practice.geeksforgeeks.org/problems/square-root/1/*/
+/*https://leetcode.com/problems/sqrtx/*/
+Solution links-
+./Searching/FindSquareRoot.java
+
+23.
+Question-count-triplets-with-sum-smaller-than-x5549
+Question links-
+/*https://practice.geeksforgeeks.org/problems/count-triplets-with-sum-smaller-than-x5549/1*/
+Solution links-
+./Searching/CountTripletsWithSumSmallerThanX.java
+
+24.
+Question-two-sum
+Question links-
+/*https://leetcode.com/problems/two-sum/*/
+Solution links-
+./Searching/PairWithSum.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Segment-Tree
+Java files: 0
+CPP files: 0
+---------------------------------------------------------------------------------
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Sorting
+Java files: 8
+CPP files: 0
+---------------------------------------------------------------------------------
+1.
+Question-heap-sort
+Question links-
+/*https://practice.geeksforgeeks.org/problems/heap-sort/1*/
+Solution links-
+./Sorting/HeapSort.java
+
+2.
+Question-bubble-sort
+Question links-
+/*https://practice.geeksforgeeks.org/problems/bubble-sort/1*/
+Solution links-
+./Sorting/BubbleSort.java
+
+3.
+Question-quick-sort
+Question links-
+/*https://practice.geeksforgeeks.org/problems/quick-sort/1#*/
+Solution links-
+./Sorting/QuickSort.java
+
+4.
+Question-selection-sort
+Question links-
+/*https://practice.geeksforgeeks.org/problems/selection-sort/1*/
+Solution links-
+./Sorting/SelectionSort.java
+
+5.
+Question-merge-sort
+Question links-
+/*https://practice.geeksforgeeks.org/problems/merge-sort/1*/
+Solution links-
+./Sorting/MergeSort.java
+
+6.
+Question-arithmetic-subarrays
+Question links-
+/*https://leetcode.com/problems/arithmetic-subarrays/*/
+Solution links-
+./Sorting/ArithmeticSubArrays.java
+
+7.
+Question-insertion-sort
+Question links-
+/*https://practice.geeksforgeeks.org/problems/insertion-sort/1*/
+Solution links-
+./Sorting/InsertionSort.java
+
+8.
+Question-counting-sort
+Question links-
+/*https://practice.geeksforgeeks.org/problems/counting-sort/1*/
+Solution links-
+./Sorting/CountingSort.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Stack
+Java files: 18
+CPP files: 0
+---------------------------------------------------------------------------------
+1.
+Question-largest-rectangle-in-histogram
+Question links-
+/*https://leetcode.com/problems/largest-rectangle-in-histogram/*/
+Solution links-
+./Stack/LargestRectangleInHistogram.java
+
+2.
+Question-longest-valid-parentheses
+Question links-
+/*https://leetcode.com/problems/longest-valid-parentheses/*/
+Solution links-
+./Stack/ValidParenthesesSubstring.java
+
+3.
+Question-implement-two-stacks-in-an-array
+Question links-
+/*https://practice.geeksforgeeks.org/problems/implement-two-stacks-in-an-array/1*/
+Solution links-
+./Stack/TwoStacksInOneArray.java
+
+4.
+Question-min-stack
+Question links-
+/*https://leetcode.com/problems/min-stack/*/
+/*https://practice.geeksforgeeks.org/problems/special-stack/1*/
+Solution links-
+./Stack/StackWithFindMin.java
+
+5.
+Question-design-a-stack-with-increment-operation
+Question links-
+/*https://leetcode.com/problems/design-a-stack-with-increment-operation/*/
+Solution links-
+./Stack/StackWithIncrementOperation.java
+
+6.
+Question-simplify-path
+Question links-
+/*https://leetcode.com/problems/simplify-path/*/
+Solution links-
+./Stack/ParsePath.java
+
+7.
+Question-implement-stack-using-queues
+Question links-
+/*https://leetcode.com/problems/implement-stack-using-queues/*/
+Solution links-
+./Stack/StackUsingQueue.java
+
+8.
+Question-next-greater-element-i
+Question links-
+/*https://leetcode.com/problems/next-greater-element-i/*/
+Solution links-
+./Stack/NextGreaterElement.java
+
+9.
+Question-the-celebrity-problem
+Question links-
+/*https://practice.geeksforgeeks.org/problems/the-celebrity-problem/1*/
+Solution links-
+./Stack/CelebrityProblem.java
+
+10.
+Question-maximum-of-minimum-for-every-window-size3453
+Question links-
+/*https://practice.geeksforgeeks.org/problems/maximum-of-minimum-for-every-window-size3453/1#*/
+Solution links-
+./Stack/MaxOfMins.java
+
+11.
+Question-valid-parentheses
+Question links-
+/*https://leetcode.com/problems/valid-parentheses/*/
+Solution links-
+./Stack/ValidParentheses.java
+
+12.
+Question-daily-temperatures
+Question links-
+/*https://leetcode.com/problems/daily-temperatures/*/
+Solution links-
+./Stack/DailyTemperatures.java
+
+13.
+Question-stock-span-problem-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/stock-span-problem-1587115621/1*/
+Solution links-
+./Stack/StockSpanProblem.java
+
+14.
+Question-next-greater-element-ii
+Question links-
+/*https://leetcode.com/problems/next-greater-element-ii/*/
+Solution links-
+./Stack/NextGreaterElementCircular.java
+
+15.
+Question-evaluate-reverse-polish-notation
+Question links-
+/*https://leetcode.com/problems/evaluate-reverse-polish-notation/*/
+/*https://practice.geeksforgeeks.org/problems/evaluation-of-postfix-expression1735/1*/
+Solution links-
+./Stack/PostfixEvaluation.java
+
+16.
+Question-online-stock-span
+Question links-
+/*https://leetcode.com/problems/online-stock-span/*/
+Solution links-
+./Stack/OnlineStockSpanProblem.java
+
+17.
+Question-sort-a-stack
+Question links-
+/*https://practice.geeksforgeeks.org/problems/sort-a-stack/1*/
+Solution links-
+./Stack/SortStack.java
+
+18.
+Question-infix-to-postfix-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/infix-to-postfix-1587115620/1*/
+Solution links-
+./Stack/InfixToPostfix.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Strings
+Java files: 25
+CPP files: 2
+---------------------------------------------------------------------------------
+1.
+Question-uncommon-words-from-two-sentences
+Question links-
+/* https://leetcode.com/problems/uncommon-words-from-two-sentences/
+Solution links-
+./Strings/LC_884_STR_UncommonWordsFromTwoSentences.cpp
+
+2.
+Question-permutation-in-string
+Question links-
+/*https://leetcode.com/problems/permutation-in-string/*/
+Solution links-
+./Strings/PermutationInStrings.java
+
+3.
+Question-valid-anagram
+Question links-
+/*https://leetcode.com/problems/valid-anagram/*/
+Solution links-
+./Strings/AnagramCheck.java
+
+4.
+Question-text-justification
+Question links-
+/*https://leetcode.com/problems/text-justification/*/
+Solution links-
+./Strings/TextJustification.java
+
+5.
+Question-valid-palindrome
+Question links-
+/*https://leetcode.com/problems/valid-palindrome/*/
+Solution links-
+./Strings/CheckPalindrome.java
+
+6.
+Question-implement-atoi
+Question links-
+/*https://practice.geeksforgeeks.org/problems/implement-atoi/1*/
+Solution links-
+./Strings/Atoi.java
+
+7.
+Question-minimum-window-substring
+Question links-
+/*https://leetcode.com/problems/minimum-window-substring/*/
+Solution links-
+./Strings/MinimumWindowSubstring.java
+
+8.
+Question-multiply-strings*
+Question links-
+/*https://leetcode.com/problems/multiply-strings*/
+Solution links-
+./Strings/MultiplyStrings.java
+
+9.
+Question-rearrange-spaces-between-words
+Question links-
+/*https://leetcode.com/problems/rearrange-spaces-between-words/*/
+Solution links-
+./Strings/RearrangeSpaces.java
+
+10.
+Question-count-number-of-homogenous-substrings
+Question links-
+/*https://leetcode.com/problems/count-number-of-homogenous-substrings/*/
+Solution links-
+./Strings/CountHomogeneousSubstrings.java
+
+11.
+Question-first-unique-character-in-a-string
+Question links-
+/*https://leetcode.com/problems/first-unique-character-in-a-string/*/
+Solution links-
+./Strings/FirstUniqueCharacter.java
+
+12.
+Question-count-and-say
+Question links-
+/*https://leetcode.com/problems/count-and-say/*/
+Solution links-
+./Strings/CountAndSay.java
+
+13.
+Question-goat-latin
+Question links-
+/*https://leetcode.com/problems/goat-latin/*/
+Solution links-
+./Strings/GoatLatin.java
+
+14.
+Question-palindrome-string0817
+Question links-
+ https://practice.geeksforgeeks.org/problems/palindrome-string0817/1
+Solution links-
+./Strings/GFG_STR_PalindromeString.cpp
+
+15.
+Question-valid-palindrome-ii
+Question links-
+/*https://leetcode.com/problems/valid-palindrome-ii/*/
+Solution links-
+./Strings/CheckPalindrome2.java
+
+16.
+Question-find-all-anagrams-in-a-string
+Question links-
+/*https://leetcode.com/problems/find-all-anagrams-in-a-string/*/
+Solution links-
+./Strings/AnagramSearch.java
+
+17.
+Question-longest-prefix-suffix2527
+Question links-
+/*https://practice.geeksforgeeks.org/problems/longest-prefix-suffix2527/1*/
+Solution links-
+./Strings/LongestPrefixSuffix.java
+
+18.
+Question-valid-number
+Question links-
+/*https://leetcode.com/problems/valid-number/*/
+Solution links-
+./Strings/ValidNumber.java
+
+19.
+Question-reorganize-string
+Question links-
+/*https://leetcode.com/problems/reorganize-string/*/
+Solution links-
+./Strings/ReorganizeString.java
+
+20.
+Question-verifying-an-alien-dictionary
+Question links-
+/*https://leetcode.com/problems/verifying-an-alien-dictionary/*/
+Solution links-
+./Strings/VerifyAlienDictionary.java
+
+21.
+Question-validate-an-ip-address-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/validate-an-ip-address-1587115621/1*/
+Solution links-
+./Strings/ValidateIPAddress.java
+
+22.
+Question-unique-morse-code-words
+Question links-
+/* https://leetcode.com/problems/unique-morse-code-words/
+Solution links-
+
+23.
+Question-consecutive-characters
+Question links-
+/*https://leetcode.com/problems/consecutive-characters/*/
+Solution links-
+./Strings/ConsecutiveCharacters.java
+
+24.
+Question-first-non-repeating-character-in-a-stream1216
+Question links-
+/*https://practice.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1*/
+Solution links-
+./Strings/FirstUniqueCharacterInAStream.java
+
+25.
+Question-rotate-string
+Question links-
+/*https://leetcode.com/problems/rotate-string/*/
+Solution links-
+./Strings/StringRotationCheck.java
+
+26.
+Question-longest-k-unique-characters-substring0853
+Question links-
+/*https://practice.geeksforgeeks.org/problems/longest-k-unique-characters-substring0853/1/*/
+Solution links-
+./Strings/LongestKUniqueCharacters.java
+
+27.
+Question-number-of-substrings-with-only-1s
+Question links-
+/*https://leetcode.com/problems/number-of-substrings-with-only-1s/*/
+Solution links-
+./Strings/CountConsecutiveOnes.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Tree
+Java files: 69
+CPP files: 5
+---------------------------------------------------------------------------------
+1.
+Question-cousins-in-binary-tree
+Question links-
+/*https://leetcode.com/problems/cousins-in-binary-tree/*/
+Solution links-
+./Tree/AreCousins.java
+
+2.
+Question-construct-tree-1
+Question links-
+/*https://practice.geeksforgeeks.org/problems/construct-tree-1/1/*/
+Solution links-
+./Tree/BuildTreeFromInAndPre.java
+
+3.
+Question-maximum-depth-of-binary-tree
+Question links-
+/*https://leetcode.com/problems/maximum-depth-of-binary-tree/*/
+Solution links-
+./Tree/Height.java
+./Tree/LC_104_MaxDepthBinaryTree.cpp
+
+4.
+Question-flatten-binary-tree-to-linked-list
+Question links-
+/*https://leetcode.com/problems/flatten-binary-tree-to-linked-list/*/
+Solution links-
+./Tree/BinaryTreeToSLL.java
+
+5.
+Question-diagonal-traversal-of-binary-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/diagonal-traversal-of-binary-tree/1*/
+Solution links-
+./Tree/DiagonalTraversal.java
+
+6.
+Question-diameter-of-binary-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/diameter-of-binary-tree/1*/
+Solution links-
+./Tree/Diameter.java
+
+7.
+Question-array-to-bst4443
+Question links-
+/*https://practice.geeksforgeeks.org/problems/array-to-bst4443/1*/
+/*https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/*/
+Solution links-
+./Tree/SortedArrayToBalancedBST.java
+
+8.
+Question-boundary-traversal-of-binary-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1*/
+Solution links-
+./Tree/BoundaryTraversal.java
+
+9.
+Question-symmetric-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/symmetric-tree/1*/
+Solution links-
+./Tree/CheckMirror.java
+./Tree/LC_101_Tree_Symmetric.cpp
+
+10.
+Question-transform-to-sum-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/transform-to-sum-tree/1*/
+Solution links-
+./Tree/ConvertIntoSumTree.java
+
+11.
+Question-unique-bsts-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/unique-bsts-1587115621/1#*/
+Solution links-
+./Tree/UniqueBSTs.java
+
+12.
+Question-merge-two-bst-s
+Question links-
+/*https://practice.geeksforgeeks.org/problems/merge-two-bst-s/1*/
+Solution links-
+./Tree/MergeTwoBSTs.java
+
+13.
+Question-insert-into-a-binary-search-tree
+Question links-
+/*https://leetcode.com/problems/insert-into-a-binary-search-tree/*/
+Solution links-
+./Tree/InsertIntoBST.java
+
+14.
+Question-find-duplicate-subtrees
+Question links-
+/*https://leetcode.com/problems/find-duplicate-subtrees/*/
+Solution links-
+./Tree/FindDuplicateSubTrees.java
+
+15.
+Question-add-all-greater-values-to-every-node-in-a-bst
+Question links-
+/*https://practice.geeksforgeeks.org/problems/add-all-greater-values-to-every-node-in-a-bst/1*/
+Solution links-
+./Tree/GreaterValueAddition.java
+
+16.
+Question-path-sum
+Question links-
+/*https://leetcode.com/problems/path-sum/*/
+Solution links-
+./Tree/IsPathSumPresent.java
+
+17.
+Question-burning-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/burning-tree/1*/
+Solution links-
+./Tree/BurnTree.java
+
+18.
+Question-mirror-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/mirror-tree/1*/
+Solution links-
+./Tree/Mirror.java
+
+19.
+Question-delete-node-in-a-bst
+Question links-
+/*https://leetcode.com/problems/delete-node-in-a-bst/*/
+Solution links-
+./Tree/DeleteFromBST.java
+
+20.
+Question-bottom-view-of-binary-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1*/
+Solution links-
+./Tree/BottomView.java
+
+21.
+Question-n-ary-tree-postorder-traversal
+Question links-
+/*https://leetcode.com/problems/n-ary-tree-postorder-traversal/*/
+Solution links-
+./Tree/NAryPostOrder.java
+
+22.
+Question-lowest-common-ancestor-in-a-bst
+Question links-
+/*https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-bst/1*/
+Solution links-
+./Tree/FindLowestCommonAncestor.java
+
+23.
+Question-n-ary-tree-preorder-traversal
+Question links-
+/*https://leetcode.com/problems/n-ary-tree-preorder-traversal/*/
+Solution links-
+./Tree/NAryPreOrder.java
+
+24.
+Question-brothers-from-different-root
+Question links-
+/*https://practice.geeksforgeeks.org/problems/brothers-from-different-root/1#*/
+Solution links-
+./Tree/BrothersFromDifferentRoots.java
+
+25.
+Question-binary-tree-zigzag-level-order-traversal
+Question links-
+/*https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/*/
+Solution links-
+./Tree/ZigzagLevelOrderTraversal.java
+
+26.
+Question-path-sum-iii
+Question links-
+/*https://leetcode.com/problems/path-sum-iii/*/
+Solution links-
+./Tree/PathSum3.java
+
+27.
+Question-unique-binary-search-trees-ii
+Question links-
+/*https://leetcode.com/problems/unique-binary-search-trees-ii/*/
+Solution links-
+./Tree/UniqueBinarySearchTrees.java
+
+28.
+Question-min-distance-between-two-given-nodes-of-a-binary-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/min-distance-between-two-given-nodes-of-a-binary-tree/1/*/
+Solution links-
+./Tree/FindDistance.java
+
+29.
+Question-n-ary-tree-level-order-traversal
+Question links-
+/*https://leetcode.com/problems/n-ary-tree-level-order-traversal/*/
+Solution links-
+./Tree/NAryLevelOrderTraversal.java
+
+30.
+Question-count-bst-nodes-that-lie-in-a-given-range
+Question links-
+/*https://practice.geeksforgeeks.org/problems/count-bst-nodes-that-lie-in-a-given-range/1/*/
+Solution links-
+./Tree/CountNodesInRange.java
+
+31.
+Question-print-a-binary-tree-in-vertical-order
+Question links-
+/*https://practice.geeksforgeeks.org/problems/print-a-binary-tree-in-vertical-order/1*/
+Solution links-
+./Tree/VerticalTraversal.java
+
+32.
+Question-maximum-difference-between-node-and-ancestor
+Question links-
+/*https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/*/
+Solution links-
+./Tree/MaximumDifferenceBetweenAncestorAndNode.java
+
+33.
+Question-construct-string-from-binary-tree
+Question links-
+/*https://leetcode.com/problems/construct-string-from-binary-tree/*/
+Solution links-
+./Tree/BinaryTreeToString.java
+
+34.
+Question-inorder-successor-in-bst
+Question links-
+/*https://practice.geeksforgeeks.org/problems/inorder-successor-in-bst/1*/
+Solution links-
+./Tree/FindInorderSuccessor.java
+
+35.
+Question-binary-tree-to-bst
+Question links-
+/*https://practice.geeksforgeeks.org/problems/binary-tree-to-bst/1*/
+Solution links-
+./Tree/BinaryTreeToBST.java
+
+36.
+Question-path-sum-ii
+Question links-
+/*https://leetcode.com/problems/path-sum-ii/*/
+Solution links-
+./Tree/FindAllPathsWithGivenSum.java
+
+37.
+Question-largest-bst
+Question links-
+/*https://practice.geeksforgeeks.org/problems/largest-bst/1*/
+Solution links-
+./Tree/LargestBST.java
+
+38.
+Question-postorder-traversal-iterative
+Question links-
+/*https://practice.geeksforgeeks.org/problems/postorder-traversal-iterative/0/*/
+Solution links-
+./Tree/IterativePostOrder.java
+
+39.
+Question-predecessor-and-successor
+Question links-
+/*https://practice.geeksforgeeks.org/problems/predecessor-and-successor/1/*/
+Solution links-
+./Tree/SuccAndPre.java
+
+40.
+Question-preorder-traversal-and-bst4006
+Question links-
+/*https://practice.geeksforgeeks.org/problems/preorder-traversal-and-bst4006/1/*/
+Solution links-
+./Tree/CheckIfPreorderOfBST.java
+
+41.
+Question-populate-inorder-successor-for-all-nodes
+Question links-
+/*https://practice.geeksforgeeks.org/problems/populate-inorder-successor-for-all-nodes/1*/
+Solution links-
+./Tree/PopulateInorderSuccessors.java
+
+42.
+Question-populating-next-right-pointers-in-each-node
+Question links-
+/*https://leetcode.com/problems/populating-next-right-pointers-in-each-node/*/
+Solution links-
+./Tree/PopulateRightPointers.java
+
+43.
+Question-right-view-of-binary-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/right-view-of-binary-tree/1*/
+Solution links-
+./Tree/RightView.java
+
+44.
+Question-reverse-level-order-traversal
+Question links-
+/* https://practice.geeksforgeeks.org/problems/reverse-level-order-traversal/1#
+Solution links-
+./Tree/GFG_Tree_ReverseOrderTraversal.cpp
+
+45.
+Question-remove-bst-keys-outside-given-range
+Question links-
+/*https://practice.geeksforgeeks.org/problems/remove-bst-keys-outside-given-range/1/*/
+Solution links-
+./Tree/RemoveNodesOutsideRange.java
+
+46.
+Question-count-good-nodes-in-binary-tree
+Question links-
+/*https://leetcode.com/problems/count-good-nodes-in-binary-tree/*/
+Solution links-
+./Tree/CountGoodNodes.java
+
+47.
+Question-find-a-pair-with-given-target-in-bst
+Question links-
+/*https://practice.geeksforgeeks.org/problems/find-a-pair-with-given-target-in-bst/1*/
+Solution links-
+./Tree/FindPairInBST.java
+
+48.
+Question-validate-binary-search-tree
+Question links-
+/*https://leetcode.com/problems/validate-binary-search-tree/*/
+Solution links-
+./Tree/IsBST.java
+
+49.
+Question-preorder-traversal-iterative
+Question links-
+/*https://practice.geeksforgeeks.org/problems/preorder-traversal-iterative/0/*/
+Solution links-
+./Tree/IterativePreOrder.java
+
+50.
+Question-balanced-binary-tree
+Question links-
+/*https://leetcode.com/problems/balanced-binary-tree/*/
+Solution links-
+./Tree/CheckIfBalanced.java
+
+51.
+Question-find-the-closest-element-in-bst
+Question links-
+/*https://practice.geeksforgeeks.org/problems/find-the-closest-element-in-bst/1*/
+Solution links-
+./Tree/ClosestElementInBST.java
+
+52.
+Question-check-whether-bst-contains-dead-end
+Question links-
+/*https://practice.geeksforgeeks.org/problems/check-whether-bst-contains-dead-end/1*/
+Solution links-
+./Tree/CheckDeadEnd.java
+
+53.
+Question-binary-tree-to-dll
+Question links-
+/*https://practice.geeksforgeeks.org/problems/binary-tree-to-dll/1*/
+Solution links-
+./Tree/BinaryTreeToDLL.java
+
+54.
+Question-determine-if-two-trees-are-identical
+Question links-
+/*https://practice.geeksforgeeks.org/problems/determine-if-two-trees-are-identical/1*/
+Solution links-
+./Tree/CheckIfIdentical.java
+
+55.
+Question-binary-search-tree-iterator
+Question links-
+/*https://leetcode.com/problems/binary-search-tree-iterator/*/
+Solution links-
+./Tree/BinarySearchTreeIterator.java
+
+56.
+Question-left-view-of-binary-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1*/
+Solution links-
+./Tree/LeftView.java
+
+57.
+Question-top-view-of-binary-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/top-view-of-binary-tree/1*/
+Solution links-
+./Tree/TopView.java
+
+58.
+Question-connect-nodes-at-same-level
+Question links-
+/*https://practice.geeksforgeeks.org/problems/connect-nodes-at-same-level/1*/
+Solution links-
+./Tree/ConnectNodesAtSameLevel.java
+
+59.
+Question-check-for-balanced-tree
+Question links-
+/* https://practice.geeksforgeeks.org/problems/check-for-balanced-tree/1
+Solution links-
+./Tree/GFG_Tree_BalancedTree.cpp
+
+60.
+Question-kth-smallest-element-in-a-bst
+Question links-
+/*https://leetcode.com/problems/kth-smallest-element-in-a-bst/*/
+/*https://practice.geeksforgeeks.org/problems/kth-largest-element-in-bst/1*/
+Solution links-
+./Tree/KthSmallestElement.java
+
+61.
+Question-maximum-level-sum-of-a-binary-tree
+Question links-
+/*https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/*/
+Solution links-
+./Tree/MaxLevelSum.java
+
+62.
+Question-binary-tree-level-order-traversal
+Question links-
+/*https://leetcode.com/problems/binary-tree-level-order-traversal/*/
+Solution links-
+./Tree/LevelOrderTraversal.java
+
+63.
+Question-find-mode-in-binary-search-tree
+Question links-
+/*https://leetcode.com/problems/find-mode-in-binary-search-tree/*/
+Solution links-
+./Tree/FindMode.java
+
+64.
+Question-duplicate-subtree-in-binary-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/duplicate-subtree-in-binary-tree/1/*/
+Solution links-
+./Tree/CheckForDuplicateSubtrees.java
+
+65.
+Question-invert-binary-tree
+Question links-
+/* https://leetcode.com/problems/invert-binary-tree/
+Solution links-
+./Tree/LC_226_Tree_InvertBinaryTree.cpp
+
+66.
+Question-maximum-difference-between-node-and-its-ancestor
+Question links-
+/*https://practice.geeksforgeeks.org/problems/maximum-difference-between-node-and-its-ancestor/1*/
+Solution links-
+./Tree/MaximumDifferenceAncestorNode.java
+
+67.
+Question-sum-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/sum-tree/1*/
+Solution links-
+./Tree/CheckSumTree.java
+
+68.
+Question-serialize-and-deserialize-binary-tree
+Question links-
+/*https://leetcode.com/problems/serialize-and-deserialize-binary-tree/*/
+/*https://practice.geeksforgeeks.org/problems/serialize-and-deserialize-a-binary-tree/1*/
+Solution links-
+./Tree/SerializeAndDeserialize.java
+
+69.
+Question-tree-from-postorder-and-inorder
+Question links-
+/*https://practice.geeksforgeeks.org/problems/tree-from-postorder-and-inorder/1/*/
+Solution links-
+./Tree/BuildTreeFromInAndPost.java
+
+70.
+Question-inorder-traversal-iterative
+Question links-
+/*https://practice.geeksforgeeks.org/problems/inorder-traversal-iterative/0/*/
+Solution links-
+./Tree/IterativeInOrder.java
+
+71.
+Question-merge-two-binary-trees
+Question links-
+/*https://leetcode.com/problems/merge-two-binary-trees/*/
+Solution links-
+./Tree/MergeTwoBinaryTrees.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Trie
+Java files: 10
+CPP files: 0
+---------------------------------------------------------------------------------
+1.
+Question-short-encoding-of-words
+Question links-
+/*https://leetcode.com/problems/short-encoding-of-words/*/
+Solution links-
+./Trie/ShortestEncoding.java
+
+2.
+Question-unique-rows-in-boolean-matrix
+Question links-
+/*https://practice.geeksforgeeks.org/problems/unique-rows-in-boolean-matrix/1*/
+Solution links-
+./Trie/UniqueRowsInMatrix.java
+
+3.
+Question-shortest-unique-prefix-for-every-word
+Question links-
+/*https://practice.geeksforgeeks.org/problems/shortest-unique-prefix-for-every-word/0/*/
+Solution links-
+./Trie/ShortestUniquePrefixForEveryWord.java
+
+4.
+Question-maximum-xor-of-two-numbers-in-an-array
+Question links-
+/*https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/*/
+Solution links-
+./Trie/MaximumXorPair.java
+
+5.
+Question-minimum-xor-value-pair
+Question links-
+/*https://practice.geeksforgeeks.org/problems/minimum-xor-value-pair/1/*/
+Solution links-
+./Trie/MinimumXorPair.java
+
+6.
+Question-stream-of-characters
+Question links-
+/*https://leetcode.com/problems/stream-of-characters/*/
+Solution links-
+./Trie/StreamOfCharacters.java
+
+7.
+Question-trie-insert-and-search0651
+Question links-
+/*https://practice.geeksforgeeks.org/problems/trie-insert-and-search0651/1*/
+Solution links-
+./Trie/Trie.java
+
+8.
+Question-implement-trie-prefix-tree
+Question links-
+/*https://leetcode.com/problems/implement-trie-prefix-tree/*/
+Solution links-
+./Trie/TriePrefixTree.java
+
+9.
+Question-search-suggestions-system
+Question links-
+/*https://leetcode.com/problems/search-suggestions-system/*/
+Solution links-
+./Trie/SearchSuggestionSystem.java
+
+10.
+Question-phone-directory4628
+Question links-
+/*https://practice.geeksforgeeks.org/problems/phone-directory4628/1*/
+Solution links-
+./Trie/PhoneDirectory.java
+
+==================================================================================================
+==================================================================================================
+
+
+
+
+
+(26-Dec-2021 16:15:11)
+
+TOPIC NAME: Arrays
+Java files: 57
+CPP files: 12
+---------------------------------------------------------------------------------
+1.
+Question-find-missing-observations
+Question links-
+/*https://leetcode.com/problems/find-missing-observations/*/
+Solution links-
+./Arrays/FindMissingObservations.java
+
+2.
+Question-sort-an-array-of-0s-1s-and-2s4231
+Question links-
+/* https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1#
+Solution links-
+./Arrays/GFG_ARR_ArraySort0_1_2.cpp
+
+3.
+Question-subarray-with-0-sum-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/subarray-with-0-sum-1587115621/1*/
+Solution links-
+./Arrays/SubarrayWithZeroSum.java
+
+4.
+Question-plus-one
+Question links-
+/*https://practice.geeksforgeeks.org/problems/plus-one/1/*/
+Solution links-
+./Arrays/AddOne.java
+
+5.
+Question-kth-smallest-element5635
+Question links-
+/* https://practice.geeksforgeeks.org/problems/kth-smallest-element5635/1#
+Solution links-
+./Arrays/GFG_ARR_KthSmallestElement.cpp
+
+6.
+Question-next-permutation
+Question links-
+/*https://leetcode.com/problems/next-permutation/*/
+Solution links-
+./Arrays/NextPermutation.java
+
+7.
+Question-maximum-difference-of-zeros-and-ones-in-binary-string4111
+Question links-
+/*https://practice.geeksforgeeks.org/problems/maximum-difference-of-zeros-and-ones-in-binary-string4111/1*/
+Solution links-
+./Arrays/MaximumDifferenceInBinaryString.java
+
+8.
+Question-subarray-with-given-sum-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/subarray-with-given-sum-1587115621/1*/
+Solution links-
+./Arrays/SubarrayWithGivenSum.java
+
+9.
+Question-smallest-subarray-with-sum-greater-than-x5651
+Question links-
+/*https://practice.geeksforgeeks.org/problems/smallest-subarray-with-sum-greater-than-x5651/1*/
+Solution links-
+./Arrays/SmallestSubarrayGreaterThanX.java
+
+10.
+Question-next-higher-palindromic-number-using-the-same-set-of-digits5859
+Question links-
+/*https://practice.geeksforgeeks.org/problems/next-higher-palindromic-number-using-the-same-set-of-digits5859/1*/
+Solution links-
+./Arrays/NextGreaterPalindrome.java
+
+11.
+Question-number-of-good-ways-to-split-a-string
+Question links-
+/*https://leetcode.com/problems/number-of-good-ways-to-split-a-string/*/
+Solution links-
+./Arrays/NumberOfGoodSplits.java
+
+12.
+Question-palindrome-string0817
+Question links-
+ https://practice.geeksforgeeks.org/problems/palindrome-string0817/1
+Solution links-
+./Arrays/GFG_STR_PalindromeString.cpp
+
+13.
+Question-circular-linked-list
+Question links-
+/* https://practice.geeksforgeeks.org/problems/circular-linked-list/1#
+Solution links-
+./Arrays/GFG_ARR_UnionTwoArrays.cpp
+
+14.
+Question-find-the-duplicate-number
+Question links-
+/*https://leetcode.com/problems/find-the-duplicate-number/*/
+Solution links-
+./Arrays/FindDuplicate.java
+
+15.
+Question-remove-duplicates-from-sorted-array
+Question links-
+/*https://leetcode.com/problems/remove-duplicates-from-sorted-array/*/
+Solution links-
+./Arrays/RemoveDuplicatesFromSortedArray.java
+
+16.
+Question-large-factorial4721
+Question links-
+/*https://practice.geeksforgeeks.org/problems/large-factorial4721/1/*/
+Solution links-
+./Arrays/LargeFactorialArray.java
+
+17.
+Question-reverse-an-array
+Question links-
+ 	https://practice.geeksforgeeks.org/problems/reverse-an-array/0
+Solution links-
+./Arrays/ReverseArray.java
+./Arrays/GFG_ARR_ReverseArray.cpp
+
+18.
+Question-three-way-partitioning
+Question links-
+/*https://practice.geeksforgeeks.org/problems/three-way-partitioning/1*/
+Solution links-
+./Arrays/ThreeWayPartitioning.java
+
+19.
+Question-merge-intervals
+Question links-
+/*https://leetcode.com/problems/merge-intervals/*/
+Solution links-
+./Arrays/MergeIntervals.java
+
+20.
+Question-minimum-number-of-jumps-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/minimum-number-of-jumps-1587115620/1*/
+Solution links-
+./Arrays/MinimumJumps.java
+
+21.
+Question-replace-elements-with-greatest-element-on-right-side
+Question links-
+/*https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/*/
+Solution links-
+./Arrays/ReplaceWithLargestOnRight.java
+
+22.
+Question-longest-consecutive-sequence
+Question links-
+/*https://leetcode.com/problems/longest-consecutive-sequence/*/
+Solution links-
+./Arrays/LongestConsecutiveSubsequence.java
+
+23.
+Question-sort-colors
+Question links-
+/*https://leetcode.com/problems/sort-colors/*/
+Solution links-
+./Arrays/ZeroOneTwoSort.java
+
+24.
+Question-minimum-size-subarray-sum
+Question links-
+/*https://leetcode.com/problems/minimum-size-subarray-sum/*/
+Solution links-
+./Arrays/MinimumSizeSubarraySum.java
+
+25.
+Question-trapping-rain-water
+Question links-
+/*https://leetcode.com/problems/trapping-rain-water/*/
+Solution links-
+./Arrays/TrappingRainWater.java
+
+26.
+Question-find-pivot-index
+Question links-
+/*https://leetcode.com/problems/find-pivot-index/*/
+Solution links-
+./Arrays/EquilibriumPoint.java
+./Arrays/LC_724_ARR_EquilibriumPoints.cpp
+
+27.
+Question-maximum-subarray
+Question links-
+/*https://leetcode.com/problems/maximum-subarray/*/
+Solution links-
+./Arrays/MaximumSumSubarray.java
+
+28.
+Question-factorials-of-large-numbers2508
+Question links-
+/*https://practice.geeksforgeeks.org/problems/factorials-of-large-numbers2508/1*/
+Solution links-
+./Arrays/LargeFactorial.java
+
+29.
+Question-array-of-alternate-ve-and-ve-nos1401
+Question links-
+/*https://practice.geeksforgeeks.org/problems/array-of-alternate-ve-and-ve-nos1401/1*/
+Solution links-
+./Arrays/AlternatePositiveNegative.java
+
+30.
+Question-insert-interval
+Question links-
+/*https://leetcode.com/problems/insert-interval/*/
+Solution links-
+./Arrays/InsertNewInterval.java
+
+31.
+Question-intersection-of-two-arrays2404
+Question links-
+/*https://practice.geeksforgeeks.org/problems/intersection-of-two-arrays2404/1*/
+/*https://leetcode.com/problems/intersection-of-two-arrays/*/
+/*https://leetcode.com/problems/intersection-of-two-arrays-ii/*/
+Solution links-
+./Arrays/IntersectionArrays.java
+
+32.
+Question-stock-buy-and-sell-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/stock-buy-and-sell-1587115621/1*/
+Solution links-
+./Arrays/StockBuyAndSell.java
+
+33.
+Question-inversion-of-array-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/inversion-of-array-1587115620/1*/
+Solution links-
+./Arrays/InversionCount.java
+
+34.
+Question-jump-game
+Question links-
+/*https://practice.geeksforgeeks.org/problems/jump-game/1/#*/
+Solution links-
+./Arrays/JumpGame.java
+
+35.
+Question-maximum-product-subarray3604
+Question links-
+/*https://practice.geeksforgeeks.org/problems/maximum-product-subarray3604/1*/
+Solution links-
+./Arrays/MaximumProductSubarray.java
+
+36.
+Question-stickler-theif-1587115621
+Question links-
+/* https://practice.geeksforgeeks.org/problems/stickler-theif-1587115621/1#
+Solution links-
+./Arrays/GFG_ARR_MaxSumNonAdj_SticklerThief.cpp
+
+37.
+Question-partition-array-into-three-parts-with-equal-sum
+Question links-
+ 	https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/
+Solution links-
+./Arrays/ThreeParts.java
+./Arrays/LC_1013_ARR_ThreeEqualParts.cpp
+
+38.
+Question-leaders-in-an-array-1587115620
+Question links-
+ 	https://practice.geeksforgeeks.org/problems/leaders-in-an-array-1587115620/1
+Solution links-
+./Arrays/LeadersInArray.java
+./Arrays/GFG_ARR_LeadersInArray.cpp
+
+39.
+Question-common-elements1132
+Question links-
+/*https://practice.geeksforgeeks.org/problems/common-elements1132/1*/
+Solution links-
+./Arrays/CommonElements.java
+
+40.
+Question-rotate-array
+Question links-
+ 	https://leetcode.com/problems/rotate-array/
+Solution links-
+./Arrays/RotateArray.java
+./Arrays/LC_189_ARR_RotateArray.cpp
+
+41.
+Question-shortest-unsorted-continuous-subarray
+Question links-
+/*https://leetcode.com/problems/shortest-unsorted-continuous-subarray/*/
+Solution links-
+./Arrays/ShortestUnsortedContinuousSubarray.java
+
+42.
+Question-union-of-two-sorted-arrays
+Question links-
+/*https://practice.geeksforgeeks.org/problems/union-of-two-sorted-arrays/1*/
+Solution links-
+./Arrays/UnionSortedArrays.java
+
+43.
+Question-union-of-two-arrays3538
+Question links-
+/*https://practice.geeksforgeeks.org/problems/union-of-two-arrays3538/1*/
+Solution links-
+./Arrays/UnionArrays.java
+
+44.
+Question-move-zeroes
+Question links-
+/*https://leetcode.com/problems/move-zeroes/*/
+Solution links-
+./Arrays/MoveZeros.java
+
+45.
+Question-contiguous-array
+Question links-
+/*https://leetcode.com/problems/contiguous-array/*/
+Solution links-
+./Arrays/ContiguousArray.java
+
+46.
+Question-move-all-negative-elements-to-end1813
+Question links-
+/*https://practice.geeksforgeeks.org/problems/move-all-negative-elements-to-end1813/1*/
+Solution links-
+./Arrays/SegregateNegativePositive.java
+
+47.
+Question-max-sum-subarray-of-size-k5313
+Question links-
+ 	https://practice.geeksforgeeks.org/problems/max-sum-subarray-of-size-k5313/1
+Solution links-
+./Arrays/MaximumSumSubarrayOfSizeK.java
+./Arrays/GFG_ARR_MaximumSumSubarrayOfSizeK.cpp
+
+48.
+Question-subarray-sum-equals-k
+Question links-
+/*https://leetcode.com/problems/subarray-sum-equals-k/submissions/*/
+Solution links-
+./Arrays/TotalSubarrays.java
+
+49.
+Question-majority-element
+Question links-
+/*https://leetcode.com/problems/majority-element/*/
+Solution links-
+./Arrays/MajorityElement.java
+
+50.
+Question-count-the-subarrays-having-product-less-than-k1708
+Question links-
+/*https://practice.geeksforgeeks.org/problems/count-the-subarrays-having-product-less-than-k1708/1*/
+Solution links-
+./Arrays/CountSubArrays.java
+
+51.
+Question-count-subarrays-with-equal-number-of-1s-and-0s-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/count-subarrays-with-equal-number-of-1s-and-0s-1587115620/1*/
+Solution links-
+./Arrays/TotalSubarraysWithEqualZerosAndOnes.java
+
+52.
+Question-maximize-number-of-1s0905
+Question links-
+/*https://practice.geeksforgeeks.org/problems/maximize-number-of-1s0905/1*/
+Solution links-
+./Arrays/MaximizeOnes.java
+
+53.
+Question-remove-duplicates-from-sorted-array-ii
+Question links-
+/*https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/*/
+Solution links-
+./Arrays/RemoveDuplicatesFromSortedArray2.java
+
+54.
+Question-cyclically-rotate-an-array-by-one2614
+Question links-
+/*https://practice.geeksforgeeks.org/problems/cyclically-rotate-an-array-by-one2614/1*/
+Solution links-
+./Arrays/SingleCyclicRotation.java
+
+55.
+Question-zero-sum-subarrays1825
+Question links-
+/*https://practice.geeksforgeeks.org/problems/zero-sum-subarrays1825/1*/
+Solution links-
+./Arrays/TotalZeroSumSubarrays.java
+
+56.
+Question-equilibrium-point-1587115620
+Question links-
+ 	https://practice.geeksforgeeks.org/problems/equilibrium-point-1587115620/1
+Solution links-
+./Arrays/GFG_ARR_EquilibriumPoints.cpp
+
+57.
+Question-count-pairs-with-given-sum5022
+Question links-
+/*https://practice.geeksforgeeks.org/problems/count-pairs-with-given-sum5022/1*/
+Solution links-
+./Arrays/CountPairSum.java
+
+58.
+Question-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold
+Question links-
+/*https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/*/
+Solution links-
+./Arrays/SubArrayAvgMoreThanThreshold.java
+
+59.
+Question-chocolate-distribution-problem3825
+Question links-
+/*https://practice.geeksforgeeks.org/problems/chocolate-distribution-problem3825/1*/
+Solution links-
+./Arrays/ChocolateDistribution.java
+
+60.
+Question-product-of-array-except-self
+Question links-
+/*https://leetcode.com/problems/product-of-array-except-self/*/
+Solution links-
+./Arrays/ProductPuzzle.java
+
+61.
+Question-majority-element-ii
+Question links-
+/* https://leetcode.com/problems/majority-element-ii/ */
+Solution links-
+./Arrays/MajorityElement-ii.java
+
+62.
+Question-merge-two-sorted-arrays5135
+Question links-
+/*https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays5135/1*/
+Solution links-
+./Arrays/MergeWithoutExtraSpace.java
+
+63.
+Question-pairs-of-songs-with-total-durations-divisible-by-60
+Question links-
+/*https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/*/
+Solution links-
+./Arrays/SongSelect.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: BackTracking
+Java files: 15
+CPP files: 0
+---------------------------------------------------------------------------------
+1.
+Question-word-break-part-23249
+Question links-
+/*https://practice.geeksforgeeks.org/problems/word-break-part-23249/1*/
+Solution links-
+./BackTracking/WordBreak.java
+
+2.
+Question-word-search
+Question links-
+/*https://leetcode.com/problems/word-search/*/
+Solution links-
+./BackTracking/WordSearch.java
+
+3.
+Question-generate-parentheses
+Question links-
+/*https://leetcode.com/problems/generate-parentheses/*/
+Solution links-
+./BackTracking/GenerateParantheses.java
+
+4.
+Question-n-queens
+Question links-
+/*https://leetcode.com/problems/n-queens/*/
+Solution links-
+./BackTracking/NQueenSolver.java
+
+5.
+Question-permutations-of-a-given-string-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/permutations-of-a-given-string-1587115620/1*/
+/*https://leetcode.com/problems/permutations/*/
+Solution links-
+./BackTracking/Permutation.java
+
+6.
+Question-combination-sum-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/combination-sum-1587115620/1*/
+Solution links-
+./BackTracking/CombinationSum.java
+
+7.
+Question-rat-in-a-maze-problem
+Question links-
+/*http://practice.geeksforgeeks.org/problems/rat-in-a-maze-problem/1*/
+Solution links-
+./BackTracking/RatInMaze.java
+
+8.
+Question-largest-number-in-k-swaps-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/largest-number-in-k-swaps-1587115620/1*/
+Solution links-
+./BackTracking/LargestNumberInKSwaps.java
+
+9.
+Question-palindrome-partitioning-ii
+Question links-
+/*https://leetcode.com/problems/palindrome-partitioning-ii/*/
+Solution links-
+./BackTracking/MinimumNumberOfPartitions.java
+
+10.
+Question-solve-the-sudoku-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/solve-the-sudoku-1587115621/1*/
+Solution links-
+./BackTracking/SudokuSolver.java
+
+11.
+Question-palindrome-partitioning
+Question links-
+/*https://leetcode.com/problems/palindrome-partitioning/*/
+Solution links-
+./BackTracking/PalindromicPartition.java
+
+12.
+Question-number-of-paths0926
+Question links-
+/*https://practice.geeksforgeeks.org/problems/number-of-paths0926/1*/
+Solution links-
+./BackTracking/PossiblePaths.java
+
+13.
+Question-design-add-and-search-words-data-structure
+Question links-
+/*https://leetcode.com/problems/design-add-and-search-words-data-structure/*/
+Solution links-
+./BackTracking/AddSearchWord.java
+
+14.
+Question-permutations-ii
+Question links-
+/*https://leetcode.com/problems/permutations-ii/*/
+Solution links-
+./BackTracking/IntegersWithDuplicatesPermutation.java
+
+15.
+Question-word-search-ii
+Question links-
+/*https://leetcode.com/problems/word-search-ii/*/
+Solution links-
+./BackTracking/WordSearch2.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Bit-Magic
+Java files: 19
+CPP files: 3
+---------------------------------------------------------------------------------
+1.
+Question-ugly-number
+Question links-
+/*https://leetcode.com/problems/ugly-number/*/
+Solution links-
+./Bit-Magic/UglyNumber.java
+
+2.
+Question-ugly-number-ii
+Question links-
+/*https://leetcode.com/problems/ugly-number-ii/*/
+Solution links-
+./Bit-Magic/UglyNumber2.java
+
+3.
+Question-count-total-set-bits-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/count-total-set-bits-1587115620/1*/
+Solution links-
+./Bit-Magic/CountSetBitsInARange.java
+
+4.
+Question-trailing-zeroes-in-factorial5134
+Question links-
+/*https://practice.geeksforgeeks.org/problems/trailing-zeroes-in-factorial5134/1*/
+Solution links-
+./Bit-Magic/TrailingZeroes.java
+
+5.
+Question-single-number-iii
+Question links-
+/*https://leetcode.com/problems/single-number-iii/*/
+Solution links-
+./Bit-Magic/TwoOddOccurringElements.java
+
+6.
+Question-number-of-1-bits
+Question links-
+/*https://leetcode.com/problems/number-of-1-bits/*/
+Solution links-
+./Bit-Magic/NoOfOneBits.java
+
+7.
+Question-find-position-of-set-bit3706
+Question links-
+/*https://practice.geeksforgeeks.org/problems/find-position-of-set-bit3706/1*/
+Solution links-
+./Bit-Magic/OnlySetBit.java
+
+8.
+Question-sum-of-two-numbers-without-using-arithmetic-operators
+Question links-
+/* https://practice.geeksforgeeks.org/problems/sum-of-two-numbers-without-using-arithmetic-operators/1/#
+Solution links-
+./Bit-Magic/SumWithoutArithmeticOperators.java
+./Bit-Magic/GFG_SumWithoutArithmeticOperators.cpp
+
+9.
+Question-longest-consecutive-1s-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/longest-consecutive-1s-1587115620/1*/
+Solution links-
+./Bit-Magic/LongestConsecutiveOnes.java
+
+10.
+Question-permutation-sequence
+Question links-
+/*https://leetcode.com/problems/permutation-sequence/*/
+Solution links-
+./Bit-Magic/PermutationSequence.java
+
+11.
+Question-bit-difference-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/bit-difference-1587115620/1*/
+Solution links-
+./Bit-Magic/BitDifference.java
+
+12.
+Question-sum-of-two-integers
+Question links-
+/* https://leetcode.com/problems/sum-of-two-integers/
+Solution links-
+./Bit-Magic/SumWithoutArithmeticOperatorsNegative.java
+./Bit-Magic/LC_371_SumWithoutArithmeticOperatorsNegative.cpp
+
+13.
+Question-reverse-bits-1611130171
+Question links-
+/*https://practice.geeksforgeeks.org/problems/reverse-bits-1611130171/1/*/
+/*https://leetcode.com/problems/reverse-bits/*/
+Solution links-
+./Bit-Magic/ReverseBits.java
+
+14.
+Question-missing-number-in-array1416
+Question links-
+/*https://practice.geeksforgeeks.org/problems/missing-number-in-array1416/1*/
+Solution links-
+./Bit-Magic/FindMissingNumber.java
+
+15.
+Question-nth-natural-number
+Question links-
+/*https://practice.geeksforgeeks.org/problems/nth-natural-number/1*/
+Solution links-
+./Bit-Magic/NthNaturalNumber.java
+
+16.
+Question-check-whether-k-th-bit-is-set-or-not-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/check-whether-k-th-bit-is-set-or-not-1587115620/1*/
+Solution links-
+./Bit-Magic/CheckKthBit.java
+
+17.
+Question-add-binary
+Question links-
+/*https://leetcode.com/problems/add-binary/*/
+Solution links-
+./Bit-Magic/AddBinary.java
+
+18.
+Question-single-number
+Question links-
+/*https://leetcode.com/problems/single-number/*/
+Solution links-
+./Bit-Magic/FindOddOccuringNumber.java
+./Bit-Magic/LC_136_Bit_SingleNumber.cpp
+
+19.
+Question-power-of-two
+Question links-
+/*https://leetcode.com/problems/power-of-two/*/
+Solution links-
+./Bit-Magic/PowerOfTwo.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Codeforces
+Java files: 22
+CPP files: 0
+---------------------------------------------------------------------------------
+1.
+Question-158-A*
+Question links-
+/*https://codeforces.com/problemset/problem/158/A*/
+Solution links-
+./Codeforces/NextRound.java
+
+2.
+Question-432-A*
+Question links-
+/*https://codeforces.com/problemset/problem/432/A*/
+Solution links-
+./Codeforces/ChoosingTeams.java
+
+3.
+Question-71-A*
+Question links-
+/*https://codeforces.com/problemset/problem/71/A*/
+Solution links-
+./Codeforces/WayTooLongWords.java
+
+4.
+Question-112-A*
+Question links-
+/*https://codeforces.com/problemset/problem/112/A*/
+Solution links-
+./Codeforces/PetyaAndStrings.java
+
+5.
+Question-263-A*
+Question links-
+/*https://codeforces.com/problemset/problem/263/A*/
+Solution links-
+./Codeforces/BeautifulMatrix.java
+
+6.
+Question-677-A*
+Question links-
+/*https://codeforces.com/problemset/problem/677/A*/
+Solution links-
+./Codeforces/VanyaAndFence.java
+
+7.
+Question-266-B*
+Question links-
+/*https://codeforces.com/problemset/problem/266/B*/
+Solution links-
+./Codeforces/QueueAtSchool.java
+
+8.
+Question-41-A*
+Question links-
+/*https://codeforces.com/problemset/problem/41/A*/
+Solution links-
+./Codeforces/Translation.java
+
+9.
+Question-617-A*
+Question links-
+/*https://codeforces.com/problemset/problem/617/A*/
+Solution links-
+./Codeforces/Elephant.java
+
+10.
+Question-339-A*
+Question links-
+/*https://codeforces.com/problemset/problem/339/A*/
+Solution links-
+./Codeforces/HelpfulMaths.java
+
+11.
+Question-200-B*
+Question links-
+/*https://codeforces.com/problemset/problem/200/B*/
+Solution links-
+./Codeforces/Drinks.java
+
+12.
+Question-469-A*
+Question links-
+/*https://codeforces.com/problemset/problem/469/A*/
+Solution links-
+./Codeforces/IWannaBeTheGuy.java
+
+13.
+Question-231-A*
+Question links-
+/*https://codeforces.com/problemset/problem/231/A*/
+Solution links-
+./Codeforces/Team.java
+
+14.
+Question-282-A*
+Question links-
+/*https://codeforces.com/problemset/problem/282/A*/
+Solution links-
+./Codeforces/BitParser.java
+
+15.
+Question-148-A*
+Question links-
+/*https://codeforces.com/problemset/problem/148/A*/
+Solution links-
+./Codeforces/InsomniaCure.java
+
+16.
+Question-1607-H*
+Question links-
+/*https://codeforces.com/problemset/problem/1607/H*/
+Solution links-
+./Codeforces/BanquetPreparation.java
+
+17.
+Question-59-A*
+Question links-
+/*https://codeforces.com/problemset/problem/59/A*/
+Solution links-
+./Codeforces/Word.java
+
+18.
+Question-1343-B*
+Question links-
+/*https://codeforces.com/problemset/problem/1343/B*/
+Solution links-
+./Codeforces/BalancedArray.java
+
+19.
+Question-546-A*
+Question links-
+/*https://codeforces.com/problemset/problem/546/A*/
+Solution links-
+./Codeforces/SoldierAndBananas.java
+
+20.
+Question-50-A*
+Question links-
+/*https://codeforces.com/problemset/problem/50/A*/
+Solution links-
+./Codeforces/DominoPiling.java
+
+21.
+Question-4-A*
+Question links-
+/*https://codeforces.com/problemset/problem/4/A*/
+Solution links-
+./Codeforces/Watermelon.java
+
+22.
+Question-236-A*
+Question links-
+/*https://codeforces.com/problemset/problem/236/A*/
+Solution links-
+./Codeforces/BoyOrGirl.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Disjoint-Set
+Java files: 0
+CPP files: 0
+---------------------------------------------------------------------------------
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Dynamic-Programming
+Java files: 51
+CPP files: 1
+---------------------------------------------------------------------------------
+1.
+Question-decode-ways
+Question links-
+/*https://leetcode.com/problems/decode-ways/*/
+Solution links-
+./Dynamic-Programming/DecodeWays.java
+
+2.
+Question-longest-increasing-subsequence-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence-1587115620/1*/
+Solution links-
+./Dynamic-Programming/LongestIncreasingSubsequence.java
+
+3.
+Question-longest-palindromic-substring
+Question links-
+/*https://leetcode.com/problems/longest-palindromic-substring/*/
+Solution links-
+./Dynamic-Programming/LongestPalindromicSubstring.java
+
+4.
+Question-count-ways-to-reach-the-nth-stair-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/count-ways-to-reach-the-nth-stair-1587115620/1*/
+/*https://leetcode.com/problems/climbing-stairs/*/
+Solution links-
+./Dynamic-Programming/CountWaysToNthStair.java
+
+5.
+Question-cutted-segments1642
+Question links-
+/*https://practice.geeksforgeeks.org/problems/cutted-segments1642/1/*/
+Solution links-
+./Dynamic-Programming/MaximizeCuts.java
+
+6.
+Question-arithmetic-slices
+Question links-
+/*https://leetcode.com/problems/arithmetic-slices/*/
+Solution links-
+./Dynamic-Programming/ArithmeticSlices.java
+
+7.
+Question-longest-common-subsequence-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/longest-common-subsequence-1587115620/1*/
+Solution links-
+./Dynamic-Programming/LCS.java
+
+8.
+Question-bbt-counter4914
+Question links-
+/*https://practice.geeksforgeeks.org/problems/bbt-counter4914/1*/
+Solution links-
+./Dynamic-Programming/BBTCounter.java
+
+9.
+Question-min-cost-climbing-stairs
+Question links-
+/*https://leetcode.com/problems/min-cost-climbing-stairs/*/
+Solution links-
+./Dynamic-Programming/MinCostStairs.java
+
+10.
+Question-coin-change2448
+Question links-
+/*https://practice.geeksforgeeks.org/problems/coin-change2448/1/*/
+/*https://leetcode.com/problems/coin-change/*/
+Solution links-
+./Dynamic-Programming/CoinChange.java
+
+11.
+Question-number-of-coins1824
+Question links-
+/*https://practice.geeksforgeeks.org/problems/number-of-coins1824/1*/
+Solution links-
+./Dynamic-Programming/MinimumCoins.java
+
+12.
+Question-subset-sum-problem2014
+Question links-
+/*https://practice.geeksforgeeks.org/problems/subset-sum-problem2014/1*/
+Solution links-
+./Dynamic-Programming/PartitionArray.java
+
+13.
+Question-friends-pairing-problem5425
+Question links-
+/*https://practice.geeksforgeeks.org/problems/friends-pairing-problem5425/1/*/
+Solution links-
+./Dynamic-Programming/FriendsPairing.java
+
+14.
+Question-minimum-path-sum
+Question links-
+/*https://leetcode.com/problems/minimum-path-sum/*/
+Solution links-
+./Dynamic-Programming/MinimumPathSum.java
+
+15.
+Question-lcs-of-three-strings0028
+Question links-
+/*https://practice.geeksforgeeks.org/problems/lcs-of-three-strings0028/1*/
+Solution links-
+./Dynamic-Programming/LCS3.java
+
+16.
+Question-minimum-cost-for-tickets
+Question links-
+/*https://leetcode.com/problems/minimum-cost-for-tickets/*/
+Solution links-
+./Dynamic-Programming/MinimumCostForTickets.java
+
+17.
+Question-painting-the-fence3727
+Question links-
+/*https://practice.geeksforgeeks.org/problems/painting-the-fence3727/1/*/
+Solution links-
+./Dynamic-Programming/PaintTheFence.java
+
+18.
+Question-minimum-falling-path-sum-ii
+Question links-
+/*https://leetcode.com/problems/minimum-falling-path-sum-ii/*/
+Solution links-
+./Dynamic-Programming/MinimumFallingPathSum2.java
+
+19.
+Question-longest-palindromic-subsequence-1612327878
+Question links-
+/*https://practice.geeksforgeeks.org/problems/longest-palindromic-subsequence-1612327878/1*/
+Solution links-
+./Dynamic-Programming/LongestPalindromicSubsequence.java
+
+20.
+Question-word-break1352
+Question links-
+/*https://practice.geeksforgeeks.org/problems/word-break1352/1*/
+Solution links-
+./Dynamic-Programming/WordBreak.java
+
+21.
+Question-n-th-tribonacci-number
+Question links-
+/*https://leetcode.com/problems/n-th-tribonacci-number/*/
+Solution links-
+./Dynamic-Programming/NthTribonacci.java
+
+22.
+Question-house-robber
+Question links-
+/*https://leetcode.com/problems/house-robber/*/
+Solution links-
+./Dynamic-Programming/HouseRobber.java
+
+23.
+Question-edit-distance3702
+Question links-
+/*https://practice.geeksforgeeks.org/problems/edit-distance3702/1*/
+Solution links-
+./Dynamic-Programming/EditDistance.java
+
+24.
+Question-subset-sum-problem-1611555638
+Question links-
+/*https://practice.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1*/
+Solution links-
+./Dynamic-Programming/SubsetSum.java
+
+25.
+Question-largest-square-formed-in-a-matrix0806
+Question links-
+/*https://practice.geeksforgeeks.org/problems/largest-square-formed-in-a-matrix0806/1*/
+Solution links-
+./Dynamic-Programming/MaxSquareOfOnes.java
+
+26.
+Question-unique-paths-ii
+Question links-
+/*https://leetcode.com/problems/unique-paths-ii/*/
+Solution links-
+./Dynamic-Programming/UniquePathsWithObstacles.java
+
+27.
+Question-longest-repeating-subsequence2004
+Question links-
+/*https://practice.geeksforgeeks.org/problems/longest-repeating-subsequence2004/1*/
+Solution links-
+./Dynamic-Programming/LongestRepeatingSubsequence.java
+
+28.
+Question-count-square-submatrices-with-all-ones
+Question links-
+/*https://leetcode.com/problems/count-square-submatrices-with-all-ones/*/
+Solution links-
+./Dynamic-Programming/CountCompleteSquaresInMatrix.java
+./Dynamic-Programming/LC_1277_CountSquareSubmatricesAllOnes.cpp
+
+29.
+Question-path-in-matrix3805
+Question links-
+/*https://practice.geeksforgeeks.org/problems/path-in-matrix3805/1*/
+Solution links-
+./Dynamic-Programming/MaxPathSum.java
+
+30.
+Question-knapsack-with-duplicate-items4201
+Question links-
+/*https://practice.geeksforgeeks.org/problems/knapsack-with-duplicate-items4201/1*/
+Solution links-
+./Dynamic-Programming/UnboundedKnapsack.java
+
+31.
+Question-wiggle-subsequence
+Question links-
+/*https://leetcode.com/problems/wiggle-subsequence/*/
+Solution links-
+./Dynamic-Programming/WiggleSubsequence.java
+
+32.
+Question-stickler-theif-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/stickler-theif-1587115621/1/*/
+Solution links-
+./Dynamic-Programming/SticklerThief.java
+
+33.
+Question-minimum-cost-to-fill-given-weight-in-a-bag1956
+Question links-
+/*https://practice.geeksforgeeks.org/problems/minimum-cost-to-fill-given-weight-in-a-bag1956/1*/
+Solution links-
+./Dynamic-Programming/BuyOranges.java
+
+34.
+Question-gold-mine-problem2608
+Question links-
+/*https://practice.geeksforgeeks.org/problems/gold-mine-problem2608/1/*/
+Solution links-
+./Dynamic-Programming/GoldMine.java
+
+35.
+Question-nth-catalan-number0817
+Question links-
+/*https://practice.geeksforgeeks.org/problems/nth-catalan-number0817/1/*/
+Solution links-
+./Dynamic-Programming/CatalanNumbers.java
+
+36.
+Question-matrix-chain-multiplication0303
+Question links-
+/*https://practice.geeksforgeeks.org/problems/matrix-chain-multiplication0303/1*/
+Solution links-
+./Dynamic-Programming/MatrixChainMultiplication.java
+
+37.
+Question-minimum-falling-path-sum
+Question links-
+/*https://leetcode.com/problems/minimum-falling-path-sum/*/
+Solution links-
+./Dynamic-Programming/MinimumFallingPathSum.java
+
+38.
+Question-maximum-profit-in-job-scheduling
+Question links-
+/*https://leetcode.com/problems/maximum-profit-in-job-scheduling/*/
+Solution links-
+./Dynamic-Programming/WeightedIntervalScheduling.java
+
+39.
+Question-wildcard-pattern-matching
+Question links-
+/*https://practice.geeksforgeeks.org/problems/wildcard-pattern-matching/1*/
+Solution links-
+./Dynamic-Programming/WildcardMatching.java
+
+40.
+Question-unique-paths
+Question links-
+/*https://leetcode.com/problems/unique-paths/*/
+Solution links-
+./Dynamic-Programming/UniquePaths.java
+
+41.
+Question-maximum-length-of-repeated-subarray
+Question links-
+/*https://leetcode.com/problems/maximum-length-of-repeated-subarray/*/
+Solution links-
+./Dynamic-Programming/MaxLengthRepeatedSubarray.java
+
+42.
+Question-counting-bits
+Question links-
+/*https://leetcode.com/problems/counting-bits/*/
+Solution links-
+./Dynamic-Programming/CountBitsInEachNumber.java
+
+43.
+Question-ncr1019
+Question links-
+/*https://practice.geeksforgeeks.org/problems/ncr1019/1*/
+Solution links-
+./Dynamic-Programming/BinomialCoefficients.java
+
+44.
+Question-egg-dropping-puzzle-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/egg-dropping-puzzle-1587115620/1*/
+Solution links-
+./Dynamic-Programming/EggDrop.java
+
+45.
+Question-longest-common-substring1452
+Question links-
+/*https://practice.geeksforgeeks.org/problems/longest-common-substring1452/1*/
+Solution links-
+./Dynamic-Programming/LongestCommonSubstring.java
+
+46.
+Question-reach-a-given-score-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/reach-a-given-score-1587115621/1*/
+Solution links-
+./Dynamic-Programming/ReachAGivenScore.java
+
+47.
+Question-house-robber-ii
+Question links-
+/*https://leetcode.com/problems/house-robber-ii/*/
+Solution links-
+./Dynamic-Programming/HouseRobber2.java
+
+48.
+Question-0-1-knapsack-problem0945
+Question links-
+/*https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1*/
+Solution links-
+./Dynamic-Programming/BinaryKnapsack.java
+
+49.
+Question-get-minimum-squares0538
+Question links-
+/*https://practice.geeksforgeeks.org/problems/get-minimum-squares0538/1*/
+Solution links-
+./Dynamic-Programming/MinimumSquaresSum.java
+
+50.
+Question-maximum-sum-increasing-subsequence4749
+Question links-
+/*https://practice.geeksforgeeks.org/problems/maximum-sum-increasing-subsequence4749/1*/
+Solution links-
+./Dynamic-Programming/MaximumSumIncreasingSubsequence.java
+
+51.
+Question-count-palindromic-subsequences
+Question links-
+/*https://practice.geeksforgeeks.org/problems/count-palindromic-subsequences/1*/
+Solution links-
+./Dynamic-Programming/CountLongestPalindromicSubsequences.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Graph
+Java files: 27
+CPP files: 10
+---------------------------------------------------------------------------------
+1.
+Question-implementing-dijkstra-set-1-adjacency-matrix
+Question links-
+/* https://practice.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1#
+Solution links-
+./Graph/ShortestPath.java
+./Graph/GFG_Graph_ShortestDistance_Dijkstra.cpp
+
+2.
+Question-clone-graph
+Question links-
+/*https://leetcode.com/problems/clone-graph/*/
+Solution links-
+./Graph/CloneGraph.java
+./Graph/LC_133_Graph_CloneGraph.cpp
+
+3.
+Question-topological-sort
+Question links-
+/* https://practice.geeksforgeeks.org/problems/topological-sort/1#
+Solution links-
+./Graph/TopologicalSort.java
+./Graph/GFG_Graph_TopologicalSort.cpp
+
+4.
+Question-find-the-number-of-islands
+Question links-
+/* https://practice.geeksforgeeks.org/problems/find-the-number-of-islands/1#
+Solution links-
+./Graph/NumberOfIslands.java
+./Graph/GFG_Graph_Numof_Islands.cpp
+
+5.
+Question-print-adjacency-list-1587115620
+Question links-
+/* https://practice.geeksforgeeks.org/problems/print-adjacency-list-1587115620/1#
+Solution links-
+./Graph/GFG_Graph_AdjListPrint.cpp
+
+6.
+Question-depth-first-traversal-for-a-graph
+Question links-
+/*https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1*/
+Solution links-
+./Graph/DFS.java
+./Graph/GFG_Graph_DFSTraversal.cpp
+
+7.
+Question-journey-to-the-moon
+Question links-
+/*https://www.hackerrank.com/challenges/journey-to-the-moon/problem*/
+Solution links-
+./Graph/JourneyToMoon.java
+
+8.
+Question-strongly-connected-component-tarjanss-algo-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/strongly-connected-component-tarjanss-algo-1587115621/1/*/
+Solution links-
+./Graph/Tarjan.java
+
+9.
+Question-detect-cycle-in-a-directed-graph
+Question links-
+/*https://practice.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1*/
+Solution links-
+./Graph/DetectCycleInDirectedGraph.java
+./Graph/GFG_Graph_CycleDetectionDirected.cpp
+
+10.
+Question-cheapest-flights-within-k-stops
+Question links-
+/*https://leetcode.com/problems/cheapest-flights-within-k-stops/*/
+Solution links-
+./Graph/CheapestFlightWithinKStops.java
+
+11.
+Question-strongly-connected-components-kosarajus-algo
+Question links-
+/* https://practice.geeksforgeeks.org/problems/strongly-connected-components-kosarajus-algo/1#
+Solution links-
+./Graph/Kosaraju.java
+./Graph/GFG_Graph_StronglyConnectedComp(Kosaraju).cpp
+
+12.
+Question-269f61832b146dd5e6d89b4ca18cbd2a2654ebbe
+Question links-
+/*https://practice.geeksforgeeks.org/problems/269f61832b146dd5e6d89b4ca18cbd2a2654ebbe/1/*/
+Solution links-
+./Graph/CovidSpread.java
+
+13.
+Question-word-ladder
+Question links-
+/*https://leetcode.com/problems/word-ladder/*/
+Solution links-
+./Graph/WordLadder.java
+
+14.
+Question-detect-cycle-in-an-undirected-graph
+Question links-
+/*https://practice.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1*/
+Solution links-
+./Graph/DetectCycleInUndirectedGraph.java
+./Graph/GFG_Graph_CycleDetectionUnDirected.cpp
+
+15.
+Question-length-of-largest-region-of-1s-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/length-of-largest-region-of-1s-1587115620/1*/
+Solution links-
+./Graph/MaxAreaOfOnes.java
+
+16.
+Question-rotting-oranges
+Question links-
+/*https://leetcode.com/problems/rotting-oranges/*/
+Solution links-
+./Graph/RottenOranges.java
+
+17.
+Question-bridge-edge-in-graph
+Question links-
+/*https://practice.geeksforgeeks.org/problems/bridge-edge-in-graph/1#*/
+Solution links-
+./Graph/CheckIfBridge.java
+
+18.
+Question-prerequisite-tasks
+Question links-
+/*https://practice.geeksforgeeks.org/problems/prerequisite-tasks/1/*/
+Solution links-
+./Graph/PrerequisiteTasks.java
+
+19.
+Question-number-of-operations-to-make-network-connected
+Question links-
+/*https://leetcode.com/problems/number-of-operations-to-make-network-connected/*/
+Solution links-
+./Graph/ConnectNetwork.java
+
+20.
+Question-employee-importance
+Question links-
+/*https://leetcode.com/problems/employee-importance/*/
+Solution links-
+./Graph/EmployeeImportance.java
+
+21.
+Question-find-the-town-judge
+Question links-
+/*https://leetcode.com/problems/find-the-town-judge/*/
+Solution links-
+./Graph/FindTownJudge.java
+
+22.
+Question-minimum-spanning-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/minimum-spanning-tree/1*/
+Solution links-
+./Graph/MinimumSpanningTree.java
+
+23.
+Question-bfs-traversal-of-graph
+Question links-
+/*https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1*/
+Solution links-
+./Graph/BFS.java
+./Graph/GFG_Graph_BFSTraversal.cpp
+
+24.
+Question-circle-of-strings4530
+Question links-
+/*https://practice.geeksforgeeks.org/problems/circle-of-strings4530/1*/
+Solution links-
+./Graph/CircleOfStrings.java
+
+25.
+Question-bipartite-graph
+Question links-
+/*https://practice.geeksforgeeks.org/problems/bipartite-graph/1*/
+Solution links-
+./Graph/CheckIfBipartite.java
+
+26.
+Question-minimum-swaps
+Question links-
+/*https://practice.geeksforgeeks.org/problems/minimum-swaps/1*/
+Solution links-
+./Graph/MinimumSwapsToSort.java
+
+27.
+Question-implementing-floyd-warshall2042
+Question links-
+/*https://practice.geeksforgeeks.org/problems/implementing-floyd-warshall2042/1*/
+Solution links-
+./Graph/FloydWarshall.java
+
+28.
+Question-distance-from-the-source-bellman-ford-algorithm
+Question links-
+/*https://practice.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/1/*/
+/*https://practice.geeksforgeeks.org/problems/negative-weight-cycle3504/1*/
+Solution links-
+./Graph/BellmanFord.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Greedy
+Java files: 15
+CPP files: 0
+---------------------------------------------------------------------------------
+1.
+Question-largest-number-with-given-sum-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/largest-number-with-given-sum-1587115620/1*/
+Solution links-
+./Greedy/LargestNumberPossible.java
+
+2.
+Question-fractional-knapsack-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1*/
+Solution links-
+./Greedy/FractionalKnapsack.java
+
+3.
+Question-maximize-toys0331
+Question links-
+/*https://practice.geeksforgeeks.org/problems/maximize-toys0331/1*/
+Solution links-
+./Greedy/MaximizeToys.java
+
+4.
+Question-maximize-sum-after-k-negations1149
+Question links-
+/*https://practice.geeksforgeeks.org/problems/maximize-sum-after-k-negations1149/1*/
+Solution links-
+./Greedy/MaximumSumAfterKOps.java
+
+5.
+Question-minimum-cost-of-ropes-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/minimum-cost-of-ropes-1587115620/1*/
+Solution links-
+./Greedy/MinimumCostRope.java
+
+6.
+Question-shop-in-candy-store1145
+Question links-
+/*https://practice.geeksforgeeks.org/problems/shop-in-candy-store1145/1*/
+Solution links-
+./Greedy/BuyCandies.java
+
+7.
+Question-coin-piles5152
+Question links-
+/*https://practice.geeksforgeeks.org/problems/coin-piles5152/1/*/
+Solution links-
+./Greedy/CoinPiles.java
+
+8.
+Question-job-sequencing-problem-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1/*/
+Solution links-
+./Greedy/JobScheduling.java
+
+9.
+Question-task-scheduler
+Question links-
+/*https://leetcode.com/problems/task-scheduler/*/
+Solution links-
+./Greedy/TaskScheduler.java
+
+10.
+Question-water-connection-problem5822
+Question links-
+/*https://practice.geeksforgeeks.org/problems/water-connection-problem5822/1*/
+Solution links-
+./Greedy/WaterConnection.java
+
+11.
+Question-chocolate-distribution-problem3825
+Question links-
+/*https://practice.geeksforgeeks.org/problems/chocolate-distribution-problem3825/1*/
+Solution links-
+./Greedy/ChocolateDistribution.java
+
+12.
+Question-n-meetings-in-one-room-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1/*/
+Solution links-
+./Greedy/ActivitySelectionProblem.java
+
+13.
+Question-pairs-with-specific-difference1533
+Question links-
+/*https://practice.geeksforgeeks.org/problems/pairs-with-specific-difference1533/1*/
+Solution links-
+./Greedy/SumOfPairsWithSpecificDifference.java
+
+14.
+Question-max-length-chain
+Question links-
+/*https://practice.geeksforgeeks.org/problems/max-length-chain/1*/
+Solution links-
+./Greedy/MaxLengthChain.java
+
+15.
+Question-huffman-encoding3345
+Question links-
+/*https://practice.geeksforgeeks.org/problems/huffman-encoding3345/1/*/
+Solution links-
+./Greedy/HuffmanCoding.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Hashing
+Java files: 20
+CPP files: 1
+---------------------------------------------------------------------------------
+1.
+Question-uncommon-words-from-two-sentences
+Question links-
+/*https://leetcode.com/problems/uncommon-words-from-two-sentences/*/
+Solution links-
+./Hashing/UncommonWords.java
+
+2.
+Question-most-common-word
+Question links-
+/*https://leetcode.com/problems/most-common-word/*/
+Solution links-
+./Hashing/MostFrequentStringIgnoringBannedOnes.java
+
+3.
+Question-unique-number-of-occurrences
+Question links-
+/* https://leetcode.com/problems/unique-number-of-occurrences/
+Solution links-
+./Hashing/LC_1207_HT_UniqueNumOfOccurrences.cpp
+
+4.
+Question-group-anagrams
+Question links-
+/*https://leetcode.com/problems/group-anagrams/*/
+Solution links-
+./Hashing/GroupAnagrams.java
+
+5.
+Question-find-all-numbers-disappeared-in-an-array
+Question links-
+/*https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/*/
+Solution links-
+./Hashing/FindDisappearedNumbers.java
+
+6.
+Question-longest-subarray-with-sum-divisible-by-k1259
+Question links-
+/*https://practice.geeksforgeeks.org/problems/longest-subarray-with-sum-divisible-by-k1259/1*/
+Solution links-
+./Hashing/LongestSubarrayWithSumDivisibleByK.java
+
+7.
+Question-most-frequent-word-in-an-array-of-strings3528
+Question links-
+/*https://practice.geeksforgeeks.org/problems/most-frequent-word-in-an-array-of-strings3528/1*/
+Solution links-
+./Hashing/MostFrequentString.java
+
+8.
+Question-in-first-but-second5423
+Question links-
+/*https://practice.geeksforgeeks.org/problems/in-first-but-second5423/1*/
+Solution links-
+./Hashing/FindMissingInSecondArray.java
+
+9.
+Question-first-missing-positive
+Question links-
+/*https://leetcode.com/problems/first-missing-positive/*/
+Solution links-
+./Hashing/FirstMissingPositive.java
+
+10.
+Question-find-unique-binary-string
+Question links-
+/*https://leetcode.com/problems/find-unique-binary-string/*/
+Solution links-
+./Hashing/FindMissingBinaryString.java
+
+11.
+Question-design-hashset
+Question links-
+/*https://leetcode.com/problems/design-hashset/*/
+Solution links-
+./Hashing/HashSetDesign.java
+
+12.
+Question-length-of-the-longest-substring3036
+Question links-
+/*https://practice.geeksforgeeks.org/problems/length-of-the-longest-substring3036/1*/
+/*https://leetcode.com/problems/longest-substring-without-repeating-characters/*/
+Solution links-
+./Hashing/LongestUniqueSubstring.java
+
+13.
+Question-top-k-frequent-elements-in-array
+Question links-
+/*https://practice.geeksforgeeks.org/problems/top-k-frequent-elements-in-array/1*/
+Solution links-
+./Hashing/TopK.java
+
+14.
+Question-design-hashmap
+Question links-
+/*https://leetcode.com/problems/design-hashmap/*/
+Solution links-
+./Hashing/HashMapDesign.java
+
+15.
+Question-count-good-meals
+Question links-
+/*https://leetcode.com/problems/count-good-meals/*/
+Solution links-
+./Hashing/CountGoodMeals.java
+
+16.
+Question-check-if-a-string-contains-all-binary-codes-of-size-k
+Question links-
+/*https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/*/
+Solution links-
+./Hashing/CheckAllBinaryCodesPresence.java
+
+17.
+Question-first-non-repeating-character-in-a-stream1216
+Question links-
+/*https://practice.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1*/
+Solution links-
+./Hashing/FindFirstNonRepeatingCharacter.java
+
+18.
+Question-find-common-characters
+Question links-
+/*https://leetcode.com/problems/find-common-characters/*/
+Solution links-
+./Hashing/FindCommonCharacters.java
+
+19.
+Question-top-k-frequent-words
+Question links-
+/*https://leetcode.com/problems/top-k-frequent-words/*/
+Solution links-
+./Hashing/TopKFrequentWords.java
+
+20.
+Question-unique-email-addresses
+Question links-
+/*https://leetcode.com/problems/unique-email-addresses/*/
+Solution links-
+./Hashing/UniqueEmailAddresses.java
+
+21.
+Question-find-all-duplicates-in-an-array
+Question links-
+/*https://leetcode.com/problems/find-all-duplicates-in-an-array/*/
+Solution links-
+./Hashing/FindDuplicates.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Heap
+Java files: 11
+CPP files: 0
+---------------------------------------------------------------------------------
+1.
+Question-find-smallest-range-containing-elements-from-k-lists
+Question links-
+/*https://practice.geeksforgeeks.org/problems/find-smallest-range-containing-elements-from-k-lists/1*/
+Solution links-
+./Heap/SmallestRangeFromKArrays.java
+
+2.
+Question-kth-largest-element-in-an-array
+Question links-
+/*https://leetcode.com/problems/kth-largest-element-in-an-array/*/
+Solution links-
+./Heap/KthLargest.java
+
+3.
+Question-merge-k-sorted-arrays
+Question links-
+/*https://practice.geeksforgeeks.org/problems/merge-k-sorted-arrays/1*/
+Solution links-
+./Heap/MergeKSortedArrays.java
+
+4.
+Question-k-closest-points-to-origin
+Question links-
+/*https://leetcode.com/problems/k-closest-points-to-origin/*/
+Solution links-
+./Heap/KClosestPointsToOrigin.java
+
+5.
+Question-merge-k-sorted-lists
+Question links-
+/*https://leetcode.com/problems/merge-k-sorted-lists/*/
+Solution links-
+./Heap/MergeKSortedLists.java
+
+6.
+Question-find-median-from-data-stream
+Question links-
+/*https://leetcode.com/problems/find-median-from-data-stream/*/
+Solution links-
+./Heap/MedianOfAStream.java
+
+7.
+Question-minimum-sum4058
+Question links-
+/*https://practice.geeksforgeeks.org/problems/minimum-sum4058/1/*/
+Solution links-
+./Heap/MinimumSum.java
+
+8.
+Question-kth-largest-element-in-a-stream
+Question links-
+/*https://leetcode.com/problems/kth-largest-element-in-a-stream/*/
+Solution links-
+./Heap/KthLargestFromStream.java
+
+9.
+Question-minimum-cost-of-ropes-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/minimum-cost-of-ropes-1587115620/1*/
+Solution links-
+./Heap/MinCostOfRopes.java
+
+10.
+Question-find-nearest-point-that-has-the-same-x-or-y-coordinate
+Question links-
+/*https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/*/
+Solution links-
+./Heap/NearestPoint.java
+
+11.
+Question-is-binary-tree-heap
+Question links-
+/*https://practice.geeksforgeeks.org/problems/is-binary-tree-heap/1/*/
+Solution links-
+./Heap/IsHeap.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Linked-List
+Java files: 38
+CPP files: 2
+---------------------------------------------------------------------------------
+1.
+Question-add-two-numbers-represented-by-linked-lists
+Question links-
+/* https://practice.geeksforgeeks.org/problems/add-two-numbers-represented-by-linked-lists/1
+* https://leetcode.com/problems/add-two-numbers-ii/ */
+Solution links-
+./Linked-List/AddLists2.java
+
+2.
+Question-rotate-a-linked-list
+Question links-
+/*https://practice.geeksforgeeks.org/problems/rotate-a-linked-list/1*/
+Solution links-
+./Linked-List/RotateList.java
+
+3.
+Question-intersection-of-two-sorted-linked-lists
+Question links-
+/*https://practice.geeksforgeeks.org/problems/intersection-of-two-sorted-linked-lists/1*/
+Solution links-
+./Linked-List/IntersectionOfSortedLists.java
+
+4.
+Question-swap-nodes-in-pairs
+Question links-
+/*https://leetcode.com/problems/swap-nodes-in-pairs/*/
+Solution links-
+./Linked-List/SwapNodesInPairs.java
+
+5.
+Question-partition-a-linked-list-around-a-given-value
+Question links-
+/*https://practice.geeksforgeeks.org/problems/partition-a-linked-list-around-a-given-value/1/*/
+Solution links-
+./Linked-List/Partition.java
+
+6.
+Question-sort-a-linked-list
+Question links-
+/*https://practice.geeksforgeeks.org/problems/sort-a-linked-list/1*/
+Solution links-
+./Linked-List/MergeSort.java
+
+7.
+Question-remove-loop-in-linked-list
+Question links-
+/*https://practice.geeksforgeeks.org/problems/remove-loop-in-linked-list/1*/
+Solution links-
+./Linked-List/RemoveCycle.java
+
+8.
+Question-middle-of-the-linked-list
+Question links-
+/*https://leetcode.com/problems/middle-of-the-linked-list/*/
+Solution links-
+./Linked-List/FindMiddleNode.java
+
+9.
+Question-delete-n-nodes-after-m-nodes-of-a-linked-list
+Question links-
+/*https://practice.geeksforgeeks.org/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/1*/
+Solution links-
+./Linked-List/LinkDelete.java
+
+10.
+Question-add-1-to-a-number-represented-as-linked-list
+Question links-
+/*https://practice.geeksforgeeks.org/problems/add-1-to-a-number-represented-as-linked-list/1/*/
+Solution links-
+./Linked-List/AddOne.java
+
+11.
+Question-union-of-two-arrays3538
+Question links-
+/* https://practice.geeksforgeeks.org/problems/union-of-two-arrays3538/1#
+Solution links-
+./Linked-List/GFG_LinkedL_CheckCircularLinkedList.cpp
+
+12.
+Question-remove-duplicates-from-sorted-list-ii
+Question links-
+/*https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/*/
+Solution links-
+./Linked-List/RemoveDuplicates2.java
+
+13.
+Question-linked-list-cycle
+Question links-
+/*https://leetcode.com/problems/linked-list-cycle/*/
+Solution links-
+./Linked-List/DetectCycle.java
+
+14.
+Question-quick-sort-on-linked-list
+Question links-
+/*https://practice.geeksforgeeks.org/problems/quick-sort-on-linked-list/1*/
+Solution links-
+./Linked-List/QuickSort.java
+
+15.
+Question-given-a-linked-list-of-0s-1s-and-2s-sort-it
+Question links-
+/*https://practice.geeksforgeeks.org/problems/given-a-linked-list-of-0s-1s-and-2s-sort-it/1*/
+Solution links-
+./Linked-List/ZeroOneTwo.java
+
+16.
+Question-circular-linked-list
+Question links-
+/*https://practice.geeksforgeeks.org/problems/circular-linked-list/1*/
+Solution links-
+./Linked-List/CheckIfCircular.java
+
+17.
+Question-deletion-and-reverse-in-linked-list
+Question links-
+/*https://practice.geeksforgeeks.org/problems/deletion-and-reverse-in-linked-list/1*/
+Solution links-
+./Linked-List/DeleteAndReverseCircular.java
+
+18.
+Question-intersection-of-two-linked-list
+Question links-
+/*https://practice.geeksforgeeks.org/problems/intersection-of-two-linked-list/1*/
+Solution links-
+./Linked-List/IntersectionOfLists.java
+
+19.
+Question-reverse-a-doubly-linked-list
+Question links-
+/*https://practice.geeksforgeeks.org/problems/reverse-a-doubly-linked-list/1*/
+Solution links-
+./Linked-List/ReverseDoublyLinkedList.java
+
+20.
+Question-remove-nth-node-from-end-of-list
+Question links-
+/*https://leetcode.com/problems/remove-nth-node-from-end-of-list/*/
+Solution links-
+./Linked-List/NthNodeFromEnd.java
+
+21.
+Question-given-a-linked-list-reverse-alternate-nodes-and-append-at-the-end
+Question links-
+/*https://practice.geeksforgeeks.org/problems/given-a-linked-list-reverse-alternate-nodes-and-append-at-the-end/*/
+Solution links-
+./Linked-List/ReverseAlternateNodes.java
+
+22.
+Question-check-if-linked-list-is-pallindrome
+Question links-
+/*https://practice.geeksforgeeks.org/problems/check-if-linked-list-is-pallindrome/1*/
+Solution links-
+./Linked-List/CheckPalindrome.java
+
+23.
+Question-merge-two-sorted-lists
+Question links-
+/*https://leetcode.com/problems/merge-two-sorted-lists/submissions/*/
+Solution links-
+./Linked-List/MergeTwoSortedLists.java
+
+24.
+Question-multiply-two-linked-lists
+Question links-
+/*https://practice.geeksforgeeks.org/problems/multiply-two-linked-lists/1*/
+Solution links-
+./Linked-List/MultiplyLists.java
+
+25.
+Question-remove-linked-list-elements
+Question links-
+/*https://leetcode.com/problems/remove-linked-list-elements/*/
+Solution links-
+./Linked-List/RemoveLinkedListElements.java
+
+26.
+Question-delete-middle-of-linked-list
+Question links-
+/*https://practice.geeksforgeeks.org/problems/delete-middle-of-linked-list/1*/
+Solution links-
+./Linked-List/DeleteMiddleNode.java
+
+27.
+Question-add-two-numbers
+Question links-
+/*https://leetcode.com/problems/add-two-numbers/*/
+Solution links-
+./Linked-List/AddLists.java
+
+28.
+Question-flatten-a-multilevel-doubly-linked-list
+Question links-
+/*https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/*/
+/*https://practice.geeksforgeeks.org/problems/flattening-a-linked-list/1*/
+Solution links-
+./Linked-List/FlattenLinkedList.java
+
+29.
+Question-odd-even-linked-list
+Question links-
+/*https://leetcode.com/problems/odd-even-linked-list/*/
+Solution links-
+./Linked-List/OddEven.java
+
+30.
+Question-delete-nodes-having-greater-value-on-right
+Question links-
+/*https://practice.geeksforgeeks.org/problems/delete-nodes-having-greater-value-on-right/1*/
+Solution links-
+./Linked-List/FindLeaders.java
+
+31.
+Question-convert-binary-number-in-a-linked-list-to-integer
+Question links-
+/*https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/*/
+Solution links-
+./Linked-List/ConvertToDecimal.java
+
+32.
+Question-reverse-nodes-in-k-group
+Question links-
+/*https://leetcode.com/problems/reverse-nodes-in-k-group/*/
+Solution links-
+./Linked-List/ReverseInGroups.java
+
+33.
+Question-split-a-circular-linked-list-into-two-halves
+Question links-
+/*http://practice.geeksforgeeks.org/problems/split-a-circular-linked-list-into-two-halves/1*/
+Solution links-
+./Linked-List/DivideCircularList.java
+
+34.
+Question-reverse-linked-list-ii
+Question links-
+/*https://leetcode.com/problems/reverse-linked-list-ii/*/
+Solution links-
+./Linked-List/ReverseLinkedList2.java
+
+35.
+Question-remove-duplicates-from-sorted-list
+Question links-
+/*https://leetcode.com/problems/remove-duplicates-from-sorted-list/*/
+Solution links-
+./Linked-List/RemoveDuplicates.java
+
+36.
+Question-clone-a-linked-list-with-next-and-random-pointer
+Question links-
+/*https://practice.geeksforgeeks.org/problems/clone-a-linked-list-with-next-and-random-pointer/1*/
+Solution links-
+./Linked-List/CloneList.java
+
+37.
+Question-reverse-linked-list
+Question links-
+/* https://leetcode.com/problems/reverse-linked-list/
+Solution links-
+./Linked-List/ReverseList.java
+./Linked-List/LC_206_LinkedL_ReverseLinkedList.cpp
+
+38.
+Question-linked-list-cycle-ii
+Question links-
+/*https://leetcode.com/problems/linked-list-cycle-ii/*/
+Solution links-
+./Linked-List/LocateCycle.java
+
+39.
+Question-partition-list
+Question links-
+/*https://leetcode.com/problems/partition-list/*/
+Solution links-
+./Linked-List/PartitionList.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Matrix
+Java files: 16
+CPP files: 1
+---------------------------------------------------------------------------------
+1.
+Question-prettyprint
+Question links-
+/*https://www.interviewbit.com/problems/prettyprint/*/
+Solution links-
+./Matrix/PrettyPrint.java
+
+2.
+Question-search-a-2d-matrix
+Question links-
+/*https://leetcode.com/problems/search-a-2d-matrix/*/
+Solution links-
+./Matrix/SearchMatrix.java
+
+3.
+Question-transpose-matrix
+Question links-
+/*https://leetcode.com/problems/transpose-matrix/*/
+Solution links-
+./Matrix/Transpose.java
+
+4.
+Question-spiral-matrix-ii
+Question links-
+/*https://leetcode.com/problems/spiral-matrix-ii/*/
+Solution links-
+./Matrix/SpiralStorage.java
+
+5.
+Question-set-matrix-zeroes
+Question links-
+/*https://leetcode.com/problems/set-matrix-zeroes/*/
+Solution links-
+./Matrix/FillMatrixWithZero.java
+
+6.
+Question-valid-sudoku
+Question links-
+/*https://leetcode.com/problems/valid-sudoku/*/
+Solution links-
+./Matrix/IsValidSudoku.java
+
+7.
+Question-find-nth-element-of-spiral-matrix
+Question links-
+/*https://practice.geeksforgeeks.org/problems/find-nth-element-of-spiral-matrix/1*/
+Solution links-
+./Matrix/NthSpiralElement.java
+
+8.
+Question-search-a-2d-matrix-ii
+Question links-
+/*https://leetcode.com/problems/search-a-2d-matrix-ii/*/
+Solution links-
+./Matrix/SearchMatrix2.java
+
+9.
+Question-row-with-max-1s0023
+Question links-
+/*https://practice.geeksforgeeks.org/problems/row-with-max-1s0023/1*/
+Solution links-
+./Matrix/MaximumOnes.java
+
+10.
+Question-diagonal-morning-assembly0028
+Question links-
+/*https://practice.geeksforgeeks.org/problems/diagonal-morning-assembly0028/1/*/
+Solution links-
+./Matrix/SortDiagonally.java
+
+11.
+Question-flood-fill
+Question links-
+/* https://leetcode.com/problems/flood-fill/
+Solution links-
+./Matrix/LC_733_Mat_FloodFill.cpp
+
+12.
+Question-rotate-image
+Question links-
+/*https://leetcode.com/problems/rotate-image/*/
+Solution links-
+./Matrix/RotateImage.java
+
+13.
+Question-spiral-matrix
+Question links-
+/*https://leetcode.com/problems/spiral-matrix/*/
+Solution links-
+./Matrix/SpiralTraversal.java
+
+14.
+Question-count-servers-that-communicate
+Question links-
+/*https://leetcode.com/problems/count-servers-that-communicate/*/
+Solution links-
+./Matrix/CountServers.java
+
+15.
+Question-boolean-matrix-problem-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/boolean-matrix-problem-1587115620/1*/
+Solution links-
+./Matrix/BooleanMatrixFlooding.java
+
+16.
+Question-kth-element-in-matrix
+Question links-
+/*https://practice.geeksforgeeks.org/problems/kth-element-in-matrix/1*/
+Solution links-
+./Matrix/kthSmallestElement.java
+
+17.
+Question-game-of-life
+Question links-
+/*https://leetcode.com/problems/game-of-life/*/
+Solution links-
+./Matrix/LifeGame.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Miscellaneous
+Java files: 15
+CPP files: 1
+---------------------------------------------------------------------------------
+1.
+Question-shortest-subarray-to-be-removed-to-make-array-sorted
+Question links-
+/*https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/submissions/*/
+Solution links-
+./Miscellaneous/RemoveShortesSubarray.java
+
+2.
+Question-basic-calculator
+Question links-
+/*https://leetcode.com/problems/basic-calculator/*/
+Solution links-
+./Miscellaneous/BasicCalculator.java
+
+3.
+Question-insert-delete-getrandom-o1
+Question links-
+/*https://leetcode.com/problems/insert-delete-getrandom-o1/*/
+Solution links-
+./Miscellaneous/InsertDeleteRandom.java
+
+4.
+Question-minimum-depth-of-binary-tree
+Question links-
+/*https://leetcode.com/problems/minimum-depth-of-binary-tree/*/
+Solution links-
+./Miscellaneous/MinDepth.java
+
+5.
+Question-zigzag-conversion
+Question links-
+/*https://leetcode.com/problems/zigzag-conversion/*/
+Solution links-
+./Miscellaneous/ZigzagConversion.java
+
+6.
+Question-smallest-factorial-number5929
+Question links-
+/* https://practice.geeksforgeeks.org/problems/smallest-factorial-number5929/1
+Solution links-
+./Miscellaneous/GFG_SmallestFactorialNum.cpp
+
+7.
+Question-design-underground-system
+Question links-
+/*https://leetcode.com/problems/design-underground-system/*/
+Solution links-
+./Miscellaneous/UnderGroundSystemDesign.java
+
+8.
+Question-letter-combinations-of-a-phone-number
+Question links-
+/*https://leetcode.com/problems/letter-combinations-of-a-phone-number/*/
+Solution links-
+./Miscellaneous/LetterCombinations.java
+
+9.
+Question-basic-calculator-ii
+Question links-
+/*https://leetcode.com/problems/basic-calculator-ii/*/
+Solution links-
+./Miscellaneous/BasicCalculator2.java
+
+10.
+Question-unique-morse-code-words
+Question links-
+/*https://leetcode.com/problems/unique-morse-code-words/*/
+Solution links-
+./Miscellaneous/MorseCodeParsing.java
+
+11.
+Question-minimum-operations-to-reduce-x-to-zero
+Question links-
+/*https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/*/
+Solution links-
+./Miscellaneous/MinOpsToReduceXToZero.java
+
+12.
+Question-substring-with-concatenation-of-all-words
+Question links-
+/*https://leetcode.com/problems/substring-with-concatenation-of-all-words/*/
+Solution links-
+./Miscellaneous/SubstringWithConcatenationOfAllWords.java
+
+13.
+Question-get-watched-videos-by-your-friends
+Question links-
+/*https://leetcode.com/problems/get-watched-videos-by-your-friends/*/
+Solution links-
+./Miscellaneous/GetWatchedVideosByYourFriends.java
+
+14.
+Question-array-of-doubled-pairs
+Question links-
+/*https://leetcode.com/problems/array-of-doubled-pairs/*/
+Solution links-
+./Miscellaneous/ArrayOfDoubledPairs.java
+
+15.
+Question-integer-to-english-words
+Question links-
+/*https://leetcode.com/problems/integer-to-english-words/*/
+Solution links-
+./Miscellaneous/IntegerToEnglishWords.java
+
+16.
+Question-sum-of-square-numbers
+Question links-
+/*https://leetcode.com/problems/sum-of-square-numbers/*/
+Solution links-
+./Miscellaneous/SumOfSquareNumbers.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Queue
+Java files: 5
+CPP files: 0
+---------------------------------------------------------------------------------
+1.
+Question-maximum-of-all-subarrays-of-size-k3101
+Question links-
+/*https://practice.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k3101/1*/
+Solution links-
+./Queue/MaximumOfAllSubarrays.java
+
+2.
+Question-sliding-window-maximum
+Question links-
+/*https://leetcode.com/problems/sliding-window-maximum/*/
+Solution links-
+./Queue/SlidingWindowMaximum.java
+
+3.
+Question-page-faults-in-lru5603
+Question links-
+/*https://practice.geeksforgeeks.org/problems/page-faults-in-lru5603/1*/
+/*https://leetcode.com/problems/lru-cache/*/
+Solution links-
+./Queue/LRUCache.java
+
+4.
+Question-implement-queue-using-stacks
+Question links-
+/*https://leetcode.com/problems/implement-queue-using-stacks/*/
+Solution links-
+./Queue/QueueUsingStack.java
+
+5.
+Question-circular-tour-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/circular-tour-1587115620/1*/
+Solution links-
+./Queue/CircularTour.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Recursion
+Java files: 12
+CPP files: 1
+---------------------------------------------------------------------------------
+1.
+Question-josephus-problem
+Question links-
+/*https://practice.geeksforgeeks.org/problems/josephus-problem/1*/
+Solution links-
+./Recursion/Josephus.java
+
+2.
+Question-letter-case-permutation
+Question links-
+/*https://leetcode.com/problems/letter-case-permutation/*/
+Solution links-
+./Recursion/LetterCasePermutations.java
+
+3.
+Question-pascals-triangle-ii
+Question links-
+/*https://leetcode.com/problems/pascals-triangle-ii/*/
+Solution links-
+./Recursion/PascalsTriangle2.java
+
+4.
+Question-combinations
+Question links-
+/*https://leetcode.com/problems/combinations/*/
+Solution links-
+./Recursion/Combinations.java
+
+5.
+Question-restore-ip-addresses
+Question links-
+/*https://leetcode.com/problems/restore-ip-addresses/*/
+/*https://practice.geeksforgeeks.org/problems/generate-ip-addresses/1*/
+Solution links-
+./Recursion/RestoreIPAddresses.java
+
+6.
+Question-palindrome-string0817
+Question links-
+ https://practice.geeksforgeeks.org/problems/palindrome-string0817/1
+Solution links-
+./Recursion/PalindromeString.java
+./Recursion/GFG_STR_PalindromeString.cpp
+
+7.
+Question-number-of-paths0926
+Question links-
+/*https://practice.geeksforgeeks.org/problems/number-of-paths0926/1*/
+Solution links-
+./Recursion/NumberOfPaths.java
+
+8.
+Question-gray-code
+Question links-
+/*https://leetcode.com/problems/gray-code/*/
+Solution links-
+./Recursion/generateGrayCode.java
+
+9.
+Question-pascals-triangle
+Question links-
+/*https://leetcode.com/problems/pascals-triangle/*/
+Solution links-
+./Recursion/PascalsTriangle.java
+
+10.
+Question-tower-of-hanoi-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/tower-of-hanoi-1587115621/1*/
+Solution links-
+./Recursion/TOH.java
+
+11.
+Question-flood-fill-algorithm1856
+Question links-
+/*https://practice.geeksforgeeks.org/problems/flood-fill-algorithm1856/1*/
+Solution links-
+./Recursion/FloodFill.java
+
+12.
+Question-subsets
+Question links-
+/*https://leetcode.com/problems/subsets/*/
+Solution links-
+./Recursion/Subsets.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Searching
+Java files: 24
+CPP files: 0
+---------------------------------------------------------------------------------
+1.
+Question-3sum
+Question links-
+/*https://leetcode.com/problems/3sum/*/
+Solution links-
+./Searching/FindTripletsWithGivenSum.java
+
+2.
+Question-guess-number-higher-or-lower
+Question links-
+/*https://leetcode.com/problems/guess-number-higher-or-lower/*/
+Solution links-
+./Searching/GuessHigherLower.java
+
+3.
+Question-find-missing-and-repeating2512
+Question links-
+/*https://practice.geeksforgeeks.org/problems/find-missing-and-repeating2512/1*/
+Solution links-
+./Searching/FindRepeatingMissing.java
+
+4.
+Question-two-sum-ii-input-array-is-sorted
+Question links-
+/*https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/*/
+Solution links-
+./Searching/PairWithSumInSortedArray.java
+
+5.
+Question-find-pair-given-difference1559
+Question links-
+/*https://practice.geeksforgeeks.org/problems/find-pair-given-difference1559/1*/
+Solution links-
+./Searching/FindPairWithGivenDifference.java
+
+6.
+Question-k-diff-pairs-in-an-array
+Question links-
+/*https://leetcode.com/problems/k-diff-pairs-in-an-array/*/
+Solution links-
+./Searching/CountKDiffUniquePairs.java
+
+7.
+Question-triplet-sum-in-array-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/triplet-sum-in-array-1587115621/1*/
+Solution links-
+./Searching/TripletWithGivenSum.java
+
+8.
+Question-first-bad-version
+Question links-
+/*https://leetcode.com/problems/first-bad-version/*/
+Solution links-
+./Searching/FirstBadVersion.java
+
+9.
+Question-3sum-closest
+Question links-
+/*https://leetcode.com/problems/3sum-closest/*/
+Solution links-
+./Searching/TripletWithSumClosestToGivenSum.java
+
+10.
+Question-4sum
+Question links-
+/*https://leetcode.com/problems/4sum/*/
+Solution links-
+./Searching/CountQuadrupletsWithGivenSum.java
+
+11.
+Question-find-first-and-last-position-of-element-in-sorted-array
+Question links-
+/*https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/*/
+Solution links-
+./Searching/FirstAndLastPositions.java
+
+12.
+Question-triplets-with-sum-with-given-range
+Question links-
+/*https://practice.geeksforgeeks.org/problems/triplets-with-sum-with-given-range/1/*/
+Solution links-
+./Searching/CountTripletsWithSumInRange.java
+
+13.
+Question-four-elements2452
+Question links-
+/*https://practice.geeksforgeeks.org/problems/four-elements2452/1*/
+Solution links-
+./Searching/QuadrupletsWithGivenSum.java
+
+14.
+Question-search-insert-position-of-k-in-a-sorted-array
+Question links-
+/*https://practice.geeksforgeeks.org/problems/search-insert-position-of-k-in-a-sorted-array/1/*/
+Solution links-
+./Searching/SearchInsertPosition.java
+
+15.
+Question-arithmetic-number2815
+Question links-
+/*https://practice.geeksforgeeks.org/problems/arithmetic-number2815/1*/
+Solution links-
+./Searching/FindPresenceInAP.java
+
+16.
+Question-pair-with-given-sum-in-a-sorted-array4940
+Question links-
+/*https://practice.geeksforgeeks.org/problems/pair-with-given-sum-in-a-sorted-array4940/1*/
+Solution links-
+./Searching/CountPairSumInSortedArray.java
+
+17.
+Question-find-k-closest-elements
+Question links-
+/*https://leetcode.com/problems/find-k-closest-elements/*/
+Solution links-
+./Searching/FindKClosestElements.java
+
+18.
+Question-kth-smallest-number-in-multiplication-table
+Question links-
+/*https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/*/
+Solution links-
+./Searching/KthSmallestInMultiplicationTable.java
+
+19.
+Question-count-possible-triangles-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/count-possible-triangles-1587115620/1/*/
+Solution links-
+./Searching/CountTriangles.java
+
+20.
+Question-3d27d4683c121c1f152ee8f41279255dc4430cf6
+Question links-
+/*https://practice.geeksforgeeks.org/problems/3d27d4683c121c1f152ee8f41279255dc4430cf6/1/*/
+Solution links-
+./Searching/TernarySearch.java
+
+21.
+Question-search-in-rotated-sorted-array
+Question links-
+/*https://leetcode.com/problems/search-in-rotated-sorted-array/*/
+Solution links-
+./Searching/SortedRotatedArraySearch.java
+
+22.
+Question-square-root
+Question links-
+/*https://practice.geeksforgeeks.org/problems/square-root/1/*/
+/*https://leetcode.com/problems/sqrtx/*/
+Solution links-
+./Searching/FindSquareRoot.java
+
+23.
+Question-count-triplets-with-sum-smaller-than-x5549
+Question links-
+/*https://practice.geeksforgeeks.org/problems/count-triplets-with-sum-smaller-than-x5549/1*/
+Solution links-
+./Searching/CountTripletsWithSumSmallerThanX.java
+
+24.
+Question-two-sum
+Question links-
+/*https://leetcode.com/problems/two-sum/*/
+Solution links-
+./Searching/PairWithSum.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Segment-Tree
+Java files: 0
+CPP files: 0
+---------------------------------------------------------------------------------
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Sorting
+Java files: 8
+CPP files: 0
+---------------------------------------------------------------------------------
+1.
+Question-heap-sort
+Question links-
+/*https://practice.geeksforgeeks.org/problems/heap-sort/1*/
+Solution links-
+./Sorting/HeapSort.java
+
+2.
+Question-bubble-sort
+Question links-
+/*https://practice.geeksforgeeks.org/problems/bubble-sort/1*/
+Solution links-
+./Sorting/BubbleSort.java
+
+3.
+Question-quick-sort
+Question links-
+/*https://practice.geeksforgeeks.org/problems/quick-sort/1#*/
+Solution links-
+./Sorting/QuickSort.java
+
+4.
+Question-selection-sort
+Question links-
+/*https://practice.geeksforgeeks.org/problems/selection-sort/1*/
+Solution links-
+./Sorting/SelectionSort.java
+
+5.
+Question-merge-sort
+Question links-
+/*https://practice.geeksforgeeks.org/problems/merge-sort/1*/
+Solution links-
+./Sorting/MergeSort.java
+
+6.
+Question-arithmetic-subarrays
+Question links-
+/*https://leetcode.com/problems/arithmetic-subarrays/*/
+Solution links-
+./Sorting/ArithmeticSubArrays.java
+
+7.
+Question-insertion-sort
+Question links-
+/*https://practice.geeksforgeeks.org/problems/insertion-sort/1*/
+Solution links-
+./Sorting/InsertionSort.java
+
+8.
+Question-counting-sort
+Question links-
+/*https://practice.geeksforgeeks.org/problems/counting-sort/1*/
+Solution links-
+./Sorting/CountingSort.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Stack
+Java files: 18
+CPP files: 0
+---------------------------------------------------------------------------------
+1.
+Question-largest-rectangle-in-histogram
+Question links-
+/*https://leetcode.com/problems/largest-rectangle-in-histogram/*/
+Solution links-
+./Stack/LargestRectangleInHistogram.java
+
+2.
+Question-longest-valid-parentheses
+Question links-
+/*https://leetcode.com/problems/longest-valid-parentheses/*/
+Solution links-
+./Stack/ValidParenthesesSubstring.java
+
+3.
+Question-implement-two-stacks-in-an-array
+Question links-
+/*https://practice.geeksforgeeks.org/problems/implement-two-stacks-in-an-array/1*/
+Solution links-
+./Stack/TwoStacksInOneArray.java
+
+4.
+Question-min-stack
+Question links-
+/*https://leetcode.com/problems/min-stack/*/
+/*https://practice.geeksforgeeks.org/problems/special-stack/1*/
+Solution links-
+./Stack/StackWithFindMin.java
+
+5.
+Question-design-a-stack-with-increment-operation
+Question links-
+/*https://leetcode.com/problems/design-a-stack-with-increment-operation/*/
+Solution links-
+./Stack/StackWithIncrementOperation.java
+
+6.
+Question-simplify-path
+Question links-
+/*https://leetcode.com/problems/simplify-path/*/
+Solution links-
+./Stack/ParsePath.java
+
+7.
+Question-implement-stack-using-queues
+Question links-
+/*https://leetcode.com/problems/implement-stack-using-queues/*/
+Solution links-
+./Stack/StackUsingQueue.java
+
+8.
+Question-next-greater-element-i
+Question links-
+/*https://leetcode.com/problems/next-greater-element-i/*/
+Solution links-
+./Stack/NextGreaterElement.java
+
+9.
+Question-the-celebrity-problem
+Question links-
+/*https://practice.geeksforgeeks.org/problems/the-celebrity-problem/1*/
+Solution links-
+./Stack/CelebrityProblem.java
+
+10.
+Question-maximum-of-minimum-for-every-window-size3453
+Question links-
+/*https://practice.geeksforgeeks.org/problems/maximum-of-minimum-for-every-window-size3453/1#*/
+Solution links-
+./Stack/MaxOfMins.java
+
+11.
+Question-valid-parentheses
+Question links-
+/*https://leetcode.com/problems/valid-parentheses/*/
+Solution links-
+./Stack/ValidParentheses.java
+
+12.
+Question-daily-temperatures
+Question links-
+/*https://leetcode.com/problems/daily-temperatures/*/
+Solution links-
+./Stack/DailyTemperatures.java
+
+13.
+Question-stock-span-problem-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/stock-span-problem-1587115621/1*/
+Solution links-
+./Stack/StockSpanProblem.java
+
+14.
+Question-next-greater-element-ii
+Question links-
+/*https://leetcode.com/problems/next-greater-element-ii/*/
+Solution links-
+./Stack/NextGreaterElementCircular.java
+
+15.
+Question-evaluate-reverse-polish-notation
+Question links-
+/*https://leetcode.com/problems/evaluate-reverse-polish-notation/*/
+/*https://practice.geeksforgeeks.org/problems/evaluation-of-postfix-expression1735/1*/
+Solution links-
+./Stack/PostfixEvaluation.java
+
+16.
+Question-online-stock-span
+Question links-
+/*https://leetcode.com/problems/online-stock-span/*/
+Solution links-
+./Stack/OnlineStockSpanProblem.java
+
+17.
+Question-sort-a-stack
+Question links-
+/*https://practice.geeksforgeeks.org/problems/sort-a-stack/1*/
+Solution links-
+./Stack/SortStack.java
+
+18.
+Question-infix-to-postfix-1587115620
+Question links-
+/*https://practice.geeksforgeeks.org/problems/infix-to-postfix-1587115620/1*/
+Solution links-
+./Stack/InfixToPostfix.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Strings
+Java files: 25
+CPP files: 2
+---------------------------------------------------------------------------------
+1.
+Question-uncommon-words-from-two-sentences
+Question links-
+/* https://leetcode.com/problems/uncommon-words-from-two-sentences/
+Solution links-
+./Strings/LC_884_STR_UncommonWordsFromTwoSentences.cpp
+
+2.
+Question-permutation-in-string
+Question links-
+/*https://leetcode.com/problems/permutation-in-string/*/
+Solution links-
+./Strings/PermutationInStrings.java
+
+3.
+Question-valid-anagram
+Question links-
+/*https://leetcode.com/problems/valid-anagram/*/
+Solution links-
+./Strings/AnagramCheck.java
+
+4.
+Question-text-justification
+Question links-
+/*https://leetcode.com/problems/text-justification/*/
+Solution links-
+./Strings/TextJustification.java
+
+5.
+Question-valid-palindrome
+Question links-
+/*https://leetcode.com/problems/valid-palindrome/*/
+Solution links-
+./Strings/CheckPalindrome.java
+
+6.
+Question-implement-atoi
+Question links-
+/*https://practice.geeksforgeeks.org/problems/implement-atoi/1*/
+Solution links-
+./Strings/Atoi.java
+
+7.
+Question-minimum-window-substring
+Question links-
+/*https://leetcode.com/problems/minimum-window-substring/*/
+Solution links-
+./Strings/MinimumWindowSubstring.java
+
+8.
+Question-multiply-strings*
+Question links-
+/*https://leetcode.com/problems/multiply-strings*/
+Solution links-
+./Strings/MultiplyStrings.java
+
+9.
+Question-rearrange-spaces-between-words
+Question links-
+/*https://leetcode.com/problems/rearrange-spaces-between-words/*/
+Solution links-
+./Strings/RearrangeSpaces.java
+
+10.
+Question-count-number-of-homogenous-substrings
+Question links-
+/*https://leetcode.com/problems/count-number-of-homogenous-substrings/*/
+Solution links-
+./Strings/CountHomogeneousSubstrings.java
+
+11.
+Question-first-unique-character-in-a-string
+Question links-
+/*https://leetcode.com/problems/first-unique-character-in-a-string/*/
+Solution links-
+./Strings/FirstUniqueCharacter.java
+
+12.
+Question-count-and-say
+Question links-
+/*https://leetcode.com/problems/count-and-say/*/
+Solution links-
+./Strings/CountAndSay.java
+
+13.
+Question-goat-latin
+Question links-
+/*https://leetcode.com/problems/goat-latin/*/
+Solution links-
+./Strings/GoatLatin.java
+
+14.
+Question-palindrome-string0817
+Question links-
+ https://practice.geeksforgeeks.org/problems/palindrome-string0817/1
+Solution links-
+./Strings/GFG_STR_PalindromeString.cpp
+
+15.
+Question-valid-palindrome-ii
+Question links-
+/*https://leetcode.com/problems/valid-palindrome-ii/*/
+Solution links-
+./Strings/CheckPalindrome2.java
+
+16.
+Question-find-all-anagrams-in-a-string
+Question links-
+/*https://leetcode.com/problems/find-all-anagrams-in-a-string/*/
+Solution links-
+./Strings/AnagramSearch.java
+
+17.
+Question-longest-prefix-suffix2527
+Question links-
+/*https://practice.geeksforgeeks.org/problems/longest-prefix-suffix2527/1*/
+Solution links-
+./Strings/LongestPrefixSuffix.java
+
+18.
+Question-valid-number
+Question links-
+/*https://leetcode.com/problems/valid-number/*/
+Solution links-
+./Strings/ValidNumber.java
+
+19.
+Question-reorganize-string
+Question links-
+/*https://leetcode.com/problems/reorganize-string/*/
+Solution links-
+./Strings/ReorganizeString.java
+
+20.
+Question-verifying-an-alien-dictionary
+Question links-
+/*https://leetcode.com/problems/verifying-an-alien-dictionary/*/
+Solution links-
+./Strings/VerifyAlienDictionary.java
+
+21.
+Question-validate-an-ip-address-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/validate-an-ip-address-1587115621/1*/
+Solution links-
+./Strings/ValidateIPAddress.java
+
+22.
+Question-unique-morse-code-words
+Question links-
+/* https://leetcode.com/problems/unique-morse-code-words/
+Solution links-
+
+23.
+Question-consecutive-characters
+Question links-
+/*https://leetcode.com/problems/consecutive-characters/*/
+Solution links-
+./Strings/ConsecutiveCharacters.java
+
+24.
+Question-first-non-repeating-character-in-a-stream1216
+Question links-
+/*https://practice.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1*/
+Solution links-
+./Strings/FirstUniqueCharacterInAStream.java
+
+25.
+Question-rotate-string
+Question links-
+/*https://leetcode.com/problems/rotate-string/*/
+Solution links-
+./Strings/StringRotationCheck.java
+
+26.
+Question-longest-k-unique-characters-substring0853
+Question links-
+/*https://practice.geeksforgeeks.org/problems/longest-k-unique-characters-substring0853/1/*/
+Solution links-
+./Strings/LongestKUniqueCharacters.java
+
+27.
+Question-number-of-substrings-with-only-1s
+Question links-
+/*https://leetcode.com/problems/number-of-substrings-with-only-1s/*/
+Solution links-
+./Strings/CountConsecutiveOnes.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Tree
+Java files: 69
+CPP files: 5
+---------------------------------------------------------------------------------
+1.
+Question-cousins-in-binary-tree
+Question links-
+/*https://leetcode.com/problems/cousins-in-binary-tree/*/
+Solution links-
+./Tree/AreCousins.java
+
+2.
+Question-construct-tree-1
+Question links-
+/*https://practice.geeksforgeeks.org/problems/construct-tree-1/1/*/
+Solution links-
+./Tree/BuildTreeFromInAndPre.java
+
+3.
+Question-maximum-depth-of-binary-tree
+Question links-
+/*https://leetcode.com/problems/maximum-depth-of-binary-tree/*/
+Solution links-
+./Tree/Height.java
+./Tree/LC_104_MaxDepthBinaryTree.cpp
+
+4.
+Question-flatten-binary-tree-to-linked-list
+Question links-
+/*https://leetcode.com/problems/flatten-binary-tree-to-linked-list/*/
+Solution links-
+./Tree/BinaryTreeToSLL.java
+
+5.
+Question-diagonal-traversal-of-binary-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/diagonal-traversal-of-binary-tree/1*/
+Solution links-
+./Tree/DiagonalTraversal.java
+
+6.
+Question-diameter-of-binary-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/diameter-of-binary-tree/1*/
+Solution links-
+./Tree/Diameter.java
+
+7.
+Question-array-to-bst4443
+Question links-
+/*https://practice.geeksforgeeks.org/problems/array-to-bst4443/1*/
+/*https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/*/
+Solution links-
+./Tree/SortedArrayToBalancedBST.java
+
+8.
+Question-boundary-traversal-of-binary-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1*/
+Solution links-
+./Tree/BoundaryTraversal.java
+
+9.
+Question-symmetric-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/symmetric-tree/1*/
+Solution links-
+./Tree/CheckMirror.java
+./Tree/LC_101_Tree_Symmetric.cpp
+
+10.
+Question-transform-to-sum-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/transform-to-sum-tree/1*/
+Solution links-
+./Tree/ConvertIntoSumTree.java
+
+11.
+Question-unique-bsts-1587115621
+Question links-
+/*https://practice.geeksforgeeks.org/problems/unique-bsts-1587115621/1#*/
+Solution links-
+./Tree/UniqueBSTs.java
+
+12.
+Question-merge-two-bst-s
+Question links-
+/*https://practice.geeksforgeeks.org/problems/merge-two-bst-s/1*/
+Solution links-
+./Tree/MergeTwoBSTs.java
+
+13.
+Question-insert-into-a-binary-search-tree
+Question links-
+/*https://leetcode.com/problems/insert-into-a-binary-search-tree/*/
+Solution links-
+./Tree/InsertIntoBST.java
+
+14.
+Question-find-duplicate-subtrees
+Question links-
+/*https://leetcode.com/problems/find-duplicate-subtrees/*/
+Solution links-
+./Tree/FindDuplicateSubTrees.java
+
+15.
+Question-add-all-greater-values-to-every-node-in-a-bst
+Question links-
+/*https://practice.geeksforgeeks.org/problems/add-all-greater-values-to-every-node-in-a-bst/1*/
+Solution links-
+./Tree/GreaterValueAddition.java
+
+16.
+Question-path-sum
+Question links-
+/*https://leetcode.com/problems/path-sum/*/
+Solution links-
+./Tree/IsPathSumPresent.java
+
+17.
+Question-burning-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/burning-tree/1*/
+Solution links-
+./Tree/BurnTree.java
+
+18.
+Question-mirror-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/mirror-tree/1*/
+Solution links-
+./Tree/Mirror.java
+
+19.
+Question-delete-node-in-a-bst
+Question links-
+/*https://leetcode.com/problems/delete-node-in-a-bst/*/
+Solution links-
+./Tree/DeleteFromBST.java
+
+20.
+Question-bottom-view-of-binary-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1*/
+Solution links-
+./Tree/BottomView.java
+
+21.
+Question-n-ary-tree-postorder-traversal
+Question links-
+/*https://leetcode.com/problems/n-ary-tree-postorder-traversal/*/
+Solution links-
+./Tree/NAryPostOrder.java
+
+22.
+Question-lowest-common-ancestor-in-a-bst
+Question links-
+/*https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-bst/1*/
+Solution links-
+./Tree/FindLowestCommonAncestor.java
+
+23.
+Question-n-ary-tree-preorder-traversal
+Question links-
+/*https://leetcode.com/problems/n-ary-tree-preorder-traversal/*/
+Solution links-
+./Tree/NAryPreOrder.java
+
+24.
+Question-brothers-from-different-root
+Question links-
+/*https://practice.geeksforgeeks.org/problems/brothers-from-different-root/1#*/
+Solution links-
+./Tree/BrothersFromDifferentRoots.java
+
+25.
+Question-binary-tree-zigzag-level-order-traversal
+Question links-
+/*https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/*/
+Solution links-
+./Tree/ZigzagLevelOrderTraversal.java
+
+26.
+Question-path-sum-iii
+Question links-
+/*https://leetcode.com/problems/path-sum-iii/*/
+Solution links-
+./Tree/PathSum3.java
+
+27.
+Question-unique-binary-search-trees-ii
+Question links-
+/*https://leetcode.com/problems/unique-binary-search-trees-ii/*/
+Solution links-
+./Tree/UniqueBinarySearchTrees.java
+
+28.
+Question-min-distance-between-two-given-nodes-of-a-binary-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/min-distance-between-two-given-nodes-of-a-binary-tree/1/*/
+Solution links-
+./Tree/FindDistance.java
+
+29.
+Question-n-ary-tree-level-order-traversal
+Question links-
+/*https://leetcode.com/problems/n-ary-tree-level-order-traversal/*/
+Solution links-
+./Tree/NAryLevelOrderTraversal.java
+
+30.
+Question-count-bst-nodes-that-lie-in-a-given-range
+Question links-
+/*https://practice.geeksforgeeks.org/problems/count-bst-nodes-that-lie-in-a-given-range/1/*/
+Solution links-
+./Tree/CountNodesInRange.java
+
+31.
+Question-print-a-binary-tree-in-vertical-order
+Question links-
+/*https://practice.geeksforgeeks.org/problems/print-a-binary-tree-in-vertical-order/1*/
+Solution links-
+./Tree/VerticalTraversal.java
+
+32.
+Question-maximum-difference-between-node-and-ancestor
+Question links-
+/*https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/*/
+Solution links-
+./Tree/MaximumDifferenceBetweenAncestorAndNode.java
+
+33.
+Question-construct-string-from-binary-tree
+Question links-
+/*https://leetcode.com/problems/construct-string-from-binary-tree/*/
+Solution links-
+./Tree/BinaryTreeToString.java
+
+34.
+Question-inorder-successor-in-bst
+Question links-
+/*https://practice.geeksforgeeks.org/problems/inorder-successor-in-bst/1*/
+Solution links-
+./Tree/FindInorderSuccessor.java
+
+35.
+Question-binary-tree-to-bst
+Question links-
+/*https://practice.geeksforgeeks.org/problems/binary-tree-to-bst/1*/
+Solution links-
+./Tree/BinaryTreeToBST.java
+
+36.
+Question-path-sum-ii
+Question links-
+/*https://leetcode.com/problems/path-sum-ii/*/
+Solution links-
+./Tree/FindAllPathsWithGivenSum.java
+
+37.
+Question-largest-bst
+Question links-
+/*https://practice.geeksforgeeks.org/problems/largest-bst/1*/
+Solution links-
+./Tree/LargestBST.java
+
+38.
+Question-postorder-traversal-iterative
+Question links-
+/*https://practice.geeksforgeeks.org/problems/postorder-traversal-iterative/0/*/
+Solution links-
+./Tree/IterativePostOrder.java
+
+39.
+Question-predecessor-and-successor
+Question links-
+/*https://practice.geeksforgeeks.org/problems/predecessor-and-successor/1/*/
+Solution links-
+./Tree/SuccAndPre.java
+
+40.
+Question-preorder-traversal-and-bst4006
+Question links-
+/*https://practice.geeksforgeeks.org/problems/preorder-traversal-and-bst4006/1/*/
+Solution links-
+./Tree/CheckIfPreorderOfBST.java
+
+41.
+Question-populate-inorder-successor-for-all-nodes
+Question links-
+/*https://practice.geeksforgeeks.org/problems/populate-inorder-successor-for-all-nodes/1*/
+Solution links-
+./Tree/PopulateInorderSuccessors.java
+
+42.
+Question-populating-next-right-pointers-in-each-node
+Question links-
+/*https://leetcode.com/problems/populating-next-right-pointers-in-each-node/*/
+Solution links-
+./Tree/PopulateRightPointers.java
+
+43.
+Question-right-view-of-binary-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/right-view-of-binary-tree/1*/
+Solution links-
+./Tree/RightView.java
+
+44.
+Question-reverse-level-order-traversal
+Question links-
+/* https://practice.geeksforgeeks.org/problems/reverse-level-order-traversal/1#
+Solution links-
+./Tree/GFG_Tree_ReverseOrderTraversal.cpp
+
+45.
+Question-remove-bst-keys-outside-given-range
+Question links-
+/*https://practice.geeksforgeeks.org/problems/remove-bst-keys-outside-given-range/1/*/
+Solution links-
+./Tree/RemoveNodesOutsideRange.java
+
+46.
+Question-count-good-nodes-in-binary-tree
+Question links-
+/*https://leetcode.com/problems/count-good-nodes-in-binary-tree/*/
+Solution links-
+./Tree/CountGoodNodes.java
+
+47.
+Question-find-a-pair-with-given-target-in-bst
+Question links-
+/*https://practice.geeksforgeeks.org/problems/find-a-pair-with-given-target-in-bst/1*/
+Solution links-
+./Tree/FindPairInBST.java
+
+48.
+Question-validate-binary-search-tree
+Question links-
+/*https://leetcode.com/problems/validate-binary-search-tree/*/
+Solution links-
+./Tree/IsBST.java
+
+49.
+Question-preorder-traversal-iterative
+Question links-
+/*https://practice.geeksforgeeks.org/problems/preorder-traversal-iterative/0/*/
+Solution links-
+./Tree/IterativePreOrder.java
+
+50.
+Question-balanced-binary-tree
+Question links-
+/*https://leetcode.com/problems/balanced-binary-tree/*/
+Solution links-
+./Tree/CheckIfBalanced.java
+
+51.
+Question-find-the-closest-element-in-bst
+Question links-
+/*https://practice.geeksforgeeks.org/problems/find-the-closest-element-in-bst/1*/
+Solution links-
+./Tree/ClosestElementInBST.java
+
+52.
+Question-check-whether-bst-contains-dead-end
+Question links-
+/*https://practice.geeksforgeeks.org/problems/check-whether-bst-contains-dead-end/1*/
+Solution links-
+./Tree/CheckDeadEnd.java
+
+53.
+Question-binary-tree-to-dll
+Question links-
+/*https://practice.geeksforgeeks.org/problems/binary-tree-to-dll/1*/
+Solution links-
+./Tree/BinaryTreeToDLL.java
+
+54.
+Question-determine-if-two-trees-are-identical
+Question links-
+/*https://practice.geeksforgeeks.org/problems/determine-if-two-trees-are-identical/1*/
+Solution links-
+./Tree/CheckIfIdentical.java
+
+55.
+Question-binary-search-tree-iterator
+Question links-
+/*https://leetcode.com/problems/binary-search-tree-iterator/*/
+Solution links-
+./Tree/BinarySearchTreeIterator.java
+
+56.
+Question-left-view-of-binary-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1*/
+Solution links-
+./Tree/LeftView.java
+
+57.
+Question-top-view-of-binary-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/top-view-of-binary-tree/1*/
+Solution links-
+./Tree/TopView.java
+
+58.
+Question-connect-nodes-at-same-level
+Question links-
+/*https://practice.geeksforgeeks.org/problems/connect-nodes-at-same-level/1*/
+Solution links-
+./Tree/ConnectNodesAtSameLevel.java
+
+59.
+Question-check-for-balanced-tree
+Question links-
+/* https://practice.geeksforgeeks.org/problems/check-for-balanced-tree/1
+Solution links-
+./Tree/GFG_Tree_BalancedTree.cpp
+
+60.
+Question-kth-smallest-element-in-a-bst
+Question links-
+/*https://leetcode.com/problems/kth-smallest-element-in-a-bst/*/
+/*https://practice.geeksforgeeks.org/problems/kth-largest-element-in-bst/1*/
+Solution links-
+./Tree/KthSmallestElement.java
+
+61.
+Question-maximum-level-sum-of-a-binary-tree
+Question links-
+/*https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/*/
+Solution links-
+./Tree/MaxLevelSum.java
+
+62.
+Question-binary-tree-level-order-traversal
+Question links-
+/*https://leetcode.com/problems/binary-tree-level-order-traversal/*/
+Solution links-
+./Tree/LevelOrderTraversal.java
+
+63.
+Question-find-mode-in-binary-search-tree
+Question links-
+/*https://leetcode.com/problems/find-mode-in-binary-search-tree/*/
+Solution links-
+./Tree/FindMode.java
+
+64.
+Question-duplicate-subtree-in-binary-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/duplicate-subtree-in-binary-tree/1/*/
+Solution links-
+./Tree/CheckForDuplicateSubtrees.java
+
+65.
+Question-invert-binary-tree
+Question links-
+/* https://leetcode.com/problems/invert-binary-tree/
+Solution links-
+./Tree/LC_226_Tree_InvertBinaryTree.cpp
+
+66.
+Question-maximum-difference-between-node-and-its-ancestor
+Question links-
+/*https://practice.geeksforgeeks.org/problems/maximum-difference-between-node-and-its-ancestor/1*/
+Solution links-
+./Tree/MaximumDifferenceAncestorNode.java
+
+67.
+Question-sum-tree
+Question links-
+/*https://practice.geeksforgeeks.org/problems/sum-tree/1*/
+Solution links-
+./Tree/CheckSumTree.java
+
+68.
+Question-serialize-and-deserialize-binary-tree
+Question links-
+/*https://leetcode.com/problems/serialize-and-deserialize-binary-tree/*/
+/*https://practice.geeksforgeeks.org/problems/serialize-and-deserialize-a-binary-tree/1*/
+Solution links-
+./Tree/SerializeAndDeserialize.java
+
+69.
+Question-tree-from-postorder-and-inorder
+Question links-
+/*https://practice.geeksforgeeks.org/problems/tree-from-postorder-and-inorder/1/*/
+Solution links-
+./Tree/BuildTreeFromInAndPost.java
+
+70.
+Question-inorder-traversal-iterative
+Question links-
+/*https://practice.geeksforgeeks.org/problems/inorder-traversal-iterative/0/*/
+Solution links-
+./Tree/IterativeInOrder.java
+
+71.
+Question-merge-two-binary-trees
+Question links-
+/*https://leetcode.com/problems/merge-two-binary-trees/*/
+Solution links-
+./Tree/MergeTwoBinaryTrees.java
+
+==================================================================================================
+==================================================================================================
+
+
+TOPIC NAME: Trie
+Java files: 10
+CPP files: 0
+---------------------------------------------------------------------------------
+1.
+Question-short-encoding-of-words
+Question links-
+/*https://leetcode.com/problems/short-encoding-of-words/*/
+Solution links-
+./Trie/ShortestEncoding.java
+
+2.
+Question-unique-rows-in-boolean-matrix
+Question links-
+/*https://practice.geeksforgeeks.org/problems/unique-rows-in-boolean-matrix/1*/
+Solution links-
+./Trie/UniqueRowsInMatrix.java
+
+3.
+Question-shortest-unique-prefix-for-every-word
+Question links-
+/*https://practice.geeksforgeeks.org/problems/shortest-unique-prefix-for-every-word/0/*/
+Solution links-
+./Trie/ShortestUniquePrefixForEveryWord.java
+
+4.
+Question-maximum-xor-of-two-numbers-in-an-array
+Question links-
+/*https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/*/
+Solution links-
+./Trie/MaximumXorPair.java
+
+5.
+Question-minimum-xor-value-pair
+Question links-
+/*https://practice.geeksforgeeks.org/problems/minimum-xor-value-pair/1/*/
+Solution links-
+./Trie/MinimumXorPair.java
+
+6.
+Question-stream-of-characters
+Question links-
+/*https://leetcode.com/problems/stream-of-characters/*/
+Solution links-
+./Trie/StreamOfCharacters.java
+
+7.
+Question-trie-insert-and-search0651
+Question links-
+/*https://practice.geeksforgeeks.org/problems/trie-insert-and-search0651/1*/
+Solution links-
+./Trie/Trie.java
+
+8.
+Question-implement-trie-prefix-tree
+Question links-
+/*https://leetcode.com/problems/implement-trie-prefix-tree/*/
+Solution links-
+./Trie/TriePrefixTree.java
+
+9.
+Question-search-suggestions-system
+Question links-
+/*https://leetcode.com/problems/search-suggestions-system/*/
+Solution links-
+./Trie/SearchSuggestionSystem.java
+
+10.
+Question-phone-directory4628
+Question links-
+/*https://practice.geeksforgeeks.org/problems/phone-directory4628/1*/
+Solution links-
+./Trie/PhoneDirectory.java
+
+==================================================================================================
+==================================================================================================
+
+
+
+
+

@@ -24,7 +24,7 @@ class Questions
 	private HashMap<String,String> solutionLinks;
 	private String difficulty;
 
-	Questions(String key, HashMap<String,Integer> qLinks, String sLink)
+	Questions(String key, HashMap<String,Integer> qLinks, String sLink, String difficulty)
 	{
 		this.questionKey = key;
 		this.questionLinks = qLinks;
@@ -33,13 +33,14 @@ class Questions
 			this.solutionLinks.put("Java",sLink);
 		else if (sLink.charAt(sLink.length()-1) == 'p') //cpp
 			this.solutionLinks.put("CPP",sLink);
-		this.difficulty = "";
+		this.difficulty = difficulty;
 	}
 
 	//getter methods
 	public String getQuestionKey() { return this.questionKey; }
 	public HashMap<String,Integer> getQuestionLinks() { return this.questionLinks; }
 	public HashMap<String,String> getSolutionLinks() { return this.solutionLinks; }
+	public String getDifficulty() { return this.difficulty; }
 
 	//solution link updation
 	public void addSolutionLink(String sLink)
@@ -100,7 +101,7 @@ class Topics
 	public Questions[] getIndexDetailsMap() { return this.indexDetailsMap; }
 
 	//methods for adding questions
-	public void addQuestion(HashMap<String,Integer> links, String topic, String program)
+	public void addQuestion(HashMap<String,Integer> links, String topic, String program, String difficulty)
 	{
 		String link = "";
 		int nameIndex = -1;
@@ -162,7 +163,7 @@ class Topics
 		}
 		else //if question does not exist
 		{
-			Questions question = new Questions(questionKey,links,solutionLink); //create a new question with all data provided
+			Questions question = new Questions(questionKey,links,solutionLink,difficulty); //create a new question with all data provided
 			indexDetailsMap[qIndex] = question; //store in index to details map
 			questionIndexMap.put(questionKey,qIndex); //add the index to question to index map
 			++qIndex; //increase index
@@ -248,7 +249,7 @@ class UpdateReadme
 					//open a reader to read the code file
 					BufferedReader reader = new BufferedReader(new FileReader(codeFile));
 
-					String nextLine = "";
+					String nextLine = "", difficulty = "";
 					HashMap<String,Integer> questionLinks = new HashMap<String,Integer>(); //stores the question links and their indices after splitting from "/"
 					while ((nextLine = reader.readLine()) != null) //for each line
 					{
@@ -258,11 +259,24 @@ class UpdateReadme
 							nextLine = extractProperLink(nextLine);
 							nameIndex = isALink(nextLine);
 							questionLinks.put(nextLine,nameIndex); //add to map
+							if (getLinkName(nextLine) == 2) //for GFG links
+							{
+								System.out.println(nextLine);
+								System.setProperty("http.proxyHost", "127.0.0.1");
+ 						       	System.setProperty("http.proxyPort", "8182");
+      							Document document = Jsoup.connect(nextLine).get();
+								Elements strongs = document.getElementsByTag("strong");
+								for (Element strong : strongs)
+								{
+									if (strong.attr("class").equals("problem-tab__problem-level"))
+									difficulty = strong.text();
+								}
+							}
 						}
 
 						//add time complexity and space complexity logic here
 					}
-					topicDetails[index].addQuestion(questionLinks,topic,program); //add the question to the main array
+					topicDetails[index].addQuestion(questionLinks,topic,program,difficulty); //add the question to the main array
 
 					reader.close();
 				}
@@ -310,8 +324,8 @@ class UpdateReadme
 		for (Topics topic : topicDetails)
 		{
 			fileWriter.write("## "+topic.getTopicName()); fileWriter.newLine(); fileWriter.newLine();
-			fileWriter.write("|  #  | Title           |  Links          |  Solution       |"); fileWriter.newLine();
-			fileWriter.write("|-----|---------------- | --------------- | --------------- |"); fileWriter.newLine();
+			fileWriter.write("|  #  | Title           |  Links          |  Solution       |  Difficulty     |"); fileWriter.newLine();
+			fileWriter.write("|-----|---------------- | --------------- | --------------- | --------------- |"); fileWriter.newLine();
 
 			HashMap<String,Integer> questionIndexMap = topic.getQuestionIndexMap(); //get the question to index map
 			Questions[] indexDetailsMap = topic.getIndexDetailsMap(); //get the index to details map
@@ -347,7 +361,7 @@ class UpdateReadme
 					Map.Entry solutionLink = (Map.Entry)solutionLinkIterator.next();
 					fileWriter.write("["+(String)solutionLink.getKey()+"]("+(String)solutionLink.getValue()+") ");
 				}
-				fileWriter.write("|");
+				fileWriter.write("|"+currentQuestion.getDifficulty()+"|");
 				fileWriter.newLine();
 			}
 

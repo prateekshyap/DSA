@@ -1,4 +1,4 @@
-/*http://practice.geeksforgeeks.org/problems/split-a-circular-linked-list-into-two-halves/1*/
+/*https://practice.geeksforgeeks.org/problems/split-a-circular-linked-list-into-two-halves/1*/
 
 class gfg
 {

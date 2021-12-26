@@ -21,7 +21,7 @@ We have solved quite a number of problems from several topics. See the below tab
 
 ## Algorithms
 
-Number of Problems Solved (25-Dec-2021 21:09:19)
+Number of Problems Solved (26-Dec-2021 15:47:14)
 
 | Topic Name | Java | CPP | 
 | :--------: | :--------: | :--------: | 
@@ -45,9 +45,9 @@ Number of Problems Solved (25-Dec-2021 21:09:19)
 | [Sorting](https://github.com/prateekshyap/DSA#sorting) | 8 | 0 |
 | [Stack](https://github.com/prateekshyap/DSA#stack) | 18 | 0 |
 | [Strings](https://github.com/prateekshyap/DSA#strings) | 25 | 2 |
-| [Tree](https://github.com/prateekshyap/DSA#tree) | 68 | 5 |
+| [Tree](https://github.com/prateekshyap/DSA#tree) | 69 | 5 |
 | [Trie](https://github.com/prateekshyap/DSA#trie) | 10 | 0 |
-| Total | 476 | 39 |
+| Total | 477 | 39 |
 
 ## Reference
 
@@ -603,26 +603,27 @@ Number of Problems Solved (25-Dec-2021 21:09:19)
 |  48  |validate-binary-search-tree|[1](https://leetcode.com/problems/validate-binary-search-tree/) |[Java](./Tree/IsBST.java) |
 |  49  |preorder-traversal-iterative|[1](https://practice.geeksforgeeks.org/problems/preorder-traversal-iterative/0/) |[Java](./Tree/IterativePreOrder.java) |
 |  50  |balanced-binary-tree|[1](https://leetcode.com/problems/balanced-binary-tree/) |[Java](./Tree/CheckIfBalanced.java) |
-|  51  |check-whether-bst-contains-dead-end|[1](https://practice.geeksforgeeks.org/problems/check-whether-bst-contains-dead-end/1) |[Java](./Tree/CheckDeadEnd.java) |
-|  52  |binary-tree-to-dll|[1](https://practice.geeksforgeeks.org/problems/binary-tree-to-dll/1) |[Java](./Tree/BinaryTreeToDLL.java) |
-|  53  |determine-if-two-trees-are-identical|[1](https://practice.geeksforgeeks.org/problems/determine-if-two-trees-are-identical/1) |[Java](./Tree/CheckIfIdentical.java) |
-|  54  |binary-search-tree-iterator|[1](https://leetcode.com/problems/binary-search-tree-iterator/) |[Java](./Tree/BinarySearchTreeIterator.java) |
-|  55  |left-view-of-binary-tree|[1](https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1) |[Java](./Tree/LeftView.java) |
-|  56  |top-view-of-binary-tree|[1](https://practice.geeksforgeeks.org/problems/top-view-of-binary-tree/1) |[Java](./Tree/TopView.java) |
-|  57  |connect-nodes-at-same-level|[1](https://practice.geeksforgeeks.org/problems/connect-nodes-at-same-level/1) |[Java](./Tree/ConnectNodesAtSameLevel.java) |
-|  58  |check-for-balanced-tree|[1](https://practice.geeksforgeeks.org/problems/check-for-balanced-tree/1) |[CPP](./Tree/GFG_Tree_BalancedTree.cpp) |
-|  59  |kth-smallest-element-in-a-bst|[1](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) [2](https://practice.geeksforgeeks.org/problems/kth-largest-element-in-bst/1) |[Java](./Tree/KthSmallestElement.java) |
-|  60  |maximum-level-sum-of-a-binary-tree|[1](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/) |[Java](./Tree/MaxLevelSum.java) |
-|  61  |binary-tree-level-order-traversal|[1](https://leetcode.com/problems/binary-tree-level-order-traversal/) |[Java](./Tree/LevelOrderTraversal.java) |
-|  62  |find-mode-in-binary-search-tree|[1](https://leetcode.com/problems/find-mode-in-binary-search-tree/) |[Java](./Tree/FindMode.java) |
-|  63  |duplicate-subtree-in-binary-tree|[1](https://practice.geeksforgeeks.org/problems/duplicate-subtree-in-binary-tree/1/) |[Java](./Tree/CheckForDuplicateSubtrees.java) |
-|  64  |invert-binary-tree|[1](https://leetcode.com/problems/invert-binary-tree/) |[CPP](./Tree/LC_226_Tree_InvertBinaryTree.cpp) |
-|  65  |maximum-difference-between-node-and-its-ancestor|[1](https://practice.geeksforgeeks.org/problems/maximum-difference-between-node-and-its-ancestor/1) |[Java](./Tree/MaximumDifferenceAncestorNode.java) |
-|  66  |sum-tree|[1](https://practice.geeksforgeeks.org/problems/sum-tree/1) |[Java](./Tree/CheckSumTree.java) |
-|  67  |serialize-and-deserialize-binary-tree|[1](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) [2](https://practice.geeksforgeeks.org/problems/serialize-and-deserialize-a-binary-tree/1) |[Java](./Tree/SerializeAndDeserialize.java) |
-|  68  |tree-from-postorder-and-inorder|[1](https://practice.geeksforgeeks.org/problems/tree-from-postorder-and-inorder/1/) |[Java](./Tree/BuildTreeFromInAndPost.java) |
-|  69  |inorder-traversal-iterative|[1](https://practice.geeksforgeeks.org/problems/inorder-traversal-iterative/0/) |[Java](./Tree/IterativeInOrder.java) |
-|  70  |merge-two-binary-trees|[1](https://leetcode.com/problems/merge-two-binary-trees/) |[Java](./Tree/MergeTwoBinaryTrees.java) |
+|  51  |find-the-closest-element-in-bst|[1](https://practice.geeksforgeeks.org/problems/find-the-closest-element-in-bst/1) |[Java](./Tree/ClosestElementInBST.java) |
+|  52  |check-whether-bst-contains-dead-end|[1](https://practice.geeksforgeeks.org/problems/check-whether-bst-contains-dead-end/1) |[Java](./Tree/CheckDeadEnd.java) |
+|  53  |binary-tree-to-dll|[1](https://practice.geeksforgeeks.org/problems/binary-tree-to-dll/1) |[Java](./Tree/BinaryTreeToDLL.java) |
+|  54  |determine-if-two-trees-are-identical|[1](https://practice.geeksforgeeks.org/problems/determine-if-two-trees-are-identical/1) |[Java](./Tree/CheckIfIdentical.java) |
+|  55  |binary-search-tree-iterator|[1](https://leetcode.com/problems/binary-search-tree-iterator/) |[Java](./Tree/BinarySearchTreeIterator.java) |
+|  56  |left-view-of-binary-tree|[1](https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1) |[Java](./Tree/LeftView.java) |
+|  57  |top-view-of-binary-tree|[1](https://practice.geeksforgeeks.org/problems/top-view-of-binary-tree/1) |[Java](./Tree/TopView.java) |
+|  58  |connect-nodes-at-same-level|[1](https://practice.geeksforgeeks.org/problems/connect-nodes-at-same-level/1) |[Java](./Tree/ConnectNodesAtSameLevel.java) |
+|  59  |check-for-balanced-tree|[1](https://practice.geeksforgeeks.org/problems/check-for-balanced-tree/1) |[CPP](./Tree/GFG_Tree_BalancedTree.cpp) |
+|  60  |kth-smallest-element-in-a-bst|[1](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) [2](https://practice.geeksforgeeks.org/problems/kth-largest-element-in-bst/1) |[Java](./Tree/KthSmallestElement.java) |
+|  61  |maximum-level-sum-of-a-binary-tree|[1](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/) |[Java](./Tree/MaxLevelSum.java) |
+|  62  |binary-tree-level-order-traversal|[1](https://leetcode.com/problems/binary-tree-level-order-traversal/) |[Java](./Tree/LevelOrderTraversal.java) |
+|  63  |find-mode-in-binary-search-tree|[1](https://leetcode.com/problems/find-mode-in-binary-search-tree/) |[Java](./Tree/FindMode.java) |
+|  64  |duplicate-subtree-in-binary-tree|[1](https://practice.geeksforgeeks.org/problems/duplicate-subtree-in-binary-tree/1/) |[Java](./Tree/CheckForDuplicateSubtrees.java) |
+|  65  |invert-binary-tree|[1](https://leetcode.com/problems/invert-binary-tree/) |[CPP](./Tree/LC_226_Tree_InvertBinaryTree.cpp) |
+|  66  |maximum-difference-between-node-and-its-ancestor|[1](https://practice.geeksforgeeks.org/problems/maximum-difference-between-node-and-its-ancestor/1) |[Java](./Tree/MaximumDifferenceAncestorNode.java) |
+|  67  |sum-tree|[1](https://practice.geeksforgeeks.org/problems/sum-tree/1) |[Java](./Tree/CheckSumTree.java) |
+|  68  |serialize-and-deserialize-binary-tree|[1](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) [2](https://practice.geeksforgeeks.org/problems/serialize-and-deserialize-a-binary-tree/1) |[Java](./Tree/SerializeAndDeserialize.java) |
+|  69  |tree-from-postorder-and-inorder|[1](https://practice.geeksforgeeks.org/problems/tree-from-postorder-and-inorder/1/) |[Java](./Tree/BuildTreeFromInAndPost.java) |
+|  70  |inorder-traversal-iterative|[1](https://practice.geeksforgeeks.org/problems/inorder-traversal-iterative/0/) |[Java](./Tree/IterativeInOrder.java) |
+|  71  |merge-two-binary-trees|[1](https://leetcode.com/problems/merge-two-binary-trees/) |[Java](./Tree/MergeTwoBinaryTrees.java) |
 ## Trie
 
 |  #  | Title           |  Links          |  Solution       |

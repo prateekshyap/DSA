@@ -22,7 +22,7 @@ class OnlineInfo
 	HashMap<String,String> questionDifficultyMap;
 	OnlineInfo()
 	{
-		questionDifficultyMap = new HashMap<String,String>();
+		this.questionDifficultyMap = new HashMap<String,String>();
 		try{
 		BufferedReader reader = new BufferedReader(new FileReader("OnlineInfo.csv"));
 		String nextLine = "";
@@ -39,6 +39,27 @@ class OnlineInfo
 
 	//getter methods
 	public HashMap<String,String> getQuestionDifficultyMap() { return this.questionDifficultyMap; }
+
+	//updater methods
+	public HashMap<String,String> updateFile(String questionKey, String difficulty) throws IOException
+	{
+		BufferedWriter writer = new BufferedWriter(new FileWriter("OnlineInfo.csv",true));
+		writer.write(questionKey);
+		writer.write(",");
+		writer.write(difficulty);
+		writer.newLine();
+		writer.close();
+		this.questionDifficultyMap = new HashMap<String,String>();
+		BufferedReader reader = new BufferedReader(new FileReader("OnlineInfo.csv"));
+		String nextLine = "";
+		while ((nextLine = reader.readLine()) != null)
+		{
+			String[] tokens = nextLine.split(",");
+			this.questionDifficultyMap.put(tokens[0],tokens[1]);
+		}
+		reader.close();
+		return this.questionDifficultyMap;
+	}
 }
 
 class Questions
@@ -313,7 +334,29 @@ class UpdateReadme
 							}*/
 							if (getLinkName(nextLine) == 2) //for GFG links
 							{
-								difficulty = questionDifficultyMap.get(new Topics().getQuestionKey(nextLine,nameIndex));
+								String gfgQuestionKey = new Topics().getQuestionKey(nextLine,nameIndex);
+								if (questionDifficultyMap.containsKey(gfgQuestionKey)) //if old gfg question
+									difficulty = questionDifficultyMap.get(gfgQuestionKey); //retrieve data from map
+								else //if new gfg question
+								{
+									//get info from webpage
+									System.setProperty("http.proxyHost", "127.0.0.1");
+	 						       	System.setProperty("http.proxyPort", "8182");
+	      							Document document = Jsoup.connect(nextLine).get();
+									Elements strongs = document.getElementsByTag("span");
+									int points = 0;
+									for (Element strong : strongs)
+									{
+										if (strong.attr("class").equals("problem-tab__value") && (strong.text().trim().equals("1") || strong.text().trim().equals("2") || strong.text().trim().equals("4") || strong.text().trim().equals("8")))
+											points = Integer.parseInt(strong.text());
+									}
+									difficulty = points == 1 ? "Basic" :
+													points == 2 ? "Easy" :
+														points == 4 ? "Medium" :
+															points == 8 ? "Hard" : "null";
+									//update the online info file
+									questionDifficultyMap = onlineInfo.updateFile(gfgQuestionKey,difficulty);
+								}
 							}
 						}
 

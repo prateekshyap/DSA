@@ -410,8 +410,8 @@ class UpdateReadme
 		for (Topics topic : topicDetails)
 		{
 			fileWriter.write("## "+topic.getTopicName()); fileWriter.newLine(); fileWriter.newLine();
-			fileWriter.write("|  #  | Title           |  Links          |  Solution       |  Difficulty     |"); fileWriter.newLine();
-			fileWriter.write("|-----|---------------- | --------------- | --------------- | --------------- |"); fileWriter.newLine();
+			fileWriter.write("|  #  |Title            |Links            |Solution         |Difficulty       |Time Complexity  |Space Complexity |"); fileWriter.newLine();
+			fileWriter.write("|-----|---------------- |---------------- |---------------- |---------------- |---------------- |---------------- |"); fileWriter.newLine();
 
 			HashMap<String,Integer> questionIndexMap = topic.getQuestionIndexMap(); //get the question to index map
 			Questions[] indexDetailsMap = topic.getIndexDetailsMap(); //get the index to details map
@@ -448,6 +448,10 @@ class UpdateReadme
 					fileWriter.write("["+(String)solutionLink.getKey()+"]("+(String)solutionLink.getValue()+") ");
 				}
 				fileWriter.write("|"+currentQuestion.getDifficulty()+"|");
+				//write time complexity
+				fileWriter.write("|");
+				//write space complexity
+				fileWriter.write("|");
 				fileWriter.newLine();
 			}
 

@@ -62,6 +62,17 @@ class OnlineInfo
 	}
 }
 
+class Parse
+{
+
+	private int isAKeyWord(String str)
+	{
+		if (str.equals("abstract") || str.equals("assert") || str.equals("boolean") || str.equals("break") || str.equals("byte") || str.equals("case") || str.equals("catch") || str.equals("char") || str.equals("class") || str.equals("const") || str.equals("continue") || str.equals("default") || str.equals("do") || str.equals("double") || str.equals("else") || str.equals("extends") || str.equals("false") || str.equals("final") || str.equals("finally") || str.equals("float") || str.equals("for") || str.equals("goto") || str.equals("if") || str.equals("implements") || str.equals("import") || str.equals("instanceof") || str.equals("int") || str.equals("interface") || str.equals("long") || str.equals("native") || str.equals("new") || str.equals("null") || str.equals("package") || str.equals("private") || str.equals("protected") || str.equals("public") || str.equals("return") || str.equals("short") || str.equals("static") || str.equals("strictfp") || str.equals("super") || str.equals("switch") || str.equals("synchronized") || str.equals("this") || str.equals("throw") || str.equals("throws") || str.equals("transient") || str.equals("true") || str.equals("try") || str.equals("void") || str.equals("volatile") || str.equals("while"))
+			return 1;
+		return 0;
+	}
+}
+
 class Questions
 {
 	private String questionKey;
@@ -359,8 +370,11 @@ class UpdateReadme
 								}
 							}
 						}
+						else
+						{
+							//tc and sc logic goes here
 
-						//add time complexity and space complexity logic here
+						}
 					}
 					topicDetails[index].addQuestion(questionLinks,topic,program,difficulty); //add the question to the main array
 
@@ -452,7 +466,7 @@ class UpdateReadme
 				fileWriter.write("|");
 				//write space complexity
 				fileWriter.write("|");
-				fileWriter.newLine();
+				fileWriter.newLine(); fileWriter.newLine(); fileWriter.newLine();
 			}
 
 			bullet = 1;
@@ -550,11 +564,13 @@ class UpdateReadme
 			writer.write("1. Fork the repository"); writer.newLine();
 			writer.write("2. Do the desired changes (add/delete/modify)"); writer.newLine();
 			writer.write("3. Make a pull request"); writer.newLine(); writer.newLine();
+			writer.write("If you want to update the readme file as well, you have to install [Java](https://www.tutorialspoint.com/java/java_environment_setup.htm) and [Jsoup](https://www.tutorialspoint.com/jsoup/jsoup_environment.htm). Then you can run the [UpdateReadme.java](./UpdateReadme.java) file to update the readme file."); writer.newLine(); writer.newLine();
 			writer.write("## When to contribute?"); writer.newLine(); writer.newLine();
 			writer.write("1. If there is no solution to a problem in the main branch"); writer.newLine();
 			writer.write("2. If your solution is asymptotically faster than the one in the main branch"); writer.newLine();
 			writer.write("3. If your algorithm is of the same time complexity but with reduced code size (In this case, comment out the original solution and make a pull request with your solution.)"); writer.newLine();
-			writer.write("4. If you have another method of solving the problem which is asymptotically slower than the original method (In this case, comment your solution in the main file and make a pull request.)"); writer.newLine(); writer.newLine();
+			writer.write("4. If you have another method of solving the problem which is asymptotically slower than the original method (In this case, comment your solution in the main file and make a pull request.)"); writer.newLine();
+			writer.write("5. If you want to update the [UpdateReadme.java](./UpdateReadme.java) file"); writer.newLine(); writer.newLine();
 			writer.write("## Algorithms"); writer.newLine(); writer.newLine();
 			writer.write("Number of Problems Solved ");//get current date and time and write
 			DateTimeFormatter currentDateAndTime = DateTimeFormatter.ofPattern("dd-MMM-yyyy HH:mm:ss");

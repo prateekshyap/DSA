@@ -64,11 +64,23 @@ class OnlineInfo
 
 class Parse
 {
-
-	private int isAKeyWord(String str)
+	public void parseFile(String fileName)
 	{
-		if (str.equals("abstract") || str.equals("assert") || str.equals("boolean") || str.equals("break") || str.equals("byte") || str.equals("case") || str.equals("catch") || str.equals("char") || str.equals("class") || str.equals("const") || str.equals("continue") || str.equals("default") || str.equals("do") || str.equals("double") || str.equals("else") || str.equals("extends") || str.equals("false") || str.equals("final") || str.equals("finally") || str.equals("float") || str.equals("for") || str.equals("goto") || str.equals("if") || str.equals("implements") || str.equals("import") || str.equals("instanceof") || str.equals("int") || str.equals("interface") || str.equals("long") || str.equals("native") || str.equals("new") || str.equals("null") || str.equals("package") || str.equals("private") || str.equals("protected") || str.equals("public") || str.equals("return") || str.equals("short") || str.equals("static") || str.equals("strictfp") || str.equals("super") || str.equals("switch") || str.equals("synchronized") || str.equals("this") || str.equals("throw") || str.equals("throws") || str.equals("transient") || str.equals("true") || str.equals("try") || str.equals("void") || str.equals("volatile") || str.equals("while"))
+		BufferedReader reader = new BufferedReader(new FileReader(new File(fileName)));
+		String nextLine = "";
+		while ((nextLine = reader.readLine()) != null)
+		{
+
+		}
+		reader.close();
+	}
+
+	private int isAKeyWord(String str, String fileName)
+	{
+		if (fileName.charAt(fileName.length()-1) == 'a' && (str.equals("abstract") || str.equals("assert") || str.equals("boolean") || str.equals("break") || str.equals("byte") || str.equals("case") || str.equals("catch") || str.equals("char") || str.equals("class") || str.equals("const") || str.equals("continue") || str.equals("default") || str.equals("do") || str.equals("double") || str.equals("else") || str.equals("extends") || str.equals("false") || str.equals("final") || str.equals("finally") || str.equals("float") || str.equals("for") || str.equals("goto") || str.equals("if") || str.equals("implements") || str.equals("import") || str.equals("instanceof") || str.equals("int") || str.equals("interface") || str.equals("long") || str.equals("native") || str.equals("new") || str.equals("null") || str.equals("package") || str.equals("private") || str.equals("protected") || str.equals("public") || str.equals("return") || str.equals("short") || str.equals("static") || str.equals("strictfp") || str.equals("super") || str.equals("switch") || str.equals("synchronized") || str.equals("this") || str.equals("throw") || str.equals("throws") || str.equals("transient") || str.equals("true") || str.equals("try") || str.equals("void") || str.equals("volatile") || str.equals("while")))
 			return 1;
+		if (fileName.charAt(fileName.length()-1) == 'p' && (str.equals("asm") || str.equals("auto") || str.equals("break") || str.equals("case") || str.equals("catch") || str.equals("char") || str.equals("class") || str.equals("const") || str.equals("continue") || str.equals("default") || str.equals("delete") || str.equals("do") || str.equals("double") || str.equals("else") || str.equals("enum") || str.equals("extern") || str.equals("float") || str.equals("for") || str.equals("friend") || str.equals("goto") || str.equals("if") || str.equals("inline") || str.equals("int") || str.equals("long") || str.equals("new") || str.equals("operator") || str.equals("private") || str.equals("protected") || str.equals("public") || str.equals("register") || str.equals("return") || str.equals("short") || str.equals("signed") || str.equals("sizedof") || str.equals("static") || str.equals("struct") || str.equals("switch") || str.equals("template") || str.equals("this") || str.equals("throw") || str.equals("try") || str.equals("typedef") || str.equals("union") || str.equals("unsigned") || str.equals("virtual") || str.equals("void") || str.equals("volatile") || str.equals("while") || str.equals("using") || str.equals("namespace") || str.equals("std")))
+			return 2;
 		return 0;
 	}
 }
@@ -370,15 +382,13 @@ class UpdateReadme
 								}
 							}
 						}
-						else
-						{
-							//tc and sc logic goes here
-
-						}
 					}
 					topicDetails[index].addQuestion(questionLinks,topic,program,difficulty); //add the question to the main array
 
 					reader.close();
+					/*
+					parse.parseFile(codeFileName);
+					*/
 				}
 				topicDetails[index].setJavaCount(javaCount);
 				topicDetails[index].setCppCount(cppCount);

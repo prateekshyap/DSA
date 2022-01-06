@@ -257,3 +257,6 @@ polynomial-addition,Medium
 merge-sort-on-doubly-linked-list,Medium
 foldable-binary-tree,Medium
 node-at-distance,Medium
+count-number-of-subtrees-having-given-sum,Medium
+maximum-path-sum-from-any-node,Medium
+pairs-violating-bst-property,Medium

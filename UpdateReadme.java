@@ -64,7 +64,7 @@ class OnlineInfo
 
 class Parse
 {
-	public void parseFile(String fileName)
+	public void parseFile(String fileName) throws IOException
 	{
 		BufferedReader reader = new BufferedReader(new FileReader(new File(fileName)));
 		String nextLine = "";
@@ -492,6 +492,7 @@ class UpdateReadme
 		StringBuffer temp = new StringBuffer();
 		for (String token : tokens)
 		{
+			if (token.length() == 0) continue;
 			char firstChar = token.charAt(0);
 			if (firstChar >= 'a' && firstChar <= 'z') firstChar = (char)(((int)firstChar)-32);
 			temp = new StringBuffer(Character.toString(firstChar));

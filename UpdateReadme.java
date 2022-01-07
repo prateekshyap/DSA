@@ -476,7 +476,7 @@ class UpdateReadme
 				fileWriter.write("|");
 				//write space complexity
 				fileWriter.write("|");
-				fileWriter.newLine(); fileWriter.newLine(); fileWriter.newLine();
+				fileWriter.newLine();
 			}
 
 			bullet = 1;
@@ -490,9 +490,14 @@ class UpdateReadme
 		String[] tokens = str.trim().split("-");
 		StringBuffer question = new StringBuffer();
 		StringBuffer temp = new StringBuffer();
+		boolean flag = false;
 		for (String token : tokens)
 		{
-			if (token.length() == 0) continue;
+			if (token.length() == 0)
+				{
+					flag = true;
+					continue;
+				}
 			char firstChar = token.charAt(0);
 			if (firstChar >= 'a' && firstChar <= 'z') firstChar = (char)(((int)firstChar)-32);
 			temp = new StringBuffer(Character.toString(firstChar));
@@ -500,6 +505,7 @@ class UpdateReadme
 			question.append(temp);
 			question.append(" ");
 		}
+		if (flag) System.out.println("'"+question.toString().trim()+"'");
 		return question.toString().trim();
 	}
 

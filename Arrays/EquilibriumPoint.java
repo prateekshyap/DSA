@@ -1,4 +1,5 @@
 /*https://leetcode.com/problems/find-pivot-index/*/
+/*https://practice.geeksforgeeks.org/problems/equilibrium-point-1587115620/1*/
 
 class Solution {
     public int pivotIndex(int[] nums) {

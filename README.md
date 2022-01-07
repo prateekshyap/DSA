@@ -24,11 +24,11 @@ If you want to update the readme file as well, you have to install [Java](https:
 
 ## Algorithms
 
-Number of Problems Solved (07-Jan-2022 15:57:14)
+Number of Problems Solved (07-Jan-2022 18:50:49)
 
 | Topic Name | Java | CPP | 
 | :--------: | :--------: | :--------: | 
-| [Arrays](https://github.com/prateekshyap/DSA#arrays) | 62 | 12 |
+| [Arrays](https://github.com/prateekshyap/DSA#arrays) | 63 | 12 |
 | [BackTracking](https://github.com/prateekshyap/DSA#backtracking) | 15 | 0 |
 | [Bit-Magic](https://github.com/prateekshyap/DSA#bit-magic) | 19 | 3 |
 | [Codeforces](https://github.com/prateekshyap/DSA#codeforces) | 22 | 0 |
@@ -38,7 +38,7 @@ Number of Problems Solved (07-Jan-2022 15:57:14)
 | [Greedy](https://github.com/prateekshyap/DSA#greedy) | 15 | 0 |
 | [Hashing](https://github.com/prateekshyap/DSA#hashing) | 20 | 1 |
 | [Heap](https://github.com/prateekshyap/DSA#heap) | 11 | 0 |
-| [Linked-List](https://github.com/prateekshyap/DSA#linked-list) | 40 | 2 |
+| [Linked-List](https://github.com/prateekshyap/DSA#linked-list) | 41 | 2 |
 | [Matrix](https://github.com/prateekshyap/DSA#matrix) | 16 | 1 |
 | [Miscellaneous](https://github.com/prateekshyap/DSA#miscellaneous) | 15 | 1 |
 | [Queue](https://github.com/prateekshyap/DSA#queue) | 5 | 0 |
@@ -50,7 +50,7 @@ Number of Problems Solved (07-Jan-2022 15:57:14)
 | [Strings](https://github.com/prateekshyap/DSA#strings) | 25 | 2 |
 | [Tree](https://github.com/prateekshyap/DSA#tree) | 75 | 5 |
 | [Trie](https://github.com/prateekshyap/DSA#trie) | 10 | 0 |
-| Total | 490 | 39 |
+| Total | 492 | 39 |
 
 ## Reference
 
@@ -77,7 +77,7 @@ Number of Problems Solved (07-Jan-2022 15:57:14)
 |  10  |Smallest Subarray With Sum Greater Than X5651|[GFG](https://practice.geeksforgeeks.org/problems/smallest-subarray-with-sum-greater-than-x5651/1) |[Java](./Arrays/SmallestSubarrayGreaterThanX.java) |null|||
 |  11  |Next Higher Palindromic Number Using The Same Set Of Digits5859|[GFG](https://practice.geeksforgeeks.org/problems/next-higher-palindromic-number-using-the-same-set-of-digits5859/1) |[Java](./Arrays/NextGreaterPalindrome.java) |Medium|||
 |  12  |Number Of Good Ways To Split A String|[LC](https://leetcode.com/problems/number-of-good-ways-to-split-a-string/) |[Java](./Arrays/NumberOfGoodSplits.java) ||||
-|  13  |Palindrome String0817|[GFG](https://practice.geeksforgeeks.org/problems/palindrome-string0817/1) |[CPP](./Arrays/GFG_STR_PalindromeString.cpp) |Easy|||
+|  13  |Palindrome String0817|[GFG](https://practice.geeksforgeeks.org/problems/palindrome-string0817/1) |[Java](./Arrays/PalindromeString.java) [CPP](./Arrays/GFG_STR_PalindromeString.cpp) |Easy|||
 |  14  |Circular Linked List|[GFG](https://practice.geeksforgeeks.org/problems/circular-linked-list/1#) |[CPP](./Arrays/GFG_ARR_UnionTwoArrays.cpp) |Basic|||
 |  15  |Rearrange Array Alternately 1587115620|[GFG](https://practice.geeksforgeeks.org/problems/-rearrange-array-alternately-1587115620/1) |[Java](./Arrays/AlternativeRearrangement.java) |Medium|||
 |  16  |Find The Duplicate Number|[LC](https://leetcode.com/problems/find-the-duplicate-number/) |[Java](./Arrays/FindDuplicate.java) ||||
@@ -92,7 +92,7 @@ Number of Problems Solved (07-Jan-2022 15:57:14)
 |  25  |Sort Colors|[LC](https://leetcode.com/problems/sort-colors/) |[Java](./Arrays/ZeroOneTwoSort.java) ||||
 |  26  |Minimum Size Subarray Sum|[LC](https://leetcode.com/problems/minimum-size-subarray-sum/) |[Java](./Arrays/MinimumSizeSubarraySum.java) ||||
 |  27  |Trapping Rain Water|[LC](https://leetcode.com/problems/trapping-rain-water/) |[Java](./Arrays/TrappingRainWater.java) ||||
-|  28  |Find Pivot Index|[LC](https://leetcode.com/problems/find-pivot-index/) |[Java](./Arrays/EquilibriumPoint.java) [CPP](./Arrays/LC_724_ARR_EquilibriumPoints.cpp) ||||
+|  28  |Find Pivot Index|[LC](https://leetcode.com/problems/find-pivot-index/) [GFG](https://practice.geeksforgeeks.org/problems/equilibrium-point-1587115620/1) |[Java](./Arrays/EquilibriumPoint.java) [CPP](./Arrays/LC_724_ARR_EquilibriumPoints.cpp) |Easy|||
 |  29  |Maximum Subarray|[LC](https://leetcode.com/problems/maximum-subarray/) |[Java](./Arrays/MaximumSumSubarray.java) ||||
 |  30  |Factorials Of Large Numbers2508|[GFG](https://practice.geeksforgeeks.org/problems/factorials-of-large-numbers2508/1) |[Java](./Arrays/LargeFactorial.java) |Medium|||
 |  31  |Array Of Alternate Ve And Ve Nos1401|[GFG](https://practice.geeksforgeeks.org/problems/array-of-alternate-ve-and-ve-nos1401/1) |[Java](./Arrays/AlternatePositiveNegative.java) |Easy|||
@@ -123,14 +123,13 @@ Number of Problems Solved (07-Jan-2022 15:57:14)
 |  56  |Remove Duplicates From Sorted Array Ii|[LC](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) |[Java](./Arrays/RemoveDuplicatesFromSortedArray2.java) ||||
 |  57  |Cyclically Rotate An Array By One2614|[GFG](https://practice.geeksforgeeks.org/problems/cyclically-rotate-an-array-by-one2614/1) |[Java](./Arrays/SingleCyclicRotation.java) |Basic|||
 |  58  |Zero Sum Subarrays1825|[GFG](https://practice.geeksforgeeks.org/problems/zero-sum-subarrays1825/1) |[Java](./Arrays/TotalZeroSumSubarrays.java) |Medium|||
-|  59  |Equilibrium Point 1587115620|[GFG](https://practice.geeksforgeeks.org/problems/equilibrium-point-1587115620/1) |[CPP](./Arrays/GFG_ARR_EquilibriumPoints.cpp) |Easy|||
-|  60  |Count Pairs With Given Sum5022|[GFG](https://practice.geeksforgeeks.org/problems/count-pairs-with-given-sum5022/1) |[Java](./Arrays/CountPairSum.java) |Easy|||
-|  61  |Number Of Sub Arrays Of Size K And Average Greater Than Or Equal To Threshold|[LC](https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) |[Java](./Arrays/SubArrayAvgMoreThanThreshold.java) ||||
-|  62  |Chocolate Distribution Problem3825|[GFG](https://practice.geeksforgeeks.org/problems/chocolate-distribution-problem3825/1) |[Java](./Arrays/ChocolateDistribution.java) |Easy|||
-|  63  |Product Of Array Except Self|[LC](https://leetcode.com/problems/product-of-array-except-self/) |[Java](./Arrays/ProductPuzzle.java) ||||
-|  64  |Majority Element Ii|[LC](https://leetcode.com/problems/majority-element-ii/) |[Java](./Arrays/MajorityElement-ii.java) ||||
-|  65  |Merge Two Sorted Arrays5135|[GFG](https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays5135/1) |[Java](./Arrays/MergeWithoutExtraSpace.java) |Hard|||
-|  66  |Pairs Of Songs With Total Durations Divisible By 60|[LC](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/) |[Java](./Arrays/SongSelect.java) ||||
+|  59  |Count Pairs With Given Sum5022|[GFG](https://practice.geeksforgeeks.org/problems/count-pairs-with-given-sum5022/1) |[Java](./Arrays/CountPairSum.java) |Easy|||
+|  60  |Number Of Sub Arrays Of Size K And Average Greater Than Or Equal To Threshold|[LC](https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) |[Java](./Arrays/SubArrayAvgMoreThanThreshold.java) ||||
+|  61  |Chocolate Distribution Problem3825|[GFG](https://practice.geeksforgeeks.org/problems/chocolate-distribution-problem3825/1) |[Java](./Arrays/ChocolateDistribution.java) |Easy|||
+|  62  |Product Of Array Except Self|[LC](https://leetcode.com/problems/product-of-array-except-self/) |[Java](./Arrays/ProductPuzzle.java) ||||
+|  63  |Majority Element Ii|[LC](https://leetcode.com/problems/majority-element-ii/) |[Java](./Arrays/MajorityElement-ii.java) ||||
+|  64  |Merge Two Sorted Arrays5135|[GFG](https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays5135/1) |[Java](./Arrays/MergeWithoutExtraSpace.java) |Hard|||
+|  65  |Pairs Of Songs With Total Durations Divisible By 60|[LC](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/) |[Java](./Arrays/SongSelect.java) ||||
 ## BackTracking
 
 |  #  |Title            |Links            |Solution         |Difficulty       |Time Complexity  |Space Complexity |
@@ -367,7 +366,7 @@ Number of Problems Solved (07-Jan-2022 15:57:14)
 |  12  |Linked List Cycle|[LC](https://leetcode.com/problems/linked-list-cycle/) |[Java](./Linked-List/DetectCycle.java) ||||
 |  13  |Quick Sort On Linked List|[GFG](https://practice.geeksforgeeks.org/problems/quick-sort-on-linked-list/1) |[Java](./Linked-List/QuickSort.java) |Medium|||
 |  14  |Given A Linked List Of 0s 1s And 2s Sort It|[GFG](https://practice.geeksforgeeks.org/problems/given-a-linked-list-of-0s-1s-and-2s-sort-it/1) |[Java](./Linked-List/ZeroOneTwo.java) |Easy|||
-|  15  |Circular Linked List|[GFG](https://practice.geeksforgeeks.org/problems/circular-linked-list/1) |[Java](./Linked-List/CheckIfCircular.java) |Basic|||
+|  15  |Circular Linked List|[GFG](https://practice.geeksforgeeks.org/problems/circular-linked-list/1) |[Java](./Linked-List/CheckIfCircularLinkedList.java) |Basic|||
 |  16  |Deletion And Reverse In Linked List|[GFG](https://practice.geeksforgeeks.org/problems/deletion-and-reverse-in-linked-list/1) |[Java](./Linked-List/DeleteAndReverseCircular.java) |Easy|||
 |  17  |Intersection Of Two Linked List|[GFG](https://practice.geeksforgeeks.org/problems/intersection-of-two-linked-list/1) |[Java](./Linked-List/IntersectionOfLists.java) |Easy|||
 |  18  |Polynomial Addition|[GFG](https://practice.geeksforgeeks.org/problems/polynomial-addition/1) |[Java](./Linked-List/PolynomialAddition.java) |Medium|||

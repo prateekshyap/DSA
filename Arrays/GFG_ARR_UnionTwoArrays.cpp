@@ -1,87 +1,62 @@
-/* https://practice.geeksforgeeks.org/problems/circular-linked-list/1#
- * Given head, the head of a singly linked list, find if the linked list is circular or not.
- * A linked list is called circular if it not NULL terminated and all nodes are connected in the form of a cycle.
- * An empty linked list is considered as circular.
+/* https://practice.geeksforgeeks.org/problems/union-of-two-arrays3538/1#
+ * Given two arrays a[] and b[] of size n and m respectively. The task is to find union between these two arrays.
+ * Union of the two arrays can be defined as the set containing distinct elements from both the arrays.
+ * If there are repetitions, then only one occurrence of element should be printed in the union.
  */
 
 // { Driver Code Starts
-// C program to find n'th Node in linked list
-#include <stdio.h>
-#include <stdlib.h>
-#include<iostream>
+//Initial template for C++
+
+#include <bits/stdc++.h>
 using namespace std;
 
-/* Link list Node */
-struct Node
-{
-    int data;
-    struct Node* next;
-
-    Node(int x){
-        data = x;
-        next = NULL;
-    }
-
-};
-
-
-/* Function to get the middle of the linked list*/
-bool isCircular(struct Node *head);
-
-/* Driver program to test above function*/
-int main()
-{
-    int T,i,n,l,k;
-
-    cin>>T;
-
-    while(T--){
-
-        cin>>n>>k;
-        Node *head=NULL, *tail = NULL;
-        int x;
-        cin >> x;
-        head = new Node(x);
-        tail = head;
-        for(int i=0;i<n-1;i++)
-        {
-            cin>>x;
-            tail -> next = new Node(x);
-            tail = tail -> next;
-        }
-        if (k==1 && n >= 1)
-            tail->next = head;
-
-
-        printf("%d\n", isCircular(head));
-    }
-    return 0;
-}
-
 // } Driver Code Ends
+//User function template in C++
 
+class Solution{
+public:
+    //Function to return the count of number of elements in union of two arrays.
+    int doUnion(int a[], int n, int b[], int m)  {
+        // https://stackoverflow.com/questions/1041620/whats-the-most-efficient-way-to-erase-duplicates-and-sort-a-vector
+        //USING SET DS
+        set<int> s;
+        for(int i = 0; i<n; i++){
+            s.insert(a[i]);
+        }
+        for(int i = 0; i<m; i++){
+            s.insert(b[i]);
+        }
 
-/* Link list Node
-struct Node
-{
-    int data;
-    struct Node* next;
-
-    Node(int x){
-        data = x;
-        next = NULL;
+        return s.size();
     }
 
+
+
+
 };
-*/
 
-/* Should return true if linked list is circular, else false */
-bool isCircular(Node *head)
-{
-    Node* ptr = head->next;
-    while(ptr!=head && ptr!=nullptr)
-        ptr=ptr->next;
+// { Driver Code Starts.
 
-    if(ptr == head) return true;
-    else return false;
-}
+int main() {
+
+    int t;
+    cin >> t;
+
+    while(t--){
+
+        int n, m;
+        cin >> n >> m;
+        int a[n], b[m];
+
+        for(int i = 0;i<n;i++)
+            cin >> a[i];
+
+        for(int i = 0;i<m;i++)
+            cin >> b[i];
+        Solution ob;
+        cout << ob.doUnion(a, n, b, m) << endl;
+
+    }
+
+    return 0;
+}  // } Driver Code Ends

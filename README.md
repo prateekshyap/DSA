@@ -24,11 +24,11 @@ If you want to update the readme file as well, you have to install [Java](https:
 
 ## Algorithms
 
-Number of Problems Solved (07-Jan-2022 15:53:14)
+Number of Problems Solved (07-Jan-2022 15:57:14)
 
 | Topic Name | Java | CPP | 
 | :--------: | :--------: | :--------: | 
-| [Arrays](https://github.com/prateekshyap/DSA#arrays) | 61 | 12 |
+| [Arrays](https://github.com/prateekshyap/DSA#arrays) | 62 | 12 |
 | [BackTracking](https://github.com/prateekshyap/DSA#backtracking) | 15 | 0 |
 | [Bit-Magic](https://github.com/prateekshyap/DSA#bit-magic) | 19 | 3 |
 | [Codeforces](https://github.com/prateekshyap/DSA#codeforces) | 22 | 0 |
@@ -50,7 +50,7 @@ Number of Problems Solved (07-Jan-2022 15:53:14)
 | [Strings](https://github.com/prateekshyap/DSA#strings) | 25 | 2 |
 | [Tree](https://github.com/prateekshyap/DSA#tree) | 75 | 5 |
 | [Trie](https://github.com/prateekshyap/DSA#trie) | 10 | 0 |
-| Total | 489 | 39 |
+| Total | 490 | 39 |
 
 ## Reference
 
@@ -70,7 +70,7 @@ Number of Problems Solved (07-Jan-2022 15:53:14)
 |  3  |Subarray With 0 Sum 1587115621|[GFG](https://practice.geeksforgeeks.org/problems/subarray-with-0-sum-1587115621/1) |[Java](./Arrays/SubarrayWithZeroSum.java) |Easy|||
 |  4  |Plus One|[GFG](https://practice.geeksforgeeks.org/problems/plus-one/1/) |[Java](./Arrays/AddOne.java) |Easy|||
 |  5  |Rearrange An Array With O1 Extra Space3142|[GFG](https://practice.geeksforgeeks.org/problems/rearrange-an-array-with-o1-extra-space3142/1) |[Java](./Arrays/RearrangeWithZeroExtraSpace.java) |Medium|||
-|  6  |Kth Smallest Element5635|[GFG](https://practice.geeksforgeeks.org/problems/kth-smallest-element5635/1#) |[CPP](./Arrays/GFG_ARR_KthSmallestElement.cpp) |Medium|||
+|  6  |Kth Smallest Element5635|[GFG](https://practice.geeksforgeeks.org/problems/kth-smallest-element5635/1#) |[Java](./Arrays/KthSmallestElement.java) [CPP](./Arrays/GFG_ARR_KthSmallestElement.cpp) |Medium|||
 |  7  |Next Permutation|[LC](https://leetcode.com/problems/next-permutation/) |[Java](./Arrays/NextPermutation.java) ||||
 |  8  |Maximum Difference Of Zeros And Ones In Binary String4111|[GFG](https://practice.geeksforgeeks.org/problems/maximum-difference-of-zeros-and-ones-in-binary-string4111/1) |[Java](./Arrays/MaximumDifferenceInBinaryString.java) |Easy|||
 |  9  |Subarray With Given Sum 1587115621|[GFG](https://practice.geeksforgeeks.org/problems/subarray-with-given-sum-1587115621/1) |[Java](./Arrays/SubarrayWithGivenSum.java) |Easy|||

@@ -24,11 +24,11 @@ If you want to update the readme file as well, you have to install [Java](https:
 
 ## Algorithms
 
-Number of Problems Solved (07-Jan-2022 15:48:44)
+Number of Problems Solved (07-Jan-2022 15:53:14)
 
 | Topic Name | Java | CPP | 
 | :--------: | :--------: | :--------: | 
-| [Arrays](https://github.com/prateekshyap/DSA#arrays) | 60 | 12 |
+| [Arrays](https://github.com/prateekshyap/DSA#arrays) | 61 | 12 |
 | [BackTracking](https://github.com/prateekshyap/DSA#backtracking) | 15 | 0 |
 | [Bit-Magic](https://github.com/prateekshyap/DSA#bit-magic) | 19 | 3 |
 | [Codeforces](https://github.com/prateekshyap/DSA#codeforces) | 22 | 0 |
@@ -50,7 +50,7 @@ Number of Problems Solved (07-Jan-2022 15:48:44)
 | [Strings](https://github.com/prateekshyap/DSA#strings) | 25 | 2 |
 | [Tree](https://github.com/prateekshyap/DSA#tree) | 75 | 5 |
 | [Trie](https://github.com/prateekshyap/DSA#trie) | 10 | 0 |
-| Total | 488 | 39 |
+| Total | 489 | 39 |
 
 ## Reference
 
@@ -66,7 +66,7 @@ Number of Problems Solved (07-Jan-2022 15:48:44)
 |  #  |Title            |Links            |Solution         |Difficulty       |Time Complexity  |Space Complexity |
 |-----|---------------- |---------------- |---------------- |---------------- |---------------- |---------------- |
 |  1  |Find Missing Observations|[LC](https://leetcode.com/problems/find-missing-observations/) |[Java](./Arrays/FindMissingObservations.java) ||||
-|  2  |Sort An Array Of 0s 1s And 2s4231|[GFG](https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1#) |[CPP](./Arrays/GFG_ARR_ArraySort0_1_2.cpp) |Easy|||
+|  2  |Sort An Array Of 0s 1s And 2s4231|[GFG](https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1#) |[Java](./Arrays/SortZeroOneTwo.java) [CPP](./Arrays/GFG_ARR_ArraySort0_1_2.cpp) |Easy|||
 |  3  |Subarray With 0 Sum 1587115621|[GFG](https://practice.geeksforgeeks.org/problems/subarray-with-0-sum-1587115621/1) |[Java](./Arrays/SubarrayWithZeroSum.java) |Easy|||
 |  4  |Plus One|[GFG](https://practice.geeksforgeeks.org/problems/plus-one/1/) |[Java](./Arrays/AddOne.java) |Easy|||
 |  5  |Rearrange An Array With O1 Extra Space3142|[GFG](https://practice.geeksforgeeks.org/problems/rearrange-an-array-with-o1-extra-space3142/1) |[Java](./Arrays/RearrangeWithZeroExtraSpace.java) |Medium|||

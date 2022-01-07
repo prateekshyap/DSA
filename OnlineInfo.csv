@@ -263,3 +263,6 @@ pairs-violating-bst-property,Medium
 -rearrange-array-alternately-1587115620,Medium
 rearrange-an-array-with-o1-extra-space3142,Medium
 rotate-and-delete-1587115621,Medium
+reverse-a-string,Basic
+leaf-at-same-level,Easy
+sum-of-the-longest-bloodline-of-a-tree,Easy

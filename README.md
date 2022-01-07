@@ -24,7 +24,7 @@ If you want to update the readme file as well, you have to install [Java](https:
 
 ## Algorithms
 
-Number of Problems Solved (07-Jan-2022 15:41:46)
+Number of Problems Solved (07-Jan-2022 15:46:01)
 
 | Topic Name | Java | CPP | 
 | :--------: | :--------: | :--------: | 
@@ -66,8 +66,6 @@ Number of Problems Solved (07-Jan-2022 15:41:46)
 |  #  |Title            |Links            |Solution         |Difficulty       |Time Complexity  |Space Complexity |
 |-----|---------------- |---------------- |---------------- |---------------- |---------------- |---------------- |
 |  1  |Find Missing Observations|[LC](https://leetcode.com/problems/find-missing-observations/) |[Java](./Arrays/FindMissingObservations.java) ||||
-
-
 |  2  |Sort An Array Of 0s 1s And 2s4231|[GFG](https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1#) |[CPP](./Arrays/GFG_ARR_ArraySort0_1_2.cpp) |Easy|||
 
 

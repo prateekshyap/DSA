@@ -24,7 +24,7 @@ If you want to update the readme file as well, you have to install [Java](https:
 
 ## Algorithms
 
-Number of Problems Solved (07-Jan-2022 15:47:04)
+Number of Problems Solved (07-Jan-2022 15:48:44)
 
 | Topic Name | Java | CPP | 
 | :--------: | :--------: | :--------: | 

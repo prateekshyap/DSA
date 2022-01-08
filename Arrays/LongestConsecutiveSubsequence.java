@@ -1,4 +1,5 @@
 /*https://leetcode.com/problems/longest-consecutive-sequence/*/
+/*https://practice.geeksforgeeks.org/problems/longest-consecutive-subsequence2449/1*/
 
 //hashing
 class Solution {

@@ -22,9 +22,21 @@ If you want to update the readme file as well, you have to install [Java](https:
 4. If you have another method of solving the problem which is asymptotically slower than the original method (In this case, comment your solution in the main file and make a pull request.)
 5. If you want to update the [UpdateReadme.java](./UpdateReadme.java) file
 
+## Format for solution files
+
+1. Paste the link for the question within comments.
+2. Paste the solution.
+3. Save with proper extension name.
+
+## Description of auto-updation of Readme file
+
+[UpdateReadme.java](./UpdateReadme.java) is the main file. It reads information (that are obtained online) from [OnlineInfo.csv](./OnlineInfo.csv) file. If you have updated the readme file with some online information without adding into csv file, then you need to run [OnlineToCSV.java](./OnlineToCSV.java) file to read that from readme and store in the csv file.
+
+For difficulty level, csv file is already updated. For other online information columns you'll have to update it.
+
 ## Algorithms
 
-Number of Problems Solved (08-Jan-2022 12:10:52)
+Number of Problems Solved (08-Jan-2022 12:41:57)
 
 | Topic Name | Java | CPP | 
 | :--------: | :--------: | :--------: | 

@@ -588,6 +588,13 @@ class UpdateReadme
 			writer.write("3. If your algorithm is of the same time complexity but with reduced code size (In this case, comment out the original solution and make a pull request with your solution.)"); writer.newLine();
 			writer.write("4. If you have another method of solving the problem which is asymptotically slower than the original method (In this case, comment your solution in the main file and make a pull request.)"); writer.newLine();
 			writer.write("5. If you want to update the [UpdateReadme.java](./UpdateReadme.java) file"); writer.newLine(); writer.newLine();
+			writer.write("## Format for solution files"); writer.newLine(); writer.newLine();
+			writer.write("1. Paste the link for the question within comments."); writer.newLine();
+			writer.write("2. Paste the solution."); writer.newLine();
+			writer.write("3. Save with proper extension name."); writer.newLine(); writer.newLine();
+			writer.write("## Description of auto-updation of Readme file"); writer.newLine(); writer.newLine();
+			writer.write("[UpdateReadme.java](./UpdateReadme.java) is the main file. It reads information (that are obtained online) from [OnlineInfo.csv](./OnlineInfo.csv) file. If you have updated the readme file with some online information without adding into csv file, then you need to run [OnlineToCSV.java](./OnlineToCSV.java) file to read that from readme and store in the csv file."); writer.newLine(); writer.newLine();
+			writer.write("For difficulty level, csv file is already updated. For other online information columns you'll have to update it."); writer.newLine(); writer.newLine();
 			writer.write("## Algorithms"); writer.newLine(); writer.newLine();
 			writer.write("Number of Problems Solved ");//get current date and time and write
 			DateTimeFormatter currentDateAndTime = DateTimeFormatter.ofPattern("dd-MMM-yyyy HH:mm:ss");

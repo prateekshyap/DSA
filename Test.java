@@ -130,7 +130,7 @@ class Parse
 
 		for (String topic : topics) //for each topic
 		{
-			if (!containsDot(topic)) //if it doesn't contain a dot that means it is a directory
+			if (!containsDot(topic) && !topic.equals("ZInfoc")) //if it doesn't contain a dot that means it is a directory
 			{
 				//get the topic directory path
 				String topicPathStr = new String(mainPathStr);
@@ -158,59 +158,70 @@ class Parse
 
 	public void parseFile(String fileName, String program) throws IOException
 	{
-		System.out.println("\n\n"+fileName);
-		BufferedReader reader = new BufferedReader(new FileReader(new File(fileName)));
-		String nextLine = "";
-		Stack<Character> stack = new Stack<Character>();
-		int openCurlyBracesCount = 0;
-		boolean isInsideClass = false;
-		while ((nextLine = reader.readLine()) != null)
+		if (program.charAt(program.length()-1) == 'a')
 		{
-			if (openCurlyBracesCount < 2)
+			System.out.println("\n\n"+fileName);
+			BufferedReader reader = new BufferedReader(new FileReader(new File(fileName)));
+			String nextLine = "";
+			Stack<Character> stack = new Stack<Character>();
+			int openCurlyBracesCount = 0;
+			boolean isInsideClass = false;
+			while ((nextLine = reader.readLine()) != null)
 			{
-				if (openCurlyBracesCount == 1) //if only class is encountered, no methods encountered
+				//System.out.println("'"+nextLine+"'");
+				if (openCurlyBracesCount < 2)
 				{
-					String[] tokens = nextLine.trim().split(" +");
-					if (tokens.length > 1 && tokens[0].length() > 1)
+					System.out.println(openCurlyBracesCount);
+					if (openCurlyBracesCount == 1) //if only class is encountered, no methods encountered
 					{
-						tokens[0] = tokens[0].trim();
-						if (javaCollections.search(tokens[0])) System.out.println("Collections");
-						else if (javaClasses.search(tokens[0])) System.out.println("Classes");
-						else if (javaPrimitiveDatatypes.search(tokens[0])) System.out.println("Data Types");
+						String[] tokens = nextLine.trim().split(" +");
+						if (tokens.length > 1 && tokens[0].length() > 1)
+						{
+							tokens[0] = tokens[0].trim();
+							if (javaCollections.search(tokens[0])) System.out.println("Collections");
+							else if (javaClasses.search(tokens[0])) System.out.println("Classes");
+							else if (javaPrimitiveDatatypes.search(tokens[0])) System.out.println("Data Types");
+						}
+					}
+					for (char ch : nextLine.toCharArray())
+					{
+						if (ch == '}')
+						{
+							--openCurlyBracesCount;
+							stack.pop();
+							if (!stack.isEmpty()) System.out.println("some error occured");
+						}
+						if (ch == '{')
+						{
+							++openCurlyBracesCount;
+							stack.push('{');
+						}
+						if (openCurlyBracesCount == 1) isInsideClass = true;
+						if (openCurlyBracesCount == 2) break;
 					}
 				}
-				for (char ch : nextLine.toCharArray())
+				else
 				{
-					if (ch == '{')
+					for (char ch : nextLine.toCharArray())
 					{
-						++openCurlyBracesCount;
-						stack.push('{');
-					}
-					if (openCurlyBracesCount == 1) isInsideClass = true;
-					if (openCurlyBracesCount == 2) break;
-				}
-			}
-			else
-			{
-				for (char ch : nextLine.toCharArray())
-				{
-					if (ch == '{')
-					{
-						++openCurlyBracesCount;
-						stack.push('{');
+						if (ch == '{')
+						{
+							++openCurlyBracesCount;
+							stack.push('{');
+						}
 					}
 				}
+				
+				/*
+				if (nextLine.length() > 3 && (nextLine.substring(0,3).equals("for") || nextLine.substring(0,5).equals("while")))
+				{
+					System.out.println("loop");
+				}
+				*/
 			}
-			
-			/*
-			if (nextLine.length() > 3 && (nextLine.substring(0,3).equals("for") || nextLine.substring(0,5).equals("while")))
-			{
-				System.out.println("loop");
-			}
-			*/
+			reader.close();
+			System.out.println();
 		}
-		reader.close();
-		System.out.println();
 	}
 
 

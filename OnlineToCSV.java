@@ -9,7 +9,7 @@ class OnlineToCSV
 	public static void main(String[] args) throws IOException
 	{
 		BufferedReader reader = new BufferedReader(new FileReader("README.md"));
-		BufferedWriter writer = new BufferedWriter(new FileWriter("OnlineInfo.csv"));
+		BufferedWriter writer = new BufferedWriter(new FileWriter("ZInfo/OnlineInfo.csv"));
 		String nextLine = "";
 		while ((nextLine = reader.readLine()) != null)
 		{

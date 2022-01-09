@@ -50,11 +50,14 @@ class Trie
 	public boolean search(String keyword)
 	{
 		TrieNode temp = root;
-		for (char ch : keyword.toCharArray())
+		for (int i = 0; i < keyword.length(); ++i)
 		{
+			char ch = keyword.charAt(i);
 			if (temp.hash[ch] == null)
 				return false;
 			temp = temp.hash[ch];
+			if (temp.isEndOfWord && i+1 < keyword.length() && !(keyword.charAt(i+1) >= 'a' && keyword.charAt(i+1) <= 'z') && !(keyword.charAt(i+1) >= 'A' && keyword.charAt(i+1) <= 'Z'))
+				return true;
 		}
 		return temp.isEndOfWord;
 	}
@@ -125,8 +128,6 @@ class Parse
 		for (String topic : topics)
 			if (!containsDot(topic)) ++dirCount;
 
-		int index = 0;
-
 		for (String topic : topics) //for each topic
 		{
 			if (!containsDot(topic)) //if it doesn't contain a dot that means it is a directory
@@ -148,43 +149,50 @@ class Parse
 					codeFileName += program;
 					File codeFile = new File(codeFileName);
 
-					parse.parseFile(codeFileName);
+					parse.parseFile(codeFileName, program);
 					
 				}
-
-				++index;
 			}
 		}
 	}
 
-	public void parseFile(String fileName) throws IOException
+	public void parseFile(String fileName, String program) throws IOException
 	{
 		System.out.println("\n\n"+fileName);
 		BufferedReader reader = new BufferedReader(new FileReader(new File(fileName)));
 		String nextLine = "";
 		Stack<Character> stack = new Stack<Character>();
-		int curlyBracesCount = 0;
+		int openCurlyBracesCount = 0;
 		boolean isInsideClass = false;
 		while ((nextLine = reader.readLine()) != null)
 		{
-			if (curlyBracesCount < 2)
+			if (openCurlyBracesCount < 2)
 			{
+				if (openCurlyBracesCount == 1) //if only class is encountered, no methods encountered
+				{
+					String[] tokens = nextLine.trim().split(" +");
+					if (tokens.length > 1 && tokens[0].length() > 1)
+					{
+						tokens[0] = tokens[0].trim();
+						if (javaCollections.search(tokens[0])) System.out.println("Collections");
+						else if (javaClasses.search(tokens[0])) System.out.println("Classes");
+						else if (javaPrimitiveDatatypes.search(tokens[0])) System.out.println("Data Types");
+					}
+				}
 				for (char ch : nextLine.toCharArray())
 				{
-					String[] tokens = nextLine.split(" ");
-
 					if (ch == '{')
 					{
-						++curlyBracesCount;
+						++openCurlyBracesCount;
 						stack.push('{');
 					}
-					if (curlyBracesCount == 1) isInsideClass = true;
-					if (curlyBracesCount == 2) break;
+					if (openCurlyBracesCount == 1) isInsideClass = true;
+					if (openCurlyBracesCount == 2) break;
 				}
 			}
 			else
 			{
-				System.out.println(nextLine);
+				//System.out.println(nextLine);
 			}
 			
 			/*

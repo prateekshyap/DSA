@@ -25,7 +25,7 @@ class OnlineInfo
 	{
 		this.questionDifficultyMap = new HashMap<String,String>();
 		try{
-		BufferedReader reader = new BufferedReader(new FileReader("OnlineInfo.csv"));
+		BufferedReader reader = new BufferedReader(new FileReader("ZInfo/OnlineInfo.csv"));
 		String nextLine = "";
 		while ((nextLine = reader.readLine()) != null)
 		{
@@ -44,14 +44,14 @@ class OnlineInfo
 	//updater methods
 	public HashMap<String,String> updateFile(String questionKey, String difficulty) throws IOException
 	{
-		BufferedWriter writer = new BufferedWriter(new FileWriter("OnlineInfo.csv",true));
+		BufferedWriter writer = new BufferedWriter(new FileWriter("ZInfo/OnlineInfo.csv",true));
 		writer.write(questionKey);
 		writer.write(",");
 		writer.write(difficulty);
 		writer.newLine();
 		writer.close();
 		this.questionDifficultyMap = new HashMap<String,String>();
-		BufferedReader reader = new BufferedReader(new FileReader("OnlineInfo.csv"));
+		BufferedReader reader = new BufferedReader(new FileReader("ZInfo/OnlineInfo.csv"));
 		String nextLine = "";
 		while ((nextLine = reader.readLine()) != null)
 		{
@@ -290,7 +290,7 @@ class UpdateReadme
 		String[] topics = mainPath.list();
 		
 		//opening readme file in write mode
-		File readmeFile = new File("test.md");
+		File readmeFile = new File("README.md");
 		if (!readmeFile.exists()) readmeFile.createNewFile();
 		BufferedWriter fileWriter = new BufferedWriter(new FileWriter(readmeFile));
 		
@@ -303,12 +303,12 @@ class UpdateReadme
 			if (!containsDot(topic)) ++dirCount;
 
 		//define topics array
-		topicDetails = new Topics[dirCount];
+		topicDetails = new Topics[dirCount-1];
 		int index = 0;
 
 		for (String topic : topics) //for each topic
 		{
-			if (!containsDot(topic)) //if it doesn't contain a dot that means it is a directory
+			if (!containsDot(topic) && !topic.equals("ZInfo")) //if it doesn't contain a dot that means it is a directory
 			{
 				//get the topic directory path
 				String topicPathStr = new String(mainPathStr);
@@ -389,6 +389,7 @@ class UpdateReadme
 							}
 						}
 					}
+					//System.out.println(topic+" "+program+" "+difficulty);
 					topicDetails[index].addQuestion(questionLinks,topic,program,difficulty); //add the question to the main array
 
 					reader.close();
@@ -404,7 +405,7 @@ class UpdateReadme
 		}
 
 		//write the data to a txt file for future reference
-		File outputFile = new File("ConsoleOutput.txt");
+		File outputFile = new File("ZInfo/ConsoleOutput.txt");
 		if (!outputFile.exists()) outputFile.createNewFile();
 		BufferedWriter outputFileWriter = new BufferedWriter(new FileWriter(outputFile, true));
 		//write the execution time
@@ -499,11 +500,7 @@ class UpdateReadme
 		boolean flag = false;
 		for (String token : tokens)
 		{
-			if (token.length() == 0)
-				{
-					flag = true;
-					continue;
-				}
+			if (token.length() == 0) continue;
 			char firstChar = token.charAt(0);
 			if (firstChar >= 'a' && firstChar <= 'z') firstChar = (char)(((int)firstChar)-32);
 			temp = new StringBuffer(Character.toString(firstChar));
@@ -511,7 +508,7 @@ class UpdateReadme
 			question.append(temp);
 			question.append(" ");
 		}
-		if (flag) System.out.println("'"+question.toString().trim()+"'");
+		//if (flag) System.out.println("'"+question.toString().trim()+"'");
 		return question.toString().trim();
 	}
 

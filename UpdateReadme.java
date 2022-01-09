@@ -11,6 +11,7 @@ import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Stack;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -68,11 +69,16 @@ class Parse
 	{
 		BufferedReader reader = new BufferedReader(new FileReader(new File(fileName)));
 		String nextLine = "";
+		Stack<Character> stack = new Stack<Character>();
 		while ((nextLine = reader.readLine()) != null)
 		{
-
+			if (nextLine.substring(0,3).equals("for") || nextLine.substring(0,5).equals("while"))
+			{
+				System.out.println("loop");
+			}
 		}
 		reader.close();
+		System.out.println();
 	}
 
 	private int isAKeyWord(String str, String fileName)
@@ -284,7 +290,7 @@ class UpdateReadme
 		String[] topics = mainPath.list();
 		
 		//opening readme file in write mode
-		File readmeFile = new File("README.md");
+		File readmeFile = new File("test.md");
 		if (!readmeFile.exists()) readmeFile.createNewFile();
 		BufferedWriter fileWriter = new BufferedWriter(new FileWriter(readmeFile));
 		

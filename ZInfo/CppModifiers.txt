@@ -1,0 +1,4 @@
+signed
+unsigned
+short
+long

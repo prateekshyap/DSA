@@ -1,0 +1,10 @@
+bool
+char
+int
+float
+double
+void
+wchar_t
+struct
+union
+enum

@@ -1,5 +1,6 @@
 /*https://practice.geeksforgeeks.org/problems/large-factorial4721/1/*/
 
+class Solution {
     long[] hash;
     public long[] factorial(long a[], int n) {
         long[] result = new long[a.length];

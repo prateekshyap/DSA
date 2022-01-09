@@ -18,6 +18,53 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+class TrieNode
+{
+	TrieNode[] hash;
+	boolean isEndOfWord;
+	TrieNode()
+	{
+		hash = new TrieNode[128];
+		isEndOfWord = true;
+	}
+}
+
+class Trie
+{
+	TrieNode root;
+	Trie()
+	{
+		root = new TrieNode();
+	}
+	public void add(String keyword)
+	{
+		TrieNode temp = root;
+		for (char ch : keyword.toCharArray())
+		{
+			if (temp.hash[ch] == null)
+				temp.hash[ch] = new TrieNode();
+			temp = temp.hash[ch];
+		}
+		temp.isEndOfWord = true;
+	}
+	public String search(String keyword)
+	{
+		TrieNode temp = root;
+		StringBuffer returnKeyword = new StringBuffer("");
+		for (int i = 0; i < keyword.length(); ++i)
+		{
+			char ch = keyword.charAt(i);
+			if (temp.hash[ch] == null)
+				return "";
+			temp = temp.hash[ch];
+			returnKeyword.append(ch);
+			if (temp.isEndOfWord && i+1 < keyword.length() && !(keyword.charAt(i+1) >= 'a' && keyword.charAt(i+1) <= 'z') && !(keyword.charAt(i+1) >= 'A' && keyword.charAt(i+1) <= 'Z'))
+				return returnKeyword.toString();
+		}
+		return temp.isEndOfWord ? returnKeyword.toString() : "";
+	}
+}
+
 class OnlineInfo
 {
 	HashMap<String,String> questionDifficultyMap;
@@ -60,34 +107,6 @@ class OnlineInfo
 		}
 		reader.close();
 		return this.questionDifficultyMap;
-	}
-}
-
-class Parse
-{
-	public void parseFile(String fileName) throws IOException
-	{
-		BufferedReader reader = new BufferedReader(new FileReader(new File(fileName)));
-		String nextLine = "";
-		Stack<Character> stack = new Stack<Character>();
-		while ((nextLine = reader.readLine()) != null)
-		{
-			if (nextLine.substring(0,3).equals("for") || nextLine.substring(0,5).equals("while"))
-			{
-				System.out.println("loop");
-			}
-		}
-		reader.close();
-		System.out.println();
-	}
-
-	private int isAKeyWord(String str, String fileName)
-	{
-		if (fileName.charAt(fileName.length()-1) == 'a' && (str.equals("abstract") || str.equals("assert") || str.equals("boolean") || str.equals("break") || str.equals("byte") || str.equals("case") || str.equals("catch") || str.equals("char") || str.equals("class") || str.equals("const") || str.equals("continue") || str.equals("default") || str.equals("do") || str.equals("double") || str.equals("else") || str.equals("extends") || str.equals("false") || str.equals("final") || str.equals("finally") || str.equals("float") || str.equals("for") || str.equals("goto") || str.equals("if") || str.equals("implements") || str.equals("import") || str.equals("instanceof") || str.equals("int") || str.equals("interface") || str.equals("long") || str.equals("native") || str.equals("new") || str.equals("null") || str.equals("package") || str.equals("private") || str.equals("protected") || str.equals("public") || str.equals("return") || str.equals("short") || str.equals("static") || str.equals("strictfp") || str.equals("super") || str.equals("switch") || str.equals("synchronized") || str.equals("this") || str.equals("throw") || str.equals("throws") || str.equals("transient") || str.equals("true") || str.equals("try") || str.equals("void") || str.equals("volatile") || str.equals("while")))
-			return 1;
-		if (fileName.charAt(fileName.length()-1) == 'p' && (str.equals("asm") || str.equals("auto") || str.equals("break") || str.equals("case") || str.equals("catch") || str.equals("char") || str.equals("class") || str.equals("const") || str.equals("continue") || str.equals("default") || str.equals("delete") || str.equals("do") || str.equals("double") || str.equals("else") || str.equals("enum") || str.equals("extern") || str.equals("float") || str.equals("for") || str.equals("friend") || str.equals("goto") || str.equals("if") || str.equals("inline") || str.equals("int") || str.equals("long") || str.equals("new") || str.equals("operator") || str.equals("private") || str.equals("protected") || str.equals("public") || str.equals("register") || str.equals("return") || str.equals("short") || str.equals("signed") || str.equals("sizedof") || str.equals("static") || str.equals("struct") || str.equals("switch") || str.equals("template") || str.equals("this") || str.equals("throw") || str.equals("try") || str.equals("typedef") || str.equals("union") || str.equals("unsigned") || str.equals("virtual") || str.equals("void") || str.equals("volatile") || str.equals("while") || str.equals("using") || str.equals("namespace") || str.equals("std")))
-			return 2;
-		return 0;
 	}
 }
 
@@ -151,8 +170,8 @@ class Topics
 	private int javaCount; //total number of .java files
 	private int cppCount; //total number of .cpp files
 	private HashMap<String,Integer> questionIndexMap; //stores the question key and the index of indexDetailsMap array
-	private Questions[] indexDetailsMap; //stores the details for each question in an array
-	private int qIndex;
+	protected Questions[] indexDetailsMap; //stores the details for each question in an array
+	protected int qIndex;
 
 	Topics()
 	{}
@@ -273,6 +292,170 @@ class Topics
 	}
 }
 
+class Parse extends Topics
+{
+	private Trie javaKeywords, cppKeywords, javaPrimitiveDatatypes, cppDataTypes, cppModifiers, javaUserDatatypes, cppUserDatatypes, javaClasses, javaCollections;
+	private int[] time, space;
+	
+	Parse(Topics topic) throws IOException
+	{
+		time = new int[topic.indexDetailsMap.length];
+		space = new int[topic.indexDetailsMap.length];
+		javaKeywords = new Trie();
+		cppKeywords = new Trie();
+		javaPrimitiveDatatypes = new Trie();
+		cppDataTypes = new Trie();
+		cppModifiers = new Trie();
+		javaUserDatatypes = new Trie();
+		cppUserDatatypes = new Trie();
+		javaClasses = new Trie();
+		javaCollections = new Trie();
+	
+		String nextLine = "";
+
+		//java
+		BufferedReader reader = new BufferedReader(new FileReader(new File("ZInfo/JavaKeywords.txt")));
+		while ((nextLine = reader.readLine()) != null)
+			javaKeywords.add(nextLine);
+
+		reader = new BufferedReader(new FileReader(new File("ZInfo/JavaClasses.txt")));
+		while ((nextLine = reader.readLine()) != null)
+			javaClasses.add(nextLine);
+
+		reader = new BufferedReader(new FileReader(new File("ZInfo/JavaCollections.txt")));
+		while ((nextLine = reader.readLine()) != null)
+			javaCollections.add(nextLine);
+
+		reader = new BufferedReader(new FileReader(new File("ZInfo/JavaPrimitiveDataTypes.txt")));
+		while ((nextLine = reader.readLine()) != null)
+			javaPrimitiveDatatypes.add(nextLine);
+
+
+		//cpp
+		reader = new BufferedReader(new FileReader(new File("ZInfo/CppKeywords.txt")));
+		while ((nextLine = reader.readLine()) != null)
+			cppKeywords.add(nextLine);
+
+		reader = new BufferedReader(new FileReader(new File("ZInfo/CppModifiers.txt")));
+		while ((nextLine = reader.readLine()) != null)
+			cppModifiers.add(nextLine);
+
+		reader = new BufferedReader(new FileReader(new File("ZInfo/CppPrimitiveDataTypes.txt")));
+		while ((nextLine = reader.readLine()) != null)
+			cppDataTypes.add(nextLine);
+
+
+		reader.close();
+	}
+
+	public int[] getTimeComplexities() { return this.time; }
+	public int[] getSpaceComplexities() { return this.space; }
+
+	public void parseFile(String fileName, String program, Topics topic) throws IOException
+	{
+		if (program.charAt(program.length()-1) == 'a')
+		{
+			BufferedReader reader = new BufferedReader(new FileReader(new File(fileName)));
+			String prevLine = "", currLine = "", nextLine = "";
+			Stack<Character> stack = new Stack<Character>();
+			Stack<String> control = new Stack<String>();
+			Stack<String> loop = new Stack<String>();
+			int openCurlyBracesCount = 0;
+			String currentControl = "";
+			int power = 0, maxPower = 0;
+			nextLine = reader.readLine();
+			nextLine = nextLine.trim();
+			currLine = nextLine;
+
+			while (currLine != null)
+			{
+				nextLine = reader.readLine();
+				if (nextLine != null)
+				{
+					nextLine = nextLine.trim();
+					if (nextLine.length() == 0) continue;
+				}
+				if (openCurlyBracesCount < 2)
+				{
+					if (openCurlyBracesCount == 1) //if only class is encountered, no methods encountered or method finished
+					{
+						String[] tokens = currLine.trim().split(" +");
+						if (tokens.length > 1 && tokens[0].length() > 1)
+						{
+							tokens[0] = tokens[0].trim();
+							/*extract data types declared within class outside method*/
+						}
+					}
+					for (char ch : currLine.toCharArray())
+					{
+						if (ch == '}')
+						{
+							--openCurlyBracesCount;
+							stack.pop();
+							control.pop();
+						}
+						if (ch == '{')
+						{
+							++openCurlyBracesCount;
+							stack.push('{');
+						}
+						if (openCurlyBracesCount == 1) 
+						{
+							control.push("class");
+							currentControl = control.peek();
+						}
+						if (openCurlyBracesCount == 2)
+						{
+							control.push("method");
+							currentControl = control.peek();
+							break;
+						}
+					}
+				}
+				else
+				{
+					if (javaKeywords.search(currLine).equals("for") || javaKeywords.search(currLine).equals("while"))
+					{
+						currentControl = javaKeywords.search(currLine);
+						if (currLine.charAt(currLine.length()-1) == '{' || nextLine.charAt(0) == '{')
+						{
+							++power;
+							maxPower = Math.max(maxPower,power);
+						}
+						else
+							maxPower = Math.max(maxPower,power+1);
+					}
+					for (char ch : currLine.toCharArray())
+					{
+						if (ch == '{')
+						{
+							++openCurlyBracesCount;
+							stack.push('{');
+							control.push(currentControl);
+						}
+					}
+					if (currLine.charAt(0) == '}' || currLine.charAt(currLine.length()-1) == '}')
+					{
+						--openCurlyBracesCount;
+						stack.pop();
+						String top = control.pop();
+						currentControl = control.peek();
+						if (top.equals("for") || top.equals("while")) --power;
+					}
+				}
+
+				prevLine = currLine;
+				currLine = nextLine;
+			}
+
+			reader.close();
+
+			time[topic.qIndex-1] = maxPower;
+			//store space complexity here
+		}
+	}
+}
+
 class UpdateReadme
 {
 	public static void main(String[] args) throws IOException
@@ -285,6 +468,9 @@ class UpdateReadme
 		//read online information
 		OnlineInfo onlineInfo = new OnlineInfo();
 		HashMap<String,String> questionDifficultyMap = onlineInfo.getQuestionDifficultyMap();
+
+		//
+		Parse[] parseDetails;
 
 		//get the list of folders i.e. the topics
 		String[] topics = mainPath.list();
@@ -304,6 +490,7 @@ class UpdateReadme
 
 		//define topics array
 		topicDetails = new Topics[dirCount-1];
+		parseDetails = new Parse[dirCount-1];
 		int index = 0;
 
 		for (String topic : topics) //for each topic
@@ -320,6 +507,8 @@ class UpdateReadme
 				int javaCount = 0, cppCount = 0;
 
 				topicDetails[index] = new Topics(topic,programs.length); //create a new topic
+				parseDetails[index] = new Parse(topicDetails[index]);
+
 				//store java and cpp counts
 				for (String program : programs) //for each file
 				{
@@ -389,13 +578,9 @@ class UpdateReadme
 							}
 						}
 					}
-					//System.out.println(topic+" "+program+" "+difficulty);
 					topicDetails[index].addQuestion(questionLinks,topic,program,difficulty); //add the question to the main array
-
+					parseDetails[index].parseFile(codeFileName,program,topicDetails[index]);
 					reader.close();
-					/*
-					parse.parseFile(codeFileName);
-					*/
 				}
 				topicDetails[index].setJavaCount(javaCount);
 				topicDetails[index].setCppCount(cppCount);
@@ -438,14 +623,18 @@ class UpdateReadme
 
 		int bullet = 1;
 		//write question and solution details
-		for (Topics topic : topicDetails)
+		for (int i = 0; i < topicDetails.length; ++i)
 		{
+			Topics topic = topicDetails[i];
+			Parse parse = parseDetails[i];
 			fileWriter.write("## "+topic.getTopicName()); fileWriter.newLine(); fileWriter.newLine();
 			fileWriter.write("|  #  |Title            |Links            |Solution         |Difficulty       |Time Complexity  |Space Complexity |"); fileWriter.newLine();
 			fileWriter.write("|-----|---------------- |---------------- |---------------- |---------------- |---------------- |---------------- |"); fileWriter.newLine();
 
 			HashMap<String,Integer> questionIndexMap = topic.getQuestionIndexMap(); //get the question to index map
 			Questions[] indexDetailsMap = topic.getIndexDetailsMap(); //get the index to details map
+			int[] timeComplexities = parse.getTimeComplexities();
+			//get space complexity here
 
 			Iterator questionIndexMapIterator = questionIndexMap.entrySet().iterator(); //map iterator
 			while (questionIndexMapIterator.hasNext()) //for each entry in question map
@@ -479,7 +668,7 @@ class UpdateReadme
 					fileWriter.write("["+(String)solutionLink.getKey()+"]("+(String)solutionLink.getValue()+") ");
 				}
 				fileWriter.write("|"+currentQuestion.getDifficulty()+"|");
-				//write time complexity
+				fileWriter.write("O(n^"+timeComplexities[questionIndex]+")");
 				fileWriter.write("|");
 				//write space complexity
 				fileWriter.write("|");

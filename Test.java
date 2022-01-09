@@ -165,7 +165,8 @@ class Parse
 			String nextLine = "";
 			Stack<Character> stack = new Stack<Character>();
 			int openCurlyBracesCount = 0;
-			boolean isInsideClass = false;
+			boolean isInsideClass = false, isInsideFunction = false;
+
 			while ((nextLine = reader.readLine()) != null)
 			{
 				//System.out.println("'"+nextLine+"'");
@@ -189,7 +190,7 @@ class Parse
 						{
 							--openCurlyBracesCount;
 							stack.pop();
-							if (!stack.isEmpty()) System.out.println("some error occured");
+							if (!stack.isEmpty()) System.out.println("some error occured 1");
 						}
 						if (ch == '{')
 						{
@@ -197,17 +198,29 @@ class Parse
 							stack.push('{');
 						}
 						if (openCurlyBracesCount == 1) isInsideClass = true;
-						if (openCurlyBracesCount == 2) break;
+						if (openCurlyBracesCount == 2) { isInsideFunction = true; break; }
 					}
 				}
 				else
 				{
+					
 					for (char ch : nextLine.toCharArray())
 					{
 						if (ch == '{')
 						{
 							++openCurlyBracesCount;
 							stack.push('{');
+						}
+						if (ch == '}')
+						{
+							if (openCurlyBracesCount == 2)
+								isInsideFunction = false;
+							if (openCurlyBracesCount == 1)
+								isInsideClass = false;
+							if (stack.isEmpty()) System.out.println("some error occurred 2");
+							--openCurlyBracesCount;
+							stack.pop();
+							if (openCurlyBracesCount == 0 && !stack.isEmpty()) System.out.println("some error occured 3");
 						}
 					}
 				}

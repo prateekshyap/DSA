@@ -149,24 +149,6 @@ public class BanquetPreparation
 						reductions[list.get(i).getIndex()][0] = list.get(i).getEatable();
 					}
 				}
-				/*for (int i = 0; i < list.size(); ++i)
-				{
-					if (minIndex == 0)
-					{
-						int currMeatValue = list.get(i).getMeat();
-						int currRem = list.get(i).getRem();
-						list.get(i).setMeat(currMeatValue-currRem);
-						list.get(i).setRem(0);
-						reductions[list.get(i).getIndex()][1] = currRem;
-					}
-					else
-					{
-						int currMeatValue = list.get(i).getMeat();
-						list.get(i).setMeat(minValue);
-						list.get(i).setRem(list.get(i).setRem()-(currMeatValue-minValue));
-						reductions[list.get(i).getIndex()][1] = currMeatValue-minValue;
-					}
-				}*/
 			}
 
 			System.out.println(result);

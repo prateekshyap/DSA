@@ -47,19 +47,21 @@ class Trie
 		}
 		temp.isEndOfWord = true;
 	}
-	public boolean search(String keyword)
+	public String search(String keyword)
 	{
 		TrieNode temp = root;
+		StringBuffer returnKeyword = new StringBuffer("");
 		for (int i = 0; i < keyword.length(); ++i)
 		{
 			char ch = keyword.charAt(i);
 			if (temp.hash[ch] == null)
-				return false;
+				return "";
 			temp = temp.hash[ch];
+			returnKeyword.append(ch);
 			if (temp.isEndOfWord && i+1 < keyword.length() && !(keyword.charAt(i+1) >= 'a' && keyword.charAt(i+1) <= 'z') && !(keyword.charAt(i+1) >= 'A' && keyword.charAt(i+1) <= 'Z'))
-				return true;
+				return returnKeyword.toString();
 		}
-		return temp.isEndOfWord;
+		return temp.isEndOfWord ? returnKeyword.toString() : "";
 	}
 }
 
@@ -130,7 +132,7 @@ class Parse
 
 		for (String topic : topics) //for each topic
 		{
-			if (!containsDot(topic) && !topic.equals("ZInfoc")) //if it doesn't contain a dot that means it is a directory
+			if (!containsDot(topic) && !topic.equals("ZInfo")) //if it doesn't contain a dot that means it is a directory
 			{
 				//get the topic directory path
 				String topicPathStr = new String(mainPathStr);
@@ -149,8 +151,7 @@ class Parse
 					codeFileName += program;
 					File codeFile = new File(codeFileName);
 
-					parse.parseFile(codeFileName, program);
-					
+					parse.parseFile(codeFileName, program);					
 				}
 			}
 		}
@@ -162,78 +163,123 @@ class Parse
 		{
 			System.out.println("\n\n"+fileName);
 			BufferedReader reader = new BufferedReader(new FileReader(new File(fileName)));
-			String nextLine = "";
+			String prevLine = "", currLine = "", nextLine = "";
 			Stack<Character> stack = new Stack<Character>();
+			Stack<String> control = new Stack<String>();
+			Stack<String> loop = new Stack<String>();
 			int openCurlyBracesCount = 0;
-			boolean isInsideClass = false, isInsideFunction = false;
+			String currentControl = "";
+			int power = 0, maxPower = 0;
+			nextLine = reader.readLine();
+			nextLine = nextLine.trim();
+			currLine = nextLine;
 
-			while ((nextLine = reader.readLine()) != null)
+			while (currLine != null)
 			{
-				//System.out.println("'"+nextLine+"'");
+				/*if (program.equals("AddOne.java"))
+				{
+					System.out.print("'"+currLine+"' ("+power+")");
+				}*/
+				nextLine = reader.readLine();
+				if (nextLine != null)
+				{
+					nextLine = nextLine.trim();
+					if (nextLine.length() == 0) continue;
+				}
 				if (openCurlyBracesCount < 2)
 				{
-					System.out.println(openCurlyBracesCount);
-					if (openCurlyBracesCount == 1) //if only class is encountered, no methods encountered
+					if (openCurlyBracesCount == 1) //if only class is encountered, no methods encountered or method finished
 					{
-						String[] tokens = nextLine.trim().split(" +");
+						String[] tokens = currLine.trim().split(" +");
 						if (tokens.length > 1 && tokens[0].length() > 1)
 						{
 							tokens[0] = tokens[0].trim();
-							if (javaCollections.search(tokens[0])) System.out.println("Collections");
-							else if (javaClasses.search(tokens[0])) System.out.println("Classes");
-							else if (javaPrimitiveDatatypes.search(tokens[0])) System.out.println("Data Types");
+							/*extract data types declared within class outside method*/
 						}
 					}
-					for (char ch : nextLine.toCharArray())
+					for (char ch : currLine.toCharArray())
 					{
 						if (ch == '}')
 						{
 							--openCurlyBracesCount;
 							stack.pop();
-							if (!stack.isEmpty()) System.out.println("some error occured 1");
+							control.pop();
 						}
 						if (ch == '{')
 						{
 							++openCurlyBracesCount;
 							stack.push('{');
 						}
-						if (openCurlyBracesCount == 1) isInsideClass = true;
-						if (openCurlyBracesCount == 2) { isInsideFunction = true; break; }
+						if (openCurlyBracesCount == 1) 
+						{
+							control.push("class");
+							currentControl = control.peek();
+						}
+						if (openCurlyBracesCount == 2)
+						{
+							control.push("method");
+							currentControl = control.peek();
+							break;
+						}
 					}
 				}
 				else
 				{
-					
-					for (char ch : nextLine.toCharArray())
+					if (javaKeywords.search(currLine).equals("for") || javaKeywords.search(currLine).equals("while"))
+					{
+						currentControl = javaKeywords.search(currLine);
+						if (currLine.charAt(currLine.length()-1) == '{' || nextLine.charAt(0) == '{')
+						{
+							//control.push(currentControl);
+							//stack.push('{');
+							++power;
+							maxPower = Math.max(maxPower,power);
+						}
+						else
+						{
+							maxPower = Math.max(maxPower,power+1);
+						}
+					}
+					/*if (currLine.charAt(0) == '{' || currLine.charAt(currLine.length()-1) == '{')
+					{
+						stack.push('{');
+						control.push("");
+					}*/
+					for (char ch : currLine.toCharArray())
 					{
 						if (ch == '{')
 						{
 							++openCurlyBracesCount;
 							stack.push('{');
-						}
-						if (ch == '}')
-						{
-							if (openCurlyBracesCount == 2)
-								isInsideFunction = false;
-							if (openCurlyBracesCount == 1)
-								isInsideClass = false;
-							if (stack.isEmpty()) System.out.println("some error occurred 2");
-							--openCurlyBracesCount;
-							stack.pop();
-							if (openCurlyBracesCount == 0 && !stack.isEmpty()) System.out.println("some error occured 3");
+							control.push(currentControl);
 						}
 					}
+					if (currLine.charAt(0) == '}' || currLine.charAt(currLine.length()-1) == '}')
+					{
+						--openCurlyBracesCount;
+						stack.pop();
+						String top = control.pop();
+						currentControl = control.peek();
+						/*if (program.equals("AddOne.java"))
+						{
+							System.out.print("("+top+")");
+						}*/
+						if (top.equals("for") || top.equals("while")) --power;
+						/*else if (top.equals("method") || top.equals("class")) 
+						{
+							power = 0;
+							maxPower = 0;
+						}*/
+					}
 				}
-				
-				/*
-				if (nextLine.length() > 3 && (nextLine.substring(0,3).equals("for") || nextLine.substring(0,5).equals("while")))
-				{
-					System.out.println("loop");
-				}
-				*/
+
+				prevLine = currLine;
+				currLine = nextLine;
+				//System.out.println();
 			}
+
 			reader.close();
-			System.out.println();
+			System.out.println("time complexity - "+maxPower);
 		}
 	}
 

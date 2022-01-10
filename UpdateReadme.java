@@ -668,7 +668,7 @@ class UpdateReadme
 					fileWriter.write("["+(String)solutionLink.getKey()+"]("+(String)solutionLink.getValue()+") ");
 				}
 				fileWriter.write("|"+currentQuestion.getDifficulty()+"|");
-				fileWriter.write("O(n^"+timeComplexities[questionIndex]+")");
+				fileWriter.write("O(n<sup>"+timeComplexities[questionIndex]+"</sup>)");
 				fileWriter.write("|");
 				//write space complexity
 				fileWriter.write("|");

@@ -668,7 +668,12 @@ class UpdateReadme
 					fileWriter.write("["+(String)solutionLink.getKey()+"]("+(String)solutionLink.getValue()+") ");
 				}
 				fileWriter.write("|"+currentQuestion.getDifficulty()+"|");
-				fileWriter.write("O(n^"+timeComplexities[questionIndex]+")");
+				if (timeComplexities[questionIndex] == 0)
+					fileWriter.write("O(1)");
+				else if (timeComplexities[questionIndex] == 1)
+					fileWriter.write("O(n)");
+				else
+					fileWriter.write("O(n<sup>"+timeComplexities[questionIndex]+"</sup>)");
 				fileWriter.write("|");
 				//write space complexity
 				fileWriter.write("|");

@@ -36,7 +36,7 @@ For difficulty level, csv file is already updated. For other online information 
 
 ## Algorithms
 
-Number of Problems Solved (21-Jan-2022 14:33:40)
+Number of Problems Solved (22-Jan-2022 13:28:20)
 
 | Topic Name | Java | CPP | 
 | :--------: | :--------: | :--------: | 
@@ -50,7 +50,7 @@ Number of Problems Solved (21-Jan-2022 14:33:40)
 | [Greedy](https://github.com/prateekshyap/DSA#greedy) | 15 | 0 |
 | [Hashing](https://github.com/prateekshyap/DSA#hashing) | 21 | 1 |
 | [Heap](https://github.com/prateekshyap/DSA#heap) | 11 | 0 |
-| [Linked-List](https://github.com/prateekshyap/DSA#linked-list) | 42 | 3 |
+| [Linked-List](https://github.com/prateekshyap/DSA#linked-list) | 44 | 3 |
 | [Matrix](https://github.com/prateekshyap/DSA#matrix) | 17 | 1 |
 | [Miscellaneous](https://github.com/prateekshyap/DSA#miscellaneous) | 17 | 2 |
 | [Queue](https://github.com/prateekshyap/DSA#queue) | 5 | 0 |
@@ -60,9 +60,9 @@ Number of Problems Solved (21-Jan-2022 14:33:40)
 | [Sorting](https://github.com/prateekshyap/DSA#sorting) | 8 | 0 |
 | [Stack](https://github.com/prateekshyap/DSA#stack) | 18 | 0 |
 | [Strings](https://github.com/prateekshyap/DSA#strings) | 25 | 6 |
-| [Tree](https://github.com/prateekshyap/DSA#tree) | 75 | 7 |
+| [Tree](https://github.com/prateekshyap/DSA#tree) | 76 | 7 |
 | [Trie](https://github.com/prateekshyap/DSA#trie) | 10 | 0 |
-| Total | 506 | 52 |
+| Total | 509 | 52 |
 
 ## Reference
 
@@ -409,10 +409,12 @@ Number of Problems Solved (21-Jan-2022 14:33:40)
 |  35  |Split A Circular Linked List Into Two Halves|[GFG](https://practice.geeksforgeeks.org/problems/split-a-circular-linked-list-into-two-halves/1) |[Java](./Linked-List/DivideCircularList.java) |Easy|O(n)||
 |  36  |Reverse Linked List Ii|[LC](https://leetcode.com/problems/reverse-linked-list-ii/) |[Java](./Linked-List/ReverseLinkedList2.java) ||O(n)||
 |  37  |Remove Duplicates From Sorted List|[LC](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) |[Java](./Linked-List/RemoveDuplicates.java) ||O(n)||
-|  38  |Clone A Linked List With Next And Random Pointer|[GFG](https://practice.geeksforgeeks.org/problems/clone-a-linked-list-with-next-and-random-pointer/1) |[Java](./Linked-List/CloneList.java) |Hard|O(n)||
-|  39  |Reverse Linked List|[LC](https://leetcode.com/problems/reverse-linked-list/) |[Java](./Linked-List/ReverseList.java) [CPP](./Linked-List/LC_206_LinkedL_ReverseLinkedList.cpp) ||O(1)||
-|  40  |Linked List Cycle Ii|[LC](https://leetcode.com/problems/linked-list-cycle-ii/) |[Java](./Linked-List/LocateCycle.java) ||O(n)||
-|  41  |Partition List|[LC](https://leetcode.com/problems/partition-list/) |[Java](./Linked-List/PartitionList.java) ||O(n)||
+|  38  |Merge 2 Sorted Linked List In Reverse Order|[GFG](https://practice.geeksforgeeks.org/problems/merge-2-sorted-linked-list-in-reverse-order/1) |[Java](./Linked-List/ReverseMerging.java) |Easy|O(n)||
+|  39  |Clone A Linked List With Next And Random Pointer|[GFG](https://practice.geeksforgeeks.org/problems/clone-a-linked-list-with-next-and-random-pointer/1) |[Java](./Linked-List/CloneList.java) |Hard|O(n)||
+|  40  |Reverse Linked List|[LC](https://leetcode.com/problems/reverse-linked-list/) |[Java](./Linked-List/ReverseList.java) [CPP](./Linked-List/LC_206_LinkedL_ReverseLinkedList.cpp) ||O(1)||
+|  41  |Linked List Of Strings Forms A Palindrome|[GFG](https://practice.geeksforgeeks.org/problems/linked-list-of-strings-forms-a-palindrome/1) |[Java](./Linked-List/CombinedStringPalindrome.java) |Easy|O(n)||
+|  42  |Linked List Cycle Ii|[LC](https://leetcode.com/problems/linked-list-cycle-ii/) |[Java](./Linked-List/LocateCycle.java) ||O(n)||
+|  43  |Partition List|[LC](https://leetcode.com/problems/partition-list/) |[Java](./Linked-List/PartitionList.java) ||O(n)||
 ## Matrix
 
 |  #  |Title            |Links            |Solution         |Difficulty       |Time Complexity  |Space Complexity |
@@ -663,6 +665,7 @@ Number of Problems Solved (21-Jan-2022 14:33:40)
 |  77  |Tree From Postorder And Inorder|[GFG](https://practice.geeksforgeeks.org/problems/tree-from-postorder-and-inorder/1/) |[Java](./Tree/BuildTreeFromInAndPost.java) |Medium|O(n)||
 |  78  |Inorder Traversal Iterative|[GFG](https://practice.geeksforgeeks.org/problems/inorder-traversal-iterative/0/) |[Java](./Tree/IterativeInOrder.java) |Medium|O(n)||
 |  79  |Merge Two Binary Trees|[LC](https://leetcode.com/problems/merge-two-binary-trees/) |[Java](./Tree/MergeTwoBinaryTrees.java) ||O(1)||
+|  80  |Nodes At Given Distance In Binary Tree|[GFG](https://practice.geeksforgeeks.org/problems/nodes-at-given-distance-in-binary-tree/1) |[Java](./Tree/FindNodesAtDistanceK.java) |Hard|O(n)||
 ## Trie
 
 |  #  |Title            |Links            |Solution         |Difficulty       |Time Complexity  |Space Complexity |

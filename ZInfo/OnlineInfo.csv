@@ -283,3 +283,6 @@ length-of-longest-palindrome-in-linked-list,Medium
 max-rectangle,Medium
 partition-array-to-k-subsets,Hard
 steps-by-knight5927,Medium
+nodes-at-given-distance-in-binary-tree,Hard
+linked-list-of-strings-forms-a-palindrome,Easy
+merge-2-sorted-linked-list-in-reverse-order,Easy

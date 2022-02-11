@@ -1,6 +1,5 @@
 /*
-https://www.geeksforgeeks.org/count-1s-sorted-binary-array/
-
+https://practice.geeksforgeeks.org/problems/count-the-zeros2550/1
 */
 /* Return counts of 1's in arr[low..high].  The array is
    assumed to be sorted in non-increasing order */

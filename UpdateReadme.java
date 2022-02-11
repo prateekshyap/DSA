@@ -199,6 +199,11 @@ class Topics
 	public String getQuestionKey(String link, int nameIndex)
 	{
 		String[] tokens = link.split("/"); //split by "/"
+		for (int i = 0; i < tokens.length; ++i)
+		{
+			System.out.print("'"+tokens[i]+"',");
+		}
+		System.out.println();
 		String questionKey = "";
 		if (nameIndex < 0) //for codeforces, attach two elements
 		{
@@ -521,6 +526,8 @@ class UpdateReadme
 					codeFileName += "\\";
 					codeFileName += program;
 					File codeFile = new File(codeFileName);
+
+					System.out.println(codeFileName);
 
 					//open a reader to read the code file
 					BufferedReader reader = new BufferedReader(new FileReader(codeFile));

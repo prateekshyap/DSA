@@ -1,3 +1,8 @@
+/*
+https://practice.geeksforgeeks.org/problems/selection-sort/1#
+Selection Sort
+
+*/
 // { Driver Code Starts
 #include <bits/stdc++.h>
 using namespace std;
@@ -36,11 +41,7 @@ class Solution
        }
     }//end
 };
-/*
-https://practice.geeksforgeeks.org/problems/selection-sort/1#
-Selection Sort
 
-*/
 // { Driver Code Starts.
  
 /* Function to print an array */

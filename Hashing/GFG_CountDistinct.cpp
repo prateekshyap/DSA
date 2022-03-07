@@ -1,6 +1,6 @@
 
 /*
-https://www.geeksforgeeks.org/count-distinct-elements-in-an-array/
+https://practice.geeksforgeeks.org/problems/distinct-absolute-array-elements4529/1
 Count distinct elements in an array
 
 */

@@ -1,6 +1,6 @@
 
 /*
-https://www.geeksforgeeks.org/frequent-element-array/
+https://practice.geeksforgeeks.org/problems/maximum-repeating-number4858/1
 Most frequent element in an array
 
 */

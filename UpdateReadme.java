@@ -458,6 +458,8 @@ class Parse extends Topics
 			time[topic.qIndex-1] = maxPower;
 			//store space complexity here
 		}
+		else if (program.charAt(program.length()-1) == 'p')
+		{}
 	}
 }
 
@@ -466,8 +468,8 @@ class UpdateReadme
 	public static void main(String[] args) throws IOException
 	{
 		//important declarations
-		//String mainPathStr = "E:\\DSA\\Coding";
-		String mainPathStr = "C:\\PP\\DSA";
+		//String mainPathStr = "E:\\DSA\\Coding"; //pp system
+		String mainPathStr = "C:\\PP\\DSA"; //iitg lab system
 		File mainPath = new File(mainPathStr);
 		Topics[] topicDetails; //main arrat that stores all the details of the folder
 

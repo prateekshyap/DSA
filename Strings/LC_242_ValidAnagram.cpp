@@ -1,6 +1,6 @@
 /*
 https://leetcode.com/problems/valid-anagram/
-https://www.geeksforgeeks.org/check-whether-two-strings-are-anagram-of-each-other/
+https://practice.geeksforgeeks.org/problems/anagram-1587115620/1
 
 */
 

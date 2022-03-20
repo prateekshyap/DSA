@@ -317,3 +317,6 @@ single-valued-subtree,Medium
 nth-node-from-end-of-linked-list,Easy
 finding-middle-element-in-a-linked-list,Easy
 max-circular-subarray-sum-1587115620,Hard
+segregate-even-and-odd-nodes-in-a-linked-list5035,Easy
+largest-zigzag-sequence5416,Easy
+number-of-turns-in-binary-tree,Hard

@@ -11,60 +11,63 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
 class Solution {
 public:
-
     ListNode* reverseList(ListNode* head) {
-
-        //return reverseListIterative(head);
-        //return reverseListRecurive(head);
-        return reverseListRecurive2(head);
-
-    }
-
+        return reverseListIterative(head);
+        
+        // return reverseListRecursive(head);
+        // return reverseListRecursive2(head);
+        
+    }// end reverseList
+    
     ListNode* reverseListIterative(ListNode* head) {
-        ListNode *p = nullptr, *q=head, *r = nullptr;
-        while(q){
-            r = q->next;
-            q->next = p;
-            p=q;
-            q=r;
+        
+        if(head == nullptr || head->next == nullptr) return head;
+        
+        //Three Pointer Approach
+        ListNode* prev = nullptr ;
+        ListNode* curr = head ;
+        ListNode* newp = nullptr ;
+        
+        while(curr)    
+        {
+            newp = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = newp;
         }
-        return p;
-    }
-
-    ListNode* reverseListRecurive(ListNode* p) {
-        if (!p || !(p->next)) {
+        
+        head = prev;
+        
+        return head;
+    }// end reverseListIterative
+    
+    ListNode* reverseListRecursive(ListNode* p)
+    {
+        if(!p || !(p->next))
             return p;
-        }
-
-        ListNode* t = reverseListRecurive(p->next);
-        p->next->next = p;          // p->next node next link is not yet changed
+        
+        ListNode* t = reverseListRecursive(p->next);
+        p->next->next = p;
         p->next = nullptr;
+        
         return t;
-    }
-
-    ListNode* reverseListRecurive2(ListNode* curr, ListNode* prev = nullptr) {
-        if (!curr) {
+        
+    }// end reverseListRecursive
+    
+    ListNode* reverseListRecursive2(ListNode* curr, ListNode* prev = nullptr)
+    {
+        if(!curr) return curr;
+        
+        if(!curr->next)
+        {
+            curr->next = prev;
             return curr;
         }
-
-        if (!curr->next) {
-            curr->next = prev;
-            return curr ;
-        }
-        ListNode* curr_next = curr->next;
+         ListNode* curr_next = curr->next;
         curr->next = prev;
-        return reverseListRecurive2(curr_next, curr);
-    }
+        return  reverseListRecursive2(curr_next, curr);
+    }// end reverseListRecursive2
+    
 };

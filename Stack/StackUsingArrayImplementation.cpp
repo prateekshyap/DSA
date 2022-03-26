@@ -1,5 +1,6 @@
 
-/* Implementation of Stack Using Dynamic Array
+/* https://practice.geeksforgeeks.org/problems/implement-stack-using-array/1
+ * Implementation of Stack Using Dynamic Array
  *
  */
 #include<iostream>

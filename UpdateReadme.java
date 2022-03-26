@@ -252,17 +252,35 @@ class Topics
 			{
 				String currentQuestionLink = (String)((Map.Entry)questionLinkIterator.next()).getKey(); //get the link
 				String[] currentTokens = currentQuestionLink.split("/"); //split by "/"
-				for (String currentToken : currentTokens) //for each token
+				/*for (String currentToken : currentTokens) //for each token
 				{
 					if (currentToken.equals(questionKey)) //if the current token matches with the question key created above
 					{
 						exists = true; //mark exists
 						existingQuestionKey = currentQuestion.getQuestionKey(); //get the current question key and store
 					}
+				}*/
+				for (int i = 0; i < currentTokens.length; ++i)
+				{
+					String currentToken = currentTokens[i];
+					if (currentToken.equals(questionKey)) //if the current token matches with the question key created above
+					{
+						exists = true; //mark exists
+						existingQuestionKey = currentQuestion.getQuestionKey(); //get the current question key and store
+					}
+					else if (i < currentTokens.length-1)
+					{
+						if ((currentToken+"-"+currentTokens[i+1]).equals(questionKey))
+						{
+							exists = true; //mark exists
+							existingQuestionKey = currentQuestion.getQuestionKey(); //get the current question key and store
+						}
+					}
 				}
 			}
 		}
 
+		System.out.println(questionKey);
 		if (exists)
 		{
 			int questionIndex = (Integer)questionIndexMap.get(existingQuestionKey); //get the existing question index
@@ -675,6 +693,7 @@ class UpdateReadme
 				while (solutionLinkIterator.hasNext())
 				{
 					Map.Entry solutionLink = (Map.Entry)solutionLinkIterator.next();
+					System.out.println("["+(String)solutionLink.getKey()+"]("+(String)solutionLink.getValue()+") ");
 					fileWriter.write("["+(String)solutionLink.getKey()+"]("+(String)solutionLink.getValue()+") ");
 				}
 				fileWriter.write("|"+currentQuestion.getDifficulty()+"|");

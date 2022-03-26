@@ -36,14 +36,14 @@ For difficulty level, csv file is already updated. For other online information 
 
 ## Algorithms
 
-Number of Problems Solved (27-Mar-2022 00:07:35)
+Number of Problems Solved (27-Mar-2022 00:09:54)
 
 | Topic Name | Java | CPP | 
 | :--------: | :--------: | :--------: | 
 | [Arrays](https://github.com/prateekshyap/DSA#arrays) | 66 | 14 |
 | [BackTracking](https://github.com/prateekshyap/DSA#backtracking) | 17 | 0 |
 | [Bit-Magic](https://github.com/prateekshyap/DSA#bit-magic) | 19 | 8 |
-| [Codeforces](https://github.com/prateekshyap/DSA#codeforces) | 31 | 0 |
+| [Codeforces](https://github.com/prateekshyap/DSA#codeforces) | 31 | 1 |
 | [Disjoint-Set](https://github.com/prateekshyap/DSA#disjoint-set) | 0 | 0 |
 | [Dynamic-Programming](https://github.com/prateekshyap/DSA#dynamic-programming) | 54 | 1 |
 | [Graph](https://github.com/prateekshyap/DSA#graph) | 33 | 10 |
@@ -62,7 +62,7 @@ Number of Problems Solved (27-Mar-2022 00:07:35)
 | [Strings](https://github.com/prateekshyap/DSA#strings) | 26 | 12 |
 | [Tree](https://github.com/prateekshyap/DSA#tree) | 92 | 7 |
 | [Trie](https://github.com/prateekshyap/DSA#trie) | 10 | 0 |
-| Total | 552 | 110 |
+| Total | 552 | 111 |
 
 ## Reference
 

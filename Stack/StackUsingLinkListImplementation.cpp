@@ -1,3 +1,5 @@
+/*https://practice.geeksforgeeks.org/problems/implement-stack-using-linked-list/1*/
+
 #include<iostream>
 using namespace std;
 // #define MAX 1000

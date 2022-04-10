@@ -329,3 +329,6 @@ binary-searchable-elements,Medium
 implement-stack-using-array,Basic
 implement-stack-using-linked-list,Basic
 rearrange-characters4649,Medium
+level-order-traversal,Easy
+height-of-binary-tree,Medium
+children-sum-parent,Easy

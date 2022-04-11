@@ -332,3 +332,6 @@ rearrange-characters4649,Medium
 level-order-traversal,Easy
 height-of-binary-tree,Medium
 children-sum-parent,Easy
+sorted-insert-for-circular-linked-list,Easy
+nearly-sorted-algorithm,Medium
+two-mirror-trees,Easy

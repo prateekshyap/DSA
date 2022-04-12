@@ -2,7 +2,6 @@
 https://practice.geeksforgeeks.org/problems/merge-k-sorted-arrays/1#
 Merge k Sorted Arrays 
 */
-
 // { Driver Code Starts
 //Initial Template for C++
 
@@ -25,7 +24,43 @@ class Solution
     public:
     //Function to merge k sorted arrays.
     
-    //USING SORT and Single ARRAY
+     vector<int> mergeKArrays(vector<vector<int>> arr, int K)
+    {
+        vector<int> ans;
+        priority_queue<pair<int,pair<int,int>>, vector<pair<int,pair<int,int>>>, greater<pair<int,pair<int,int>>>> pq;
+        
+        for(int i=0; i<K; i++)
+        {
+            // pushing all first min element
+            pq.push({arr[i][0], {i,0}});
+        }
+        
+        while(!pq.empty())
+        {
+            int ele = pq.top().first;
+            int i = pq.top().second.first;
+            int j = pq.top().second.second;
+            
+            pq.pop();
+            
+            if(j== K-1) // last column
+            {
+                ans.push_back(ele);
+                continue;
+            }
+            else
+            {
+                ans.push_back(ele);
+                j++;
+                pq.push({arr[i][j], {i,j}});
+            }
+            
+        }
+        return ans;
+    }// end
+    
+    //USING Min Heap and pushing all elements
+    /*
     vector<int> mergeKArrays(vector<vector<int>> arr, int K)
     {
         vector<int> ans;
@@ -46,6 +81,7 @@ class Solution
         }
         return ans;
     }// end
+    */
     
     //USING SORT and Single ARRAY
     /*

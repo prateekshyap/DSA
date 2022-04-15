@@ -2,39 +2,41 @@
  * Given a directed graph. The task is to do Breadth First Traversal of this graph starting from 0.
  */
 
-// { Driver Code Starts
 #include <bits/stdc++.h>
 using namespace std;
 
-// } Driver Code Ends
-
+ // } Driver Code Ends
 class Solution {
-public:
+  public:
     // Function to return Breadth First Traversal of given graph.
     vector<int> bfsOfGraph(int V, vector<int> adj[]) {
         // Code here
-
-        vector<int> bfs_list;  // to store the bfs traversal
+        
+        vector<int> bfs_lists;
         queue<int> q;
-        bool visited[V]={false};
-
-        q.push(0);          //0th node;
+        vector<bool> visited(V,0);
+        
+        q.push(0);
         visited[0]=true;
-
-        while(!q.empty()){
-            int x = q.front();
-            bfs_list.push_back(x);
-            q.pop();
-
-            for(int w: adj[x]){
-                if(!visited[w]){
-                    visited[w]=true;
-                    q.push(w);
-                }
-            }//for adj
-        }//while queue
-        return bfs_list;
-    }//bfsOfGraph
+        
+        while(!q.empty())
+        {
+            int i = q.front(); q.pop();
+            bfs_lists.push_back(i);
+            
+            for(int w: adj[i])
+            {
+                if(!visited[w])
+                    {
+                        visited[w] = true;
+                        q.push(w);
+                    }
+            }
+            
+        }// while
+        
+        return bfs_lists;
+    }
 };
 
 // { Driver Code Starts.

@@ -3,37 +3,41 @@
  * Note: Use recursive approach to find the DFS traversal of the graph starting from the 0th vertex from left to right according to the graph.
  */
 
-// { Driver Code Starts
 #include <bits/stdc++.h>
 using namespace std;
 
-// } Driver Code Ends
+ // } Driver Code Ends
 class Solution {
-public:
-    // Function to return a list containing the DFS traversal of the graph.
-    vector<int> dfsOfGraph(int V, vector<int> adj[]) {
-
-        vector<int> dfs_list;
-
-        vector <bool> visited(V,false);
-
-        DFS(0, adj, visited, dfs_list);
-
-        return dfs_list;
+  public:
+    // Function to return Breadth First Traversal of given graph.
+    vector<int> bfsOfGraph(int V, vector<int> adj[]) {
+        // Code here
+        
+        vector<int> bfs_lists;
+        queue<int> q;
+        vector<bool> visited(V,0);
+        
+        q.push(0);
+        visited[0]=true;
+        
+        while(!q.empty())
+        {
+            int i = q.front(); q.pop();
+            bfs_lists.push_back(i);
+            
+            for(int w: adj[i])
+            {
+                if(!visited[w])
+                    {
+                        visited[w] = true;
+                        q.push(w);
+                    }
+            }
+            
+        }// while
+        
+        return bfs_lists;
     }
-
-    void DFS(int s, vector<int> adj[], vector<bool> &vis, vector<int> &dfs_l){
-
-        dfs_l.push_back(s);
-        vis[s]=true;
-
-        for(int w: adj[s]){
-
-            if(!vis[w])
-                DFS(w,adj,vis,dfs_l);
-        }//for adj
-
-    }//DFS
 };
 
 // { Driver Code Starts.
@@ -42,7 +46,9 @@ int main() {
     cin >> tc;
     while (tc--) {
         int V, E;
-        cin >> V >> E;
+        cin >> V >>
+
+            E;
 
         vector<int> adj[V];
 
@@ -50,12 +56,12 @@ int main() {
             int u, v;
             cin >> u >> v;
             adj[u].push_back(v);
-            adj[v].push_back(u);
+            // 		adj[v].push_back(u);
         }
         // string s1;
         // cin>>s1;
         Solution obj;
-        vector<int> ans = obj.dfsOfGraph(V, adj);
+        vector<int> ans = obj.bfsOfGraph(V, adj);
         for (int i = 0; i < ans.size(); i++) {
             cout << ans[i] << " ";
         }

@@ -11,7 +11,7 @@ public class SymmetricMatrix
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		int tests = Integer.parseInt(reader.readLine());
 		int[][][] tiles;
-		int n, m, i, r, c;
+		int n, m, i, r, c, symCount, halfSymCount;
 		String[] tokens;
 		while (tests-- > 0)
 		{
@@ -28,6 +28,19 @@ public class SymmetricMatrix
 						tiles[i][r][c] = Integer.parseInt(tokens[c]);
 				}
 			}
+			symCount = halfSymCount = 0;
+		    if (m%2 != 0) System.out.println("NO");
+		    else
+		    {
+				for (i = 0; i < n; ++i)
+				{
+				    if (tiles[i][0][0] == tiles[i][1][1] && tiles[i][0][1] == tiles[i][1][0]) ++symCount;
+				    else if (tiles[i][0][0] != tiles[i][1][1] && tiles[i][0][1] == tiles[i][1][0]) ++halfSymCount;
+				}
+				if (symCount == 0 && halfSymCount == 0) System.out.println("NO");
+				else System.out.println("YES");
+		    }
+			
 		}
 	}
 }

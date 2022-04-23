@@ -346,3 +346,6 @@ k-subarray-sum,Easy
 longest-subarray-with-atmost-k-even-elements,Easy
 reach-the-target,Easy
 maximum-width-of-tree,Easy
+all-unique-permutations-of-an-array,Medium
+rank-of-matrix,Medium
+longest-even-length-substring,Medium

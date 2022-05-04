@@ -54,3 +54,36 @@ class Solution {
         }
     }
 }
+
+/*https://practice.geeksforgeeks.org/problems/generate-grey-code-sequences/1*/
+
+class Solution
+{
+    int num, N;
+    ArrayList<String> generateCode(int n)
+    {
+        // Your code here
+        ArrayList<String> grayCodes = new ArrayList<String>();
+        N = n;
+        recur(n, grayCodes);
+        return grayCodes;
+    }
+    private void recur(int n, ArrayList<String> grayCodes) {
+        if (n == 0)
+        {
+            StringBuffer res = new StringBuffer(Integer.toBinaryString(num));
+            while (res.length() < N)
+            {
+                StringBuffer temp = new StringBuffer("0");
+                temp.append(res);
+                res = temp;
+            }
+            grayCodes.add(res.toString());
+        }
+        else {
+            recur(n - 1, grayCodes);
+            num ^= (1 << (n - 1));
+            recur(n - 1, grayCodes);
+        }
+    }
+}

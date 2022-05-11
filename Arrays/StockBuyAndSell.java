@@ -1,6 +1,8 @@
 /*https://practice.geeksforgeeks.org/problems/stock-buy-and-sell-1587115621/1*/
+/*https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/*/
 
 /*Prateekshya's Solution*/
+/*gfg*/
 import java.io.*;
 
 class GFG
@@ -53,6 +55,43 @@ class GFG
 		        System.out.println("No Profit");
 	    }
 	}
+}
+
+/*Leetcode*/
+class Solution {
+    public int maxProfit(int[] prices) {
+        ArrayList<Integer> localMin = new ArrayList<Integer>();
+        ArrayList<Integer> localMax = new ArrayList<Integer>();
+        
+        int min = 0;
+        int n = prices.length;
+        for (int i = 1; i < n; ++i)
+        {
+            if (min == i-1 && prices[i] < prices[min])
+                min = i;
+            else if (prices[i] < prices[i-1])
+            {
+                if (min != i-1)
+                {
+                    localMin.add(min);
+                    localMax.add(i-1);
+                }
+                min = i;
+            }
+            else if (i == prices.length-1)
+            {
+                if (min != prices.length-1)
+                {
+                    localMin.add(min);
+                    localMax.add(prices.length-1);
+                }
+            }
+        }
+        int sum = 0;
+        for (int i = 0; i < localMin.size(); ++i)
+            sum += prices[localMax.get(i)]-prices[localMin.get(i)];
+        return sum;
+    }
 }
 
 /*Pratik's Solution*/

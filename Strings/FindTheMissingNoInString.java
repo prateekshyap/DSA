@@ -1,3 +1,5 @@
+/*https://practice.geeksforgeeks.org/problems/find-the-missing-no-in-string/1*/
+
 class GfG
 {
     public int missingNumber(String s)

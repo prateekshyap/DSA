@@ -687,7 +687,8 @@ class UpdateReadme
 					fileWriter.write("["+(questionLinkCount == 1 ? "LC" :
 											questionLinkCount == 2 ? "GFG" :
 												questionLinkCount == 3 ? "HR" :
-													questionLinkCount == 4 ? "IB" : "CF")+"]("+currentQuestionLink+") "); //write the link
+													questionLinkCount == 4 ? "IB" : 
+														questionLinkCount == 5 ? "CF" : "BS")+"]("+currentQuestionLink+") "); //write the link
 				}
 				fileWriter.write("|");
 				while (solutionLinkIterator.hasNext())
@@ -746,6 +747,7 @@ class UpdateReadme
 			else if (token.equals("www.hackerrank.com")) return 3;
 			else if (token.equals("www.interviewbit.com")) return 4;
 			else if (token.equals("codeforces.com")) return 5;
+			else if (token.equals("binarysearch.com")) return 6;
 		}
 		return -1;
 	}
@@ -778,7 +780,7 @@ class UpdateReadme
 		for (int i = 0; i < tokens.length; ++i)
 		{
 			String token = tokens[i];
-			if (token.equals("leetcode.com") || token.equals("practice.geeksforgeeks.org") || token.equals("www.hackerrank.com") || token.equals("www.interviewbit.com"))
+			if (token.equals("leetcode.com") || token.equals("practice.geeksforgeeks.org") || token.equals("www.hackerrank.com") || token.equals("www.interviewbit.com") || token.equals("binarysearch.com"))
 				return i+2; //question name appears after two indices
 			else if (token.equals("codeforces.com"))
 				return (i+3)*(-1); //question name appears after three indices

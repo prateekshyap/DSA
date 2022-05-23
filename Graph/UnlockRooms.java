@@ -28,7 +28,7 @@ Explanation
 
 We start off at room 0 and can go to room 1 with its key. From room 1 we can go to room 2. Then, we can go back to room 0 and go to room 3.
 
-https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1
+https://binarysearch.com/problems/Unlock-Rooms
 */
 
 //BFS

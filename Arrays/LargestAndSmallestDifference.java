@@ -23,8 +23,7 @@ Explanation
 
 The best list we can make is [1, 2, 5].
 
-A sample question from sliding window -
-https://practice.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k3101/1
+https://binarysearch.com/problems/Largest-and-Smallest-Difference
 */
 
 //sliding window solution

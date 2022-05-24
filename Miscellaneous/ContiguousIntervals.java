@@ -18,7 +18,7 @@ Output
 
 Variation of merge intervals
 
-https://leetcode.com/problems/merge-intervals/
+https://binarysearch.com/problems/Contiguous-Intervals
 */
 
 import java.util.*;

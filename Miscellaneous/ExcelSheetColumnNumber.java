@@ -1,4 +1,6 @@
 /*https://leetcode.com/problems/excel-sheet-column-number/*/
+/*https://binarysearch.com/problems/The-Auditor*/
+
 
 class Solution {
     public int titleToNumber(String columnTitle) {

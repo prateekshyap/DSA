@@ -1,4 +1,5 @@
 /*https://leetcode.com/problems/majority-element/*/
+/*https://binarysearch.com/problems/Majority-Vote*/
 
 class Solution {
     public int majorityElement(int[] nums) {
@@ -56,5 +57,52 @@ class Solution {
         if (counter > size/2)
             return majorityElement;
         return -1;
+    }
+}
+
+//binary search
+import java.util.*;
+
+class Solution {
+    public int solve(int[] nums) {
+
+        //moore's voting solution
+        int i, n = nums.length;
+        int maj = nums[0], counter = 1;
+        for (i = 1; i < n; ++i)
+        {
+            if (maj == nums[i]) ++counter; else --counter;
+            if (counter == 0)
+            {
+                maj = nums[i];
+                counter = 1;
+            }
+        }
+
+        //check for actual majority
+        counter = 0;
+        for (i = 0; i < n; ++i) if (nums[i] == maj) ++counter;
+
+        if (counter > n/2) return maj;
+        return -1;
+
+        //hashing solution
+        /*HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
+        int i, n = nums.length;
+        for (i = 0; i < n; ++i)
+            map.put(nums[i], map.containsKey(nums[i]) ? (Integer)map.get(nums[i])+1 : 1 );
+        Iterator it = map.entrySet().iterator();
+        int result = 0, val = 0;
+        while (it.hasNext())
+        {
+            Map.Entry elem = (Map.Entry)it.next();
+            if ((Integer)elem.getValue() > result)
+                {
+                    result = (Integer)elem.getValue();
+                    val = (Integer)elem.getKey();
+                }
+        }
+        if (result > n/2) return val;
+        return -1;*/
     }
 }

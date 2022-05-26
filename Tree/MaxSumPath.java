@@ -1,5 +1,6 @@
 /*https://practice.geeksforgeeks.org/problems/maximum-sum-leaf-to-root-path/1*/
 
+
 class Solution
 {
     static int maxSum;
@@ -19,5 +20,14 @@ class Solution
         }
         if (root.left != null) recur(root.left,currSum+root.data);
         if (root.right != null) recur(root.right,currSum+root.data);
+    }
+}
+
+class Solution {
+    public int solve(Tree root) {
+        if (root == null) return 0;
+        int leftSum = solve(root.left);
+        int rightSum = solve(root.right);
+        return Math.max(leftSum,rightSum)+root.val;
     }
 }

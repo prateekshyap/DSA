@@ -66,3 +66,9 @@ class Solution {
         return Math.max(height(root.left),height(root.right))+1;
     }
 }
+
+/*
+
+,"sumRange","update","sumRange",[0,1],[1,-3],[0,1]
+
+*/

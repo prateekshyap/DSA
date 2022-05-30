@@ -1,4 +1,5 @@
 /*https://leetcode.com/problems/swap-nodes-in-pairs/*/
+/*https://binarysearch.com/problems/Pairwise-Linked-List-Swap*/
 
 //iterative solution
 class Solution {
@@ -26,6 +27,23 @@ class Solution {
 
             //update for the next iteration
             first = newList;
+        }
+        return newHead;
+    }
+}
+
+class Solution {
+    public LLNode solve(LLNode node) {
+        if (node == null || node.next == null)
+            return node;
+        LLNode prev = node, curr = node, newList = node, newHead = node.next;
+        while (newList != null && newList.next != null)
+        {
+            prev = newList;
+            curr = prev.next;
+            newList = curr.next;
+            curr.next = prev;
+            prev.next = newList == null || newList.next == null ? newList : newList.next;
         }
         return newHead;
     }

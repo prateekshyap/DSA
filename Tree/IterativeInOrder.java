@@ -60,3 +60,38 @@ class Tree
         return list;
     }
 }
+
+//best approach
+
+class Solution {
+    ArrayList<Integer> list;
+    public int[] solve(Tree root) {
+        if (root == null) return new int[0];
+        list = new ArrayList<Integer>();
+
+        Stack<Tree> stack = new Stack<Tree>();
+        Tree curr = root;
+        while (curr != null)
+        {
+            stack.push(curr);
+            curr = curr.left;
+        }
+
+        while (!stack.isEmpty())
+        {
+            curr = stack.pop();
+            list.add (curr.val);
+            curr = curr.right;
+            while (curr != null)
+            {
+                stack.push(curr);
+                curr = curr.left;
+            }
+        }
+
+        int[] result = new int[list.size()];
+        for (int i = 0; i < result.length; ++i)
+            result[i] = (Integer)list.get(i);
+        return result;
+    }
+}

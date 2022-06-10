@@ -40,6 +40,44 @@ class Solution
     }
 }
 
+/*Without extra space with three pointers*/
+class Solution
+{
+    ArrayList<Integer> commonElements(int A[], int B[], int C[], int n1, int n2, int n3) 
+    {
+        // code here 
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        
+        int i1 = 0, i2 = 0, i3 = 0, min = 0, minArr = -1;
+        while (i1 < n1 && i2 < n2 && i3 < n3)
+        {
+            if (A[i1] == B[i2] && A[i1] == C[i3])
+            {
+                if (list.size() == 0 || list.get(list.size()-1) != A[i1]) list.add(A[i1]);
+                ++i1; ++i2; ++i3;
+                continue;
+            }
+            min = A[i1]; minArr = 1;
+            if (B[i2] < min)
+            {
+                min = B[i2];
+                minArr = 2;
+            }
+            if (C[i3] < min)
+            {
+                min = C[i3];
+                minArr = 3;
+            }
+            
+            if (minArr == 1) ++i1;
+            else if (minArr == 2) ++i2;
+            else ++i3;
+        }
+        
+        return list;
+    }
+}
+
 /* Pratik's Solution */
 class Solution
 {

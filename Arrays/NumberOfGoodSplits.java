@@ -1,4 +1,5 @@
 /*https://leetcode.com/problems/number-of-good-ways-to-split-a-string/*/
+/*https://binarysearch.com/problems/Split-String-with-Same-Distinct-Counts*/
 
 /*Prateekshya's Solution*/
 class Solution {

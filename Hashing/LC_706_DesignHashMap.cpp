@@ -95,60 +95,60 @@ https://leetcode.com/problems/design-hashmap/
 
 
 // /*********** using vector + list (Chaining) **********/
-class MyHashMap {
-public:
+// class MyHashMap {
+// public:
     
-    vector<list<pair<int,int>>> mp; // array of linkedlist
-    const int size = 769; // large prime number 9973;
+//     vector<list<pair<int,int>>> mp; // array of linkedlist
+//     const int size = 769; // large prime number 9973;
     
-    MyHashMap() {
-        mp.resize(size, NULL);
-    }
+//     MyHashMap() {
+//         mp.resize(size, NULL);
+//     }
     
-    void put(int key, int value) {
+//     void put(int key, int value) {
         
-        auto& list = mp[getIndex(key)];
-        //if key already exist
-        for(auto &it : list)
-        {
-            if(it.first == key)
-            {
-                it.second =value;
-                return;
-            }
-        }
-        // if key doesn't exist
-        list.push_back({key,value});
-    }
+//         auto& list = mp[getIndex(key)];
+//         //if key already exist
+//         for(auto &it : list)
+//         {
+//             if(it.first == key)
+//             {
+//                 it.second =value;
+//                 return;
+//             }
+//         }
+//         // if key doesn't exist
+//         list.push_back({key,value});
+//     }
     
    
-    int get(int key) {
-       auto &list = mp[getIndex(key)];
-        for(auto it: list)
-            if(it.first == key)
-                return it.second;
-        return -1;
-    }
+//     int get(int key) {
+//        auto &list = mp[getIndex(key)];
+//         for(auto it: list)
+//             if(it.first == key)
+//                 return it.second;
+//         return -1;
+//     }
     
-    void remove(int key) {
-       auto &list = mp[getIndex(key)];
-        for(auto &it:list)
-            if(it.first == key)
-            {
-                list.remove(it);
-                return;
-            }
+//     void remove(int key) {
+//        auto &list = mp[getIndex(key)];
+//         for(auto &it:list)
+//             if(it.first == key)
+//             {
+//                 list.remove(it);
+//                 return;
+//             }
 
-    }
+//     }
     
-    int getIndex(int key)
-    {
-        return key%size;
-    }
+//     int getIndex(int key)
+//     {
+//         return key%size;
+//     }
 
-};
+// };
 
-/*********** using vector + vector (Chaining) **********/
+// /*********** using vector + vector (Chaining) **********/
 // class MyHashMap {
 // public:
     
@@ -209,6 +209,80 @@ public:
 //     }
 
 // };
+
+
+/*********** using user defined **********/
+struct Node{
+  int key, val;
+    Node* next;
+    Node(int k, int v, Node* n)
+    {
+        key = k;
+        val = v;
+        next = n;
+    }
+};
+class MyHashMap {
+public:
+    
+    const static int size = 19997; // large prime number 9973;
+    const static int mult = 12582917;
+    Node* data[size]; // array of linkedlist
+
+    int hash(int key)
+    {
+        return (int)((long)key*mult %size);
+    }
+    
+    // MyHashMap() {
+    // }
+    
+    void put(int key, int value) {
+        
+        remove(key);
+        int h = hash(key);
+        Node *node = new Node(key, value, data[h]);
+        data[h] = node;
+    }
+    
+   
+    int get(int key) {
+        int h = hash(key);
+        Node *node = data[h];
+        while(node!=nullptr)
+        {
+            if(node->key == key)
+                return node->val;
+            node = node->next;
+        }
+        return -1;
+    }
+    
+    void remove(int key) {
+       int h = hash(key);
+        
+        // cout<<key<<" "<<h<<" "<<endl;
+       Node *node = data[h];
+       if(node == nullptr) return;
+       if(node->key == key) 
+           data[h] = node->next;
+       else {
+           while(node->next !=nullptr)
+           {
+               if(node->next->key == key)
+               {
+                   node->next = node->next->next;
+                   return;
+               }
+               node = node->next;
+           }
+       }
+    }
+    
+    
+    
+
+};
 
 
 /**

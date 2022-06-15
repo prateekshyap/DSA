@@ -1,5 +1,7 @@
 /* https://leetcode.com/problems/reverse-linked-list/
  * Given the head of a singly linked list, reverse the list, and return the reversed list.
+ 
+ https://binarysearch.com/problems/Reverse-a-Linked-List
  */
 /**
  * Definition for singly-linked list.

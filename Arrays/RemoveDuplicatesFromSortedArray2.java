@@ -40,3 +40,42 @@ class Solution {
         return curr+1;
     }
 }
+
+/*Binary Seacrh*/
+import java.util.*;
+
+import java.util.*;
+
+class Solution {
+    public int[] solve(int[] nums) {
+        if (nums.length == 0) return nums;
+        int i, j, k;
+
+        i = j = k = 0;
+
+        while (j < nums.length) //till all elements are parsed
+        {
+            if (nums[i] == nums[j]) ++j; //increase j till the end of the window
+            else
+            {
+                if (j-i >= 2) //if window size is at least 2, keep an element
+                    nums[k++] = nums[i];
+                nums[k++] = nums[i]; //keep at least one element
+                i = j; //close the old window and start a new one
+            }
+        }
+
+        //last window operation
+        if (j-i >= 2)
+            nums[k++] = nums[i];
+        nums[k++] = nums[i];
+
+        //copy the result
+        int[] result = new int[k];
+        for (i = 0; i < k; ++i)
+            result[i] = nums[i];
+        nums = result;
+
+        return nums;
+    }
+}

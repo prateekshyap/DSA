@@ -376,3 +376,6 @@ next-right-node,Easy
 trie-delete,Medium
 majority-element-1587115620,Medium
 generate-all-possible-parentheses,Medium
+sum-of-binary-tree,Basic
+number-of-palindromic-paths-in-a-matrix0819,Medium
+check-mirror-in-n-ary-tree1528,Medium

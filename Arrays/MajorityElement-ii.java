@@ -51,3 +51,48 @@ class Solution {
 }
 
 /* Please Notify me once you get any O(N) time and O(1) space solution */
+/*Got it*/
+class Solution {
+public List majorityElement(int[] nums) {
+int candidate1=0,candidate2=0,count1=0,count2=0;
+int n=nums.length;
+for(int i=0;i<nums.length;i++){
+
+        if(candidate1==nums[i]){
+            count1+=1;
+        }
+        else if(candidate2==nums[i]){
+            count2+=1;
+        }
+        else if(count1==0){
+            candidate1=nums[i];
+            count1=1;
+        }
+        else if(count2==0){
+            candidate2=nums[i];
+            count2=1;
+        }
+        else{
+            count1-=1;
+            count2-=1;
+        }
+        
+    }
+    count1=count2=0;
+    for(int i=0;i<nums.length;i++){
+        if(candidate1==(nums[i])){
+            count1+=1;
+        }
+       else if(candidate2==(nums[i])){
+            count2+=1;
+        }
+    }
+    List <Integer> l = new ArrayList<>();
+    if(count1>(n/3))
+        l.add(candidate1);
+    if(count2>(n/3))
+        l.add(candidate2);
+    
+    return l; 
+}
+} 

@@ -1,4 +1,5 @@
 /*https://practice.geeksforgeeks.org/problems/longest-common-substring1452/1*/
+/*https://binarysearch.com/problems/Longest-Common-Substring*/
 
 /*
 Modification of Longest Common Subsequence-
@@ -18,7 +19,6 @@ class Solution{
                     dp[i][j] = dp[i-1][j-1]+1;
                     max = Math.max(max,dp[i][j]);
                 }
-                else dp[i][j] = 0;
         return max;
     }
 }

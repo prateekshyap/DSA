@@ -47,3 +47,41 @@ class Solution
         return false;
     }
 }
+
+class Solution {
+    int[] color;
+    boolean result;
+    // Function to detect cycle in an undirected graph.
+    public boolean isCycle(int V, ArrayList<ArrayList<Integer>> adj)
+    {
+        // Code here
+        color = new int[V];
+        result = false;
+        for (int i = 0; i < V; ++i) if (color[i] == 0) dfs(adj, V, i, -1);
+                
+        return result;
+    }
+    public void dfs(ArrayList<ArrayList<Integer>> graph, int V, int src, int parent)
+    {
+        if (result) return;
+        
+        color[src] = 1; // entry color is 1
+        for (int adjacentNode : graph.get(src)) // for each neighbour of the current node
+        {
+            if (color[adjacentNode] == 2) // if color is 2
+                continue; // continue
+            if (adjacentNode != parent) // if color is 1 or dfs from neighbour is false, return false
+            {
+                if (color[adjacentNode] == 1)
+                {
+                    result = true;
+                    break;
+                }
+                dfs(graph, V, adjacentNode, src); //recursion call
+            }
+        }
+
+        if (result) return;
+        color[src] = 2; // exit color is 2
+    }
+}

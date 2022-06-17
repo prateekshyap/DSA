@@ -63,20 +63,19 @@ class Solution {
     }
 }
 
-//proper dfs
 class Solution {
-    public int dfs(int[][] grid, int i, int j){ //ith row, jth column
-        if(i == grid.length) { //if rows are over, return j
+    public int dfs(int[][] grid, int i, int j){
+        if(i == grid.length) {
             return j;
         }
         
-        if(j < 0 || j >= grid[0].length) { //if j runs out of boundary, ball stops
+        if(j < 0 || j >= grid[0].length) {
             return -1;
         }
             
-        if(grid[i][j] == 1 && j+1 < grid[0].length && grid[i][j+1] == 1) { //move right
+        if(grid[i][j] == 1 && j+1 < grid[0].length && grid[i][j+1] == 1) {
             return dfs(grid, i+1, j+1);
-        } else if(grid[i][j] == -1 && j-1 >= 0 && grid[i][j-1] == -1) { //move left
+        } else if(grid[i][j] == -1 && j-1 >= 0 && grid[i][j-1] == -1) {
             return dfs(grid, i+1, j-1);
         }
             

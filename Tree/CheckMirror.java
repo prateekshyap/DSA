@@ -1,4 +1,5 @@
 /*https://leetcode.com/problems/symmetric-tree/*/
+/*https://binarysearch.com/problems/Symmetric-Binary-Tree*/
 
 class Solution {
     public boolean isSymmetric(TreeNode root) {
@@ -20,5 +21,21 @@ class Solution {
 
         /*recursion*/
         return checkSymmetry(root1.left,root2.right) && checkSymmetry(root1.right,root2.left);
+    }
+}
+
+class Solution
+{
+    public boolean solve(Tree root)
+    {
+        if (root == null) return true;
+        return recur(root.left, root.right); 
+    }
+    public boolean recur(Tree root1, Tree root2)
+    {
+        if (root1 == null && root2 == null) return true;
+        if (root1 == null || root2 == null) return false;
+        if (root1.val != root2.val) return false;
+        return recur(root1.left,root2.right)&&recur(root1.right,root2.left);
     }
 }

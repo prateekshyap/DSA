@@ -42,3 +42,85 @@ class Solution {
                 dfs(graph,adjNode,component);
     }
 }
+
+//disjoint set solution
+class Solution {
+    boolean[] visited;
+    public long countPairs(int n, int[][] edges) {
+        visited = new boolean[n];
+        DSU dsu = new DSU(n);
+        for (int[] edge: edges) {
+            dsu.union(edge[0], edge[1]);
+        }
+        Set<Integer> set = new HashSet<>();
+        for (int i = 0; i < n; i++) {
+            set.add(dsu.find(i));
+        }
+        List<Integer> list = new ArrayList<>();
+        for (int root: set) {
+            list.add(dsu.getComponentSize(root));
+        }
+        long sum = list.get(0);
+        long res = 0;
+        for (int i = 1; i < list.size(); i++) {
+            res += list.get(i) * sum;
+            sum += list.get(i);
+        }
+        return res;
+    }
+    public void dfs(List<List<Integer>> graph, int src, Set<Integer> component)
+    {
+        visited[src] = true;
+        component.add(src);
+        
+        for (Integer adjNode : graph.get(src))
+        {
+            if (!visited[adjNode])
+            {
+                dfs(graph,adjNode,component);
+            }
+        }
+    }
+}
+
+class DSU {
+    private int[] parent;
+    private int[] capacity;
+    
+    public DSU(int n) {
+        this.parent = new int[n];
+        this.capacity = new int[n];
+        for (int i = 0; i < n; i++) {
+            parent[i] = i;
+            capacity[i] = 1;
+        }
+    }
+    
+    public int find(int a) {
+        int root = parent[a];
+        while (root != parent[root]) root = parent[root];
+        while (a != parent[a]) {
+            a = parent[a];
+            parent[a] = root;
+        }
+        return root;
+    }
+    
+    public void union(int a, int b) {
+        int rootA = find(a);
+        int rootB = find(b);
+        if (rootA == rootB) return;
+        
+        if (capacity[rootA] >= capacity[rootB]) {
+            capacity[rootA] += capacity[rootB];
+            parent[rootB] = rootA;
+        } else {
+            capacity[rootB] += capacity[rootA];
+            parent[rootA] = rootB;
+        }
+    }
+    
+    public int getComponentSize(int root) {
+        return this.capacity[root];
+    }
+}

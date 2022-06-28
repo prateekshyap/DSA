@@ -37,3 +37,26 @@ class Solution {
         return result;
     }
 }
+
+class Solution {
+    public int[] canSeePersonsCount(int[] heights) 
+    {
+        int size = heights.length;
+        int[] stack = new int[size];
+        int i, top = 0;
+        stack[0] = heights[size-1];
+        int[] visible = new int[size];
+        for (i = size-2; i >= 0; --i)
+        {
+            int count = 0;
+            while (top >= 0 && heights[i] >= stack[idx])
+            {
+                ++count; --top;
+            }
+            if (top >= 0) ++count;
+            stack[++top] = heights[i];
+            visible[i] = count;
+        }
+        return visible;
+    }
+}

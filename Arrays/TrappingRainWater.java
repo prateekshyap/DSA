@@ -1,4 +1,5 @@
 /*https://leetcode.com/problems/trapping-rain-water/*/
+/*https://binarysearch.com/problems/Rain-Catcher*/
 
 class Solution {
     public int trap(int[] height) {
@@ -39,5 +40,39 @@ class Solution {
             if (m > 0) result += m;
         }
         return result;
+    }
+}
+
+import java.util.*;
+
+class Solution {
+    public int solve(int[] nums) {
+        int n = nums.length;
+        if (n <= 2) return 0;
+        int left = 0, right = n-1, border;
+        while (left < n-1 && nums[left] <= nums[left+1]) ++left;
+        while (right > 0 && nums[right] <= nums[right-1]) --right;
+        int water = 0;
+        int index = 0, sum, temp;
+        while (left < right)
+        {
+            if (nums[left] < nums[right])
+            {
+                border = nums[left];
+                left++;
+                while(nums[left] < border){
+                    water += border - nums[left++];
+                }
+            }
+            else
+            {
+                border = nums[right];
+                right--;
+                while(nums[right] < border){
+                    water += border - nums[right--];
+                }
+            }
+        }
+        return water;
     }
 }

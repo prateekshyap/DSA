@@ -1,4 +1,5 @@
 /*https://practice.geeksforgeeks.org/problems/bipartite-graph/1*/
+/*https://leetcode.com/problems/is-graph-bipartite/*/
 
 class Solution
 {
@@ -74,6 +75,36 @@ class Solution
         }
 
         //if loop uninterrupted, graph is bipartite
+        return true;
+    }
+}
+
+class Solution {
+    public boolean isBipartite(int[][] graph) {
+        int N = graph.length, i;
+        int[] color = new int[N];
+        
+        for (i = 0; i < N; ++i) color[i] = -1;
+        
+        for (i = 0; i < N; ++i)
+            if (color[i] == -1)
+                if (!DFS(graph,color,i))
+                    return false;
+        
+        return true;
+    }
+    boolean DFS (int[][] graph, int[] color, int node)
+    {
+        if (color[node] == -1) color[node] = 1;
+        for (int a: graph[node])
+        {
+            if (color[a] == -1)
+            {
+                color[a] = 1-color[node];
+                if (!DFS(graph,color,a)) return false;
+            }
+            else if(color[a] == color[node]) return false;
+        }
         return true;
     }
 }

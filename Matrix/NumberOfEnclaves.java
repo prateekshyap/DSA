@@ -1,4 +1,5 @@
 /*https://leetcode.com/problems/number-of-enclaves/*/
+/*https://binarysearch.com/problems/Enclosed-Islands*/
 
 //simple dfs solution
 class Solution {
@@ -146,5 +147,47 @@ class Solution {
         flood(grid, y + 1, x);
         flood(grid, y, x - 1);
         flood(grid, y, x + 1);
+    }
+}
+
+import java.util.*;
+
+class Solution {
+    int  m, n;
+    int[][] pos = new int[][]{{1,0},{-1,0},{0,1},{0,-1}};
+    public int solve(int[][] matrix) {
+        int i, j;
+        m = matrix.length; n = matrix[0].length;
+
+        for (i = 0; i < m; ++i)
+        {
+            if (matrix[i][0] == 1) dfs(matrix,i,0);
+            if (matrix[i][n-1] == 1) dfs(matrix,i,n-1);
+        }
+
+        for (j = 0; j < n; ++j)
+        {
+            if (matrix[0][j] == 1) dfs(matrix,0,j);
+            if (matrix[m-1][j] == 1) dfs(matrix,m-1,j);
+        }
+
+        int result = 0;
+        for (i = 0; i < m; ++i)
+            for (j = 0; j < n; ++j)
+                result += matrix[i][j];
+
+        return result;
+    }
+    public void dfs(int[][] matrix, int row, int col)
+    {
+        matrix[row][col] = 0;
+        int r, c, i;
+        for (i = 0; i < 4; ++i)
+        {
+            r = row+pos[i][0];
+            c = col+pos[i][1];
+            if (r >= 0 && r < m && c >= 0 && c < n && matrix[r][c] == 1)
+                dfs(matrix,r,c);
+        }
     }
 }

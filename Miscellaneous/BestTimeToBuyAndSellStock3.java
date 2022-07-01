@@ -1,4 +1,5 @@
 /*https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/*/
+/*https://practice.geeksforgeeks.org/problems/buy-and-sell-a-share-at-most-twice/1/*/
 
 class Solution {
     public int maxProfit(int[] prices) {
@@ -20,5 +21,19 @@ class Solution {
             if (leftMax[i]+rightMax[i] > finalPrice)
                 finalPrice = leftMax[i]+rightMax[i];
         return finalPrice;
+    }
+}
+
+class Solution {
+    public int maxProfit(int[] price) {        
+        int i, n = price.length, firstBuy = Integer.MIN_VALUE, firstSell = 0, secondBuy = Integer.MIN_VALUE, secondSell = 0;
+        for (i = 0; i < n; ++i)
+        {
+            firstBuy = Math.max(firstBuy,-price[i]);
+            firstSell = Math.max(firstSell,firstBuy+price[i]);
+            secondBuy = Math.max(secondBuy,firstSell-price[i]);
+            secondSell = Math.max(secondSell,secondBuy+price[i]);
+        }
+        return secondSell;
     }
 }

@@ -62,6 +62,48 @@ class Solution
     }
 }
 
+class Solution {
+    int minCuts;
+    Integer[] ccm;
+    public int minCut(String s) {
+        minCuts = Integer.MAX_VALUE;
+        if (s.length() == 0) return 1;
+        ccm = new Integer[s.length()+1];
+        recur(s,0,s.length(),0);
+        return minCuts-1;
+    }
+    public int recur(String s, int index, int n, int cutsCount)
+    {
+        if (index == n)
+        {
+            if (cutsCount < minCuts) minCuts = cutsCount;
+            ccm[index] = 0;
+            return 0;
+        }
+        int result = Integer.MAX_VALUE;
+        if (ccm[index] != null) return ccm[index];
+        for (int i = index; i < n; ++i)
+        {
+            if (isPalindrome(s.substring(index,i+1)))
+                result = Math.min(result,recur(s, i+1, n, cutsCount+1)+1);
+        }
+        ccm[index] = result;
+        if (cutsCount+ccm[index] < minCuts) minCuts = cutsCount+ccm[index];
+        return ccm[index];
+    }
+    public boolean isPalindrome(String s)
+    {
+        int i = 0, j = s.length()-1;
+        while (i < j)
+        {
+            if (s.charAt(i) != s.charAt(j)) return false;
+            ++i;
+            --j;
+        }
+        return true;
+    }
+}
+
 //best solution
 class Solution {
     public int minCut(String s) {
@@ -91,6 +133,31 @@ class Solution {
                 dp[r] = Math.min(1 + dp[l-1],dp[r]);
             l--;
             r++;
+        }
+    }
+}
+
+public class Solution {
+    public int minCut(String s) {
+        int n = s.length();
+        char[] t = s.toCharArray();
+        int[] dp = new int[n + 1];
+        Arrays.fill(dp, Integer.MAX_VALUE);
+        dp[0] = -1;
+        int i = 0;
+        while (i < n) {
+            expandAround(t, i, i, dp);
+            expandAround(t, i, i + 1, dp);
+            i++;
+        }
+        return dp[n];
+    }
+
+    private void expandAround(char[] t, int i, int j, int[] dp) {
+        while (i >= 0 && j < t.length && t[i] == t[j]) {
+            dp[j + 1] = Math.min(dp[j + 1], dp[i] + 1);
+            i--;
+            j++;
         }
     }
 }

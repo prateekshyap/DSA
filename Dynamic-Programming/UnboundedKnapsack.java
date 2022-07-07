@@ -15,6 +15,18 @@ class Solution{
     }
 }
 
+class Solution{
+    static int knapSack(int N, int W, int val[], int wt[])
+    {
+        int[] table = new int[W+1];
+        int index = 0;
+        for (int i = 1; i <= N; ++i)
+            for (int j = wt[i-1]; j <= W; ++j)
+                table[j] = Math.max(val[i-1]+table[j-wt[i-1]],table[j]);
+        return table[W];
+    }
+}
+
 /*Pratik's Solution*/
 
 class Solution{

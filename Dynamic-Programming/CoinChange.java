@@ -48,3 +48,80 @@ class Solution {
         return table[amount] == 0 ? -1 : table[amount];
     }
 }
+
+
+class Solution {
+    int n, minCoins;
+    Integer[][] coinCounts;
+    public int coinChange(int[] coins, int amount) {
+        Arrays.sort(coins);
+        int i = 0, j = coins.length-1, temp;
+        n = coins.length;
+        minCoins = Integer.MAX_VALUE;
+        coinCounts = new Integer[n+1][amount+1];
+        solve(coins, amount, n-1, 0);
+        return minCoins == Integer.MAX_VALUE ? -1 : minCoins;
+    }
+    public void solve(int[] coins, int amount, int index, int coinCount)
+    {
+        if (amount == 0)
+        {
+            if (coinCount < minCoins) minCoins = coinCount;
+            return;
+        }
+        if (coinCounts[index][amount] != null && coinCount >= coinCounts[index][amount]) return;
+        coinCounts[index][amount] = coinCount;
+        int i;
+        for (i = index; i >= 0; --i)
+            if (coins[i] <= amount)
+                solve(coins, amount-coins[i], i, coinCount+1);
+    }
+}
+
+class Solution {
+    int n, minCoins;
+    Integer[][] coinCounts;
+    public int coinChange(int[] coins, int amount) {
+        Arrays.sort(coins);
+        int i = 0, j = coins.length-1, temp;
+        n = coins.length;
+        minCoins = Integer.MAX_VALUE;
+        coinCounts = new Integer[n+1][amount+1];
+        solve(coins, amount, n-1, 0);
+        return minCoins == Integer.MAX_VALUE ? -1 : minCoins;
+    }
+    public void solve(int[] coins, int amount, int index, int coinCount)
+    {
+        if (index == -1) return;
+        if (amount == 0)
+        {
+            if (coinCount < minCoins) minCoins = coinCount;
+            return;
+        }
+        if (coinCounts[index][amount] != null && coinCount >= coinCounts[index][amount]) return;
+        coinCounts[index][amount] = coinCount;
+        
+        
+        if (coins[index] <= amount)
+            solve(coins, amount-coins[index], index, coinCount+1);
+        solve(coins, amount, index-1, coinCount);
+    }
+}
+
+class Solution {
+    public int coinChange(int[] coins, int amount) {
+        int n = coins.length;
+        int a, c;
+        int[] dp = new int[amount+1];
+        Arrays.fill(dp,amount+1);
+        dp[0] = 0;
+        for (int coin : coins)
+        {
+            for (a = coin; a <= amount; ++a)
+            {
+                dp[a] = Math.min(dp[a],dp[a-coin]+1);
+            }
+        }
+        return dp[amount] == amount+1 ? -1 : dp[amount];
+    }
+}

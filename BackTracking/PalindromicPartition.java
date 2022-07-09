@@ -1,4 +1,5 @@
 /*https://leetcode.com/problems/palindrome-partitioning/*/
+/*https://practice.geeksforgeeks.org/problems/find-all-possible-palindromic-partitions-of-a-string/1/*/
 
 class Solution
 {

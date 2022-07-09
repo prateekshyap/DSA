@@ -72,3 +72,48 @@ class Solution {
         return count;
     }*/
 }
+
+class Solution {
+    int[] houses;
+    int[][] costs;
+    int noc, noh, target;
+    Integer[][][] minWays;
+    static final int MAX_COST = (int)1e6+1;
+    public int minCost(int[] houses, int[][] cost, int m, int n, int target) {
+        this.houses = houses;
+        this.costs = cost;
+        this.noh = m;
+        this.noc = n;
+        this.target = target;
+        minWays = new Integer[target+1][noc+2][noh+1];
+        minWays[0][0][0] = solve(0,-1,0);
+        if (minWays[0][0][0] >= MAX_COST) return -1;
+        return minWays[0][0][0];
+    }
+    public int solve(int nCount, int prevColor, int index)
+    {
+        if (nCount > target) return MAX_COST;
+        if (nCount == target && index == noh) return 0;
+        if (index == noh) return MAX_COST;
+        
+        if (minWays[nCount][prevColor+1][index] != null) return minWays[nCount][prevColor+1][index];
+        int result = MAX_COST, col, minCol = noc+1, curr;
+        if (houses[index] != 0)
+        {
+            if (houses[index] == prevColor)
+                result = Math.min(result, solve(nCount, houses[index], index+1));
+            else result = Math.min(result, solve(nCount+1, houses[index], index+1));
+        }
+        else
+        {
+            for (col = 1; col <= noc; ++col)
+            {
+                if (col == prevColor)
+                    result = Math.min(result, solve(nCount, col, index+1)+costs[index][col-1]);
+                else result = Math.min(result, solve(nCount+1, col, index+1)+costs[index][col-1]);
+            }
+        }
+        minWays[nCount][prevColor+1][index] = result;
+        return result;
+    }
+}

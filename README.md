@@ -36,18 +36,18 @@ For difficulty level, csv file is already updated. For other online information 
 
 ## Algorithms
 
-Number of Problems Solved (05-Jul-2022 23:49:56)
+Number of Problems Solved (09-Jul-2022 23:29:49)
 
 | Topic Name | Java | CPP | 
 | :--------: | :--------: | :--------: | 
 | [Arrays](https://github.com/prateekshyap/DSA#arrays) | 94 | 44 |
-| [BackTracking](https://github.com/prateekshyap/DSA#backtracking) | 24 | 5 |
+| [BackTracking](https://github.com/prateekshyap/DSA#backtracking) | 25 | 5 |
 | [Bit-Magic](https://github.com/prateekshyap/DSA#bit-magic) | 27 | 21 |
 | [Codeforces](https://github.com/prateekshyap/DSA#codeforces) | 76 | 1 |
 | [Disjoint-Set](https://github.com/prateekshyap/DSA#disjoint-set) | 4 | 0 |
-| [Dynamic-Programming](https://github.com/prateekshyap/DSA#dynamic-programming) | 112 | 15 |
+| [Dynamic-Programming](https://github.com/prateekshyap/DSA#dynamic-programming) | 117 | 15 |
 | [Graph](https://github.com/prateekshyap/DSA#graph) | 64 | 19 |
-| [Greedy](https://github.com/prateekshyap/DSA#greedy) | 19 | 7 |
+| [Greedy](https://github.com/prateekshyap/DSA#greedy) | 20 | 7 |
 | [Hashing](https://github.com/prateekshyap/DSA#hashing) | 39 | 9 |
 | [Heap](https://github.com/prateekshyap/DSA#heap) | 22 | 9 |
 | [Linked-List](https://github.com/prateekshyap/DSA#linked-list) | 55 | 20 |
@@ -55,14 +55,14 @@ Number of Problems Solved (05-Jul-2022 23:49:56)
 | [Miscellaneous](https://github.com/prateekshyap/DSA#miscellaneous) | 58 | 3 |
 | [Queue](https://github.com/prateekshyap/DSA#queue) | 6 | 6 |
 | [Recursion](https://github.com/prateekshyap/DSA#recursion) | 13 | 12 |
-| [Searching](https://github.com/prateekshyap/DSA#searching) | 33 | 31 |
+| [Searching](https://github.com/prateekshyap/DSA#searching) | 34 | 31 |
 | [Segment-Tree](https://github.com/prateekshyap/DSA#segment-tree) | 2 | 0 |
 | [Sorting](https://github.com/prateekshyap/DSA#sorting) | 11 | 7 |
 | [Stack](https://github.com/prateekshyap/DSA#stack) | 24 | 7 |
-| [Strings](https://github.com/prateekshyap/DSA#strings) | 57 | 14 |
-| [Tree](https://github.com/prateekshyap/DSA#tree) | 141 | 26 |
+| [Strings](https://github.com/prateekshyap/DSA#strings) | 60 | 14 |
+| [Tree](https://github.com/prateekshyap/DSA#tree) | 142 | 26 |
 | [Trie](https://github.com/prateekshyap/DSA#trie) | 13 | 2 |
-| Total | 932 | 278 |
+| Total | 944 | 278 |
 
 ## Reference
 
@@ -188,25 +188,26 @@ Number of Problems Solved (05-Jul-2022 23:49:56)
 |  4  |Generate Parentheses|[LC](https://leetcode.com/problems/generate-parentheses/) |[Java](./BackTracking/GenerateParantheses.java) ||O(n)||
 |  5  |Rat In A Maze Problem|[GFG](https://practice.geeksforgeeks.org/problems/rat-in-a-maze-problem/1#) |[Java](./BackTracking/RatInMaze.java) [CPP](./BackTracking/GFG_RatInMaze.cpp) |Medium|O(1)||
 |  6  |Permutations|[LC](https://leetcode.com/problems/permutations/) [GFG](https://practice.geeksforgeeks.org/problems/permutations-of-a-given-string-1587115620/1#) |[Java](./BackTracking/Permutation.java) [CPP](./BackTracking/GFG_StringPermutations.cpp) |Easy|O(1)||
-|  7  |Partition A Set Into Two Subsets Such That The Difference Of Subset Sums Is Minimum Set 2|[GFG](https://practice.geeksforgeeks.org/problems/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum-set-2/1/) |[Java](./BackTracking/PartitionIntoSubsetsOfMinimumDifference.java) |Hard|O(1)||
-|  8  |Palindrome Partitioning Ii|[LC](https://leetcode.com/problems/palindrome-partitioning-ii/) |[Java](./BackTracking/MinimumNumberOfPartitions.java) ||O(n)||
-|  9  |Combination Sum|[LC](https://leetcode.com/problems/combination-sum/) [GFG](https://practice.geeksforgeeks.org/problems/combination-sum-1587115620/1) |[Java](./BackTracking/CombinationSum.java) |Medium|O(n)||
-|  10  |Palindrome Partitioning|[LC](https://leetcode.com/problems/palindrome-partitioning/) |[Java](./BackTracking/PalindromicPartition.java) ||O(n)||
-|  11  |Generate All Possible Parentheses|[GFG](https://practice.geeksforgeeks.org/problems/generate-all-possible-parentheses/1) [LC](https://leetcode.com/problems/generate-parentheses/) |[CPP](./BackTracking/LC_22_GenParenthesis.cpp) |Medium|O(1)||
-|  12  |Permutations Ii|[LC](https://leetcode.com/problems/permutations-ii/) |[Java](./BackTracking/IntegersWithDuplicatesPermutation.java) [CPP](./BackTracking/LC_47_Permutations2.cpp) ||O(n)||
-|  13  |Fair Distribution Of Cookies|[LC](https://leetcode.com/problems/fair-distribution-of-cookies/) |[Java](./BackTracking/FairDistributionOfCookies.java) ||O(n)||
-|  14  |Word Search Ii|[LC](https://leetcode.com/problems/word-search-ii/) |[Java](./BackTracking/WordSearch2.java) ||O(n<sup>2</sup>)||
-|  15  |Subset Sums Between The Given Range|[GFG](https://practice.geeksforgeeks.org/problems/subset-sums-between-the-given-range/1/) |[Java](./BackTracking/SubsetSumsBetweenTheGivenRange.java) |Hard|O(1)||
-|  16  |N Queens|[LC](https://leetcode.com/problems/n-queens/) |[Java](./BackTracking/NQueenSolver.java) ||O(n<sup>2</sup>)||
-|  17  |Combination Sum Ii|[LC](https://leetcode.com/problems/combination-sum-ii/) |[Java](./BackTracking/CombinationSum2.java) ||O(n)||
-|  18  |Combination Sum Iv|[LC](https://leetcode.com/problems/combination-sum-iv/) |[Java](./BackTracking/CombinationSum4.java) ||O(n)||
-|  19  |Largest Number In K Swaps 1587115620|[GFG](https://practice.geeksforgeeks.org/problems/largest-number-in-k-swaps-1587115620/1) |[Java](./BackTracking/LargestNumberInKSwaps.java) |Medium|O(n<sup>2</sup>)||
-|  20  |Solve The Sudoku 1587115621|[GFG](https://practice.geeksforgeeks.org/problems/solve-the-sudoku-1587115621/1) |[Java](./BackTracking/SudokuSolver.java) |Hard|O(n<sup>2</sup>)||
-|  21  |All Unique Permutations Of An Array|[GFG](https://practice.geeksforgeeks.org/problems/all-unique-permutations-of-an-array/1) |[Java](./BackTracking/UniquePermutations.java) |Medium|O(n)||
-|  22  |Number Of Paths0926|[GFG](https://practice.geeksforgeeks.org/problems/number-of-paths0926/1#) |[Java](./BackTracking/PossiblePaths.java) [CPP](./BackTracking/GFG_NumOfPaths.cpp) |Easy|O(1)||
-|  23  |Design Add And Search Words Data Structure|[LC](https://leetcode.com/problems/design-add-and-search-words-data-structure/) |[Java](./BackTracking/AddSearchWord.java) ||O(n<sup>2</sup>)||
-|  24  |Find Whether Path Exist5238|[GFG](https://practice.geeksforgeeks.org/problems/find-whether-path-exist5238/1/) |[Java](./BackTracking/FindIfPathExists.java) |Medium|O(n<sup>2</sup>)||
-|  25  |Partition Array To K Subsets|[GFG](https://practice.geeksforgeeks.org/problems/partition-array-to-k-subsets/1) |[Java](./BackTracking/FindKPartitions.java) |Hard|O(n)||
+|  7  |Find All Possible Palindromic Partitions Of A String|[GFG](https://practice.geeksforgeeks.org/problems/find-all-possible-palindromic-partitions-of-a-string/1/) [LC](https://leetcode.com/problems/palindrome-partitioning/) |[Java](./BackTracking/PalindromicPartition.java) |Hard|O(n)||
+|  8  |Partition A Set Into Two Subsets Such That The Difference Of Subset Sums Is Minimum Set 2|[GFG](https://practice.geeksforgeeks.org/problems/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum-set-2/1/) |[Java](./BackTracking/PartitionIntoSubsetsOfMinimumDifference.java) |Hard|O(1)||
+|  9  |Palindrome Partitioning Ii|[LC](https://leetcode.com/problems/palindrome-partitioning-ii/) |[Java](./BackTracking/MinimumNumberOfPartitions.java) ||O(n)||
+|  10  |Combination Sum|[LC](https://leetcode.com/problems/combination-sum/) [GFG](https://practice.geeksforgeeks.org/problems/combination-sum-1587115620/1) |[Java](./BackTracking/CombinationSum.java) |Medium|O(n)||
+|  11  |Travelling Salesman Problem2732|[GFG](https://practice.geeksforgeeks.org/problems/travelling-salesman-problem2732/1/) |[Java](./BackTracking/TravellingSalesmanProblem.java) |Hard|O(n)||
+|  12  |Generate All Possible Parentheses|[GFG](https://practice.geeksforgeeks.org/problems/generate-all-possible-parentheses/1) [LC](https://leetcode.com/problems/generate-parentheses/) |[CPP](./BackTracking/LC_22_GenParenthesis.cpp) |Medium|O(1)||
+|  13  |Permutations Ii|[LC](https://leetcode.com/problems/permutations-ii/) |[Java](./BackTracking/IntegersWithDuplicatesPermutation.java) [CPP](./BackTracking/LC_47_Permutations2.cpp) ||O(n)||
+|  14  |Fair Distribution Of Cookies|[LC](https://leetcode.com/problems/fair-distribution-of-cookies/) |[Java](./BackTracking/FairDistributionOfCookies.java) ||O(n)||
+|  15  |Word Search Ii|[LC](https://leetcode.com/problems/word-search-ii/) |[Java](./BackTracking/WordSearch2.java) ||O(n<sup>2</sup>)||
+|  16  |Subset Sums Between The Given Range|[GFG](https://practice.geeksforgeeks.org/problems/subset-sums-between-the-given-range/1/) |[Java](./BackTracking/SubsetSumsBetweenTheGivenRange.java) |Hard|O(1)||
+|  17  |N Queens|[LC](https://leetcode.com/problems/n-queens/) |[Java](./BackTracking/NQueenSolver.java) ||O(n<sup>2</sup>)||
+|  18  |Combination Sum Ii|[LC](https://leetcode.com/problems/combination-sum-ii/) |[Java](./BackTracking/CombinationSum2.java) ||O(n)||
+|  19  |Combination Sum Iv|[LC](https://leetcode.com/problems/combination-sum-iv/) |[Java](./BackTracking/CombinationSum4.java) ||O(n)||
+|  20  |Largest Number In K Swaps 1587115620|[GFG](https://practice.geeksforgeeks.org/problems/largest-number-in-k-swaps-1587115620/1) |[Java](./BackTracking/LargestNumberInKSwaps.java) |Medium|O(n<sup>2</sup>)||
+|  21  |Solve The Sudoku 1587115621|[GFG](https://practice.geeksforgeeks.org/problems/solve-the-sudoku-1587115621/1) |[Java](./BackTracking/SudokuSolver.java) |Hard|O(n<sup>2</sup>)||
+|  22  |All Unique Permutations Of An Array|[GFG](https://practice.geeksforgeeks.org/problems/all-unique-permutations-of-an-array/1) |[Java](./BackTracking/UniquePermutations.java) |Medium|O(n)||
+|  23  |Number Of Paths0926|[GFG](https://practice.geeksforgeeks.org/problems/number-of-paths0926/1#) |[Java](./BackTracking/PossiblePaths.java) [CPP](./BackTracking/GFG_NumOfPaths.cpp) |Easy|O(1)||
+|  24  |Design Add And Search Words Data Structure|[LC](https://leetcode.com/problems/design-add-and-search-words-data-structure/) |[Java](./BackTracking/AddSearchWord.java) ||O(n<sup>2</sup>)||
+|  25  |Find Whether Path Exist5238|[GFG](https://practice.geeksforgeeks.org/problems/find-whether-path-exist5238/1/) |[Java](./BackTracking/FindIfPathExists.java) |Medium|O(n<sup>2</sup>)||
+|  26  |Partition Array To K Subsets|[GFG](https://practice.geeksforgeeks.org/problems/partition-array-to-k-subsets/1) |[Java](./BackTracking/FindKPartitions.java) |Hard|O(n)||
 ## Bit-Magic
 
 |  #  |Title            |Links            |Solution         |Difficulty       |Time Complexity  |Space Complexity |
@@ -343,108 +344,113 @@ Number of Problems Solved (05-Jul-2022 23:49:56)
 |  11  |Integer Replacement|[LC](https://leetcode.com/problems/integer-replacement/) |[Java](./Dynamic-Programming/IntegerReplacement.java) ||O(n)||
 |  12  |Is Subsequence|[LC](https://leetcode.com/problems/is-subsequence/) |[Java](./Dynamic-Programming/IsSubsequence.java) ||O(n)||
 |  13  |Lcs Of Three Strings0028|[GFG](https://practice.geeksforgeeks.org/problems/lcs-of-three-strings0028/1#) |[Java](./Dynamic-Programming/LCS3.java) [CPP](./Dynamic-Programming/GFG_LCS3.cpp) |Medium|O(1)||
-|  14  |Minimum Cost For Tickets|[LC](https://leetcode.com/problems/minimum-cost-for-tickets/) |[Java](./Dynamic-Programming/MinimumCostForTickets.java) ||O(n<sup>2</sup>)||
-|  15  |Different Ways To Add Parentheses|[LC](https://leetcode.com/problems/different-ways-to-add-parentheses/) |[Java](./Dynamic-Programming/DifferentWaysToAddParentheses.java) ||O(n<sup>3</sup>)||
-|  16  |Minimum Falling Path Sum Ii|[LC](https://leetcode.com/problems/minimum-falling-path-sum-ii/) |[Java](./Dynamic-Programming/MinimumFallingPathSum2.java) ||O(n)||
-|  17  |Longest Palindromic Subsequence 1612327878|[GFG](https://practice.geeksforgeeks.org/problems/longest-palindromic-subsequence-1612327878/1) |[Java](./Dynamic-Programming/LongestPalindromicSubsequence.java) |Medium|O(n<sup>2</sup>)||
-|  18  |Intersecting Intervals|[GFG](https://practice.geeksforgeeks.org/problems/intersecting-intervals/1/) |[Java](./Dynamic-Programming/MaximumNumberOfOverlappingIntervals.java) |Hard|O(n)||
-|  19  |House Robber|[LC](https://leetcode.com/problems/house-robber/) |[Java](./Dynamic-Programming/HouseRobber.java) [CPP](./Dynamic-Programming/LC_198_HouseRobber.cpp) ||O(n)||
-|  20  |Edit Distance3702|[GFG](https://practice.geeksforgeeks.org/problems/edit-distance3702/1) |[Java](./Dynamic-Programming/EditDistance.java) |Medium|O(n<sup>2</sup>)||
-|  21  |Subset Sum Problem 1611555638|[GFG](https://practice.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1) |[Java](./Dynamic-Programming/SubsetSum.java) [CPP](./Dynamic-Programming/GFG_SubsetSum.cpp) |Medium|O(1)||
-|  22  |Minimum Ascii Delete Sum For Two Strings|[LC](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/) |[Java](./Dynamic-Programming/MinimumASCIIDeleteSumForTwoStrings.java) ||O(n<sup>2</sup>)||
-|  23  |Unique Paths Ii|[LC](https://leetcode.com/problems/unique-paths-ii/) |[Java](./Dynamic-Programming/UniquePathsWithObstacles.java) ||O(n<sup>2</sup>)||
-|  24  |Longest Repeating Subsequence2004|[GFG](https://practice.geeksforgeeks.org/problems/longest-repeating-subsequence2004/1) |[Java](./Dynamic-Programming/LongestRepeatingSubsequence.java) |Easy|O(n<sup>2</sup>)||
-|  25  |Count Square Submatrices With All Ones|[LC](https://leetcode.com/problems/count-square-submatrices-with-all-ones/) |[Java](./Dynamic-Programming/CountCompleteSquaresInMatrix.java) [CPP](./Dynamic-Programming/LC_1277_CountSquareSubmatricesAllOnes.cpp) ||O(n<sup>2</sup>)||
-|  26  |Path In Matrix3805|[GFG](https://practice.geeksforgeeks.org/problems/path-in-matrix3805/1) |[Java](./Dynamic-Programming/MaxPathSum.java) |Medium|O(n<sup>2</sup>)||
-|  27  |Shortest Common Supersequence0322|[GFG](https://practice.geeksforgeeks.org/problems/shortest-common-supersequence0322/1/) |[Java](./Dynamic-Programming/ShortestCommonSupersequence.java) |Medium|O(n<sup>2</sup>)||
-|  28  |Knapsack With Duplicate Items4201|[GFG](https://practice.geeksforgeeks.org/problems/knapsack-with-duplicate-items4201/1#) |[Java](./Dynamic-Programming/UnboundedKnapsack.java) [CPP](./Dynamic-Programming/GFG_01KnapsackDuplicateItems.cpp) |Easy|O(1)||
-|  29  |Partition Array For Maximum Sum|[LC](https://leetcode.com/problems/partition-array-for-maximum-sum/) |[Java](./Dynamic-Programming/PartitionArrayForMaximumSum.java) ||O(n<sup>2</sup>)||
-|  30  |Paint House Iii|[LC](https://leetcode.com/problems/paint-house-iii/) |[Java](./Dynamic-Programming/PaintHouse3.java) ||O(n)||
-|  31  |Integer Break|[LC](https://leetcode.com/problems/integer-break/) |[Java](./Dynamic-Programming/IntegerBreak.java) ||O(n<sup>2</sup>)||
-|  32  |Gold Mine Problem2608|[GFG](https://practice.geeksforgeeks.org/problems/gold-mine-problem2608/1/) |[Java](./Dynamic-Programming/GoldMine.java) |Easy|O(n<sup>2</sup>)||
-|  33  |Palindromic Substrings|[LC](https://leetcode.com/problems/palindromic-substrings/) |[Java](./Dynamic-Programming/PalindromicSubstrings.java) ||O(n<sup>2</sup>)||
-|  34  |Minimum Falling Path Sum|[LC](https://leetcode.com/problems/minimum-falling-path-sum/) |[Java](./Dynamic-Programming/MinimumFallingPathSum.java) [CPP](./Dynamic-Programming/LC_931_MinFallingPathSum.cpp) ||O(1)||
-|  35  |Special Keyboard3018|[GFG](https://practice.geeksforgeeks.org/problems/special-keyboard3018/1) |[Java](./Dynamic-Programming/SpecialKeyboard.java) |Medium|O(n<sup>2</sup>)||
-|  36  |Triangle|[LC](https://leetcode.com/problems/triangle/) |[Java](./Dynamic-Programming/Triangle.java) ||O(n)||
-|  37  |Maximum Profit In Job Scheduling|[LC](https://leetcode.com/problems/maximum-profit-in-job-scheduling/) |[Java](./Dynamic-Programming/WeightedIntervalScheduling.java) ||O(n)||
-|  38  |Wildcard Pattern Matching|[GFG](https://practice.geeksforgeeks.org/problems/wildcard-pattern-matching/1) |[Java](./Dynamic-Programming/WildcardMatching.java) |Medium|O(n<sup>2</sup>)||
-|  39  |Box Stacking|[GFG](https://practice.geeksforgeeks.org/problems/box-stacking/1/) |[Java](./Dynamic-Programming/BoxStacking.java) |Medium|O(n<sup>2</sup>)||
-|  40  |Unique Paths|[LC](https://leetcode.com/problems/unique-paths/) |[Java](./Dynamic-Programming/UniquePaths.java) ||O(n)||
-|  41  |Maximum Length Of Repeated Subarray|[LC](https://leetcode.com/problems/maximum-length-of-repeated-subarray/) |[Java](./Dynamic-Programming/MaxLengthRepeatedSubarray.java) ||O(n<sup>2</sup>)||
-|  42  |Counting Bits|[LC](https://leetcode.com/problems/counting-bits/) |[Java](./Dynamic-Programming/CountBitsInEachNumber.java) [CPP](./Dynamic-Programming/LC_338_CountingBits.cpp) ||O(n<sup>2</sup>)||
-|  43  |Ncr1019|[GFG](https://practice.geeksforgeeks.org/problems/ncr1019/1) |[Java](./Dynamic-Programming/BinomialCoefficients.java) |Medium|O(n<sup>2</sup>)||
-|  44  |Word Wrap1646|[GFG](https://practice.geeksforgeeks.org/problems/word-wrap1646/1) |[Java](./Dynamic-Programming/WordWrap.java) |Hard|O(n)||
-|  45  |Longest Common Substring1452|[GFG](https://practice.geeksforgeeks.org/problems/longest-common-substring1452/1#) |[CPP](./Dynamic-Programming/GFG_LongestCommonSubstring.cpp) |Medium|O(1)||
-|  46  |Longest Sign Alternating Subsequence|[BS](https://binarysearch.com/problems/Longest-Sign-Alternating-Subsequence) |[Java](./Dynamic-Programming/LongestSignAlternatingSequence.java) ||O(n<sup>2</sup>)||
-|  47  |Get Maximum In Generated Array|[LC](https://leetcode.com/problems/get-maximum-in-generated-array/) |[Java](./Dynamic-Programming/GetMaximumInGeneratedArray.java) ||O(n)||
-|  48  |Reach A Given Score 1587115621|[GFG](https://practice.geeksforgeeks.org/problems/reach-a-given-score-1587115621/1) |[Java](./Dynamic-Programming/ReachAGivenScore.java) |Easy|O(n)||
-|  49  |Number Of Longest Increasing Subsequence|[LC](https://leetcode.com/problems/number-of-longest-increasing-subsequence/) |[Java](./Dynamic-Programming/NumberOfLongestIncreasingSubsequences.java) ||O(n<sup>2</sup>)||
-|  50  |Get Minimum Squares0538|[GFG](https://practice.geeksforgeeks.org/problems/get-minimum-squares0538/1) |[Java](./Dynamic-Programming/MinimumSquaresSum.java) |Medium|O(n<sup>2</sup>)||
-|  51  |Scramble String|[LC](https://leetcode.com/problems/scramble-string/) |[Java](./Dynamic-Programming/ScrambleString.java) ||O(n)||
-|  52  |Collecting Coins|[BS](https://binarysearch.com/problems/Collecting-Coins) |[Java](./Dynamic-Programming/CollectingCoins.java) ||O(n)||
-|  53  |Rotate Function|[LC](https://leetcode.com/problems/rotate-function/) |[Java](./Dynamic-Programming/RotateFunction.java) ||O(n)||
-|  54  |Partition To K Equal Sum Subsets|[LC](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/) |[Java](./Dynamic-Programming/PartitionToKEqualSumSubsets.java) ||O(n)||
-|  55  |Maximum Sum Increasing Subsequence4749|[GFG](https://practice.geeksforgeeks.org/problems/maximum-sum-increasing-subsequence4749/1) |[Java](./Dynamic-Programming/MaximumSumIncreasingSubsequence.java) |Medium|O(n<sup>2</sup>)||
-|  56  |Longest Common Subsequence|[LC](https://leetcode.com/problems/longest-common-subsequence/) [GFG](https://practice.geeksforgeeks.org/problems/longest-common-subsequence-1587115620/1) |[Java](./Dynamic-Programming/LCS.java) |Medium|O(n<sup>3</sup>)||
-|  57  |Decode Ways|[LC](https://leetcode.com/problems/decode-ways/) |[Java](./Dynamic-Programming/DecodeWays.java) ||O(n)||
-|  58  |Perfect Squares|[LC](https://leetcode.com/problems/perfect-squares/) |[Java](./Dynamic-Programming/PerfectSquare.java) ||O(n<sup>2</sup>)||
-|  59  |Longest Palindromic Substring|[LC](https://leetcode.com/problems/longest-palindromic-substring/) |[Java](./Dynamic-Programming/LongestPalindromicSubstring.java) ||O(n)||
-|  60  |Regular Expression Matching|[LC](https://leetcode.com/problems/regular-expression-matching/) |[Java](./Dynamic-Programming/RegularExpressionMatching.java) ||O(1)||
-|  61  |Palindrome Splitting|[BS](https://binarysearch.com/problems/Palindrome-Splitting) |[Java](./Dynamic-Programming/PalindromeSplitting.java) ||O(n)||
-|  62  |Wildcard String Matching1126|[GFG](https://practice.geeksforgeeks.org/problems/wildcard-string-matching1126/1) |[Java](./Dynamic-Programming/WildCardStringMatching.java) |Hard|O(n)||
-|  63  |Arithmetic Slices|[LC](https://leetcode.com/problems/arithmetic-slices/) |[Java](./Dynamic-Programming/ArithmeticSlices.java) [CPP](./Dynamic-Programming/LC_413_ArithmeticSlices.cpp) ||O(n<sup>2</sup>)||
-|  64  |Maximum Sum Of Elements Not Part Of Lis|[GFG](https://practice.geeksforgeeks.org/problems/maximum-sum-of-elements-not-part-of-lis/1) |[Java](./Dynamic-Programming/MaxSumNotPartOfLIS.java) |Medium|O(n<sup>2</sup>)||
-|  65  |Longest Common Subsequence 1587115620|[GFG](https://practice.geeksforgeeks.org/problems/longest-common-subsequence-1587115620/1) |[CPP](./Dynamic-Programming/GFG_LCS.cpp) |Medium|O(1)||
-|  66  |Minimum Sum Partition3317|[GFG](https://practice.geeksforgeeks.org/problems/minimum-sum-partition3317/1/) |[Java](./Dynamic-Programming/MinimumSumPartition.java) |Hard|O(n<sup>2</sup>)||
-|  67  |Bbt Counter4914|[GFG](https://practice.geeksforgeeks.org/problems/bbt-counter4914/1) |[Java](./Dynamic-Programming/BBTCounter.java) [CPP](./Dynamic-Programming/GFG_bbtCounter.cpp) |Easy|O(n)||
-|  68  |Longest Continuous Increasing Subsequence|[LC](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) |[Java](./Dynamic-Programming/LongestContinuousIncreasingSubsequence.java) ||O(n)||
-|  69  |Coin Change2448|[GFG](https://practice.geeksforgeeks.org/problems/coin-change2448/1/) [LC](https://leetcode.com/problems/coin-change/) |[Java](./Dynamic-Programming/CoinChange.java) |Medium|O(n<sup>2</sup>)||
-|  70  |Count Sorted Vowel Strings|[LC](https://leetcode.com/problems/count-sorted-vowel-strings/) |[Java](./Dynamic-Programming/CountSortedVowelStrings.java) ||O(n<sup>2</sup>)||
-|  71  |Minimum Cost Tree From Leaf Values|[LC](https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/) |[Java](./Dynamic-Programming/MinimumCostTreeFromLeafValues.java) ||O(n<sup>2</sup>)||
-|  72  |Longest Arithmetic Subsequence Of Given Difference|[LC](https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/) |[Java](./Dynamic-Programming/LongestArithmeticSubsequenceOfGivenDifference.java) ||O(n)||
-|  73  |Maximum Score Words Formed By Letters|[LC](https://leetcode.com/problems/maximum-score-words-formed-by-letters/) |[Java](./Dynamic-Programming/MaximumScoreWordFormedByLetters.java) ||O(n<sup>2</sup>)||
-|  74  |Beautiful Arrangement|[LC](https://leetcode.com/problems/beautiful-arrangement/solution/) |[Java](./Dynamic-Programming/BeautifulArrangement.java) ||O(n)||
-|  75  |Friends Pairing Problem5425|[GFG](https://practice.geeksforgeeks.org/problems/friends-pairing-problem5425/1/) |[Java](./Dynamic-Programming/FriendsPairing.java) |Easy|O(n)||
-|  76  |Minimum Path Sum|[LC](https://leetcode.com/problems/minimum-path-sum/submissions/) |[Java](./Dynamic-Programming/MinimumPathSum.java) [CPP](./Dynamic-Programming/LC_64_MinPathSum.cpp) ||O(1)||
-|  77  |Minimum Path Cost In A Grid|[LC](https://leetcode.com/problems/minimum-path-cost-in-a-grid/) |[Java](./Dynamic-Programming/MinimumPathCostInAGrid.java) ||O(n<sup>2</sup>)||
-|  78  |Count Digit Groupings Of A Number1520|[GFG](https://practice.geeksforgeeks.org/problems/count-digit-groupings-of-a-number1520/1/) |[Java](./Dynamic-Programming/CountDigitGroupingsOfANumber.java) |Medium|O(n)||
-|  79  |Painting The Fence3727|[GFG](https://practice.geeksforgeeks.org/problems/painting-the-fence3727/1/) |[Java](./Dynamic-Programming/PaintTheFence.java) |Medium|O(n)||
-|  80  |Word Break1352|[GFG](https://practice.geeksforgeeks.org/problems/word-break1352/1) |[Java](./Dynamic-Programming/WordBreak.java) |Medium|O(n<sup>2</sup>)||
-|  81  |N Th Tribonacci Number|[LC](https://leetcode.com/problems/n-th-tribonacci-number/) |[Java](./Dynamic-Programming/NthTribonacci.java) ||O(n)||
-|  82  |Ones And Zeroes|[LC](https://leetcode.com/problems/ones-and-zeroes/) |[Java](./Dynamic-Programming/OnesAndZeros.java) ||O(n<sup>2</sup>)||
-|  83  |Count Square Submatrices|[BS](https://binarysearch.com/problems/Count-Square-Submatrices) |[Java](./Dynamic-Programming/CountSquareSubmatrices.java) ||O(n<sup>2</sup>)||
-|  84  |Largest Square Formed In A Matrix0806|[GFG](https://practice.geeksforgeeks.org/problems/largest-square-formed-in-a-matrix0806/1) |[Java](./Dynamic-Programming/MaxSquareOfOnes.java) |Medium|O(n)||
-|  85  |Count Numbers With Unique Digits|[LC](https://leetcode.com/problems/count-numbers-with-unique-digits/) |[Java](./Dynamic-Programming/CountNumbersWithUniqueDigits.java) ||O(n<sup>2</sup>)||
-|  86  |Target Sum 1626326450|[GFG](https://practice.geeksforgeeks.org/problems/target-sum-1626326450/1) |[Java](./Dynamic-Programming/TargetSum.java) |Medium|O(n<sup>2</sup>)||
-|  87  |Minimize The Difference Between Target And Chosen Elements|[LC](https://leetcode.com/problems/minimize-the-difference-between-target-and-chosen-elements/) |[Java](./Dynamic-Programming/MinimizeTheDifferenceBetweenTargetAndChosenElements.java) ||O(n<sup>3</sup>)||
-|  88  |Count Primes|[LC](https://leetcode.com/problems/count-primes/) |[Java](./Dynamic-Programming/CountPrimes.java) ||O(n<sup>2</sup>)||
-|  89  |Wiggle Subsequence|[LC](https://leetcode.com/problems/wiggle-subsequence/) |[CPP](./Dynamic-Programming/LC_376_WiggleSubsequence.cpp) ||O(1)||
-|  90  |Sum Of Floored Pairs|[LC](https://leetcode.com/problems/sum-of-floored-pairs/) |[Java](./Dynamic-Programming/SumOfFlooredPairs.java) ||O(n<sup>3</sup>)||
-|  91  |Stickler Theif 1587115621|[GFG](https://practice.geeksforgeeks.org/problems/stickler-theif-1587115621/1/) |[Java](./Dynamic-Programming/SticklerThief.java) |Easy|O(n<sup>2</sup>)||
-|  92  |K Palindrome|[GFG](https://practice.geeksforgeeks.org/problems/k-palindrome/1) |[Java](./Dynamic-Programming/KPalindrome.java) |Easy|O(n<sup>2</sup>)||
-|  93  |Minimum Cost To Fill Given Weight In A Bag1956|[GFG](https://practice.geeksforgeeks.org/problems/minimum-cost-to-fill-given-weight-in-a-bag1956/1) |[Java](./Dynamic-Programming/BuyOranges.java) [CPP](./Dynamic-Programming/GFG_MinCostToFillGivenWeightInABag.cpp) |Medium|O(n<sup>2</sup>)||
-|  94  |Nth Catalan Number0817|[GFG](https://practice.geeksforgeeks.org/problems/nth-catalan-number0817/1/) |[Java](./Dynamic-Programming/CatalanNumbers.java) |Easy|O(n<sup>2</sup>)||
-|  95  |Matrix Chain Multiplication0303|[GFG](https://practice.geeksforgeeks.org/problems/matrix-chain-multiplication0303/1) |[Java](./Dynamic-Programming/MatrixChainMultiplication.java) |Hard|O(n<sup>3</sup>)||
-|  96  |Number Of Distinct Roll Sequences|[LC](https://leetcode.com/problems/number-of-distinct-roll-sequences/) |[Java](./Dynamic-Programming/NumberOfDistinctRollSequences.java) ||O(n)||
-|  97  |Longest Alternating Subsequence5951|[GFG](https://practice.geeksforgeeks.org/problems/longest-alternating-subsequence5951/1/) [LC](https://leetcode.com/problems/wiggle-subsequence/) |[Java](./Dynamic-Programming/WiggleSubsequence.java) |Medium|O(n<sup>2</sup>)||
-|  98  |Cherry Pickup Ii|[LC](https://leetcode.com/problems/cherry-pickup-ii/) |[Java](./Dynamic-Programming/CherryPickup2.java) ||O(n<sup>5</sup>)||
-|  99  |Sort Integers By The Power Value|[LC](https://leetcode.com/problems/sort-integers-by-the-power-value/) |[Java](./Dynamic-Programming/SortIntegersByThePowerValue.java) ||O(n)||
-|  100  |Longest Common Substring|[BS](https://binarysearch.com/problems/Longest-Common-Substring) [GFG](https://practice.geeksforgeeks.org/problems/longest-common-substring1452/1) |[Java](./Dynamic-Programming/LongestCommonSubstring.java) |Medium|O(n)||
-|  101  |Longest Bitonic Subsequence|[BS](https://binarysearch.com/problems/Longest-Bitonic-Subsequence) |[Java](./Dynamic-Programming/LongestBitonicSubsequence.java) ||O(n)||
-|  102  |Super Ugly Number|[LC](https://leetcode.com/problems/super-ugly-number/) |[Java](./Dynamic-Programming/SuperUglyNumber.java) ||O(n<sup>2</sup>)||
-|  103  |Egg Dropping Puzzle 1587115620|[GFG](https://practice.geeksforgeeks.org/problems/egg-dropping-puzzle-1587115620/1) |[Java](./Dynamic-Programming/EggDrop.java) |Medium|O(n<sup>3</sup>)||
-|  104  |Largest Divisible Subset|[LC](https://leetcode.com/problems/largest-divisible-subset/) |[Java](./Dynamic-Programming/LargestDivisibleSubset.java) ||O(n<sup>2</sup>)||
-|  105  |House Robber Ii|[LC](https://leetcode.com/problems/house-robber-ii/) |[Java](./Dynamic-Programming/HouseRobber2.java) ||O(n)||
-|  106  |0 1 Knapsack Problem0945|[GFG](https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1) |[Java](./Dynamic-Programming/BinaryKnapsack.java) [CPP](./Dynamic-Programming/GFG_01Knapsack.cpp) |Medium|O(n<sup>2</sup>)||
-|  107  |Delete Characters To Equalize Strings|[BS](https://binarysearch.com/problems/Delete-Characters-to-Equalize-Strings) |[Java](./Dynamic-Programming/DeleteCharactersToEqualizeStrings.java) ||O(n<sup>2</sup>)||
-|  108  |Best Time To Buy And Sell Stock Iv|[LC](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) [GFG](https://practice.geeksforgeeks.org/problems/maximum-profit4657/1) |[Java](./Dynamic-Programming/BestTimeToBuyAndSellStock4.java) |Hard|O(n<sup>2</sup>)||
-|  109  |Predict The Winner|[LC](https://leetcode.com/problems/predict-the-winner/) |[Java](./Dynamic-Programming/PredictTheWinner.java) ||O(1)||
-|  110  |All Possible Full Binary Trees|[LC](https://leetcode.com/problems/all-possible-full-binary-trees/) |[Java](./Dynamic-Programming/AllPossibleFullBinaryTrees.java) ||O(n<sup>2</sup>)||
-|  111  |Count Number Of Ways To Place Houses|[LC](https://leetcode.com/problems/count-number-of-ways-to-place-houses/) |[Java](./Dynamic-Programming/CountNumberOfWaysToPlaceHouses.java) ||O(n)||
-|  112  |Number Of Ways2552|[GFG](https://practice.geeksforgeeks.org/problems/number-of-ways2552/1) |[Java](./Dynamic-Programming/NumberOfWays.java) |Medium|O(n)||
-|  113  |Skip Tasks To Minimize Work|[BS](https://binarysearch.com/problems/Skip-Tasks-to-Minimize-Work) |[Java](./Dynamic-Programming/SkipTasksToMinimizeWork.java) ||O(n)||
-|  114  |Longest Increasing Subsequence|[BS](https://binarysearch.com/problems/Longest-Increasing-Subsequence) [GFG](https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence-1587115620/1) |[Java](./Dynamic-Programming/LongestIncreasingSubsequence.java) |Medium|O(n<sup>2</sup>)||
-|  115  |Count Palindromic Subsequences|[GFG](https://practice.geeksforgeeks.org/problems/count-palindromic-subsequences/1) |[Java](./Dynamic-Programming/CountLongestPalindromicSubsequences.java) |Medium|O(n<sup>2</sup>)||
+|  14  |House Robber Iii|[LC](https://leetcode.com/problems/house-robber-iii/) [GFG](https://practice.geeksforgeeks.org/problems/maximum-sum-of-non-adjacent-nodes/1/) |[Java](./Dynamic-Programming/HouseRobber3.java) |Medium|O(1)||
+|  15  |Minimum Cost For Tickets|[LC](https://leetcode.com/problems/minimum-cost-for-tickets/) |[Java](./Dynamic-Programming/MinimumCostForTickets.java) ||O(n<sup>2</sup>)||
+|  16  |Different Ways To Add Parentheses|[LC](https://leetcode.com/problems/different-ways-to-add-parentheses/) |[Java](./Dynamic-Programming/DifferentWaysToAddParentheses.java) ||O(n<sup>3</sup>)||
+|  17  |Minimum Falling Path Sum Ii|[LC](https://leetcode.com/problems/minimum-falling-path-sum-ii/) |[Java](./Dynamic-Programming/MinimumFallingPathSum2.java) ||O(n)||
+|  18  |Longest Palindromic Subsequence 1612327878|[GFG](https://practice.geeksforgeeks.org/problems/longest-palindromic-subsequence-1612327878/1) |[Java](./Dynamic-Programming/LongestPalindromicSubsequence.java) |Medium|O(n<sup>2</sup>)||
+|  19  |Intersecting Intervals|[GFG](https://practice.geeksforgeeks.org/problems/intersecting-intervals/1/) |[Java](./Dynamic-Programming/MaximumNumberOfOverlappingIntervals.java) |Hard|O(n)||
+|  20  |House Robber|[LC](https://leetcode.com/problems/house-robber/) |[Java](./Dynamic-Programming/HouseRobber.java) [CPP](./Dynamic-Programming/LC_198_HouseRobber.cpp) ||O(n)||
+|  21  |Edit Distance3702|[GFG](https://practice.geeksforgeeks.org/problems/edit-distance3702/1) |[Java](./Dynamic-Programming/EditDistance.java) |Medium|O(n<sup>2</sup>)||
+|  22  |Subset Sum Problem 1611555638|[GFG](https://practice.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1) |[Java](./Dynamic-Programming/SubsetSum.java) [CPP](./Dynamic-Programming/GFG_SubsetSum.cpp) |Medium|O(1)||
+|  23  |Minimum Ascii Delete Sum For Two Strings|[LC](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/) |[Java](./Dynamic-Programming/MinimumASCIIDeleteSumForTwoStrings.java) ||O(n<sup>2</sup>)||
+|  24  |Unique Paths Ii|[LC](https://leetcode.com/problems/unique-paths-ii/) |[Java](./Dynamic-Programming/UniquePathsWithObstacles.java) ||O(n<sup>2</sup>)||
+|  25  |Longest Repeating Subsequence2004|[GFG](https://practice.geeksforgeeks.org/problems/longest-repeating-subsequence2004/1) |[Java](./Dynamic-Programming/LongestRepeatingSubsequence.java) |Easy|O(n<sup>2</sup>)||
+|  26  |Count Square Submatrices With All Ones|[LC](https://leetcode.com/problems/count-square-submatrices-with-all-ones/) |[Java](./Dynamic-Programming/CountCompleteSquaresInMatrix.java) [CPP](./Dynamic-Programming/LC_1277_CountSquareSubmatricesAllOnes.cpp) ||O(n<sup>2</sup>)||
+|  27  |Path In Matrix3805|[GFG](https://practice.geeksforgeeks.org/problems/path-in-matrix3805/1) |[Java](./Dynamic-Programming/MaxPathSum.java) |Medium|O(n<sup>2</sup>)||
+|  28  |Shortest Common Supersequence0322|[GFG](https://practice.geeksforgeeks.org/problems/shortest-common-supersequence0322/1/) |[Java](./Dynamic-Programming/ShortestCommonSupersequence.java) |Medium|O(n<sup>2</sup>)||
+|  29  |Knapsack With Duplicate Items4201|[GFG](https://practice.geeksforgeeks.org/problems/knapsack-with-duplicate-items4201/1#) |[Java](./Dynamic-Programming/UnboundedKnapsack.java) [CPP](./Dynamic-Programming/GFG_01KnapsackDuplicateItems.cpp) |Easy|O(1)||
+|  30  |Partition Array For Maximum Sum|[LC](https://leetcode.com/problems/partition-array-for-maximum-sum/) |[Java](./Dynamic-Programming/PartitionArrayForMaximumSum.java) ||O(n<sup>2</sup>)||
+|  31  |Paint House Iii|[LC](https://leetcode.com/problems/paint-house-iii/) |[Java](./Dynamic-Programming/PaintHouse3.java) ||O(n)||
+|  32  |Integer Break|[LC](https://leetcode.com/problems/integer-break/) |[Java](./Dynamic-Programming/IntegerBreak.java) ||O(n<sup>2</sup>)||
+|  33  |Gold Mine Problem2608|[GFG](https://practice.geeksforgeeks.org/problems/gold-mine-problem2608/1/) |[Java](./Dynamic-Programming/GoldMine.java) |Easy|O(n<sup>2</sup>)||
+|  34  |Palindromic Substrings|[LC](https://leetcode.com/problems/palindromic-substrings/) |[Java](./Dynamic-Programming/PalindromicSubstrings.java) ||O(n<sup>2</sup>)||
+|  35  |Distinct Subsequences|[LC](https://leetcode.com/problems/distinct-subsequences/) |[Java](./Dynamic-Programming/DistinctSubsequences.java) ||O(n)||
+|  36  |Minimum Falling Path Sum|[LC](https://leetcode.com/problems/minimum-falling-path-sum/) |[Java](./Dynamic-Programming/MinimumFallingPathSum.java) [CPP](./Dynamic-Programming/LC_931_MinFallingPathSum.cpp) ||O(1)||
+|  37  |Special Keyboard3018|[GFG](https://practice.geeksforgeeks.org/problems/special-keyboard3018/1) |[Java](./Dynamic-Programming/SpecialKeyboard.java) |Medium|O(n<sup>2</sup>)||
+|  38  |Triangle|[LC](https://leetcode.com/problems/triangle/) |[Java](./Dynamic-Programming/Triangle.java) ||O(n)||
+|  39  |Maximum Profit In Job Scheduling|[LC](https://leetcode.com/problems/maximum-profit-in-job-scheduling/) |[Java](./Dynamic-Programming/WeightedIntervalScheduling.java) ||O(n)||
+|  40  |Wildcard Pattern Matching|[GFG](https://practice.geeksforgeeks.org/problems/wildcard-pattern-matching/1) |[Java](./Dynamic-Programming/WildcardMatching.java) |Medium|O(n<sup>2</sup>)||
+|  41  |Box Stacking|[GFG](https://practice.geeksforgeeks.org/problems/box-stacking/1/) |[Java](./Dynamic-Programming/BoxStacking.java) |Medium|O(n<sup>2</sup>)||
+|  42  |Unique Paths|[LC](https://leetcode.com/problems/unique-paths/) |[Java](./Dynamic-Programming/UniquePaths.java) ||O(n<sup>2</sup>)||
+|  43  |Maximum Length Of Repeated Subarray|[LC](https://leetcode.com/problems/maximum-length-of-repeated-subarray/) |[Java](./Dynamic-Programming/MaxLengthRepeatedSubarray.java) ||O(n<sup>2</sup>)||
+|  44  |Counting Bits|[LC](https://leetcode.com/problems/counting-bits/) |[Java](./Dynamic-Programming/CountBitsInEachNumber.java) [CPP](./Dynamic-Programming/LC_338_CountingBits.cpp) ||O(n<sup>2</sup>)||
+|  45  |Ncr1019|[GFG](https://practice.geeksforgeeks.org/problems/ncr1019/1) |[Java](./Dynamic-Programming/BinomialCoefficients.java) |Medium|O(n<sup>2</sup>)||
+|  46  |Word Wrap1646|[GFG](https://practice.geeksforgeeks.org/problems/word-wrap1646/1) |[Java](./Dynamic-Programming/WordWrap.java) |Hard|O(n)||
+|  47  |Longest Common Substring1452|[GFG](https://practice.geeksforgeeks.org/problems/longest-common-substring1452/1#) |[CPP](./Dynamic-Programming/GFG_LongestCommonSubstring.cpp) |Medium|O(1)||
+|  48  |Longest Sign Alternating Subsequence|[BS](https://binarysearch.com/problems/Longest-Sign-Alternating-Subsequence) |[Java](./Dynamic-Programming/LongestSignAlternatingSequence.java) ||O(n<sup>2</sup>)||
+|  49  |Get Maximum In Generated Array|[LC](https://leetcode.com/problems/get-maximum-in-generated-array/) |[Java](./Dynamic-Programming/GetMaximumInGeneratedArray.java) ||O(n)||
+|  50  |Reach A Given Score 1587115621|[GFG](https://practice.geeksforgeeks.org/problems/reach-a-given-score-1587115621/1) |[Java](./Dynamic-Programming/ReachAGivenScore.java) |Easy|O(n)||
+|  51  |Number Of Longest Increasing Subsequence|[LC](https://leetcode.com/problems/number-of-longest-increasing-subsequence/) |[Java](./Dynamic-Programming/NumberOfLongestIncreasingSubsequences.java) ||O(n<sup>2</sup>)||
+|  52  |Get Minimum Squares0538|[GFG](https://practice.geeksforgeeks.org/problems/get-minimum-squares0538/1) |[Java](./Dynamic-Programming/MinimumSquaresSum.java) |Medium|O(n<sup>2</sup>)||
+|  53  |Scramble String|[LC](https://leetcode.com/problems/scramble-string/) |[Java](./Dynamic-Programming/ScrambleString.java) ||O(n)||
+|  54  |Collecting Coins|[BS](https://binarysearch.com/problems/Collecting-Coins) |[Java](./Dynamic-Programming/CollectingCoins.java) ||O(n)||
+|  55  |Rotate Function|[LC](https://leetcode.com/problems/rotate-function/) |[Java](./Dynamic-Programming/RotateFunction.java) ||O(n)||
+|  56  |Partition To K Equal Sum Subsets|[LC](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/) |[Java](./Dynamic-Programming/PartitionToKEqualSumSubsets.java) ||O(n)||
+|  57  |Maximum Sum Increasing Subsequence4749|[GFG](https://practice.geeksforgeeks.org/problems/maximum-sum-increasing-subsequence4749/1) |[Java](./Dynamic-Programming/MaximumSumIncreasingSubsequence.java) |Medium|O(n<sup>2</sup>)||
+|  58  |Longest Common Subsequence|[LC](https://leetcode.com/problems/longest-common-subsequence/) [GFG](https://practice.geeksforgeeks.org/problems/longest-common-subsequence-1587115620/1) |[Java](./Dynamic-Programming/LCS.java) |Medium|O(n<sup>3</sup>)||
+|  59  |Decode Ways|[LC](https://leetcode.com/problems/decode-ways/) |[Java](./Dynamic-Programming/DecodeWays.java) ||O(n)||
+|  60  |Perfect Squares|[LC](https://leetcode.com/problems/perfect-squares/) |[Java](./Dynamic-Programming/PerfectSquare.java) ||O(n<sup>2</sup>)||
+|  61  |Longest Palindromic Substring|[LC](https://leetcode.com/problems/longest-palindromic-substring/) |[Java](./Dynamic-Programming/LongestPalindromicSubstring.java) ||O(n)||
+|  62  |Regular Expression Matching|[LC](https://leetcode.com/problems/regular-expression-matching/) |[Java](./Dynamic-Programming/RegularExpressionMatching.java) ||O(1)||
+|  63  |Palindrome Splitting|[BS](https://binarysearch.com/problems/Palindrome-Splitting) |[Java](./Dynamic-Programming/PalindromeSplitting.java) ||O(n)||
+|  64  |Wildcard String Matching1126|[GFG](https://practice.geeksforgeeks.org/problems/wildcard-string-matching1126/1) |[Java](./Dynamic-Programming/WildCardStringMatching.java) |Hard|O(n)||
+|  65  |Arithmetic Slices|[LC](https://leetcode.com/problems/arithmetic-slices/) |[Java](./Dynamic-Programming/ArithmeticSlices.java) [CPP](./Dynamic-Programming/LC_413_ArithmeticSlices.cpp) ||O(n<sup>2</sup>)||
+|  66  |Brackets In Matrix Chain Multiplication1024|[GFG](https://practice.geeksforgeeks.org/problems/brackets-in-matrix-chain-multiplication1024/1) |[Java](./Dynamic-Programming/BracketsInMatrixChainMultiplication.java) |Hard|O(n)||
+|  67  |Multiset Sum|[BS](https://binarysearch.com/problems/Multiset-Sum) |[Java](./Dynamic-Programming/MultisetSum.java) ||O(n)||
+|  68  |Maximum Sum Of Elements Not Part Of Lis|[GFG](https://practice.geeksforgeeks.org/problems/maximum-sum-of-elements-not-part-of-lis/1) |[Java](./Dynamic-Programming/MaxSumNotPartOfLIS.java) |Medium|O(n<sup>2</sup>)||
+|  69  |Longest Common Subsequence 1587115620|[GFG](https://practice.geeksforgeeks.org/problems/longest-common-subsequence-1587115620/1) |[CPP](./Dynamic-Programming/GFG_LCS.cpp) |Medium|O(1)||
+|  70  |Minimum Sum Partition3317|[GFG](https://practice.geeksforgeeks.org/problems/minimum-sum-partition3317/1/) |[Java](./Dynamic-Programming/MinimumSumPartition.java) |Hard|O(n<sup>2</sup>)||
+|  71  |Bbt Counter4914|[GFG](https://practice.geeksforgeeks.org/problems/bbt-counter4914/1) |[Java](./Dynamic-Programming/BBTCounter.java) [CPP](./Dynamic-Programming/GFG_bbtCounter.cpp) |Easy|O(n)||
+|  72  |Longest Continuous Increasing Subsequence|[LC](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) |[Java](./Dynamic-Programming/LongestContinuousIncreasingSubsequence.java) ||O(n)||
+|  73  |Coin Change2448|[GFG](https://practice.geeksforgeeks.org/problems/coin-change2448/1/) [LC](https://leetcode.com/problems/coin-change/) |[Java](./Dynamic-Programming/CoinChange.java) |Medium|O(n<sup>2</sup>)||
+|  74  |Count Sorted Vowel Strings|[LC](https://leetcode.com/problems/count-sorted-vowel-strings/) |[Java](./Dynamic-Programming/CountSortedVowelStrings.java) ||O(n<sup>2</sup>)||
+|  75  |Minimum Cost Tree From Leaf Values|[LC](https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/) |[Java](./Dynamic-Programming/MinimumCostTreeFromLeafValues.java) ||O(n<sup>2</sup>)||
+|  76  |Longest Arithmetic Subsequence Of Given Difference|[LC](https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/) |[Java](./Dynamic-Programming/LongestArithmeticSubsequenceOfGivenDifference.java) ||O(n)||
+|  77  |Maximum Score Words Formed By Letters|[LC](https://leetcode.com/problems/maximum-score-words-formed-by-letters/) |[Java](./Dynamic-Programming/MaximumScoreWordFormedByLetters.java) ||O(n<sup>2</sup>)||
+|  78  |Beautiful Arrangement|[LC](https://leetcode.com/problems/beautiful-arrangement/solution/) |[Java](./Dynamic-Programming/BeautifulArrangement.java) ||O(n)||
+|  79  |Friends Pairing Problem5425|[GFG](https://practice.geeksforgeeks.org/problems/friends-pairing-problem5425/1/) |[Java](./Dynamic-Programming/FriendsPairing.java) |Easy|O(n)||
+|  80  |Minimum Path Sum|[LC](https://leetcode.com/problems/minimum-path-sum/submissions/) |[Java](./Dynamic-Programming/MinimumPathSum.java) [CPP](./Dynamic-Programming/LC_64_MinPathSum.cpp) ||O(1)||
+|  81  |Minimum Path Cost In A Grid|[LC](https://leetcode.com/problems/minimum-path-cost-in-a-grid/) |[Java](./Dynamic-Programming/MinimumPathCostInAGrid.java) ||O(n<sup>2</sup>)||
+|  82  |Count Digit Groupings Of A Number1520|[GFG](https://practice.geeksforgeeks.org/problems/count-digit-groupings-of-a-number1520/1/) |[Java](./Dynamic-Programming/CountDigitGroupingsOfANumber.java) |Medium|O(n)||
+|  83  |Painting The Fence3727|[GFG](https://practice.geeksforgeeks.org/problems/painting-the-fence3727/1/) |[Java](./Dynamic-Programming/PaintTheFence.java) |Medium|O(n)||
+|  84  |Word Break1352|[GFG](https://practice.geeksforgeeks.org/problems/word-break1352/1) |[Java](./Dynamic-Programming/WordBreak.java) |Medium|O(n<sup>2</sup>)||
+|  85  |N Th Tribonacci Number|[LC](https://leetcode.com/problems/n-th-tribonacci-number/) |[Java](./Dynamic-Programming/NthTribonacci.java) ||O(n)||
+|  86  |Ones And Zeroes|[LC](https://leetcode.com/problems/ones-and-zeroes/) |[Java](./Dynamic-Programming/OnesAndZeros.java) ||O(n<sup>2</sup>)||
+|  87  |Count Square Submatrices|[BS](https://binarysearch.com/problems/Count-Square-Submatrices) |[Java](./Dynamic-Programming/CountSquareSubmatrices.java) ||O(n<sup>2</sup>)||
+|  88  |Largest Square Formed In A Matrix0806|[GFG](https://practice.geeksforgeeks.org/problems/largest-square-formed-in-a-matrix0806/1) |[Java](./Dynamic-Programming/MaxSquareOfOnes.java) |Medium|O(n)||
+|  89  |Count Numbers With Unique Digits|[LC](https://leetcode.com/problems/count-numbers-with-unique-digits/) |[Java](./Dynamic-Programming/CountNumbersWithUniqueDigits.java) ||O(n<sup>2</sup>)||
+|  90  |Target Sum 1626326450|[GFG](https://practice.geeksforgeeks.org/problems/target-sum-1626326450/1) |[Java](./Dynamic-Programming/TargetSum.java) |Medium|O(n<sup>2</sup>)||
+|  91  |Minimize The Difference Between Target And Chosen Elements|[LC](https://leetcode.com/problems/minimize-the-difference-between-target-and-chosen-elements/) |[Java](./Dynamic-Programming/MinimizeTheDifferenceBetweenTargetAndChosenElements.java) ||O(n<sup>3</sup>)||
+|  92  |Largest Sum Of Non Adjacent Numbers|[BS](https://binarysearch.com/problems/Largest-Sum-of-Non-Adjacent-Numbers) |[Java](./Dynamic-Programming/LargestSumOfNonAdjacentNumbers.java) ||O(n)||
+|  93  |Count Primes|[LC](https://leetcode.com/problems/count-primes/) |[Java](./Dynamic-Programming/CountPrimes.java) ||O(n<sup>2</sup>)||
+|  94  |Wiggle Subsequence|[LC](https://leetcode.com/problems/wiggle-subsequence/) |[CPP](./Dynamic-Programming/LC_376_WiggleSubsequence.cpp) ||O(1)||
+|  95  |Sum Of Floored Pairs|[LC](https://leetcode.com/problems/sum-of-floored-pairs/) |[Java](./Dynamic-Programming/SumOfFlooredPairs.java) ||O(n<sup>3</sup>)||
+|  96  |Stickler Theif 1587115621|[GFG](https://practice.geeksforgeeks.org/problems/stickler-theif-1587115621/1/) |[Java](./Dynamic-Programming/SticklerThief.java) |Easy|O(n<sup>2</sup>)||
+|  97  |K Palindrome|[GFG](https://practice.geeksforgeeks.org/problems/k-palindrome/1) |[Java](./Dynamic-Programming/KPalindrome.java) |Easy|O(n<sup>2</sup>)||
+|  98  |Minimum Cost To Fill Given Weight In A Bag1956|[GFG](https://practice.geeksforgeeks.org/problems/minimum-cost-to-fill-given-weight-in-a-bag1956/1) |[Java](./Dynamic-Programming/BuyOranges.java) [CPP](./Dynamic-Programming/GFG_MinCostToFillGivenWeightInABag.cpp) |Medium|O(n<sup>2</sup>)||
+|  99  |Nth Catalan Number0817|[GFG](https://practice.geeksforgeeks.org/problems/nth-catalan-number0817/1/) |[Java](./Dynamic-Programming/CatalanNumbers.java) |Easy|O(n<sup>2</sup>)||
+|  100  |Matrix Chain Multiplication0303|[GFG](https://practice.geeksforgeeks.org/problems/matrix-chain-multiplication0303/1) |[Java](./Dynamic-Programming/MatrixChainMultiplication.java) |Hard|O(n<sup>3</sup>)||
+|  101  |Number Of Distinct Roll Sequences|[LC](https://leetcode.com/problems/number-of-distinct-roll-sequences/) |[Java](./Dynamic-Programming/NumberOfDistinctRollSequences.java) ||O(n)||
+|  102  |Longest Alternating Subsequence5951|[GFG](https://practice.geeksforgeeks.org/problems/longest-alternating-subsequence5951/1/) [LC](https://leetcode.com/problems/wiggle-subsequence/) |[Java](./Dynamic-Programming/WiggleSubsequence.java) |Medium|O(n<sup>2</sup>)||
+|  103  |Cherry Pickup Ii|[LC](https://leetcode.com/problems/cherry-pickup-ii/) |[Java](./Dynamic-Programming/CherryPickup2.java) ||O(n<sup>5</sup>)||
+|  104  |Sort Integers By The Power Value|[LC](https://leetcode.com/problems/sort-integers-by-the-power-value/) |[Java](./Dynamic-Programming/SortIntegersByThePowerValue.java) ||O(n)||
+|  105  |Longest Common Substring|[BS](https://binarysearch.com/problems/Longest-Common-Substring) [GFG](https://practice.geeksforgeeks.org/problems/longest-common-substring1452/1) |[Java](./Dynamic-Programming/LongestCommonSubstring.java) |Medium|O(n)||
+|  106  |Longest Bitonic Subsequence|[BS](https://binarysearch.com/problems/Longest-Bitonic-Subsequence) |[Java](./Dynamic-Programming/LongestBitonicSubsequence.java) ||O(n)||
+|  107  |Super Ugly Number|[LC](https://leetcode.com/problems/super-ugly-number/) |[Java](./Dynamic-Programming/SuperUglyNumber.java) ||O(n<sup>2</sup>)||
+|  108  |Egg Dropping Puzzle 1587115620|[GFG](https://practice.geeksforgeeks.org/problems/egg-dropping-puzzle-1587115620/1) |[Java](./Dynamic-Programming/EggDrop.java) |Medium|O(n<sup>3</sup>)||
+|  109  |Largest Divisible Subset|[LC](https://leetcode.com/problems/largest-divisible-subset/) |[Java](./Dynamic-Programming/LargestDivisibleSubset.java) ||O(n<sup>2</sup>)||
+|  110  |House Robber Ii|[LC](https://leetcode.com/problems/house-robber-ii/) |[Java](./Dynamic-Programming/HouseRobber2.java) ||O(n)||
+|  111  |0 1 Knapsack Problem0945|[GFG](https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1) |[Java](./Dynamic-Programming/BinaryKnapsack.java) [CPP](./Dynamic-Programming/GFG_01Knapsack.cpp) |Medium|O(n<sup>2</sup>)||
+|  112  |Delete Characters To Equalize Strings|[BS](https://binarysearch.com/problems/Delete-Characters-to-Equalize-Strings) |[Java](./Dynamic-Programming/DeleteCharactersToEqualizeStrings.java) ||O(n<sup>2</sup>)||
+|  113  |Best Time To Buy And Sell Stock Iv|[LC](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) [GFG](https://practice.geeksforgeeks.org/problems/maximum-profit4657/1) |[Java](./Dynamic-Programming/BestTimeToBuyAndSellStock4.java) |Hard|O(n<sup>2</sup>)||
+|  114  |Predict The Winner|[LC](https://leetcode.com/problems/predict-the-winner/) |[Java](./Dynamic-Programming/PredictTheWinner.java) ||O(1)||
+|  115  |All Possible Full Binary Trees|[LC](https://leetcode.com/problems/all-possible-full-binary-trees/) |[Java](./Dynamic-Programming/AllPossibleFullBinaryTrees.java) ||O(n<sup>2</sup>)||
+|  116  |Count Number Of Ways To Place Houses|[LC](https://leetcode.com/problems/count-number-of-ways-to-place-houses/) |[Java](./Dynamic-Programming/CountNumberOfWaysToPlaceHouses.java) ||O(n)||
+|  117  |Number Of Ways2552|[GFG](https://practice.geeksforgeeks.org/problems/number-of-ways2552/1) |[Java](./Dynamic-Programming/NumberOfWays.java) |Medium|O(n)||
+|  118  |Skip Tasks To Minimize Work|[BS](https://binarysearch.com/problems/Skip-Tasks-to-Minimize-Work) |[Java](./Dynamic-Programming/SkipTasksToMinimizeWork.java) ||O(n)||
+|  119  |Longest Increasing Subsequence|[BS](https://binarysearch.com/problems/Longest-Increasing-Subsequence) [GFG](https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence-1587115620/1) |[Java](./Dynamic-Programming/LongestIncreasingSubsequence.java) |Medium|O(n<sup>2</sup>)||
+|  120  |Count Palindromic Subsequences|[GFG](https://practice.geeksforgeeks.org/problems/count-palindromic-subsequences/1) |[Java](./Dynamic-Programming/CountLongestPalindromicSubsequences.java) |Medium|O(n<sup>2</sup>)||
 ## Graph
 
 |  #  |Title            |Links            |Solution         |Difficulty       |Time Complexity  |Space Complexity |
@@ -535,9 +541,10 @@ Number of Problems Solved (05-Jul-2022 23:49:56)
 |  15  |Reducing Dishes|[LC](https://leetcode.com/problems/reducing-dishes/) |[Java](./Greedy/ReducingDishes.java) ||O(n)||
 |  16  |Chocolate Distribution Problem3825|[GFG](https://practice.geeksforgeeks.org/problems/chocolate-distribution-problem3825/1) |[Java](./Greedy/ChocolateDistribution.java) |Easy|O(n)||
 |  17  |N Meetings In One Room 1587115620|[GFG](https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1/) |[Java](./Greedy/ActivitySelectionProblem.java) [CPP](./Greedy/GFG_ActivitySelection_NMeetingsInOneRoom.cpp) |Easy|O(n)||
-|  18  |Pairs With Specific Difference1533|[GFG](https://practice.geeksforgeeks.org/problems/pairs-with-specific-difference1533/1) |[Java](./Greedy/SumOfPairsWithSpecificDifference.java) |Easy|O(n)||
-|  19  |Max Length Chain|[GFG](https://practice.geeksforgeeks.org/problems/max-length-chain/1) |[Java](./Greedy/MaxLengthChain.java) [CPP](./Greedy/GFG_MaxLengthChain.cpp) |Medium|O(1)||
-|  20  |Huffman Encoding3345|[GFG](https://practice.geeksforgeeks.org/problems/huffman-encoding3345/1) |[Java](./Greedy/HuffmanCoding.java) [CPP](./Greedy/GFG_HuffmanEncoding.cpp) |Medium|O(1)||
+|  18  |Split The Binary String Into Substrings With Equal Number Of 0s And 1s|[GFG](https://practice.geeksforgeeks.org/problems/split-the-binary-string-into-substrings-with-equal-number-of-0s-and-1s/1/) |[Java](./Greedy/SplitTheBinaryStringIntoSubstringsWithEqualNumberOf0sAnd1s.java) |Medium|O(n)||
+|  19  |Pairs With Specific Difference1533|[GFG](https://practice.geeksforgeeks.org/problems/pairs-with-specific-difference1533/1) |[Java](./Greedy/SumOfPairsWithSpecificDifference.java) |Easy|O(n)||
+|  20  |Max Length Chain|[GFG](https://practice.geeksforgeeks.org/problems/max-length-chain/1) |[Java](./Greedy/MaxLengthChain.java) [CPP](./Greedy/GFG_MaxLengthChain.cpp) |Medium|O(1)||
+|  21  |Huffman Encoding3345|[GFG](https://practice.geeksforgeeks.org/problems/huffman-encoding3345/1) |[Java](./Greedy/HuffmanCoding.java) [CPP](./Greedy/GFG_HuffmanEncoding.cpp) |Medium|O(1)||
 ## Hashing
 
 |  #  |Title            |Links            |Solution         |Difficulty       |Time Complexity  |Space Complexity |
@@ -851,17 +858,18 @@ Number of Problems Solved (05-Jul-2022 23:49:56)
 |  26  |Count Triplets With Sum Smaller Than X5549|[GFG](https://practice.geeksforgeeks.org/problems/count-triplets-with-sum-smaller-than-x5549/1) |[Java](./Searching/CountTripletsWithSumSmallerThanX.java) [CPP](./Searching/GFG_TripletsSumSmallerThanX.cpp) |Medium|O(n<sup>2</sup>)||
 |  27  |Two Sum|[LC](https://leetcode.com/problems/two-sum/) |[Java](./Searching/PairWithSum.java) [CPP](./Searching/LC_1_TwoSum.cpp) ||O(1)||
 |  28  |3sum|[LC](https://leetcode.com/problems/3sum/) |[Java](./Searching/FindTripletsWithGivenSum.java) [CPP](./Searching/LC_15_3Sum.cpp) ||O(n<sup>3</sup>)||
-|  29  |Guess Number Higher Or Lower|[LC](https://leetcode.com/problems/guess-number-higher-or-lower/) |[Java](./Searching/GuessHigherLower.java) [CPP](./Searching/LC_374_GuessNumHigherOrLower.cpp) ||O(n)||
-|  30  |Two Sum Ii Input Array Is Sorted|[LC](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) |[Java](./Searching/PairWithSumInSortedArray.java) [CPP](./Searching/LC_167_TwoSumII.cpp) ||O(1)||
-|  31  |Maximum Distance Between A Pair Of Values|[LC](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/) |[Java](./Searching/MaximumDistanceBetweenAPairOfValues.java) ||O(n)||
-|  32  |Number Of Pairs 1587115620|[GFG](https://practice.geeksforgeeks.org/problems/number-of-pairs-1587115620/1/) |[Java](./Searching/NumberOfPairs.java) |Medium|O(n<sup>2</sup>)||
-|  33  |Count Pairs With Given Sum5022|[GFG](https://practice.geeksforgeeks.org/problems/count-pairs-with-given-sum5022/1#) |[CPP](./Searching/GFG_CountPairsWithGivenSum.cpp) |Easy|O(1)||
-|  34  |First Bad Version|[LC](https://leetcode.com/problems/first-bad-version/) |[Java](./Searching/FirstBadVersion.java) [CPP](./Searching/LC_278_FirstBadVersion.cpp) ||O(n)||
-|  35  |Search Insert Position Of K In A Sorted Array|[GFG](https://practice.geeksforgeeks.org/problems/search-insert-position-of-k-in-a-sorted-array/1/#) |[Java](./Searching/SearchInsertPosition.java) [CPP](./Searching/GFG_SearchInsertPosInSortedArray.cpp) |Easy|O(1)||
-|  36  |Searching In An Array Where Adjacent Differ By At Most K0456|[GFG](https://practice.geeksforgeeks.org/problems/searching-in-an-array-where-adjacent-differ-by-at-most-k0456/1/#) |[CPP](./Searching/GFG_SearchWhereAdjDifferAtmostK.cpp) |Easy|O(1)||
-|  37  |Kth Smallest Number In Multiplication Table|[LC](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/) |[Java](./Searching/KthSmallestInMultiplicationTable.java) [CPP](./Searching/LC_668_KthSmallestNumberInMultiplication.cpp) ||O(n)||
-|  38  |Count Possible Triangles 1587115620|[GFG](https://practice.geeksforgeeks.org/problems/count-possible-triangles-1587115620/1/) |[Java](./Searching/CountTriangles.java) [CPP](./Searching/GFG_CountNumOfPossibleTriangles.cpp) |Medium|O(n<sup>3</sup>)||
-|  39  |Search In Rotated Sorted Array|[LC](https://leetcode.com/problems/search-in-rotated-sorted-array/) |[Java](./Searching/SortedRotatedArraySearch.java) [CPP](./Searching/LC_33_SearchRotatedSortedArray.cpp) ||O(1)||
+|  29  |Lowest Sum Of Pair Larger Than Target|[BS](https://binarysearch.com/problems/Lowest-Sum-of-Pair-Larger-than-Target) |[Java](./Searching/LowestSumOfPairLargerThanTarget.java) ||O(n<sup>2</sup>)||
+|  30  |Guess Number Higher Or Lower|[LC](https://leetcode.com/problems/guess-number-higher-or-lower/) |[Java](./Searching/GuessHigherLower.java) [CPP](./Searching/LC_374_GuessNumHigherOrLower.cpp) ||O(n)||
+|  31  |Two Sum Ii Input Array Is Sorted|[LC](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) |[Java](./Searching/PairWithSumInSortedArray.java) [CPP](./Searching/LC_167_TwoSumII.cpp) ||O(1)||
+|  32  |Maximum Distance Between A Pair Of Values|[LC](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/) |[Java](./Searching/MaximumDistanceBetweenAPairOfValues.java) ||O(n)||
+|  33  |Number Of Pairs 1587115620|[GFG](https://practice.geeksforgeeks.org/problems/number-of-pairs-1587115620/1/) |[Java](./Searching/NumberOfPairs.java) |Medium|O(n<sup>2</sup>)||
+|  34  |Count Pairs With Given Sum5022|[GFG](https://practice.geeksforgeeks.org/problems/count-pairs-with-given-sum5022/1#) |[CPP](./Searching/GFG_CountPairsWithGivenSum.cpp) |Easy|O(1)||
+|  35  |First Bad Version|[LC](https://leetcode.com/problems/first-bad-version/) |[Java](./Searching/FirstBadVersion.java) [CPP](./Searching/LC_278_FirstBadVersion.cpp) ||O(n)||
+|  36  |Search Insert Position Of K In A Sorted Array|[GFG](https://practice.geeksforgeeks.org/problems/search-insert-position-of-k-in-a-sorted-array/1/#) |[Java](./Searching/SearchInsertPosition.java) [CPP](./Searching/GFG_SearchInsertPosInSortedArray.cpp) |Easy|O(1)||
+|  37  |Searching In An Array Where Adjacent Differ By At Most K0456|[GFG](https://practice.geeksforgeeks.org/problems/searching-in-an-array-where-adjacent-differ-by-at-most-k0456/1/#) |[CPP](./Searching/GFG_SearchWhereAdjDifferAtmostK.cpp) |Easy|O(1)||
+|  38  |Kth Smallest Number In Multiplication Table|[LC](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/) |[Java](./Searching/KthSmallestInMultiplicationTable.java) [CPP](./Searching/LC_668_KthSmallestNumberInMultiplication.cpp) ||O(n)||
+|  39  |Count Possible Triangles 1587115620|[GFG](https://practice.geeksforgeeks.org/problems/count-possible-triangles-1587115620/1/) |[Java](./Searching/CountTriangles.java) [CPP](./Searching/GFG_CountNumOfPossibleTriangles.cpp) |Medium|O(n<sup>3</sup>)||
+|  40  |Search In Rotated Sorted Array|[LC](https://leetcode.com/problems/search-in-rotated-sorted-array/) |[Java](./Searching/SortedRotatedArraySearch.java) [CPP](./Searching/LC_33_SearchRotatedSortedArray.cpp) ||O(1)||
 ## Segment-Tree
 
 |  #  |Title            |Links            |Solution         |Difficulty       |Time Complexity  |Space Complexity |
@@ -925,61 +933,64 @@ Number of Problems Solved (05-Jul-2022 23:49:56)
 |  5  |Get Equal Substrings Within Budget|[LC](https://leetcode.com/problems/get-equal-substrings-within-budget/) |[Java](./Strings/GetEqualSubstringsWithinBudget.java) ||O(n)||
 |  6  |Truncate Sentence|[LC](https://leetcode.com/problems/truncate-sentence/) |[Java](./Strings/TruncateSentence.java) ||O(n)||
 |  7  |Rearrange Spaces Between Words|[LC](https://leetcode.com/problems/rearrange-spaces-between-words/) |[Java](./Strings/RearrangeSpaces.java) [CPP](./Strings/LC_1592_STR_RearrangeSpaceBwWords.cpp) ||O(1)||
-|  8  |Count Number Of Homogenous Substrings|[LC](https://leetcode.com/problems/count-number-of-homogenous-substrings/) |[Java](./Strings/CountHomogeneousSubstrings.java) [CPP](./Strings/LC_1759_STR_CountNumOfHomogenousSubstring.cpp) ||O(n)||
-|  9  |Sentence Reversal|[BS](https://binarysearch.com/problems/Sentence-Reversal) |[CPP](./Strings/BS_SentenceReversal.cpp) ||O(1)||
-|  10  |Minimum Changes To Make Alternating Binary String|[LC](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/) |[Java](./Strings/MinimumChangesToMakeAlternatingBinaryString.java) ||O(n)||
-|  11  |Validate Ip Address|[LC](https://leetcode.com/problems/validate-ip-address/) |[Java](./Strings/ValidateIPAddressLeetcode.java) ||O(n)||
-|  12  |Goat Latin|[LC](https://leetcode.com/problems/goat-latin/) |[Java](./Strings/GoatLatin.java) ||O(n)||
-|  13  |Minimum Indexed Character 1587115620|[GFG](https://practice.geeksforgeeks.org/problems/minimum-indexed-character-1587115620/1/) |[Java](./Strings/MinimumIndexedCharacter.java) |Easy|O(n)||
-|  14  |Palindrome String0817|[GFG](https://practice.geeksforgeeks.org/problems/palindrome-string0817/1) |[CPP](./Strings/GFG_STR_PalindromeString.cpp) |Easy|O(1)||
-|  15  |Run Length Encoding|[GFG](https://practice.geeksforgeeks.org/problems/run-length-encoding/1) |[Java](./Strings/RunLengthEncoding.java) |Easy|O(n)||
-|  16  |Maximize Number Of Subsequences In A String|[LC](https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/) |[Java](./Strings/MaximizeNumberOfSubsequencesInAString.java) ||O(n)||
-|  17  |Find All Anagrams In A String|[LC](https://leetcode.com/problems/find-all-anagrams-in-a-string/) |[Java](./Strings/AnagramSearch.java) [CPP](./Strings/LC_438_FindAllAnagramsString.cpp) ||O(n<sup>2</sup>)||
-|  18  |Count Words Obtained After Adding A Letter|[LC](https://leetcode.com/problems/count-words-obtained-after-adding-a-letter/) |[Java](./Strings/CountWordsObtainedAfterAddingALetter.java) ||O(n<sup>2</sup>)||
-|  19  |Longest Prefix Suffix2527|[GFG](https://practice.geeksforgeeks.org/problems/longest-prefix-suffix2527/1) |[Java](./Strings/LongestPrefixSuffix.java) |Medium|O(n)||
-|  20  |Multiply Strings|[LC](https://leetcode.com/problems/multiply-strings) |[Java](./Strings/MultiplyStrings.java) ||O(n<sup>2</sup>)||
-|  21  |Maximum Number Of Vowels In A Substring Of Given Length|[LC](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) |[Java](./Strings/MaximumNumberOfVowelsInASubstringOfGivenLength.java) [CPP](./Strings/LC_1456_MaxVowelsInSubString.cpp) ||O(1)||
-|  22  |Sherlock And Anagrams|[HR](https://www.hackerrank.com/challenges/sherlock-and-anagrams/) |[Java](./Strings/SherlockAndAnagrams.java) ||O(n<sup>2</sup>)||
-|  23  |Strong Password Checker Ii|[LC](https://leetcode.com/problems/strong-password-checker-ii/) |[Java](./Strings/StrongPasswordChecker2.java) ||O(n)||
-|  24  |Reorganize String|[LC](https://leetcode.com/problems/reorganize-string/) |[Java](./Strings/ReorganizeString.java) ||O(n)||
-|  25  |Longest 1s After One Flip|[BS](https://binarysearch.com/problems/Longest-1s-After-One-Flip) |[Java](./Strings/LongestOnesAfterOneFlip.java) ||O(n<sup>2</sup>)||
-|  26  |Count Substrings That Differ By One Character|[LC](https://leetcode.com/problems/count-substrings-that-differ-by-one-character/) |[Java](./Strings/CountSubstringsThatDifferByOneCharacter.java) ||O(n<sup>3</sup>)||
-|  27  |Delete Operation For Two Strings|[LC](https://leetcode.com/problems/delete-operation-for-two-strings/) |[Java](./Strings/DeleteOperationForTwoStrings.java) ||O(n<sup>2</sup>)||
-|  28  |Rearrange Characters4649|[GFG](https://practice.geeksforgeeks.org/problems/rearrange-characters4649/1) |[Java](./Strings/RearrangeCharacters.java) |Medium|O(n<sup>2</sup>)||
-|  29  |Bulk Shift Letters|[BS](https://binarysearch.com/problems/Bulk-Shift-Letters) |[Java](./Strings/BulkShiftLetters.java) ||O(n)||
-|  30  |Remove All Duplicates From A Given String4321|[GFG](https://practice.geeksforgeeks.org/problems/remove-all-duplicates-from-a-given-string4321/1/) |[Java](./Strings/RemoveAllDuplicatesFromAGivenString.java) |Easy|O(n)||
-|  31  |Validate An Ip Address 1587115621|[GFG](https://practice.geeksforgeeks.org/problems/validate-an-ip-address-1587115621/1) |[Java](./Strings/ValidateIPAddress.java) |Medium|O(n)||
-|  32  |Unique Morse Code Words|[LC](https://leetcode.com/problems/unique-morse-code-words/) |||O(1)||
-|  33  |Consecutive Characters|[LC](https://leetcode.com/problems/consecutive-characters/) |[Java](./Strings/ConsecutiveCharacters.java) [CPP](./Strings/LC_1446_STR_Consecutive_Characters.cpp) ||O(n)||
-|  34  |Rotate String|[LC](https://leetcode.com/problems/rotate-string/) |[Java](./Strings/StringRotationCheck.java) [CPP](./Strings/LC_796_RotateString.cpp) ||O(1)||
-|  35  |Longest K Unique Characters Substring0853|[GFG](https://practice.geeksforgeeks.org/problems/longest-k-unique-characters-substring0853/1/) |[Java](./Strings/LongestKUniqueCharacters.java) |Easy|O(n<sup>2</sup>)||
-|  36  |Add Binary Numbers|[BS](https://binarysearch.com/problems/Add-Binary-Numbers) |[Java](./Strings/AddBinaryNumbers.java) ||O(n)||
-|  37  |Number Of Substrings With Only 1s|[LC](https://leetcode.com/problems/number-of-substrings-with-only-1s/) |[Java](./Strings/CountConsecutiveOnes.java) ||O(n)||
-|  38  |Uncommon Words From Two Sentences|[LC](https://leetcode.com/problems/uncommon-words-from-two-sentences/) |[CPP](./Strings/LC_884_STR_UncommonWordsFromTwoSentences.cpp) ||O(1)||
-|  39  |Permutation In String|[LC](https://leetcode.com/problems/permutation-in-string/) |[Java](./Strings/PermutationInStrings.java) ||O(n)||
-|  40  |Subsequence Strings|[BS](https://binarysearch.com/problems/Subsequence-Strings) |[Java](./Strings/SubsequenceStrings.java) ||O(n)||
-|  41  |Smallest Window In A String Containing All The Characters Of Another String 1587115621|[GFG](https://practice.geeksforgeeks.org/problems/smallest-window-in-a-string-containing-all-the-characters-of-another-string-1587115621/1) [LC](https://leetcode.com/problems/minimum-window-substring/) |[Java](./Strings/MinimumWindowSubstring.java) |Medium|O(n<sup>2</sup>)||
-|  42  |Valid Anagram|[LC](https://leetcode.com/problems/valid-anagram/) |[Java](./Strings/AnagramCheck.java) [CPP](./Strings/LC_242_ValidAnagram.cpp) ||O(n)||
-|  43  |Text Justification|[LC](https://leetcode.com/problems/text-justification/) |[Java](./Strings/TextJustification.java) ||O(n<sup>3</sup>)||
-|  44  |Valid Palindrome|[LC](https://leetcode.com/problems/valid-palindrome/) |[Java](./Strings/CheckPalindrome.java) ||O(n)||
-|  45  |Replace The Substring For Balanced String|[LC](https://leetcode.com/problems/replace-the-substring-for-balanced-string/) |[Java](./Strings/ReplaceTheSubstringForBalancedString.java) ||O(n)||
-|  46  |Implement Atoi|[GFG](https://practice.geeksforgeeks.org/problems/implement-atoi/1) |[Java](./Strings/Atoi.java) [CPP](./Strings/GFG_ImplementAtoi.cpp) |Medium|O(n)||
-|  47  |Smallest Distant Window3132|[GFG](https://practice.geeksforgeeks.org/problems/smallest-distant-window3132/1) |[Java](./Strings/SmallestDistinctWindow.java) |Medium|O(n)||
-|  48  |Greatest English Letter In Upper And Lower Case|[LC](https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/) |[Java](./Strings/GreatestEnglishLetterInUpperAndLowerCase.java) ||O(n)||
-|  49  |First Unique Character In A String|[LC](https://leetcode.com/problems/first-unique-character-in-a-string/) |[Java](./Strings/FirstUniqueCharacter.java) [CPP](./Strings/GFG_NonRepeatingChar.cpp) ||O(n)||
-|  50  |Count And Say|[LC](https://leetcode.com/problems/count-and-say/) |[Java](./Strings/CountAndSay.java) ||O(n<sup>2</sup>)||
-|  51  |Reorder Data In Log Files|[LC](https://leetcode.com/problems/reorder-data-in-log-files/) |[Java](./Strings/ReorderDataInLogFiles.java) ||O(1)||
-|  52  |Valid Palindrome Ii|[LC](https://leetcode.com/problems/valid-palindrome-ii/) |[Java](./Strings/CheckPalindrome2.java) ||O(n)||
-|  53  |Number Of Substrings Containing All Three Characters|[LC](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) |[Java](./Strings/NumberOfSubstringsContainingAllThreeCharacters.java) ||O(n<sup>2</sup>)||
-|  54  |Repetition Of K Length Substring|[GFG](https://practice.geeksforgeeks.org/problems/repetition-of-k-length-substring/1) |[Java](./Strings/RepititionOfKLengthSubstring.java) |Easy|O(n)||
-|  55  |Reverse A String|[GFG](https://practice.geeksforgeeks.org/problems/reverse-a-string/1#) |[CPP](./Strings/GFG_STR_ReverseString.cpp) |Basic|O(1)||
-|  56  |Valid Number|[LC](https://leetcode.com/problems/valid-number/) |[Java](./Strings/ValidNumber.java) ||O(n)||
-|  57  |Longest Even Length Substring|[GFG](https://practice.geeksforgeeks.org/problems/longest-even-length-substring/0) |[Java](./Strings/LongestEvenLengthSubstring.java) |Medium|O(n<sup>3</sup>)||
-|  58  |Verifying An Alien Dictionary|[LC](https://leetcode.com/problems/verifying-an-alien-dictionary/) |[Java](./Strings/VerifyAlienDictionary.java) ||O(n<sup>2</sup>)||
-|  59  |Find First Repeated Character4108|[GFG](https://practice.geeksforgeeks.org/problems/find-first-repeated-character4108/1/) |[CPP](./Strings/GFG_FirstRepeatedChar.cpp) |Basic|O(1)||
-|  60  |Find The Missing No In String|[GFG](https://practice.geeksforgeeks.org/problems/find-the-missing-no-in-string/1) |[Java](./Strings/FindTheMissingNoInString.java) |null|O(n<sup>2</sup>)||
-|  61  |First Non Repeating Character In A Stream1216|[GFG](https://practice.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1) |[Java](./Strings/FirstUniqueCharacterInAStream.java) |Medium|O(n<sup>2</sup>)||
-|  62  |Substrings Of Length K With K 1 Distinct Elements|[GFG](https://practice.geeksforgeeks.org/problems/substrings-of-length-k-with-k-1-distinct-elements/1#) |[Java](./Strings/SubstringsWithK-1DistinctElements.java) |Medium|O(n)||
+|  8  |Minimum Number Of Frogs Croaking|[LC](https://leetcode.com/problems/minimum-number-of-frogs-croaking/) |[Java](./Strings/MinimumNumberOfFrogsCroaking.java) ||O(n)||
+|  9  |Count Number Of Homogenous Substrings|[LC](https://leetcode.com/problems/count-number-of-homogenous-substrings/) |[Java](./Strings/CountHomogeneousSubstrings.java) [CPP](./Strings/LC_1759_STR_CountNumOfHomogenousSubstring.cpp) ||O(n)||
+|  10  |Sentence Reversal|[BS](https://binarysearch.com/problems/Sentence-Reversal) |[CPP](./Strings/BS_SentenceReversal.cpp) ||O(1)||
+|  11  |Minimum Changes To Make Alternating Binary String|[LC](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/) |[Java](./Strings/MinimumChangesToMakeAlternatingBinaryString.java) ||O(n)||
+|  12  |Validate Ip Address|[LC](https://leetcode.com/problems/validate-ip-address/) |[Java](./Strings/ValidateIPAddressLeetcode.java) ||O(n)||
+|  13  |Goat Latin|[LC](https://leetcode.com/problems/goat-latin/) |[Java](./Strings/GoatLatin.java) ||O(n)||
+|  14  |Minimum Indexed Character 1587115620|[GFG](https://practice.geeksforgeeks.org/problems/minimum-indexed-character-1587115620/1/) |[Java](./Strings/MinimumIndexedCharacter.java) |Easy|O(n)||
+|  15  |Palindrome String0817|[GFG](https://practice.geeksforgeeks.org/problems/palindrome-string0817/1) |[CPP](./Strings/GFG_STR_PalindromeString.cpp) |Easy|O(1)||
+|  16  |Run Length Encoding|[GFG](https://practice.geeksforgeeks.org/problems/run-length-encoding/1) |[Java](./Strings/RunLengthEncoding.java) |Easy|O(n)||
+|  17  |Maximize Number Of Subsequences In A String|[LC](https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/) |[Java](./Strings/MaximizeNumberOfSubsequencesInAString.java) ||O(n)||
+|  18  |Find All Anagrams In A String|[LC](https://leetcode.com/problems/find-all-anagrams-in-a-string/) |[Java](./Strings/AnagramSearch.java) [CPP](./Strings/LC_438_FindAllAnagramsString.cpp) ||O(n<sup>2</sup>)||
+|  19  |Count Words Obtained After Adding A Letter|[LC](https://leetcode.com/problems/count-words-obtained-after-adding-a-letter/) |[Java](./Strings/CountWordsObtainedAfterAddingALetter.java) ||O(n<sup>2</sup>)||
+|  20  |Longest Prefix Suffix2527|[GFG](https://practice.geeksforgeeks.org/problems/longest-prefix-suffix2527/1) |[Java](./Strings/LongestPrefixSuffix.java) |Medium|O(n)||
+|  21  |Multiply Strings|[LC](https://leetcode.com/problems/multiply-strings) |[Java](./Strings/MultiplyStrings.java) ||O(n<sup>2</sup>)||
+|  22  |Maximum Number Of Vowels In A Substring Of Given Length|[LC](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) |[Java](./Strings/MaximumNumberOfVowelsInASubstringOfGivenLength.java) [CPP](./Strings/LC_1456_MaxVowelsInSubString.cpp) ||O(1)||
+|  23  |Sherlock And Anagrams|[HR](https://www.hackerrank.com/challenges/sherlock-and-anagrams/) |[Java](./Strings/SherlockAndAnagrams.java) ||O(n<sup>2</sup>)||
+|  24  |Strong Password Checker Ii|[LC](https://leetcode.com/problems/strong-password-checker-ii/) |[Java](./Strings/StrongPasswordChecker2.java) ||O(n)||
+|  25  |Reorganize String|[LC](https://leetcode.com/problems/reorganize-string/) |[Java](./Strings/ReorganizeString.java) ||O(n)||
+|  26  |Longest 1s After One Flip|[BS](https://binarysearch.com/problems/Longest-1s-After-One-Flip) |[Java](./Strings/LongestOnesAfterOneFlip.java) ||O(n<sup>2</sup>)||
+|  27  |Count Substrings That Differ By One Character|[LC](https://leetcode.com/problems/count-substrings-that-differ-by-one-character/) |[Java](./Strings/CountSubstringsThatDifferByOneCharacter.java) ||O(n<sup>3</sup>)||
+|  28  |Delete Operation For Two Strings|[LC](https://leetcode.com/problems/delete-operation-for-two-strings/) |[Java](./Strings/DeleteOperationForTwoStrings.java) ||O(n<sup>2</sup>)||
+|  29  |Rearrange Characters4649|[GFG](https://practice.geeksforgeeks.org/problems/rearrange-characters4649/1) |[Java](./Strings/RearrangeCharacters.java) |Medium|O(n<sup>2</sup>)||
+|  30  |Bulk Shift Letters|[BS](https://binarysearch.com/problems/Bulk-Shift-Letters) |[Java](./Strings/BulkShiftLetters.java) ||O(n)||
+|  31  |Remove All Duplicates From A Given String4321|[GFG](https://practice.geeksforgeeks.org/problems/remove-all-duplicates-from-a-given-string4321/1/) |[Java](./Strings/RemoveAllDuplicatesFromAGivenString.java) |Easy|O(n)||
+|  32  |Validate An Ip Address 1587115621|[GFG](https://practice.geeksforgeeks.org/problems/validate-an-ip-address-1587115621/1) |[Java](./Strings/ValidateIPAddress.java) |Medium|O(n)||
+|  33  |Unique Morse Code Words|[LC](https://leetcode.com/problems/unique-morse-code-words/) |||O(1)||
+|  34  |Consecutive Characters|[LC](https://leetcode.com/problems/consecutive-characters/) |[Java](./Strings/ConsecutiveCharacters.java) [CPP](./Strings/LC_1446_STR_Consecutive_Characters.cpp) ||O(n)||
+|  35  |Rotate String|[LC](https://leetcode.com/problems/rotate-string/) |[Java](./Strings/StringRotationCheck.java) [CPP](./Strings/LC_796_RotateString.cpp) ||O(1)||
+|  36  |Longest K Unique Characters Substring0853|[GFG](https://practice.geeksforgeeks.org/problems/longest-k-unique-characters-substring0853/1/) |[Java](./Strings/LongestKUniqueCharacters.java) |Easy|O(n<sup>2</sup>)||
+|  37  |Add Binary Numbers|[BS](https://binarysearch.com/problems/Add-Binary-Numbers) |[Java](./Strings/AddBinaryNumbers.java) ||O(n)||
+|  38  |Number Of Substrings With Only 1s|[LC](https://leetcode.com/problems/number-of-substrings-with-only-1s/) |[Java](./Strings/CountConsecutiveOnes.java) ||O(n)||
+|  39  |Uncommon Words From Two Sentences|[LC](https://leetcode.com/problems/uncommon-words-from-two-sentences/) |[CPP](./Strings/LC_884_STR_UncommonWordsFromTwoSentences.cpp) ||O(1)||
+|  40  |Permutation In String|[LC](https://leetcode.com/problems/permutation-in-string/) |[Java](./Strings/PermutationInStrings.java) ||O(n)||
+|  41  |Subsequence Strings|[BS](https://binarysearch.com/problems/Subsequence-Strings) |[Java](./Strings/SubsequenceStrings.java) ||O(n)||
+|  42  |Smallest Window In A String Containing All The Characters Of Another String 1587115621|[GFG](https://practice.geeksforgeeks.org/problems/smallest-window-in-a-string-containing-all-the-characters-of-another-string-1587115621/1) [LC](https://leetcode.com/problems/minimum-window-substring/) |[Java](./Strings/MinimumWindowSubstring.java) |Medium|O(n<sup>2</sup>)||
+|  43  |Valid Anagram|[LC](https://leetcode.com/problems/valid-anagram/) |[Java](./Strings/AnagramCheck.java) [CPP](./Strings/LC_242_ValidAnagram.cpp) ||O(n)||
+|  44  |Text Justification|[LC](https://leetcode.com/problems/text-justification/) |[Java](./Strings/TextJustification.java) ||O(n<sup>3</sup>)||
+|  45  |Valid Palindrome|[LC](https://leetcode.com/problems/valid-palindrome/) |[Java](./Strings/CheckPalindrome.java) ||O(n)||
+|  46  |Replace The Substring For Balanced String|[LC](https://leetcode.com/problems/replace-the-substring-for-balanced-string/) |[Java](./Strings/ReplaceTheSubstringForBalancedString.java) ||O(n)||
+|  47  |Implement Atoi|[GFG](https://practice.geeksforgeeks.org/problems/implement-atoi/1) |[Java](./Strings/Atoi.java) [CPP](./Strings/GFG_ImplementAtoi.cpp) |Medium|O(n)||
+|  48  |Lexicographically Smallest Non Palindromic String|[BS](https://binarysearch.com/problems/Lexicographically-Smallest-Non-Palindromic-String) [LC](https://leetcode.com/problems/break-a-palindrome/) |[Java](./Strings/LexicographicallySmallestNonPalindromicString.java) ||O(n)||
+|  49  |Smallest Distant Window3132|[GFG](https://practice.geeksforgeeks.org/problems/smallest-distant-window3132/1) |[Java](./Strings/SmallestDistinctWindow.java) |Medium|O(n)||
+|  50  |Greatest English Letter In Upper And Lower Case|[LC](https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/) |[Java](./Strings/GreatestEnglishLetterInUpperAndLowerCase.java) ||O(n)||
+|  51  |First Unique Character In A String|[LC](https://leetcode.com/problems/first-unique-character-in-a-string/) |[Java](./Strings/FirstUniqueCharacter.java) [CPP](./Strings/GFG_NonRepeatingChar.cpp) ||O(n)||
+|  52  |Count And Say|[LC](https://leetcode.com/problems/count-and-say/) |[Java](./Strings/CountAndSay.java) ||O(n<sup>2</sup>)||
+|  53  |Count Palindrome Sub Strings Of A String0652|[GFG](https://practice.geeksforgeeks.org/problems/count-palindrome-sub-strings-of-a-string0652/1/) |[Java](./Strings/CountPalindromeSubstringsOfAString.java) |Medium|O(n)||
+|  54  |Reorder Data In Log Files|[LC](https://leetcode.com/problems/reorder-data-in-log-files/) |[Java](./Strings/ReorderDataInLogFiles.java) ||O(1)||
+|  55  |Valid Palindrome Ii|[LC](https://leetcode.com/problems/valid-palindrome-ii/) |[Java](./Strings/CheckPalindrome2.java) ||O(n)||
+|  56  |Number Of Substrings Containing All Three Characters|[LC](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) |[Java](./Strings/NumberOfSubstringsContainingAllThreeCharacters.java) ||O(n<sup>2</sup>)||
+|  57  |Repetition Of K Length Substring|[GFG](https://practice.geeksforgeeks.org/problems/repetition-of-k-length-substring/1) |[Java](./Strings/RepititionOfKLengthSubstring.java) |Easy|O(n)||
+|  58  |Reverse A String|[GFG](https://practice.geeksforgeeks.org/problems/reverse-a-string/1#) |[CPP](./Strings/GFG_STR_ReverseString.cpp) |Basic|O(1)||
+|  59  |Valid Number|[LC](https://leetcode.com/problems/valid-number/) |[Java](./Strings/ValidNumber.java) ||O(n)||
+|  60  |Longest Even Length Substring|[GFG](https://practice.geeksforgeeks.org/problems/longest-even-length-substring/0) |[Java](./Strings/LongestEvenLengthSubstring.java) |Medium|O(n<sup>3</sup>)||
+|  61  |Verifying An Alien Dictionary|[LC](https://leetcode.com/problems/verifying-an-alien-dictionary/) |[Java](./Strings/VerifyAlienDictionary.java) ||O(n<sup>2</sup>)||
+|  62  |Find First Repeated Character4108|[GFG](https://practice.geeksforgeeks.org/problems/find-first-repeated-character4108/1/) |[CPP](./Strings/GFG_FirstRepeatedChar.cpp) |Basic|O(1)||
+|  63  |Find The Missing No In String|[GFG](https://practice.geeksforgeeks.org/problems/find-the-missing-no-in-string/1) |[Java](./Strings/FindTheMissingNoInString.java) |null|O(n<sup>2</sup>)||
+|  64  |First Non Repeating Character In A Stream1216|[GFG](https://practice.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1) |[Java](./Strings/FirstUniqueCharacterInAStream.java) |Medium|O(n<sup>2</sup>)||
+|  65  |Substrings Of Length K With K 1 Distinct Elements|[GFG](https://practice.geeksforgeeks.org/problems/substrings-of-length-k-with-k-1-distinct-elements/1#) |[Java](./Strings/SubstringsWithK-1DistinctElements.java) |Medium|O(n)||
 ## Tree
 
 |  #  |Title            |Links            |Solution         |Difficulty       |Time Complexity  |Space Complexity |
@@ -1047,91 +1058,92 @@ Number of Problems Solved (05-Jul-2022 23:49:56)
 |  61  |Tree From Postorder And Inorder|[GFG](https://practice.geeksforgeeks.org/problems/tree-from-postorder-and-inorder/1/) |[Java](./Tree/BuildTreeFromInAndPost.java) |Medium|O(n)||
 |  62  |Inorder Traversal Iterative|[GFG](https://practice.geeksforgeeks.org/problems/inorder-traversal-iterative/0/) |[Java](./Tree/IterativeInOrder.java) |Medium|O(n)||
 |  63  |Maximum Sum Leaf To Root Path|[GFG](https://practice.geeksforgeeks.org/problems/maximum-sum-leaf-to-root-path/1) |[Java](./Tree/MaxSumPath.java) |Medium|O(1)||
-|  64  |Cousins In Binary Tree|[LC](https://leetcode.com/problems/cousins-in-binary-tree/) |[Java](./Tree/AreCousins.java) ||O(n<sup>2</sup>)||
-|  65  |Node At Distance|[GFG](https://practice.geeksforgeeks.org/problems/node-at-distance/1) |[Java](./Tree/NodeAtDistance.java) |Medium|O(1)||
-|  66  |Construct Tree 1|[GFG](https://practice.geeksforgeeks.org/problems/construct-tree-1/1/) |[Java](./Tree/BuildTreeFromInAndPre.java) |Medium|O(n)||
-|  67  |Inorder Successor|[BS](https://binarysearch.com/problems/Inorder-Successor) |[Java](./Tree/InorderSuccessor.java) ||O(n)||
-|  68  |Pairs Violating Bst Property|[GFG](https://practice.geeksforgeeks.org/problems/pairs-violating-bst-property/1) |[Java](./Tree/PairsViolatingBSTProperty.java) |Medium|O(n)||
-|  69  |Find A Corresponding Node Of A Binary Tree In A Clone Of That Tree|[LC](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/) |[Java](./Tree/FindACorrespondingNodeOfABinaryTreeInACloneOfThatTree.java) ||O(1)||
-|  70  |Maximum Depth Of Binary Tree|[LC](https://leetcode.com/problems/maximum-depth-of-binary-tree/) |[Java](./Tree/Height.java) [CPP](./Tree/LC_104_MaxDepthBinaryTree.cpp) ||O(1)||
-|  71  |Insufficient Nodes In Root To Leaf Paths|[LC](https://leetcode.com/problems/insufficient-nodes-in-root-to-leaf-paths/) |[Java](./Tree/InsufficientNodesInRootToLeafPaths.java) ||O(1)||
-|  72  |Check If Tree Is Isomorphic|[GFG](https://practice.geeksforgeeks.org/problems/check-if-tree-is-isomorphic/1) |[Java](./Tree/CheckIfTreeIsIsomorphic.java) |Easy|O(1)||
-|  73  |Leaf Similar Trees|[LC](https://leetcode.com/problems/leaf-similar-trees/) |[Java](./Tree/LeafSimilarTrees.java) ||O(n<sup>2</sup>)||
-|  74  |Print Binary Tree|[LC](https://leetcode.com/problems/print-binary-tree/) |[Java](./Tree/PrintBinaryTree.java) ||O(n<sup>2</sup>)||
-|  75  |Binary Tree Cameras|[LC](https://leetcode.com/problems/binary-tree-cameras/) |[Java](./Tree/BinaryTreeCameras.java) ||O(1)||
-|  76  |Subtree Of Another Tree|[LC](https://leetcode.com/problems/subtree-of-another-tree/) |[Java](./Tree/SubtreeOfAnotherTree.java) ||O(1)||
-|  77  |Diameter Of Binary Tree|[GFG](https://practice.geeksforgeeks.org/problems/diameter-of-binary-tree/1) |[Java](./Tree/Diameter.java) |Easy|O(1)||
-|  78  |Sum Of The Longest Bloodline Of A Tree|[GFG](https://practice.geeksforgeeks.org/problems/sum-of-the-longest-bloodline-of-a-tree/1#) |[Java](./Tree/SumOfLongestBloodLine.java) [CPP](./Tree/GFG_Tree_SumLongestBloodlineOfaTree.cpp) |Easy|O(1)||
-|  79  |Sum Of Nodes With Even Valued Grandparent|[LC](https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/) |[Java](./Tree/SumOfNodesWithEvenValuedGrandParent.java) ||O(1)||
-|  80  |Maximum Path Sum From Any Node|[GFG](https://practice.geeksforgeeks.org/problems/maximum-path-sum-from-any-node/1) |[Java](./Tree/MaximumPathSumFromAnyNode.java) |Medium|O(1)||
-|  81  |Array To Bst4443|[GFG](https://practice.geeksforgeeks.org/problems/array-to-bst4443/1) [LC](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) |[Java](./Tree/SortedArrayToBalancedBST.java) |Easy|O(n)||
-|  82  |Largest Subtree Sum In A Tree|[GFG](https://practice.geeksforgeeks.org/problems/largest-subtree-sum-in-a-tree/1/) |[Java](./Tree/LargestSubtreeSumInATree.java) |Hard|O(1)||
-|  83  |Symmetric Tree|[GFG](https://practice.geeksforgeeks.org/problems/symmetric-tree/1) |[Java](./Tree/CheckIfSymmetric.java) |Easy|O(1)||
-|  84  |Transform To Sum Tree|[GFG](https://practice.geeksforgeeks.org/problems/transform-to-sum-tree/1) [BS](https://binarysearch.com/problems/Elephant-Tree) |[Java](./Tree/ConvertIntoSumTree.java) |Easy|O(1)||
-|  85  |Merge Two Bst S|[GFG](https://practice.geeksforgeeks.org/problems/merge-two-bst-s/1) |[Java](./Tree/MergeTwoBSTs.java) |Hard|O(n)||
-|  86  |Two Mirror Trees|[GFG](https://practice.geeksforgeeks.org/problems/two-mirror-trees/1) |[Java](./Tree/TwoMirrorTrees.java) |Easy|O(1)||
-|  87  |Insert Into A Binary Search Tree|[LC](https://leetcode.com/problems/insert-into-a-binary-search-tree/) |[Java](./Tree/InsertIntoBST.java) [CPP](./Tree/LC_701_InsertIntoBST.cpp) ||O(1)||
-|  88  |Children Sum Parent|[GFG](https://practice.geeksforgeeks.org/problems/children-sum-parent/1/#) |[CPP](./Tree/GFG_ChildrenSumParent.cpp) |Easy|O(1)||
-|  89  |Add All Greater Values To Every Node In A Bst|[GFG](https://practice.geeksforgeeks.org/problems/add-all-greater-values-to-every-node-in-a-bst/1) |[Java](./Tree/GreaterValueAddition.java) |Medium|O(1)||
-|  90  |Merging Binary Trees|[BS](https://binarysearch.com/problems/Merging-Binary-Trees) |[Java](./Tree/MergingBinaryTrees.java) ||O(1)||
-|  91  |Longest Tree Sum Path From Root To Leaf|[BS](https://binarysearch.com/problems/Longest-Tree-Sum-Path-From-Root-to-Leaf) |[Java](./Tree/LongestTreeSumPathFromRootToLeaf.java) ||O(1)||
-|  92  |Serialize And Deserialize A Binary Tree|[GFG](https://practice.geeksforgeeks.org/problems/serialize-and-deserialize-a-binary-tree/1) [LC](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) |[Java](./Tree/SerializeAndDeserialize.java) |Medium|O(1)||
-|  93  |Mirror Tree|[GFG](https://practice.geeksforgeeks.org/problems/mirror-tree/1) |[Java](./Tree/Mirror.java) |Easy|O(1)||
-|  94  |Height Balanced Tree|[BS](https://binarysearch.com/problems/Height-Balanced-Tree) |[Java](./Tree/HeightBalancedTree.java) ||O(1)||
-|  95  |N Ary Tree Postorder Traversal|[LC](https://leetcode.com/problems/n-ary-tree-postorder-traversal/) |[Java](./Tree/NAryPostOrder.java) ||O(n)||
-|  96  |Binary Tree Zigzag Level Order Traversal|[LC](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) |[Java](./Tree/ZigzagLevelOrderTraversal.java) ||O(n<sup>2</sup>)||
-|  97  |Min Distance Between Two Given Nodes Of A Binary Tree|[GFG](https://practice.geeksforgeeks.org/problems/min-distance-between-two-given-nodes-of-a-binary-tree/1/) |[Java](./Tree/FindDistance.java) |Medium|O(1)||
-|  98  |Binary Tree K Level Sum3857|[GFG](https://practice.geeksforgeeks.org/problems/binary-tree-k-level-sum3857/1) |[Java](./Tree/KLevelSum.java) |Easy|O(n<sup>2</sup>)||
-|  99  |Partition Tree|[BS](https://binarysearch.com/problems/Partition-Tree) |[Java](./Tree/PartitionTree.java) ||O(n<sup>2</sup>)||
-|  100  |Cousins Of A Given Node|[GFG](https://practice.geeksforgeeks.org/problems/cousins-of-a-given-node/1) |[Java](./Tree/Cousins.java) |Medium|O(n<sup>2</sup>)||
-|  101  |Check Completeness Of A Binary Tree|[LC](https://leetcode.com/problems/check-completeness-of-a-binary-tree/) |[Java](./Tree/CheckCompletenessOfABinaryTree.java) ||O(n)||
-|  102  |Longest Path With Different Adjacent Characters|[LC](https://leetcode.com/problems/longest-path-with-different-adjacent-characters/) |[Java](./Tree/LongestPathWithDifferentAdjacentCharacters.java) ||O(n)||
-|  103  |Check If Subtree|[GFG](https://practice.geeksforgeeks.org/problems/check-if-subtree/1) |[Java](./Tree/CheckIfSubtree.java) |Medium|O(n)||
-|  104  |Delete Leaves With A Given Value|[LC](https://leetcode.com/problems/delete-leaves-with-a-given-value/) |[Java](./Tree/DeleteLeavesWithGivenValue.java) ||O(1)||
-|  105  |Delete Even Leaves|[BS](https://binarysearch.com/problems/Delete-Even-Leaves) |[Java](./Tree/DeleteEvenLeaves.java) ||O(1)||
-|  106  |Postorder Traversal Iterative|[GFG](https://practice.geeksforgeeks.org/problems/postorder-traversal-iterative/0/) |[Java](./Tree/IterativePostOrder.java) |Medium|O(n)||
-|  107  |Predecessor And Successor|[GFG](https://practice.geeksforgeeks.org/problems/predecessor-and-successor/1/) |[Java](./Tree/SuccAndPre.java) |Easy|O(1)||
-|  108  |Preorder Traversal And Bst4006|[GFG](https://practice.geeksforgeeks.org/problems/preorder-traversal-and-bst4006/1/) |[Java](./Tree/CheckIfPreorderOfBST.java) |Medium|O(n)||
-|  109  |Populating Next Right Pointers In Each Node|[LC](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) |[Java](./Tree/PopulateRightPointers.java) ||O(n<sup>2</sup>)||
-|  110  |Binary Tree Tilt|[LC](https://leetcode.com/problems/binary-tree-tilt/) |[Java](./Tree/BinaryTreeTilt.java) ||O(1)||
-|  111  |Reverse Level Order Traversal|[GFG](https://practice.geeksforgeeks.org/problems/reverse-level-order-traversal/1#) |[Java](./Tree/ReverseLevelOrder.java) [CPP](./Tree/GFG_Tree_ReverseOrderTraversal.cpp) |Easy|O(1)||
-|  112  |Number Of Turns In Binary Tree|[GFG](https://practice.geeksforgeeks.org/problems/number-of-turns-in-binary-tree/1) |[Java](./Tree/NumberOfTurnsInBinaryTree.java) |Hard|O(1)||
-|  113  |Remove Bst Keys Outside Given Range|[GFG](https://practice.geeksforgeeks.org/problems/remove-bst-keys-outside-given-range/1/) |[Java](./Tree/RemoveNodesOutsideRange.java) |Medium|O(n<sup>2</sup>)||
-|  114  |Find A Pair With Given Target In Bst|[GFG](https://practice.geeksforgeeks.org/problems/find-a-pair-with-given-target-in-bst/1) |[Java](./Tree/FindPairInBST.java) [CPP](./Tree/GFG_FindPairWithSumBST.cpp) |Medium|O(n)||
-|  115  |Validate Binary Search Tree|[LC](https://leetcode.com/problems/validate-binary-search-tree/) |[Java](./Tree/IsBST.java) [CPP](./Tree/LC_98_ValidateBST.cpp) ||O(1)||
-|  116  |Count Nodes In Complete Binary Tree|[BS](https://binarysearch.com/problems/Count-Nodes-in-Complete-Binary-Tree) |[Java](./Tree/CountNodesInCompleteBinaryTree.java) ||O(n)||
-|  117  |Symmetric Binary Tree|[BS](https://binarysearch.com/problems/Symmetric-Binary-Tree) [LC](https://leetcode.com/problems/symmetric-tree/) |[Java](./Tree/CheckMirror.java) [CPP](./Tree/LC_101_Tree_Symmetric.cpp) ||O(1)||
-|  118  |Find The Distance Between Two Nodes4402|[GFG](https://practice.geeksforgeeks.org/problems/find-the-distance-between-two-nodes4402/1) |[Java](./Tree/ShortestDistance.java) |Easy|O(n)||
-|  119  |Find The Closest Element In Bst|[GFG](https://practice.geeksforgeeks.org/problems/find-the-closest-element-in-bst/1) |[Java](./Tree/ClosestElementInBST.java) |Medium|O(n)||
-|  120  |Complete Binary Tree|[GFG](https://practice.geeksforgeeks.org/problems/complete-binary-tree/1) |[Java](./Tree/CompleteBinaryTree.java) |Medium|O(n<sup>2</sup>)||
-|  121  |Check Whether Bst Contains Dead End|[GFG](https://practice.geeksforgeeks.org/problems/check-whether-bst-contains-dead-end/1) |[Java](./Tree/CheckDeadEnd.java) |Easy|O(1)||
-|  122  |Binary Tree To Dll|[GFG](https://practice.geeksforgeeks.org/problems/binary-tree-to-dll/1) |[Java](./Tree/BinaryTreeToDLL.java) |Hard|O(1)||
-|  123  |All Elements In Two Binary Search Trees|[LC](https://leetcode.com/problems/all-elements-in-two-binary-search-trees/) |[Java](./Tree/AllElementsInTwoBinarySearchTrees.java) ||O(1)||
-|  124  |Determine If Two Trees Are Identical|[GFG](https://practice.geeksforgeeks.org/problems/determine-if-two-trees-are-identical/1) |[Java](./Tree/CheckIfIdentical.java) [CPP](./Tree/GFG_DetermineIfTwoTreesIdentical.cpp) |Easy|O(1)||
-|  125  |Binary Search Tree Iterator|[LC](https://leetcode.com/problems/binary-search-tree-iterator/) |[Java](./Tree/BinarySearchTreeIterator.java) ||O(n)||
-|  126  |Create Binary Tree From Descriptions|[LC](https://leetcode.com/problems/create-binary-tree-from-descriptions/) |[Java](./Tree/CreateBinaryTreeFromDescriptions.java) ||O(n)||
-|  127  |Foldable Binary Tree|[GFG](https://practice.geeksforgeeks.org/problems/foldable-binary-tree/1) |[Java](./Tree/FoldableBinaryTree.java) |Medium|O(1)||
-|  128  |Left View Of Binary Tree|[GFG](https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1#) |[Java](./Tree/LeftView.java) [CPP](./Tree/GFG_Tree_LeftView.cpp) |Easy|O(1)||
-|  129  |Top View Of Binary Tree|[GFG](https://practice.geeksforgeeks.org/problems/top-view-of-binary-tree/1) |[Java](./Tree/TopView.java) |Medium|O(n)||
-|  130  |Check For Balanced Tree|[GFG](https://practice.geeksforgeeks.org/problems/check-for-balanced-tree/1) |[CPP](./Tree/GFG_Tree_BalancedTree.cpp) |Easy|O(1)||
-|  131  |Kth Smallest Element In A Bst|[LC](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) [GFG](https://practice.geeksforgeeks.org/problems/kth-largest-element-in-bst/1) |[Java](./Tree/KthSmallestElement.java) |Easy|O(1)||
-|  132  |Maximum Level Sum Of A Binary Tree|[LC](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/) |[Java](./Tree/MaxLevelSum.java) ||O(n<sup>2</sup>)||
-|  133  |Find Mode In Binary Search Tree|[LC](https://leetcode.com/problems/find-mode-in-binary-search-tree/) |[Java](./Tree/FindMode.java) ||O(n)||
-|  134  |Deepest Leaves Sum|[LC](https://leetcode.com/problems/deepest-leaves-sum/) |[Java](./Tree/DeepestLeavesSum.java) ||O(1)||
-|  135  |Duplicate Subtree In Binary Tree|[GFG](https://practice.geeksforgeeks.org/problems/duplicate-subtree-in-binary-tree/1/) |[Java](./Tree/CheckForDuplicateSubtrees.java) |Medium|O(n<sup>4</sup>)||
-|  136  |Largest Value In Each Level|[GFG](https://practice.geeksforgeeks.org/problems/largest-value-in-each-level/1) |[Java](./Tree/LargestValueInEachLevel.java) |Easy|O(n<sup>2</sup>)||
-|  137  |Trim A Binary Search Tree|[LC](https://leetcode.com/problems/trim-a-binary-search-tree/) |[CPP](./Tree/LC_669_TrimBST.cpp) ||O(1)||
-|  138  |Bst To Greater Sum Tree|[GFG](https://practice.geeksforgeeks.org/problems/bst-to-greater-sum-tree/1) |[Java](./Tree/BstToGreaterSumTree.java) |Medium|O(1)||
-|  139  |Maximum Difference Between Node And Its Ancestor|[GFG](https://practice.geeksforgeeks.org/problems/maximum-difference-between-node-and-its-ancestor/1) |[Java](./Tree/MaximumDifferenceAncestorNode.java) |Medium|O(n)||
-|  140  |Sum Tree|[GFG](https://practice.geeksforgeeks.org/problems/sum-tree/1) |[Java](./Tree/CheckSumTree.java) |Medium|O(1)||
-|  141  |Ffd66b6a0bf7cefb9987fa455974b6ea5695709e|[GFG](https://practice.geeksforgeeks.org/problems/ffd66b6a0bf7cefb9987fa455974b6ea5695709e/1) |[Java](./Tree/BinarySearch.java) |Easy|O(n<sup>2</sup>)||
-|  142  |Minimum Height Trees|[LC](https://leetcode.com/problems/minimum-height-trees/) |[Java](./Tree/MinimumHeightTrees.java) ||O(n<sup>2</sup>)||
-|  143  |Largest Tree Sum Path|[BS](https://binarysearch.com/problems/Largest-Tree-Sum-Path) |[Java](./Tree/LargestTreeSumPath.java) ||O(n)||
-|  144  |Univalue Tree|[BS](https://binarysearch.com/problems/Univalue-Tree) |[Java](./Tree/UniValueTree.java) ||O(1)||
-|  145  |Find Largest Value In Each Tree Row|[LC](https://leetcode.com/problems/find-largest-value-in-each-tree-row/) |[Java](./Tree/FindLargestValueInEachTreeRow.java) ||O(n<sup>2</sup>)||
-|  146  |Sum Tree|[BS](https://binarysearch.com/problems/Sum-Tree) |[Java](./Tree/CheckIfSumTree.java) ||O(1)||
-|  147  |Merge Two Binary Trees|[LC](https://leetcode.com/problems/merge-two-binary-trees/) |[Java](./Tree/MergeTwoBinaryTrees.java) [CPP](./Tree/LC_617_MergeTwoBST.cpp) ||O(1)||
-|  148  |Nodes At Given Distance In Binary Tree|[GFG](https://practice.geeksforgeeks.org/problems/nodes-at-given-distance-in-binary-tree/1) |[Java](./Tree/FindNodesAtDistanceK.java) |Hard|O(n)||
+|  64  |Sum Root To Leaf Numbers|[LC](https://leetcode.com/problems/sum-root-to-leaf-numbers/) |[Java](./Tree/SumRootToLeafNumbers.java) ||O(1)||
+|  65  |Cousins In Binary Tree|[LC](https://leetcode.com/problems/cousins-in-binary-tree/) |[Java](./Tree/AreCousins.java) ||O(n<sup>2</sup>)||
+|  66  |Node At Distance|[GFG](https://practice.geeksforgeeks.org/problems/node-at-distance/1) |[Java](./Tree/NodeAtDistance.java) |Medium|O(1)||
+|  67  |Construct Tree 1|[GFG](https://practice.geeksforgeeks.org/problems/construct-tree-1/1/) |[Java](./Tree/BuildTreeFromInAndPre.java) |Medium|O(n)||
+|  68  |Inorder Successor|[BS](https://binarysearch.com/problems/Inorder-Successor) |[Java](./Tree/InorderSuccessor.java) ||O(n)||
+|  69  |Pairs Violating Bst Property|[GFG](https://practice.geeksforgeeks.org/problems/pairs-violating-bst-property/1) |[Java](./Tree/PairsViolatingBSTProperty.java) |Medium|O(n)||
+|  70  |Find A Corresponding Node Of A Binary Tree In A Clone Of That Tree|[LC](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/) |[Java](./Tree/FindACorrespondingNodeOfABinaryTreeInACloneOfThatTree.java) ||O(1)||
+|  71  |Maximum Depth Of Binary Tree|[LC](https://leetcode.com/problems/maximum-depth-of-binary-tree/) |[Java](./Tree/Height.java) [CPP](./Tree/LC_104_MaxDepthBinaryTree.cpp) ||O(1)||
+|  72  |Insufficient Nodes In Root To Leaf Paths|[LC](https://leetcode.com/problems/insufficient-nodes-in-root-to-leaf-paths/) |[Java](./Tree/InsufficientNodesInRootToLeafPaths.java) ||O(1)||
+|  73  |Check If Tree Is Isomorphic|[GFG](https://practice.geeksforgeeks.org/problems/check-if-tree-is-isomorphic/1) |[Java](./Tree/CheckIfTreeIsIsomorphic.java) |Easy|O(1)||
+|  74  |Leaf Similar Trees|[LC](https://leetcode.com/problems/leaf-similar-trees/) |[Java](./Tree/LeafSimilarTrees.java) ||O(n<sup>2</sup>)||
+|  75  |Print Binary Tree|[LC](https://leetcode.com/problems/print-binary-tree/) |[Java](./Tree/PrintBinaryTree.java) ||O(n<sup>2</sup>)||
+|  76  |Binary Tree Cameras|[LC](https://leetcode.com/problems/binary-tree-cameras/) |[Java](./Tree/BinaryTreeCameras.java) ||O(1)||
+|  77  |Subtree Of Another Tree|[LC](https://leetcode.com/problems/subtree-of-another-tree/) |[Java](./Tree/SubtreeOfAnotherTree.java) ||O(1)||
+|  78  |Diameter Of Binary Tree|[GFG](https://practice.geeksforgeeks.org/problems/diameter-of-binary-tree/1) |[Java](./Tree/Diameter.java) |Easy|O(1)||
+|  79  |Sum Of The Longest Bloodline Of A Tree|[GFG](https://practice.geeksforgeeks.org/problems/sum-of-the-longest-bloodline-of-a-tree/1#) |[Java](./Tree/SumOfLongestBloodLine.java) [CPP](./Tree/GFG_Tree_SumLongestBloodlineOfaTree.cpp) |Easy|O(1)||
+|  80  |Sum Of Nodes With Even Valued Grandparent|[LC](https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/) |[Java](./Tree/SumOfNodesWithEvenValuedGrandParent.java) ||O(1)||
+|  81  |Maximum Path Sum From Any Node|[GFG](https://practice.geeksforgeeks.org/problems/maximum-path-sum-from-any-node/1) [LC](https://leetcode.com/problems/binary-tree-maximum-path-sum/) |[Java](./Tree/MaximumPathSumFromAnyNode.java) |Medium|O(1)||
+|  82  |Array To Bst4443|[GFG](https://practice.geeksforgeeks.org/problems/array-to-bst4443/1) [LC](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) |[Java](./Tree/SortedArrayToBalancedBST.java) |Easy|O(n)||
+|  83  |Largest Subtree Sum In A Tree|[GFG](https://practice.geeksforgeeks.org/problems/largest-subtree-sum-in-a-tree/1/) |[Java](./Tree/LargestSubtreeSumInATree.java) |Hard|O(1)||
+|  84  |Symmetric Tree|[GFG](https://practice.geeksforgeeks.org/problems/symmetric-tree/1) |[Java](./Tree/CheckIfSymmetric.java) |Easy|O(1)||
+|  85  |Transform To Sum Tree|[GFG](https://practice.geeksforgeeks.org/problems/transform-to-sum-tree/1) [BS](https://binarysearch.com/problems/Elephant-Tree) |[Java](./Tree/ConvertIntoSumTree.java) |Easy|O(1)||
+|  86  |Merge Two Bst S|[GFG](https://practice.geeksforgeeks.org/problems/merge-two-bst-s/1) |[Java](./Tree/MergeTwoBSTs.java) |Hard|O(n)||
+|  87  |Two Mirror Trees|[GFG](https://practice.geeksforgeeks.org/problems/two-mirror-trees/1) |[Java](./Tree/TwoMirrorTrees.java) |Easy|O(1)||
+|  88  |Insert Into A Binary Search Tree|[LC](https://leetcode.com/problems/insert-into-a-binary-search-tree/) |[Java](./Tree/InsertIntoBST.java) [CPP](./Tree/LC_701_InsertIntoBST.cpp) ||O(1)||
+|  89  |Children Sum Parent|[GFG](https://practice.geeksforgeeks.org/problems/children-sum-parent/1/#) |[CPP](./Tree/GFG_ChildrenSumParent.cpp) |Easy|O(1)||
+|  90  |Add All Greater Values To Every Node In A Bst|[GFG](https://practice.geeksforgeeks.org/problems/add-all-greater-values-to-every-node-in-a-bst/1) |[Java](./Tree/GreaterValueAddition.java) |Medium|O(1)||
+|  91  |Merging Binary Trees|[BS](https://binarysearch.com/problems/Merging-Binary-Trees) |[Java](./Tree/MergingBinaryTrees.java) ||O(1)||
+|  92  |Longest Tree Sum Path From Root To Leaf|[BS](https://binarysearch.com/problems/Longest-Tree-Sum-Path-From-Root-to-Leaf) |[Java](./Tree/LongestTreeSumPathFromRootToLeaf.java) ||O(1)||
+|  93  |Serialize And Deserialize A Binary Tree|[GFG](https://practice.geeksforgeeks.org/problems/serialize-and-deserialize-a-binary-tree/1) [LC](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) |[Java](./Tree/SerializeAndDeserialize.java) |Medium|O(1)||
+|  94  |Mirror Tree|[GFG](https://practice.geeksforgeeks.org/problems/mirror-tree/1) |[Java](./Tree/Mirror.java) |Easy|O(1)||
+|  95  |Height Balanced Tree|[BS](https://binarysearch.com/problems/Height-Balanced-Tree) |[Java](./Tree/HeightBalancedTree.java) ||O(1)||
+|  96  |N Ary Tree Postorder Traversal|[LC](https://leetcode.com/problems/n-ary-tree-postorder-traversal/) |[Java](./Tree/NAryPostOrder.java) ||O(n)||
+|  97  |Binary Tree Zigzag Level Order Traversal|[LC](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) |[Java](./Tree/ZigzagLevelOrderTraversal.java) ||O(n<sup>2</sup>)||
+|  98  |Min Distance Between Two Given Nodes Of A Binary Tree|[GFG](https://practice.geeksforgeeks.org/problems/min-distance-between-two-given-nodes-of-a-binary-tree/1/) |[Java](./Tree/FindDistance.java) |Medium|O(1)||
+|  99  |Binary Tree K Level Sum3857|[GFG](https://practice.geeksforgeeks.org/problems/binary-tree-k-level-sum3857/1) |[Java](./Tree/KLevelSum.java) |Easy|O(n<sup>2</sup>)||
+|  100  |Partition Tree|[BS](https://binarysearch.com/problems/Partition-Tree) |[Java](./Tree/PartitionTree.java) ||O(n<sup>2</sup>)||
+|  101  |Cousins Of A Given Node|[GFG](https://practice.geeksforgeeks.org/problems/cousins-of-a-given-node/1) |[Java](./Tree/Cousins.java) |Medium|O(n<sup>2</sup>)||
+|  102  |Check Completeness Of A Binary Tree|[LC](https://leetcode.com/problems/check-completeness-of-a-binary-tree/) |[Java](./Tree/CheckCompletenessOfABinaryTree.java) ||O(n)||
+|  103  |Longest Path With Different Adjacent Characters|[LC](https://leetcode.com/problems/longest-path-with-different-adjacent-characters/) |[Java](./Tree/LongestPathWithDifferentAdjacentCharacters.java) ||O(n)||
+|  104  |Check If Subtree|[GFG](https://practice.geeksforgeeks.org/problems/check-if-subtree/1) |[Java](./Tree/CheckIfSubtree.java) |Medium|O(n)||
+|  105  |Delete Leaves With A Given Value|[LC](https://leetcode.com/problems/delete-leaves-with-a-given-value/) |[Java](./Tree/DeleteLeavesWithGivenValue.java) ||O(1)||
+|  106  |Delete Even Leaves|[BS](https://binarysearch.com/problems/Delete-Even-Leaves) |[Java](./Tree/DeleteEvenLeaves.java) ||O(1)||
+|  107  |Postorder Traversal Iterative|[GFG](https://practice.geeksforgeeks.org/problems/postorder-traversal-iterative/0/) |[Java](./Tree/IterativePostOrder.java) |Medium|O(n)||
+|  108  |Predecessor And Successor|[GFG](https://practice.geeksforgeeks.org/problems/predecessor-and-successor/1/) |[Java](./Tree/SuccAndPre.java) |Easy|O(1)||
+|  109  |Preorder Traversal And Bst4006|[GFG](https://practice.geeksforgeeks.org/problems/preorder-traversal-and-bst4006/1/) |[Java](./Tree/CheckIfPreorderOfBST.java) |Medium|O(n)||
+|  110  |Populating Next Right Pointers In Each Node|[LC](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) |[Java](./Tree/PopulateRightPointers.java) ||O(n<sup>2</sup>)||
+|  111  |Binary Tree Tilt|[LC](https://leetcode.com/problems/binary-tree-tilt/) |[Java](./Tree/BinaryTreeTilt.java) ||O(1)||
+|  112  |Reverse Level Order Traversal|[GFG](https://practice.geeksforgeeks.org/problems/reverse-level-order-traversal/1#) |[Java](./Tree/ReverseLevelOrder.java) [CPP](./Tree/GFG_Tree_ReverseOrderTraversal.cpp) |Easy|O(1)||
+|  113  |Number Of Turns In Binary Tree|[GFG](https://practice.geeksforgeeks.org/problems/number-of-turns-in-binary-tree/1) |[Java](./Tree/NumberOfTurnsInBinaryTree.java) |Hard|O(1)||
+|  114  |Remove Bst Keys Outside Given Range|[GFG](https://practice.geeksforgeeks.org/problems/remove-bst-keys-outside-given-range/1/) |[Java](./Tree/RemoveNodesOutsideRange.java) |Medium|O(n<sup>2</sup>)||
+|  115  |Find A Pair With Given Target In Bst|[GFG](https://practice.geeksforgeeks.org/problems/find-a-pair-with-given-target-in-bst/1) |[Java](./Tree/FindPairInBST.java) [CPP](./Tree/GFG_FindPairWithSumBST.cpp) |Medium|O(n)||
+|  116  |Validate Binary Search Tree|[LC](https://leetcode.com/problems/validate-binary-search-tree/) |[Java](./Tree/IsBST.java) [CPP](./Tree/LC_98_ValidateBST.cpp) ||O(1)||
+|  117  |Count Nodes In Complete Binary Tree|[BS](https://binarysearch.com/problems/Count-Nodes-in-Complete-Binary-Tree) |[Java](./Tree/CountNodesInCompleteBinaryTree.java) ||O(n)||
+|  118  |Symmetric Binary Tree|[BS](https://binarysearch.com/problems/Symmetric-Binary-Tree) [LC](https://leetcode.com/problems/symmetric-tree/) |[Java](./Tree/CheckMirror.java) [CPP](./Tree/LC_101_Tree_Symmetric.cpp) ||O(1)||
+|  119  |Find The Distance Between Two Nodes4402|[GFG](https://practice.geeksforgeeks.org/problems/find-the-distance-between-two-nodes4402/1) |[Java](./Tree/ShortestDistance.java) |Easy|O(n)||
+|  120  |Find The Closest Element In Bst|[GFG](https://practice.geeksforgeeks.org/problems/find-the-closest-element-in-bst/1) |[Java](./Tree/ClosestElementInBST.java) |Medium|O(n)||
+|  121  |Complete Binary Tree|[GFG](https://practice.geeksforgeeks.org/problems/complete-binary-tree/1) |[Java](./Tree/CompleteBinaryTree.java) |Medium|O(n<sup>2</sup>)||
+|  122  |Check Whether Bst Contains Dead End|[GFG](https://practice.geeksforgeeks.org/problems/check-whether-bst-contains-dead-end/1) |[Java](./Tree/CheckDeadEnd.java) |Easy|O(1)||
+|  123  |Binary Tree To Dll|[GFG](https://practice.geeksforgeeks.org/problems/binary-tree-to-dll/1) |[Java](./Tree/BinaryTreeToDLL.java) |Hard|O(1)||
+|  124  |All Elements In Two Binary Search Trees|[LC](https://leetcode.com/problems/all-elements-in-two-binary-search-trees/) |[Java](./Tree/AllElementsInTwoBinarySearchTrees.java) ||O(1)||
+|  125  |Determine If Two Trees Are Identical|[GFG](https://practice.geeksforgeeks.org/problems/determine-if-two-trees-are-identical/1) |[Java](./Tree/CheckIfIdentical.java) [CPP](./Tree/GFG_DetermineIfTwoTreesIdentical.cpp) |Easy|O(1)||
+|  126  |Binary Search Tree Iterator|[LC](https://leetcode.com/problems/binary-search-tree-iterator/) |[Java](./Tree/BinarySearchTreeIterator.java) ||O(n)||
+|  127  |Create Binary Tree From Descriptions|[LC](https://leetcode.com/problems/create-binary-tree-from-descriptions/) |[Java](./Tree/CreateBinaryTreeFromDescriptions.java) ||O(n)||
+|  128  |Foldable Binary Tree|[GFG](https://practice.geeksforgeeks.org/problems/foldable-binary-tree/1) |[Java](./Tree/FoldableBinaryTree.java) |Medium|O(1)||
+|  129  |Left View Of Binary Tree|[GFG](https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1#) |[Java](./Tree/LeftView.java) [CPP](./Tree/GFG_Tree_LeftView.cpp) |Easy|O(1)||
+|  130  |Top View Of Binary Tree|[GFG](https://practice.geeksforgeeks.org/problems/top-view-of-binary-tree/1) |[Java](./Tree/TopView.java) |Medium|O(n)||
+|  131  |Check For Balanced Tree|[GFG](https://practice.geeksforgeeks.org/problems/check-for-balanced-tree/1) |[CPP](./Tree/GFG_Tree_BalancedTree.cpp) |Easy|O(1)||
+|  132  |Kth Smallest Element In A Bst|[LC](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) [GFG](https://practice.geeksforgeeks.org/problems/kth-largest-element-in-bst/1) |[Java](./Tree/KthSmallestElement.java) |Easy|O(1)||
+|  133  |Maximum Level Sum Of A Binary Tree|[LC](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/) |[Java](./Tree/MaxLevelSum.java) ||O(n<sup>2</sup>)||
+|  134  |Find Mode In Binary Search Tree|[LC](https://leetcode.com/problems/find-mode-in-binary-search-tree/) |[Java](./Tree/FindMode.java) ||O(n)||
+|  135  |Deepest Leaves Sum|[LC](https://leetcode.com/problems/deepest-leaves-sum/) |[Java](./Tree/DeepestLeavesSum.java) ||O(1)||
+|  136  |Duplicate Subtree In Binary Tree|[GFG](https://practice.geeksforgeeks.org/problems/duplicate-subtree-in-binary-tree/1/) |[Java](./Tree/CheckForDuplicateSubtrees.java) |Medium|O(n<sup>4</sup>)||
+|  137  |Largest Value In Each Level|[GFG](https://practice.geeksforgeeks.org/problems/largest-value-in-each-level/1) |[Java](./Tree/LargestValueInEachLevel.java) |Easy|O(n<sup>2</sup>)||
+|  138  |Trim A Binary Search Tree|[LC](https://leetcode.com/problems/trim-a-binary-search-tree/) |[CPP](./Tree/LC_669_TrimBST.cpp) ||O(1)||
+|  139  |Bst To Greater Sum Tree|[GFG](https://practice.geeksforgeeks.org/problems/bst-to-greater-sum-tree/1) |[Java](./Tree/BstToGreaterSumTree.java) |Medium|O(1)||
+|  140  |Maximum Difference Between Node And Its Ancestor|[GFG](https://practice.geeksforgeeks.org/problems/maximum-difference-between-node-and-its-ancestor/1) |[Java](./Tree/MaximumDifferenceAncestorNode.java) |Medium|O(n)||
+|  141  |Sum Tree|[GFG](https://practice.geeksforgeeks.org/problems/sum-tree/1) |[Java](./Tree/CheckSumTree.java) |Medium|O(1)||
+|  142  |Ffd66b6a0bf7cefb9987fa455974b6ea5695709e|[GFG](https://practice.geeksforgeeks.org/problems/ffd66b6a0bf7cefb9987fa455974b6ea5695709e/1) |[Java](./Tree/BinarySearch.java) |Easy|O(n<sup>2</sup>)||
+|  143  |Minimum Height Trees|[LC](https://leetcode.com/problems/minimum-height-trees/) |[Java](./Tree/MinimumHeightTrees.java) ||O(n<sup>2</sup>)||
+|  144  |Largest Tree Sum Path|[BS](https://binarysearch.com/problems/Largest-Tree-Sum-Path) |[Java](./Tree/LargestTreeSumPath.java) ||O(n)||
+|  145  |Univalue Tree|[BS](https://binarysearch.com/problems/Univalue-Tree) |[Java](./Tree/UniValueTree.java) ||O(1)||
+|  146  |Find Largest Value In Each Tree Row|[LC](https://leetcode.com/problems/find-largest-value-in-each-tree-row/) |[Java](./Tree/FindLargestValueInEachTreeRow.java) ||O(n<sup>2</sup>)||
+|  147  |Sum Tree|[BS](https://binarysearch.com/problems/Sum-Tree) |[Java](./Tree/CheckIfSumTree.java) ||O(1)||
+|  148  |Merge Two Binary Trees|[LC](https://leetcode.com/problems/merge-two-binary-trees/) |[Java](./Tree/MergeTwoBinaryTrees.java) [CPP](./Tree/LC_617_MergeTwoBST.cpp) ||O(1)||
+|  149  |Nodes At Given Distance In Binary Tree|[GFG](https://practice.geeksforgeeks.org/problems/nodes-at-given-distance-in-binary-tree/1) |[Java](./Tree/FindNodesAtDistanceK.java) |Hard|O(n)||
 ## Trie
 
 |  #  |Title            |Links            |Solution         |Difficulty       |Time Complexity  |Space Complexity |

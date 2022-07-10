@@ -22,3 +22,37 @@ class Solution
         return max;
     }
 } 
+
+class Solution 
+{
+    //Function to find length of longest increasing subsequence.
+    static int longestSubsequence(int size, int a[])
+    {
+        // code here
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        int result = 0, i = 0, low, high, mid, pos = -1;
+        list.add(a[i]);
+        for (i = 1; i < size; ++i)
+        {
+            if (a[i] > list.get(list.size()-1)) list.add(a[i]);
+            else
+            {
+                pos = -1;
+                low = 0;
+                high = list.size()-1;
+                while (low <= high)
+                {
+                    mid = low+(high-low)/2;
+                    if (list.get(mid) >= a[i])
+                    {
+                        pos = mid;
+                        high = mid-1;
+                    }
+                    else low = mid+1;
+                }
+                list.set(pos,a[i]);
+            }
+        }
+        return list.size();
+    }
+} 

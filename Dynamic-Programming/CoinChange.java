@@ -1,5 +1,30 @@
 /*https://practice.geeksforgeeks.org/problems/coin-change2448/1/*/
 
+class Solution {
+    Long[][] storedWays;
+    public long count(int S[], int m, int n) {
+        storedWays = new Long[m+1][n+1];
+        storedWays[m][n] = solve(S, m, n, 0);
+        return storedWays[m][n];
+    }
+    public long solve(int[] coins, int n, int amount, int index)
+    {
+        if (amount == 0)
+        {
+            storedWays[index][amount] = (long)1;
+            return 1;
+        }
+        if (storedWays[index][amount] != null) return storedWays[index][amount];
+        int i;
+        long result = 0;
+        for (i = index; i < n; ++i)
+            if (coins[i] <= amount)
+                result += solve(coins, n, amount-coins[i], i);
+        storedWays[index][amount] = result;
+        return result;
+    }
+}
+
 class Solution
 {
     public long count(int S[], int m, int n) 

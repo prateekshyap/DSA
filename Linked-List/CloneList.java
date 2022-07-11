@@ -1,4 +1,5 @@
 /*https://practice.geeksforgeeks.org/problems/clone-a-linked-list-with-next-and-random-pointer/1*/
+/*https://leetcode.com/problems/copy-list-with-random-pointer/*/
 
 //hashmap approach
 class Clone {
@@ -114,6 +115,38 @@ class Clone {
 
 		/*This way we retain both the head pointers intact and also create the required copy list*/
 		//return the new head
+        return newHead;
+    }
+}
+
+class Solution {
+    public Node copyRandomList(Node head) {
+        if (head == null) return null;
+        Node temp = head, newNode;
+        while (temp != null)
+        {
+            newNode = new Node(temp.val);
+            newNode.next = temp.next;
+            temp.next = newNode;
+            temp = temp.next.next;
+        }
+        temp = head;
+        while (temp != null)
+        {
+            temp.next.random = temp.random == null ? null : temp.random.next;
+            temp = temp.next.next;
+        }
+        temp = head;
+        Node newHead = temp.next;
+        Node hold = temp.next.next;
+        while (hold != null)
+        {
+            temp.next.next = hold.next;
+            temp.next = hold;
+            temp = hold;
+            hold = temp.next.next;
+        }
+        temp.next = null;
         return newHead;
     }
 }

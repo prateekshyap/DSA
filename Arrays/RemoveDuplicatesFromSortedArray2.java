@@ -79,3 +79,26 @@ class Solution {
         return nums;
     }
 }
+
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        int n=nums.length;
+        if( nums==null || n==0) return 0;
+        
+        int currNum=nums[0], count=1, left=1;
+
+        for(int i=1;i<n;i++){
+            if(currNum!=nums[i]){
+                nums[left++] = nums[i];
+                currNum = nums[i];
+                count=1;
+                continue;
+            }
+            if(count>=2) continue;
+
+            nums[left++] = nums[i];
+            count++;
+        }
+        return left;
+    }
+}

@@ -29,3 +29,33 @@ class Solution
         return dp[n][k];
     }
 }
+
+class Solution 
+{
+    static Integer[][] store;
+    //Function to find minimum number of attempts needed in 
+    //order to find the critical floor.
+    static int eggDrop(int n, int k) 
+    {
+        // Your code here
+        store = new Integer[n+1][k+1];
+        store[n][k] = calculate(n, k);
+        return store[n][k];
+    }
+    static int calculate(int n, int k)
+    {
+        if (k == 1 || k == 0) return store[n][k] = k;
+        
+        if (n == 1) return store[n][k] = k;
+        
+        if (store[n][k] != null) return store[n][k];
+        
+        int result = 0, min = Integer.MAX_VALUE;
+        for (int f = 1; f <= k; ++f)
+        {
+            result = Math.max(calculate(n-1,f-1),calculate(n,k-f));
+            min = Math.min(min,result);
+        }
+        return store[n][k] = min+1;
+    }
+}

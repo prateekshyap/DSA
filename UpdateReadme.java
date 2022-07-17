@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;
 
-import java.util.HashMap;
+import java.util.TreeMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Stack;
@@ -67,10 +67,10 @@ class Trie
 
 class OnlineInfo
 {
-	HashMap<String,String> questionDifficultyMap;
+	TreeMap<String,String> questionDifficultyMap;
 	OnlineInfo()
 	{
-		this.questionDifficultyMap = new HashMap<String,String>();
+		this.questionDifficultyMap = new TreeMap<String,String>();
 		try{
 		BufferedReader reader = new BufferedReader(new FileReader("ZInfo/OnlineInfo.csv"));
 		String nextLine = "";
@@ -86,10 +86,10 @@ class OnlineInfo
 	}
 
 	//getter methods
-	public HashMap<String,String> getQuestionDifficultyMap() { return this.questionDifficultyMap; }
+	public TreeMap<String,String> getQuestionDifficultyMap() { return this.questionDifficultyMap; }
 
 	//updater methods
-	public HashMap<String,String> updateFile(String questionKey, String difficulty) throws IOException
+	public TreeMap<String,String> updateFile(String questionKey, String difficulty) throws IOException
 	{
 		BufferedWriter writer = new BufferedWriter(new FileWriter("ZInfo/OnlineInfo.csv",true));
 		writer.write(questionKey);
@@ -97,7 +97,7 @@ class OnlineInfo
 		writer.write(difficulty);
 		writer.newLine();
 		writer.close();
-		this.questionDifficultyMap = new HashMap<String,String>();
+		this.questionDifficultyMap = new TreeMap<String,String>();
 		BufferedReader reader = new BufferedReader(new FileReader("ZInfo/OnlineInfo.csv"));
 		String nextLine = "";
 		while ((nextLine = reader.readLine()) != null)
@@ -113,15 +113,15 @@ class OnlineInfo
 class Questions
 {
 	private String questionKey;
-	private HashMap<String,Integer> questionLinks;
-	private HashMap<String,String> solutionLinks;
+	private TreeMap<String,Integer> questionLinks;
+	private TreeMap<String,String> solutionLinks;
 	private String difficulty;
 
-	Questions(String key, HashMap<String,Integer> qLinks, String sLink, String difficulty)
+	Questions(String key, TreeMap<String,Integer> qLinks, String sLink, String difficulty)
 	{
 		this.questionKey = key;
 		this.questionLinks = qLinks;
-		this.solutionLinks = new HashMap<String,String>();
+		this.solutionLinks = new TreeMap<String,String>();
 		if (sLink.charAt(sLink.length()-1) == 'a') //java
 			this.solutionLinks.put("Java",sLink);
 		else if (sLink.charAt(sLink.length()-1) == 'p') //cpp
@@ -131,8 +131,8 @@ class Questions
 
 	//getter methods
 	public String getQuestionKey() { return this.questionKey; }
-	public HashMap<String,Integer> getQuestionLinks() { return this.questionLinks; }
-	public HashMap<String,String> getSolutionLinks() { return this.solutionLinks; }
+	public TreeMap<String,Integer> getQuestionLinks() { return this.questionLinks; }
+	public TreeMap<String,String> getSolutionLinks() { return this.solutionLinks; }
 	public String getDifficulty() { return this.difficulty; }
 
 	//solution link updation
@@ -169,7 +169,7 @@ class Topics
 	private String topic; //name of the topic/directory
 	private int javaCount; //total number of .java files
 	private int cppCount; //total number of .cpp files
-	private HashMap<String,Integer> questionIndexMap; //stores the question key and the index of indexDetailsMap array
+	private TreeMap<String,Integer> questionIndexMap; //stores the question key and the index of indexDetailsMap array
 	protected Questions[] indexDetailsMap; //stores the details for each question in an array
 	protected int qIndex;
 
@@ -180,7 +180,7 @@ class Topics
 	{
 		this.topic = topic;
 		javaCount = cppCount = 0;
-		questionIndexMap = new HashMap<String,Integer>();
+		questionIndexMap = new TreeMap<String,Integer>();
 		indexDetailsMap = new Questions[noq];
 		qIndex = 0;
 	}
@@ -193,7 +193,7 @@ class Topics
 	public String getTopicName() { return this.topic; }
 	public int getJavaCount() { return this.javaCount; }
 	public int getCppCount() { return this.cppCount; }
-	public HashMap<String,Integer> getQuestionIndexMap() { return this.questionIndexMap; }
+	public TreeMap<String,Integer> getQuestionIndexMap() { return this.questionIndexMap; }
 	public Questions[] getIndexDetailsMap() { return this.indexDetailsMap; }
 
 	public String getQuestionKey(String link, int nameIndex)
@@ -219,7 +219,7 @@ class Topics
 	}
 
 	//methods for adding questions
-	public void addQuestion(HashMap<String,Integer> links, String topic, String program, String difficulty)
+	public void addQuestion(TreeMap<String,Integer> links, String topic, String program, String difficulty)
 	{
 		String link = "";
 		int nameIndex = -1;
@@ -246,7 +246,7 @@ class Topics
 		{
 			int questionIndex = (Integer)((Map.Entry)questionIndexMapIterator.next()).getValue(); //get the current question index
 			Questions currentQuestion = indexDetailsMap[questionIndex]; //get the current question
-			HashMap<String,Integer> currentQuestionLinks = currentQuestion.getQuestionLinks(); //get the question links
+			TreeMap<String,Integer> currentQuestionLinks = currentQuestion.getQuestionLinks(); //get the question links
 			Iterator questionLinkIterator = currentQuestionLinks.entrySet().iterator(); //question links iterator
 			while (questionLinkIterator.hasNext()) //for each entry in the question links
 			{
@@ -493,7 +493,7 @@ class UpdateReadme
 
 		//read online information
 		OnlineInfo onlineInfo = new OnlineInfo();
-		HashMap<String,String> questionDifficultyMap = onlineInfo.getQuestionDifficultyMap();
+		TreeMap<String,String> questionDifficultyMap = onlineInfo.getQuestionDifficultyMap();
 
 		//
 		Parse[] parseDetails;
@@ -554,7 +554,7 @@ class UpdateReadme
 					BufferedReader reader = new BufferedReader(new FileReader(codeFile));
 
 					String nextLine = "", difficulty = "";
-					HashMap<String,Integer> questionLinks = new HashMap<String,Integer>(); //stores the question links and their indices after splitting from "/"
+					TreeMap<String,Integer> questionLinks = new TreeMap<String,Integer>(); //stores the question links and their indices after splitting from "/"
 					while ((nextLine = reader.readLine()) != null) //for each line
 					{
 						int nameIndex = isALink(nextLine); //get the index of the question
@@ -659,7 +659,7 @@ class UpdateReadme
 			fileWriter.write("|  #  |Title            |Links            |Solution         |Difficulty       |Time Complexity  |Space Complexity |"); fileWriter.newLine();
 			fileWriter.write("|-----|---------------- |---------------- |---------------- |---------------- |---------------- |---------------- |"); fileWriter.newLine();
 
-			HashMap<String,Integer> questionIndexMap = topic.getQuestionIndexMap(); //get the question to index map
+			TreeMap<String,Integer> questionIndexMap = topic.getQuestionIndexMap(); //get the question to index map
 			Questions[] indexDetailsMap = topic.getIndexDetailsMap(); //get the index to details map
 			int[] timeComplexities = parse.getTimeComplexities();
 			//get space complexity here
@@ -673,9 +673,9 @@ class UpdateReadme
 				String currentQuestionName = frameQuestion(currentQuestion.getQuestionKey()); //get the key and transform it to title case
 				fileWriter.write(currentQuestionName+"|"); //write the question key
 
-				HashMap<String,Integer> currentQuestionLinks = currentQuestion.getQuestionLinks(); //get question links
+				TreeMap<String,Integer> currentQuestionLinks = currentQuestion.getQuestionLinks(); //get question links
 				Iterator questionLinkIterator = currentQuestionLinks.entrySet().iterator(); //question links iterator
-				HashMap<String,String> currentSolutionLinks = currentQuestion.getSolutionLinks(); //get solution links
+				TreeMap<String,String> currentSolutionLinks = currentQuestion.getSolutionLinks(); //get solution links
 				Iterator solutionLinkIterator = currentSolutionLinks.entrySet().iterator(); //solution links iterator
 
 				int questionLinkCount = 0;

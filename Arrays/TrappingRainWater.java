@@ -43,6 +43,21 @@ class Solution {
     }
 }
 
+class Solution {
+    public int trap(int[] height) {
+        int i, n = height.length;
+        int[] leftMax = new int[n], rightMax = new int[n];
+        for (i = 1; i < n; ++i)
+            leftMax[i] = Math.max(leftMax[i-1],height[i-1]);
+        for (i = n-2; i >= 0; --i)
+            rightMax[i] = Math.max(rightMax[i+1],height[i+1]);
+        int water = 0;
+        for (i = 0; i < n; ++i)
+            water += Math.max(0,Math.min(leftMax[i],rightMax[i])-height[i]);
+        return water;
+    }
+}
+
 import java.util.*;
 
 class Solution {

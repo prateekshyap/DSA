@@ -1,5 +1,6 @@
 /*https://leetcode.com/problems/move-pieces-to-obtain-a-string/*/
 
+
 class Solution {
     public boolean canChange(String start, String target) {
         if (start.length() != target.length()) return false;
@@ -16,6 +17,13 @@ class Solution {
             if (i < j && target.charAt(j) == 'L' && start.charAt(i) == 'L') return false; //if i is on the left but the letter doesn't say R, we cannot move right, so false
             ++i; ++j; //increment both i and j
         }
-        return true; //if no interruptions, feasible
+        boolean result = true;
+        for (; j < target.length(); ++j)
+            if (target.charAt(j) != '_')
+            {
+                result = false;
+                break;
+            }
+        return result; //if no interruptions, feasible
     }
 }

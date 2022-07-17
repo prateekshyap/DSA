@@ -39,6 +39,27 @@ class Solution {
     }
 }
 
+class Solution {
+    public boolean canThreePartsEqualSum(int[] arr) {
+        int sum = 0, n = arr.length;
+        for (int val : arr) sum += val;
+        if (sum%3 != 0) return false;
+        int parts = 3, index = 0, target = sum/3;
+        sum = 0;
+        while (parts > 0)
+        {
+            if (index >= n) break;
+            sum += arr[index++];
+            if (sum == target)
+            {
+                --parts;
+                sum = 0;
+            }
+        }
+        return parts == 0;
+    }
+}
+
 /*Pratik's Solution*/
 
 class Solution {

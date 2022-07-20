@@ -40,37 +40,35 @@ class Solution
     }
 }
 
-class Solution {
+class Solution
+{
     int[] color;
-    boolean result;
+    int V;
+    
     // Function to detect cycle in a directed graph.
-    public boolean isCyclic(int V, ArrayList<ArrayList<Integer>> adj) {
+    public boolean isCyclic(int V, ArrayList<ArrayList<Integer>> adj)
+    {
         // code here
         color = new int[V];
-        result = false;
-        //System.out.println(adj);
-        for (int i = 0; i < V; ++i) if (color[i] == 0) dfs(adj, V, i);
-                
-        return result;
+        this.V = V;
+        for (int i = 0; i < V; ++i) if (color[i] == 0 && dfs(adj, i)) return true;
+        return false;
     }
-    public void dfs(ArrayList<ArrayList<Integer>> graph, int V, int src)
+    
+    private boolean dfs(ArrayList<ArrayList<Integer>> graph, int src)
     {
-        if (result) return;
+        color[src] = 1;
         
-        color[src] = 1; // entry color is 1
-        for (int adjacentNode : graph.get(src)) // for each neighbour of the current node
+        for (int adjNode : graph.get(src))
         {
-            if (color[adjacentNode] == 2) // if color is 2
-                continue; // continue
-            if (color[adjacentNode] == 1)
-            {
-                result = true;
-                break;
-            }
-            dfs(graph, V, adjacentNode); //recursion call
+            if (color[adjNode] == 1)
+                return true;
+            if (color[adjNode] == 0)
+                if (dfs(graph,adjNode))
+                    return true;
         }
-
-        if (result) return;
-        color[src] = 2; // exit color is 2
+        
+        color[src] = 2;
+        return false;
     }
 }

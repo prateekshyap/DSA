@@ -22,3 +22,14 @@ class Solution {
         return 0;
     }
 }
+
+class Solution {
+    static int canReach(int[] A, int N) {
+        // code here
+        int i, reach = 0;
+        for (i = 0; i < N; ++i)
+            if (i <= reach)
+                reach = Math.max(reach,i+A[i]);
+        return reach >= N-1 ? 1 : 0;
+    }
+};

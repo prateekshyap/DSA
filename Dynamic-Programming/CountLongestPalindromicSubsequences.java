@@ -1,5 +1,4 @@
 /*https://practice.geeksforgeeks.org/problems/count-palindromic-subsequences/1*/
-
 class Solution
 {
     long countPS(String S)
@@ -23,5 +22,29 @@ class Solution
             }
         }
         return dp[0][n-1];
+    }
+}
+
+class Solution
+{
+    static final long m = (long)1e9+7;
+    Long[][] dp;
+    long countPS(String str)
+    {
+        // Your code here
+        dp = new Long[str.length()][str.length()];
+        dp[0][str.length()-1] = count(str,0,str.length()-1);
+        return dp[0][str.length()-1];
+    }
+    private long count(String str, int i, int j)
+    {
+        if (i > j) return 0;
+        if (i == j) return 1;
+        if (dp[i][j] != null) return dp[i][j];
+        if (str.charAt(i) == str.charAt(j))
+            dp[i][j] = (count(str,i+1,j)+count(str,i,j-1)+1)%m;
+        else dp[i][j] = (count(str,i+1,j)+count(str,i,j-1)-count(str,i+1,j-1))%m;
+        if (dp[i][j] < 0) dp[i][j] += m;
+        return dp[i][j];
     }
 }

@@ -56,3 +56,65 @@ class Solution
         return result;
     }
 }
+
+class Solution
+{
+    static int V;
+    static int[] costs;
+    static boolean[] visited;
+    //Function to find sum of weights of edges of the Minimum Spanning Tree.
+    static int spanningTree(int v, ArrayList<ArrayList<ArrayList<Integer>>> adj) 
+    {
+        // Add your code here
+        V = v;
+        costs = new int[V];
+        int[] parents = new int[V];
+        visited = new boolean[V];
+        Arrays.fill(costs,5000000);
+        costs[0] = 0;
+        PriorityQueue<Pair> heap = new PriorityQueue<Pair>();
+        heap.add(new Pair(0,0));
+        Pair p;
+        while (!heap.isEmpty())
+        {
+            p = heap.poll();
+            if (visited[p.j]) continue;
+            visited[p.j] = true;
+            costs[p.j] = p.wt;
+            for (ArrayList<Integer> adjNode : adj.get(p.j))
+            {
+                if (!visited[adjNode.get(0)])
+                {
+                    heap.add(new Pair(adjNode.get(0),adjNode.get(1)));
+                }
+            }
+        }
+        
+        return sum(costs);
+    }
+    
+    private static int sum(int[] c)
+    {
+        int result = 0;
+        for (int val : c)
+            result += val;
+        return result;
+    }
+}
+
+class Pair implements Comparable<Pair>
+{
+    int j;
+    int wt;
+    Pair(int j, int wt)
+    {
+        this.j = j;
+        this.wt = wt;
+    }
+    
+    @Override
+    public int compareTo(Pair p)
+    {
+        return this.wt-p.wt;
+    }
+}

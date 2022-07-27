@@ -72,3 +72,43 @@ class Solution
         return false;
     }
 }
+
+class Solution
+{
+    // int[] color;
+    enum Color
+    {
+        WHITE,
+        GRAY,
+        BLACK
+    }
+    Color[] color;
+    int V;
+    
+    // Function to detect cycle in a directed graph.
+    public boolean isCyclic(int V, ArrayList<ArrayList<Integer>> adj)
+    {
+        // code here
+        color = new Color[V];
+        Arrays.fill(color,Color.WHITE);
+        this.V = V;
+        for (int i = 0; i < V; ++i) if (color[i] == Color.WHITE && dfs(adj, i)) return true;
+        return false;
+    }
+    
+    private boolean dfs(ArrayList<ArrayList<Integer>> graph, int src)
+    {
+        color[src] = Color.GRAY;
+        
+        for (int adjNode : graph.get(src))
+        {
+            if (color[adjNode] == Color.GRAY) return true;
+            if (color[adjNode] == Color.WHITE)
+                if (dfs(graph,adjNode))
+                    return true;
+        }
+        
+        color[src] = Color.BLACK;
+        return false;
+    }
+}

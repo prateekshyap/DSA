@@ -118,3 +118,86 @@ class Pair implements Comparable<Pair>
         return this.wt-p.wt;
     }
 }
+
+class Solution
+{
+    static int[] parent;
+    static int[] size;
+    static boolean[] visited;
+    static int V;
+    
+    //Function to find sum of weights of edges of the Minimum Spanning Tree.
+    static int spanningTree(int v, ArrayList<ArrayList<ArrayList<Integer>>> adj) 
+    {
+        // Add your code here
+        V = v;
+        visited = new boolean[V];
+        parent = new int[V];
+        size = new int[V];
+        for (int i = 0; i < V; ++i)
+            parent[i] = i;
+        Arrays.fill(size,1);
+        PriorityQueue<Data> heap = new PriorityQueue<Data>();
+        int cost = 0;
+        Data d;
+        
+        for (int i = 0; i < V; ++i)
+        {
+            for (ArrayList<Integer> j : adj.get(i))
+            {
+                heap.add(new Data(i,j.get(0),j.get(1)));
+            }
+        }
+        
+        while (!heap.isEmpty())
+        {
+            d = heap.poll();
+            if (find(d.i) != find(d.j))
+            {
+                cost += d.wt;
+            }
+            union(d.i,d.j);
+        }
+        
+        return cost;
+    }
+    private static boolean union(int i, int j)
+    {
+        int parentI = find(i);
+        int parentJ = find(j);
+        
+        if (parentI == parentJ) return true;
+        if (size[parentI] > size[parentJ])
+        {
+            int temp = parentI;
+            parentI = parentJ;
+            parentJ = temp;
+        }
+        parent[parentI] = parentJ;
+        size[parentJ] += size[parentI];
+        return false;
+    }
+    private static int find(int i)
+    {
+        if (parent[i] == i) return i;
+        parent[i] = find(parent[i]);
+        return parent[i];
+    }
+}
+
+class Data implements Comparable<Data>
+{
+    int i, j, wt;
+    Data(int i, int j, int wt)
+    {
+        this.i = i;
+        this.j = j;
+        this.wt = wt;
+    }
+    
+    @Override
+    public int compareTo(Data d)
+    {
+        return this.wt-d.wt;
+    }
+}

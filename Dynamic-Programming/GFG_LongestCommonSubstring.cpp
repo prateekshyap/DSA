@@ -1,6 +1,8 @@
 /*
 https://practice.geeksforgeeks.org/problems/longest-common-substring1452/1#
 Longest Common Substring 
+
+https://binarysearch.com/problems/Longest-Common-Substring
 */
 // { Driver Code Starts
 #include<bits/stdc++.h>
@@ -126,3 +128,105 @@ int main()
 }
 // Contributed By: Pranay Bansal
   // } Driver Code Ends
+  
+  
+  
+//BS
+
+int solve_1(string s0, string s1) {
+   int ans=0;
+   int n0 = s0.size();
+   int n1 = s1.size();
+   int dp[n0+1][n1+1];
+
+   for(int i=0; i<=n0; i++)
+   {
+       for(int j=0; j<=n1; j++)
+       {
+           if(i==0 || j==0)
+             dp[i][j] = 0;
+           else if(s0[i-1]==s1[j-1])
+            {    
+                dp[i][j] = dp[i-1][j-1]+1;
+                if(ans < dp[i][j])
+                    ans = dp[i][j];
+                // ans = max(ans, dp[i][j]);
+            }
+            else
+                dp[i][j] = 0;
+            
+       }
+   }
+
+   return ans; 
+}//
+
+int solve(string s0, string s1) {
+    int ans = 0;
+    int n0 = s0.size();
+    int n1 = s1.size();
+    vector<int> dp(n1 + 1, 0);
+    for(int i = 1; i <= n0; i++) {
+        for(int j = n1; j >= 1; j--) 
+        {
+            if(s0[i-1] == s1[j-1]) 
+            {
+                dp[j] = dp[j-1] + 1;
+                if(ans < dp[j])
+                    ans = dp[j];
+            }
+            else dp[j] = 0;
+        }
+        // ans = max(ans, *max_element(dp.begin(), dp.end()));
+    }
+    return ans;
+}
+
+static int MOD = 1e9 + 7, BASE = 51;
+bool hasCommon(string &s0, string &s1, int len) {
+    // Return true for finding common substring for length `0`.
+    if (!len) return true;
+
+    // Stores all hashes encountered for strings of length `len` in s0.
+    unordered_set<int> encountered;
+    long hash = 0, pow = 1;
+
+    // pow(BASE,len-1) required for rolling hash.
+    for (int i = 0; i < len - 1; i++) pow = (pow * BASE) % MOD;
+
+    // Calculate and store all hashes of strings of length len from s0.
+    for (int i = 0; i < s0.length(); i++) {
+        // Remove hash created by the character moving out of the window.
+        if (i >= len) hash = (((hash - (s0[i - len] - 'a' + 1) * pow) % MOD) + MOD) % MOD;
+        hash = (hash * BASE) % MOD;
+        hash = (hash + s0[i] - 'a' + 1) % MOD;
+        if (i >= len - 1) encountered.insert(hash);
+    }
+    hash = 0;
+
+    // Calculate all hashes of strings of length `len` in s1.
+    // Return true if any hash exist in the set `encountered`.
+    for (int i = 0; i < s1.length(); i++) {
+        // Remove hash created by the character moving out of the window.
+        if (i >= len) hash = ((hash - (((s1[i - len] - 'a' + 1) * pow) % MOD)) + MOD) % MOD;
+        hash = (hash * BASE) % MOD;
+        hash = (hash + s1[i] - 'a' + 1) % MOD;
+        if (i >= len - 1 && encountered.count(hash)) return true;
+    }
+    // No hashes found in s1 same as s0.
+    return false;
+}
+int solve_3(string s0, string s1) {
+    if (s1.length() < s0.length()) s1.swap(s0);
+    int i = 0, j = s0.length() + 1, mid;
+    // Basic binary search template for finding maxium length
+    // of common substring between 0 and min(s0.length(),s1.length()).
+    while (i < j) {
+        mid = (i + j) / 2;
+        if (hasCommon(s0, s1, mid))
+            i = mid + 1;
+        else
+            j = mid;
+    }
+    return i - 1;
+}

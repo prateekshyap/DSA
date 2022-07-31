@@ -2,91 +2,122 @@
 Minimum Spanning Tree 
 https://practice.geeksforgeeks.org/problems/minimum-spanning-tree/1
 */
-// { Driver Code Starts
-#include<bits/stdc++.h>
-using namespace std;
-
- // } Driver Code Ends
-
-
 class Solution
 {
 	public:
 	//Function to find sum of weights of edges of the Minimum Spanning Tree.
+    
     int spanningTree(int V, vector<vector<int>> adj[])
     {
-        int sum_wgt=0;
-        vector<int> parent(V, -1); // parent of each node; 
-        vector<int> weights(V,INT_MAX); // weights of each node;
-        vector<bool> isMst(V, false);
+        // return spanningTreePrims(V, adj);
+        return spanningTreeKrushkals(V, adj);
+    }
+    
+    //Krushkals Algorithm // Disjoint Set 
+    vector<int> parent, rank;
+    int spanningTreeKrushkals(int V, vector<vector<int>> adj[])
+    {
+        parent = vector<int>(V);
+        rank = vector<int>(V, 0);
+        for(int i=0; i<V; i++) parent[i] = i;
         
-        // include first vertex into the mst
-        weights[0] = 0;
-        parent[0] = -1;
+        vector<pair<int, pair<int,int>>> edges; //{wt, {u, v}}
+        for(int u=0; u<V; u++) {
+            for(auto w: adj[u])
+                edges.push_back({w[1], {u, w[0]}});   
+        }
+        sort(edges.begin(), edges.end());
+    //   for( auto edge: edges) cout<<edge.first<<" ("<<edge.second.first<<","<<edge.second.second<<")"<<endl;    
+        int sumwt=0;
+        for( auto edge: edges)
+        {
+            int u = edge.second.first, v = edge.second.second;
+            if(find_set(u) != find_set(v))
+            {
+                union_set(u,v);
+                sumwt += edge.first;
+            }
+        }
+        return sumwt;
+    }
+    
+    bool union_set(int x, int y) {
+        int px = find_set(x);    
+        int py = find_set(y);
+        if(px == py) return true;
         
-        priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> pq;
-        // pair {wgt, node};
-        pq.push({weights[0],0});
+        if(rank[px] > rank[py])
+            swap(px, py);
+        parent[px] = py;
+        if(rank[px] == rank[py])
+            rank[py]++;
+        return false;
+    }
+    
+    int find_set(int x) {
+        if(parent[x] == x) return x;
+        return parent[x] = find_set(parent[x]);
+    }
+    
+    // Prims Algorithm
+    int spanningTreePrims(int V, vector<vector<int>> adj[])
+    {
         
+        vector<int> parent(V, -1), weight(V, INT_MAX);
+        vector<bool> isMST(V, false);
+        priority_queue<pair<int,int>, vector<pair<int,int>>, greater<>> pq;
+        weight[0] = 0; 
+        pq.push({weight[0], 0});
         while(!pq.empty())
         {
-            int e = pq.top().second; pq.pop();
-            
-            isMst[e] = true;
-            // sum_wgt += weights[e];
-            
-            for(const auto& w : adj[e])
+            int node = pq.top().second; pq.pop(); 
+            if(isMST[node]) continue;
+            isMST[node] = true;
+            for(const auto& w: adj[node])
             {
-                int adjNode = w[0];
-                int wgt = w[1];
-                if(!isMst[adjNode] && wgt < weights[adjNode])
+                int adjnode = w[0]; int wgt = w[1];
+                if(!isMST[adjnode] and wgt < weight[adjnode])
                 {
-                    parent[adjNode] = e;
-                    weights[adjNode] = wgt;
-                    pq.push({weights[adjNode], adjNode});
+                    parent[adjnode] = node;
+                    weight[adjnode] = wgt; 
+                    pq.push({wgt, adjnode});
                 }
             }
-            
-        }// while
-        
-        for(int v=0; v<V; v++)
-        {
-            if(weights[v]!=INT_MAX)
-                sum_wgt += weights[v];
-        }
-        return sum_wgt;
-    }// end
-};
-
-// { Driver Code Starts.
-
-
-int main()
-{
-    int t;
-    cin >> t;
-    while (t--) {
-        int V, E;
-        cin >> V >> E;
-        vector<vector<int>> adj[V];
-        int i=0;
-        while (i++<E) {
-            int u, v, w;
-            cin >> u >> v >> w;
-            vector<int> t1,t2;
-            t1.push_back(v);
-            t1.push_back(w);
-            adj[u].push_back(t1);
-            t2.push_back(u);
-            t2.push_back(w);
-            adj[v].push_back(t2);
         }
         
-        Solution obj;
-    	cout << obj.spanningTree(V, adj) << "\n";
+        int sum=accumulate(weight.begin(), weight.end(), 0);
+        return sum;
     }
-
-    return 0;
-}
-
-  // } Driver Code Ends
+    
+    /*
+     int spanningTree(int V, vector<vector<int>> adj[])
+    {
+        vector<int> parent(V, -1), weight(V, INT_MAX);
+        vector<bool> isMST(V, false);
+        priority_queue<pair<int,int>, vector<pair<int,int>>, greater<>> pq;
+        weight[0] = 0; 
+        pq.push({weight[0], 0});
+        while(!pq.empty())
+        {
+            auto n = pq.top(); pq.pop(); 
+            int node = n.second; int w = n.first;
+            if(isMST[node]) continue;
+            isMST[node] = true;
+            weight[node] = w; 
+            for(const auto& w: adj[node])
+            {
+                int adjnode = w[0]; int wgt = w[1];
+                if(!isMST[adjnode] and wgt < weight[adjnode])
+                {
+                    parent[adjnode] = node;
+                    pq.push({wgt, adjnode});
+                }
+            }
+        }
+        
+        int sum=accumulate(weight.begin(), weight.end(), 0);
+        return sum;
+    }
+    */
+    
+};

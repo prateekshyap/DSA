@@ -1,67 +1,106 @@
-/* https://leetcode.com/problems/rearrange-spaces-between-words/
- * You are given a string text of words that are placed among some number of spaces. Each word consists of one or more lowercase English letters and are separated by at least one space. It's guaranteed that text contains at least one word.
- */
- 
- class Solution {
+/*
+https://leetcode.com/problems/rearrange-spaces-between-words/
+1592. Rearrange Spaces Between Words
+
+*/
+class Solution {
 public:
+    /*
     string reorderSpaces(string text) {
-        int cnt_words=0;
-        int cnt_spaces=0;
-        int uniform_space =0, remainder_space=0;
+        
+        int size = text.size();
+        int spaceCount=0, wordsCount=0;
+        string buff;
         vector<string> words;
         
-        // counting words and spaces
-//         for(int c=0; c<text.size(); c++){
-//             if(text[c] == ' ') cnt_spaces++;
-//             else
-//             {
-//                 string temp;
-//                 for(; c<text.size(); c++)
-//                     if(text[c] != ' ')temp = temp+text[c];
-//                     else {
-//                         cnt_spaces++; break;
-//                     }
-//                 words.push_back(temp);
-//             }
-            
-//         }//for c
-        
-//         // couting space between words and at the last
-//         if(words.size() == 1) {
-//             uniform_space=0, 
-//             remainder_space=cnt_spaces;
-//         }
-//         else
-//         {
-//             uniform_space = cnt_spaces/(words.size()-1);
-//             remainder_space=cnt_spaces%(words.size()-1);
-//         }
-        
-//         //making final string
-//         string ans_str=words[0];
-//         for(int w=1; w<words.size(); w++){
-//             for(int s=1; s<=uniform_space; s++) ans_str.push_back(' ');
-//             ans_str +=words[w];            
-//         }
-//         for(int s=1; s<=remainder_space; s++) ans_str.push_back(' ');
-        
-//         return ans_str;
-        
-        // Another Approach
-        int words_len=0;
-        stringstream ss(text);
-        string w;
-        while(ss>>w){
-            cnt_words++;
-            words_len += size(w);
+        for(char ch: text)
+        {
+            if(ch != ' ')
+            {
+                buff+=ch;
+            }
+            else
+            {
+                spaceCount++;
+                if(buff != "")
+                {
+                    words.push_back(buff);
+                    buff="";
+                }
+            }
         }
-        cnt_spaces = size(text) - words_len;
-        uniform_space = cnt_words!=1 ? cnt_spaces/(cnt_words-1) : 0;
+        if(buff != "")
+        {
+            words.push_back(buff);
+            buff="";
+        }
+        wordsCount = words.size()-1;
+        if(wordsCount==0)
+        {
+            string gap(spaceCount, ' ');
+            return words[0]+gap;
+        }
+        int spaceGap = spaceCount / wordsCount;
+        int lastGap = spaceCount % wordsCount;
         string ans;
-        for(stringstream s(text); s>>w; cnt_spaces-=uniform_space)
-            ans.append(w).append(--cnt_words?uniform_space:cnt_spaces,' ');
-        return ans;
-    }//reorderSpaces
+        string gap(spaceGap, ' ');
+        string lastG(lastGap, ' ');
+        
+        for(int i=0; i<words.size()-1; i++)
+        {
+            ans+= words[i] + gap;
+        }
+        
+        return ans+words[wordsCount] + lastG;
+    }//end
+    */
     
-    
+     string reorderSpaces(string text) {
+        
+        int size = text.size();
+        string buff;
+        int cnt_spaces=0, cnt_words=0;
+        vector<string> words;
+        
+        for(char ch: text)
+        {
+            if(ch!=' ')
+                buff+=ch;
+            else
+            {
+                if(buff!="")
+                {
+                    words.push_back(buff);
+                    buff="";
+                }
+                cnt_spaces++;
+            }
+            
+        }
+         
+        if(buff != "") //last word
+        {
+            words.push_back(buff);
+            buff="";
+        }
+        
+        int uniform_space=0, remainder_space = cnt_spaces;
+        cnt_words = words.size()-1;
+        if(cnt_words>0)
+        {
+            uniform_space = cnt_spaces / cnt_words;
+            remainder_space = cnt_spaces % cnt_words;
+        }
+        
+        string ans;
+        string uniform_gap(uniform_space, ' ');
+        string remainder_gap(remainder_space, ' ');
+        
+        for(int i=0; i<cnt_words; i++)
+        {
+            ans+= words[i] + uniform_gap;
+        }
+        
+        return ans+words[cnt_words] + remainder_gap;
+    }//end
 };

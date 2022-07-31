@@ -1,4 +1,6 @@
 /*https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-bst/1*/
+/*https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1*/
+/*https://binarysearch.com/problems/Lowest-Common-Ancestor*/
 
 //for BST, path modification approach
 class BST
@@ -128,5 +130,19 @@ class Solution
  
         // Otherwise check if left subtree or right subtree is LCA
         return (left  != null) ? left  : right;
+    }
+}
+
+//binary tree
+class Solution {
+    public int solve(Tree root, int a, int b) {
+        if (root == null) return -1;
+        if (root.val == a || root.val == b) return root.val;
+        int left = solve(root.left, a, b);
+        int right = solve(root.right, a, b);
+        if (left != -1 && right != -1) return root.val;
+        if (left != -1) return left;
+        if (right != -1) return right;
+        return -1;
     }
 }

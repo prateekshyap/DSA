@@ -2,6 +2,65 @@
 
 class Solution {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
+        if (obstacleGrid[0][0] == 1) return 0;
+        int m = obstacleGrid.length, n = obstacleGrid[0].length;
+        int[][] ways = new int[2][n];
+        int row, col, index = 0;
+        for (col = 0; col < n; ++col)
+        {
+            if (obstacleGrid[0][col] == 1) break; //if obstacle, we can't move further in that row
+            ways[0][col] = 1;
+        }
+        for (row = 1; row < m; ++row) //for all next rows
+        {
+            /*
+            if there is an obstacle in the first column or we can't reach the first column of the
+            previous row, then we can't reach the first column of the current row
+            */
+            ways[1-index][0] = obstacleGrid[row][0] == 1 || ways[index][0] == 0 ? 0 : 1;
+            for (col = 1; col < n; ++col) //for rest of the columns
+            {
+                if (obstacleGrid[row][col] == 1) //if obstacle
+                    ways[1-index][col] = 0; //store 0
+                else //otherwise
+                    ways[1-index][col] = ways[index][col]+ways[1-index][col-1]; //count
+            }
+            index = 1-index;
+        }
+        return ways[index][n-1];
+    }
+}
+
+class Solution {
+    public int uniquePathsWithObstacles(int[][] obstacleGrid) {
+        int m = obstacleGrid.length, n = obstacleGrid[0].length;
+        if (obstacleGrid[0][0] == 1 || obstacleGrid[m-1][n-1] == 1) return 0;
+        int row = 0, col = 0;
+        for (row = 0; row < m; ++row)
+            for (col = 0; col < n; ++col)
+                if (obstacleGrid[row][col] == 1)
+                    obstacleGrid[row][col] = -1;
+        for (col = 0; col < n; ++col)
+        {
+            if (obstacleGrid[0][col] == -1) break;
+            obstacleGrid[0][col] = 1;
+        }
+        for (row = 1; row < m; ++row)
+        {
+            if (obstacleGrid[row][0] != -1 && obstacleGrid[row-1][0] != -1 && obstacleGrid[row-1][0] != 0) obstacleGrid[row][0] = 1;
+            for (col = 1; col < n; ++col)
+            {
+                if (obstacleGrid[row][col] != -1)
+                    obstacleGrid[row][col] = (obstacleGrid[row][col-1] == -1 ? 0 : obstacleGrid[row][col-1])+(obstacleGrid[row-1][col] == -1 ? 0 : obstacleGrid[row-1][col]);
+            }
+        }
+        
+        return obstacleGrid[m-1][n-1];
+    }
+}
+
+class Solution {
+    public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         int m = obstacleGrid.length;
         int n = obstacleGrid[0].length;
 

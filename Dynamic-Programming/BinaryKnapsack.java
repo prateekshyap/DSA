@@ -18,3 +18,25 @@ class Solution
         return table[n][W];
     } 
 }
+
+class Solution 
+{ 
+    //Function to return max value that can be put in knapsack of capacity W.
+    static Integer[][] dp;
+    static int knapSack(int W, int wt[], int val[], int n) 
+    {
+        int[] table = new int[W+1];
+        int index = 0;
+        for (int i = 1; i <= n; ++i)
+        {
+            for (int j = W; j >= 1; --j)
+            {
+                if (wt[i-1] > j)
+                    table[j] = table[j];
+                else
+                    table[j] = Math.max(val[i-1]+table[j-wt[i-1]],table[j]);
+            }
+        }
+        return table[W];
+    }
+}

@@ -1,4 +1,5 @@
 /*https://binarysearch.com/problems/Count-Nodes-in-Complete-Binary-Tree*/
+/*https://leetcode.com/problems/count-complete-tree-nodes/*/
 
 /*x*logn approach*/
 import java.util.*;
@@ -67,8 +68,26 @@ class Solution {
     }
 }
 
-/*
-
-,"sumRange","update","sumRange",[0,1],[1,-3],[0,1]
-
-*/
+class Solution {
+    public int countNodes(TreeNode root) {
+        if(root == null) return 0;
+        if(root.left == null && root.right == null)return 1;
+        final int leftHigh = leftDepth(root.left);
+        final int rightHigh = leftDepth(root.right);
+        if(leftHigh > rightHigh){
+            return countNodes(root.left) + (int)Math.pow(2,rightHigh);
+        }else if(leftHigh == rightHigh){
+            return countNodes(root.right) + (int)Math.pow(2,leftHigh);
+        }else{
+            return 0;
+        }
+    }
+    private int leftDepth(TreeNode root){
+        int res = 0;
+        while(root != null){
+            root = root.left;
+            res++;
+        }
+        return res;
+    }
+}

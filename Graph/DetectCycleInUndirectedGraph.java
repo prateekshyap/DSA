@@ -85,3 +85,59 @@ class Solution {
         color[src] = 2; // exit color is 2
     }
 }
+
+class Solution {
+    int[] parent;
+    int[] size;
+    boolean[] visited;
+    // Function to detect cycle in an undirected graph.
+    public boolean isCycle(int V, ArrayList<ArrayList<Integer>> adj) {
+        // Code here
+        parent = new int[V];
+        size = new int[V];
+        visited = new boolean[V];
+        int i;
+        
+        //initialize disjoint set
+        for (i = 0; i < V; ++i)
+        {
+            parent[i] = i;
+            size[i] = 1;
+        }
+        
+        //for each edge, call union and find
+        for (i = 0; i < V; ++i)
+        {
+            if (visited[i]) continue;
+            visited[i] = true;
+            for (Integer adjNode : adj.get(i))
+            {
+                if (!visited[adjNode] && union(i,adjNode)) return true;
+            }
+        }
+        
+        return false;
+    }
+    private boolean union(int i, int j)
+    {
+        int parentI = find(i);
+        int parentJ = find(j);
+        
+        if (parentI == parentJ) return true;
+        if (size[parentI] > size[parentJ])
+        {
+            int temp = parentI;
+            parentI = parentJ;
+            parentJ = temp;
+        }
+        parent[parentI] = parentJ;
+        size[parentJ] += size[parentI];
+        return false;
+    }
+    private int find(int i)
+    {
+        if (parent[i] == i) return i;
+        parent[i] = find(parent[i]);
+        return parent[i];
+    }
+}

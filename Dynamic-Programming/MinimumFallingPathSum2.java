@@ -1,6 +1,6 @@
 /*https://leetcode.com/problems/minimum-falling-path-sum-ii/*/
 
-//simple DP solution (O(n^2))
+//simple DP solution (O(n^))
 class Solution {
     public int minFallingPathSum(int[][] matrix) {
         if (matrix.length == 1 && matrix[0].length == 1) return matrix[0][0];
@@ -30,40 +30,32 @@ class Solution {
     }
 }
 
-//efficient solution (O(n^3))
+//efficient solution (O(n^2))
 
 class Solution {
-    public int minFallingPathSum(int[][] matrix) {
-        if (matrix.length == 1 && matrix[0].length == 1) return matrix[0][0];
-        int n = matrix.length;        
-        int min1 = 0, min2 = 0;
-        int min1Index = -1;
+    public int minFallingPathSum(int[][] grid) {
+        int M = grid.length, N = grid[0].length;
+        int row, col;
+        int min = 0, secondMin = 0, minIndex = -1, nextMin, nextSecondMin, nextMinIndex, currResult = 0;
         
-        for (int i = 0; i < n; ++i)
+        for (row = 0; row < M; ++row)
         {
-            int newMin1 = Integer.MAX_VALUE, newMin2 = Integer.MAX_VALUE;
-            int newMin1Index = -1;
-            for (int j = 0; j < matrix[i].length; ++j)
+            nextMin = Integer.MAX_VALUE; nextSecondMin = Integer.MAX_VALUE; nextMinIndex = -1;
+            for (col = 0; col < N; ++col)
             {
-                int res = 0;
-                if (j == min1Index)
-                    res = matrix[i][j]+min2;
-                else
-                    res = matrix[i][j]+min1;
-                if (res < newMin1)
+                if (col == minIndex) currResult = grid[row][col]+secondMin;
+                else currResult = grid[row][col]+min;
+                if (currResult < nextMin)
                 {
-                    newMin2 = newMin1;
-                    newMin1 = res;
-                    newMin1Index = j;
+                    nextSecondMin = nextMin;
+                    nextMin = currResult;
+                    nextMinIndex = col;
                 }
-                else if (res < newMin2)
-                    newMin2 = res;
+                else if (currResult < nextSecondMin)
+                    nextSecondMin = currResult;
             }
-            min1 = newMin1;
-            min2 = newMin2;
-            min1Index = newMin1Index;
+            min = nextMin; secondMin = nextSecondMin; minIndex = nextMinIndex;
         }
-
-        return min1;
+        return min;
     }
 }

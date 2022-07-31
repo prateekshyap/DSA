@@ -11,17 +11,47 @@ class Solution {
             i = 0; //set the current row as 0
             while (i < m) //till we have finished the board
             {
+            	/*   (i,j) (i,j+1)
+					|\    |\    |
+					|  \  |  \  |
+					|____\|____\|
+            	*/
                 if (grid[i][j] == 1) //if the current cell moves the ball to the right
                 {
                     left = grid[i][j]; //current cell will be the left boundary
                     right = j+1 < n ? grid[i][j+1] : 0; //right next cell will be the right boundary
                 }
+                /*  (i,j-1) (i,j)
+					|    /|    /|
+					|  /  |  /  |
+					|/____|/____|
+            	*/
                 else //if the current cell moves the ball to the left
                 {
                     left = j-1 >= 0 ? grid[i][j-1] : 0; //left next cell will be the left boundary
                     right = grid[i][j]; //current cell will be the right boundary
                 }
+                /*  l  r
+					|    /|
+					|  /  |
+					|/____|
+					
+					or
+					   l  r
+					|\    |
+					|  \  |
+					|____\|
+                */
                 if (left == 0 || right == 0) break; //if any of them is a wall, ball cannot move further
+                /*
+					|\    |    /|
+					|  \  |  /  |
+					|____\|/____|  this is the case
+
+					|    /|\    |
+					|  /  |  \  |
+					|/____|____\|  case cannot happen because we are deciding left and right such a way
+                */
                 if (left != right) break; //if both are not equal, ball cannot move further
                 j += left; //column changes according to the direction of the current cell
                 ++i; //increment the row

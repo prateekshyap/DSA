@@ -33,3 +33,23 @@ class Solution {
         return (int)currentElement;
     }
 }
+
+class Solution {
+    static int[] uglyNums = new int[1690];
+    public int nthUglyNumber(int n) {
+        if(uglyNums[0] == 1) return uglyNums[n-1];
+        int a = 0, b = 0, c = 0;
+        uglyNums[0] = 1;
+        for(int i = 1; i < 1690; i++){
+            int mul2 = uglyNums[a] * 2;
+            int mul3 = uglyNums[b] * 3;
+            int mul5 = uglyNums[c] * 5;
+            int min = Math.min(mul2, Math.min(mul3, mul5));
+            if(min == mul2)a++;
+            if(min == mul3)b++;
+            if(min == mul5)c++;
+            uglyNums[i] = min;
+        }
+        return uglyNums[n-1];
+    }
+}

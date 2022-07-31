@@ -1,4 +1,5 @@
 /*https://leetcode.com/problems/palindrome-partitioning/*/
+/*https://practice.geeksforgeeks.org/problems/find-all-possible-palindromic-partitions-of-a-string/1/*/
 
 class Solution
 {
@@ -56,5 +57,47 @@ class Solution
         List<String> curr = new ArrayList<String>();
         palindromicPartitionSolver(table,s,s.length(),0,0,curr);
         return result;
+    }
+}
+
+class Solution {
+    List<List<String>> result;
+    public List<List<String>> partition(String s) {
+        result = new ArrayList<List<String>>();
+        if (s.length() == 0) return result;
+        recur(s,-1,s.length(),new ArrayList<String>());
+        return result;
+    }
+    public void recur(String s, int index, int n, List<String> currPartition)
+    {
+        if (index == n-1)
+        {
+            List<String> newList = new ArrayList<String>();
+            for (String str : currPartition)
+                newList.add(str);
+            result.add(newList);
+            return;
+        }
+        int result = 0;
+        for (int i = index+1; i < n; ++i)
+        {
+            if (isPalindrome(s,index+1,i))
+            {
+                currPartition.add(s.substring(index+1,i+1));
+                recur(s, i, n, currPartition);
+                currPartition.remove(currPartition.size()-1);
+            }
+        }
+    }
+    public boolean isPalindrome(String s, int start, int end)
+    {
+        while(start<end)
+        {
+            if(s.charAt(start)!=s.charAt(end))
+                return false;
+            start++;
+            end--;
+        }
+        return true;
     }
 }

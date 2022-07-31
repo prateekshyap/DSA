@@ -59,3 +59,33 @@ class Solution {
         }
     }
 }
+
+class Solution {
+ public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
+        int[] dist = new int[n];
+        Arrays.fill(dist, Integer.MAX_VALUE);
+        dist[src] = 0;
+        for (int i = 0; i <= k; i++) {
+            if (noChange(flights, dist))
+                break;
+        }
+        return dist[dst] == Integer.MAX_VALUE ? -1 : dist[dst];
+    }
+    private static boolean noChange(int[][] flights, int[] dp) {
+        boolean answer = true;
+        int[] copy = Arrays.copyOf(dp, dp.length);
+        for (int[] entry : flights) {
+            int src = entry[0];
+            int dst = entry[1];
+            int cost = entry[2];
+            if (copy[src] < Integer.MAX_VALUE) {
+                if (dp[dst] - cost > copy[src]) {
+                    dp[dst] = cost + copy[src];
+                    answer = false;
+                }
+            }
+        }
+
+        return answer;
+    }
+}

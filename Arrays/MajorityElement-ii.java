@@ -1,4 +1,6 @@
-/* https://leetcode.com/problems/majority-element-ii/ */
+/*https://leetcode.com/problems/majority-element-ii/*/
+/*https://binarysearch.com/problems/Submajority-Vote*/
+
 /* Using Extra space */
 class Solution {
     public List<Integer> majorityElement(int[] nums) 

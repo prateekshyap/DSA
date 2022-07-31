@@ -1,4 +1,5 @@
 /*https://leetcode.com/problems/partition-equal-subset-sum/*/
+/*https://binarysearch.com/problems/Equal-Partitions*/
 
 /*Modified subset sum*/
 class Solution {
@@ -63,4 +64,36 @@ class Solution {
 		}
 		else return dfs(nums, dp, index+1, target);
 	}
+}
+
+import java.util.*;
+
+class Solution {
+    Boolean[][] dp;
+    public boolean solve(int[] nums) {
+        int sum = 0;
+        int i;
+        for (int num : nums)
+            sum += num;
+        if (sum%2 != 0) return false;
+        sum /= 2;
+        dp = new Boolean[nums.length+1][sum+1];
+        return isSubsetSum(nums, 0, 0, sum, nums.length);
+    }
+    public boolean isSubsetSum(int[] nums, int index, int sum, int target, int n)
+    {
+        if (index == n)
+        {
+            if (sum == target) dp[index][sum] = true;
+            else return false;
+            return dp[index][sum];
+        }
+        if (sum > target) return false;
+        if (dp[index][sum] != null) return dp[index][sum];
+        boolean result = false;
+        result |= isSubsetSum(nums, index+1, sum, target, n);
+        result |= isSubsetSum(nums, index+1, sum+nums[index], target, n);
+        dp[index][sum] = result;
+        return result;
+    }
 }

@@ -1,4 +1,5 @@
 /*https://leetcode.com/problems/rotting-oranges/*/
+/*https://practice.geeksforgeeks.org/problems/rotten-oranges2536/1*/
 
 class Solution {
     public int orangesRotting(int[][] grid) {
@@ -48,5 +49,48 @@ class Solution {
             
         }
         return -1;
+    }
+}
+
+class Solution
+{
+    int max, m, n;
+    boolean[][] visited;
+    int[][] rotTime;
+    int[][] pos = new int[][]{{0,1},{0,-1},{1,0},{-1,0}};
+    //Function to find minimum time required to rot all oranges. 
+    public int orangesRotting(int[][] grid)
+    {
+        // Code here
+        max = -1;
+        m = grid.length; n = grid[0].length;
+        rotTime = new int[m][n];
+        int i, j;
+        for (i = 0; i < m; ++i) for (j = 0; j < n; ++j) rotTime[i][j] = Integer.MAX_VALUE;
+        visited = new boolean[m][n];
+        for (i = 0; i < m; ++i)
+            for (j = 0; j < n; ++j)
+                if (grid[i][j] == 2)
+                    dfs(grid,i,j,0);
+        for (i = 0; i < m; ++i)
+            for (j = 0; j < n; ++j)
+                if (grid[i][j] == 1 && rotTime[i][j] > max) max = rotTime[i][j];
+        return max == Integer.MAX_VALUE ? -1 : max;
+    }
+    public void dfs(int[][] grid, int row, int col, int timer)
+    {
+        visited[row][col] = true;
+        if (timer < rotTime[row][col]) rotTime[row][col] = timer;
+        
+        int r, c;
+        
+        for (int i = 0; i < 4; ++i)
+        {
+            r = row+pos[i][0];
+            c = col+pos[i][1];
+            if (r >= 0 && r < m && c >= 0 && c < n && !visited[r][c] && grid[r][c] == 1)
+                dfs(grid,r,c,timer+1);
+        }
+        visited[row][col] = false;
     }
 }

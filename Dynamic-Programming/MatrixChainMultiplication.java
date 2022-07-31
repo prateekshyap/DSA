@@ -41,6 +41,44 @@ class Solution{
     }
 }
 
+class Solution{
+    static int matrixMultiplication(int N, int arr[])
+    {
+        // code here
+        return solve(arr,0,N-2);
+    }
+    static int solve(int[] arr, int i, int j)
+    {
+        if (i == j) return 0;
+        
+        int result = Integer.MAX_VALUE, k;
+        for (k = i; k < j; ++k)
+            result = Math.min(result,solve(arr,i,k)+solve(arr,k+1,j)+(arr[i]*arr[k+1]*arr[j+1]));
+        
+        return result;
+    }
+}
+
+class Solution{
+    static Integer[][] costs;
+    static int matrixMultiplication(int N, int arr[])
+    {
+        costs = new Integer[N-1][N-1];
+        costs[0][N-2] = solve(arr,0,N-2);
+        return costs[0][N-2];
+    }
+    static int solve(int[] arr, int i, int j)
+    {
+        if (i == j) return 0;
+        if (costs[i][j] != null) return costs[i][j];
+        int result = Integer.MAX_VALUE, k;
+        for (k = i; k < j; ++k)
+            result = Math.min(result,solve(arr,i,k)+solve(arr,k+1,j)+(arr[i]*arr[k+1]*arr[j+1]));
+        costs[i][j] = result;
+        return result;
+    }
+}
+
 /*Recursion+Tabulation*/
 class Solution{
     static int matrixMultiplication(int N, int arr[])

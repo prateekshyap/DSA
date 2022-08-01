@@ -36,7 +36,7 @@ For difficulty level, csv file is already updated. For other online information 
 
 ## Algorithms
 
-Number of Problems Solved (01-Aug-2022 17:32:32)
+Number of Problems Solved (01-Aug-2022 17:34:45)
 
 | Topic Name | Java | CPP | 
 | :--------: | :--------: | :--------: | 
@@ -51,7 +51,7 @@ Number of Problems Solved (01-Aug-2022 17:32:32)
 | [Hashing](https://github.com/prateekshyap/DSA#hashing) | 43 | 9 |
 | [Heap](https://github.com/prateekshyap/DSA#heap) | 24 | 9 |
 | [Linked-List](https://github.com/prateekshyap/DSA#linked-list) | 57 | 20 |
-| [Matrix](https://github.com/prateekshyap/DSA#matrix) | 44 | 20 |
+| [Matrix](https://github.com/prateekshyap/DSA#matrix) | 45 | 20 |
 | [Miscellaneous](https://github.com/prateekshyap/DSA#miscellaneous) | 65 | 3 |
 | [Queue](https://github.com/prateekshyap/DSA#queue) | 6 | 6 |
 | [Recursion](https://github.com/prateekshyap/DSA#recursion) | 13 | 12 |
@@ -62,7 +62,7 @@ Number of Problems Solved (01-Aug-2022 17:32:32)
 | [Strings](https://github.com/prateekshyap/DSA#strings) | 88 | 14 |
 | [Tree](https://github.com/prateekshyap/DSA#tree) | 163 | 26 |
 | [Trie](https://github.com/prateekshyap/DSA#trie) | 13 | 2 |
-| Total | 1054 | 278 |
+| Total | 1055 | 278 |
 
 ## Reference
 
@@ -744,7 +744,7 @@ Number of Problems Solved (01-Aug-2022 17:32:32)
 |  14  |Count Servers That Communicate|[LC](https://leetcode.com/problems/count-servers-that-communicate/) |[CPP](./Matrix/LC_1267_CountServersThatCommunicate.cpp) [Java](./Matrix/CountServers.java) ||O(n<sup>2</sup>)||
 |  15  |Equal Row And Column Pairs|[LC](https://leetcode.com/problems/equal-row-and-column-pairs/) |[Java](./Matrix/EqualRowAndColumnPairs.java) ||O(n<sup>2</sup>)||
 |  16  |Find Nth Element Of Spiral Matrix|[GFG](https://practice.geeksforgeeks.org/problems/find-nth-element-of-spiral-matrix/1#) |[CPP](./Matrix/GFG_NthEleOfSpiralMat.cpp) [Java](./Matrix/NthSpiralElement.java) |Medium|O(1)||
-|  17  |Find The String In Grid0111|[GFG](https://practice.geeksforgeeks.org/problems/find-the-string-in-grid0111/1) |[Java](./Matrix/MedianInARowWiseSortedMatrix.java) |Medium|O(n)||
+|  17  |Find The String In Grid0111|[GFG](https://practice.geeksforgeeks.org/problems/find-the-string-in-grid0111/1) |[Java](./Matrix/MedianInARowWiseSortedMatrix.java) |Medium|O(n<sup>2</sup>)||
 |  18  |Flood Fill|[LC](https://leetcode.com/problems/flood-fill/) |[CPP](./Matrix/LC_733_Mat_FloodFill.cpp) ||O(1)||
 |  19  |Game Of Life|[LC](https://leetcode.com/problems/game-of-life/) |[Java](./Matrix/LifeGame.java) ||O(n<sup>2</sup>)||
 |  20  |Island Perimeter|[LC](https://leetcode.com/problems/island-perimeter/) |[Java](./Matrix/IslandPerimeter.java) ||O(n<sup>2</sup>)||
@@ -754,7 +754,7 @@ Number of Problems Solved (01-Aug-2022 17:32:32)
 |  24  |Max Rectangle|[GFG](https://practice.geeksforgeeks.org/problems/max-rectangle/1/) |[Java](./Matrix/LargestRectangle.java) |Medium|O(n<sup>2</sup>)||
 |  25  |Maximum Area Of Triangle|[IB](https://www.interviewbit.com/problems/maximum-area-of-triangle/) |[Java](./Matrix/MaximumAreaOfATriangle.java) ||O(n<sup>2</sup>)||
 |  26  |Maximum Difference Between Pair In A Matrix|[GFG](https://practice.geeksforgeeks.org/problems/maximum-difference-between-pair-in-a-matrix/1/) |[Java](./Matrix/MaximumDifferenceBetweenPairInAMatrix.java) |Hard|O(n<sup>2</sup>)||
-|  27  |Maximum Sum Rectangle2948|[GFG](https://practice.geeksforgeeks.org/problems/maximum-sum-rectangle2948/1) |[Java](./Matrix/MaximumSumRectangle.java) |null|O(n<sup>3</sup>)||
+|  27  |Maximum Sum Rectangle2948|[GFG](https://practice.geeksforgeeks.org/problems/maximum-sum-rectangle2948/1) |[Java](./Matrix/MaximumSumRectangle.java) |null|O(n)||
 |  28  |Minesweeper|[LC](https://leetcode.com/problems/minesweeper/) |[Java](./Matrix/Minesweeper.java) ||O(n<sup>2</sup>)||
 |  29  |Number Of Palindromic Paths In A Matrix0819|[GFG](https://practice.geeksforgeeks.org/problems/number-of-palindromic-paths-in-a-matrix0819/1#) |[Java](./Matrix/NumberOfPalindromicPathsInMatrix.java) |Medium|O(n)||
 |  30  |Prettyprint|[IB](https://www.interviewbit.com/problems/prettyprint/) |[Java](./Matrix/PrettyPrint.java) ||O(n<sup>2</sup>)||

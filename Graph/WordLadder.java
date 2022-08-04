@@ -61,3 +61,135 @@ class Solution {
         return 0;
     }
 }
+
+class Solution {
+    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+
+        // Since all words are of same length.
+        int L = beginWord.length();
+
+        // Dictionary to hold combination of words that can be formed,
+        // from any given word. By changing one letter at a time.
+        Map<String, List<String>> allComboDict = new HashMap<>();
+        StringBuilder temp;
+        String newWord;
+        for (String word : wordList)
+        {
+            temp = new StringBuilder(word);
+            for (int i = 0; i < L; i++) {
+                // Key is the generic word
+                // Value is a list of words which have the same intermediate generic word.
+                temp.replace(i,i+1,"*");
+                newWord = temp.toString();
+                List<String> transformations = allComboDict.getOrDefault(newWord, new ArrayList<>());
+                transformations.add(word);
+                allComboDict.put(newWord, transformations);
+                temp.replace(i,i+1,Character.toString(word.charAt(i)));
+            }
+        }
+        // System.out.println(allComboDict);
+
+        // Queue for BFS
+        Queue<String> Q = new LinkedList<>();
+        Q.add(beginWord);
+        int level = 0, size;
+
+        // Visited to make sure we don't repeat processing same word.
+        Map<String, Boolean> visited = new HashMap<>();
+        visited.put(beginWord, true);
+        
+        while (!Q.isEmpty()) {
+            size = Q.size();
+            ++level;
+            while (size-- > 0)
+            {
+                String word = Q.poll();
+                if (word.equals(endWord)) return level;
+                temp = new StringBuilder(word);
+                for (int i = 0; i < L; i++) {
+
+                    // Intermediate words for current word
+                    temp.replace(i,i+1,"*");
+                    newWord = temp.toString();
+
+                    // Next states are all the words which share the same intermediate state.
+                    for (String adjacentWord : allComboDict.getOrDefault(newWord, new ArrayList<>()))
+                    {
+                        if (!visited.containsKey(adjacentWord))
+                        {
+                            visited.put(adjacentWord, true);
+                            Q.add(adjacentWord);
+                        }
+                    }
+                    temp.replace(i,i+1,Character.toString(word.charAt(i)));
+                }
+            }
+        }
+
+        return 0;
+    }
+}
+
+class Solution {
+    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        if (wordList == null || wordList.size() == 0) return 0;
+        Set<String> wordSet = new HashSet<>(wordList);
+        Set<String> visited = new HashSet<>();
+        if (!wordSet.contains(endWord)) return 0;
+        Set<String> head = new HashSet<>();
+        Set<String> tail = new HashSet<>();
+        Set<String> temp = new HashSet<>();
+        int smallest = 2;
+        head.add(beginWord);
+        tail.add(endWord);
+        StringBuilder build;
+        String key;
+        int i, len = beginWord.length();
+        Map<String,List<String>> graph = new HashMap<String,List<String>>();
+        for (String word : wordList)
+        {
+            build = new StringBuilder(word);
+            for (i = 0; i < len; ++i)
+            {
+                build.replace(i,i+1,"*");
+                key = build.toString();
+                if (!graph.containsKey(key))
+                    graph.put(key, new ArrayList<String>());
+                graph.get(key).add(word);
+                build.replace(i,i+1,Character.toString(word.charAt(i)));
+            }
+        }
+        visited.add(beginWord);
+        while (!head.isEmpty() && !tail.isEmpty()) {
+            if (head.size() > tail.size()) {
+                temp = head;
+                head = tail;
+                tail = temp;
+            }
+            temp = new HashSet<>();
+            
+            for (String current: head) {
+                visited.add(current);
+                build = new StringBuilder(current);
+                for (i = 0; i < len; ++i)
+                {
+                    build.replace(i,i+1,"*");
+                    key = build.toString();
+                    for (String neighbor: graph.getOrDefault(key,new ArrayList<String>())) {
+                        if (tail.contains(neighbor)) {
+                            return smallest;
+                        }
+                        if (!visited.contains(neighbor))
+                            temp.add(neighbor);
+                    }
+                    build.replace(i,i+1,Character.toString(current.charAt(i)));
+                }
+            }
+            head = temp;
+            smallest++;
+        }
+        
+        return 0;
+        
+    }
+}

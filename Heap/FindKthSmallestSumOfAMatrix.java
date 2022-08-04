@@ -99,3 +99,52 @@ class Solution {
         return result.toString();
     }
 }
+
+class Solution {
+    public int kthSmallest(int[][] M, int k) {
+        return kthSmallest(M, M.length, M[0].length, k);
+    }
+    
+    private int kthSmallest(int[][] M, int m, int n, int k) {
+        int lo = m, hi = m * 5000, ans = -1; 
+        
+        while(lo <= hi) {
+            int mi = lo + (hi - lo) / 2; 
+            int count = countLessThanOrEqual(M, m, n, mi, k); 
+            
+            if(count >= k) {
+                hi = mi - 1; 
+                ans = mi; 
+            } else {
+                lo = mi + 1; 
+            }
+        }
+        
+        return ans; 
+    }
+    
+    private int countLessThanOrEqual(int[][] M, int m, int n, int target, int k) {
+        return countLessThanOrEqual(M, 0, m, n, 0, target, k); 
+    }
+    
+    private int countLessThanOrEqual(int[][] M, int r, int m, int n, int sum, int target, int k) {
+        
+        if(sum > target)
+            return 0; 
+        if(r == m)
+            return 1; 
+        
+        int result = 0; 
+        for(int c = 0; c < n && result <= k; c++) {
+            int count = countLessThanOrEqual(M, r + 1, m, n, sum + M[r][c], target, k - result); 
+            
+            if(count > 0) {
+                result += count; 
+            } else {
+                break; 
+            }
+        }
+            
+        return result; 
+    }
+}

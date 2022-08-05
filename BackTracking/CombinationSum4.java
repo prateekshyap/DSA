@@ -26,3 +26,41 @@ class Solution
         return count;
 	}
 }
+
+class Solution {
+    Integer[] table;
+    public int combinationSum4(int[] nums, int target) {
+        table = new Integer[target+1];
+        return countCombinations(nums,target,0);
+    }
+    private int countCombinations(int[] nums, int target, int sum)
+    {
+        if (sum == target) return 1;
+        if (table[sum] != null) return table[sum];
+        int count = 0;
+        for (int i = 0; i < nums.length; ++i)
+            if (sum+nums[i] <= target)
+                count += countCombinations(nums,target,sum+nums[i]);
+        table[sum] = count;
+        return count;
+    }
+}
+
+class Solution {
+    Integer[] table;
+    public int combinationSum4(int[] nums, int target) {
+        table = new Integer[target+1];
+        return countCombinations(nums,target);
+    }
+    private int countCombinations(int[] nums, int target)
+    {
+        if (target == 0) return 1;
+        if (table[target] != null) return table[target];
+        int count = 0;
+        for (int i = 0; i < nums.length; ++i)
+            if (nums[i] <= target)
+                count += countCombinations(nums,target-nums[i]);
+        table[target] = count;
+        return count;
+    }
+}

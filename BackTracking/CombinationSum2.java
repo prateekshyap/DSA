@@ -31,3 +31,33 @@ class Solution {
         }
     }
 }
+
+class Solution {
+    List<List<Integer>> resultSet;
+    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+        Arrays.sort(candidates);
+        resultSet = new ArrayList<List<Integer>>();
+        generateCombinations(candidates,target,-1,0,new ArrayList<Integer>());
+        return resultSet;
+    }
+    private void generateCombinations(int[] candidates, int target, int index, int sum, List<Integer> curr)
+    {
+        if (sum == target)
+        {
+            List<Integer> newCombination = new ArrayList<>(curr);
+            Collections.sort(newCombination);
+            resultSet.add(newCombination);
+            return;
+        }
+        for (int i = index+1; i < candidates.length; ++i)
+        {
+            if (i > index+1 && candidates[i] == candidates[i-1]) continue;
+            if (sum+candidates[i] <= target)
+            {
+                curr.add(candidates[i]);
+                generateCombinations(candidates,target,i,sum+candidates[i],curr);
+                curr.remove(curr.size()-1);
+            }
+        }
+    }
+}

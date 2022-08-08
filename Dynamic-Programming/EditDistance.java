@@ -1,23 +1,28 @@
 /*https://practice.geeksforgeeks.org/problems/edit-distance3702/1*/
+/*https://leetcode.com/problems/edit-distance/*/
 
 //recursive approach
 class Solution {
     int minOps;
-    public int editDistance(String s, String t) {
-        if (s.equalsIgnoreCase(t)) return 0;
-        minOps = performOps(s,t,s.length(),t.length());
+    Integer[][] table;
+    public int minDistance(String word1, String word2) {
+        if (word1.equalsIgnoreCase(word2)) return 0;
+        table = new Integer[word1.length()+1][word2.length()+1];
+        minOps = performOps(word1,word2,word1.length(),word2.length());
         return minOps;
     }
     public int performOps(String s, String t, int m, int n)
     {
-        if (m == 0) return n;
-        if (n == 0) return m;
+        if (m == 0) return table[m][n] = n;
+        if (n == 0) return table[m][n] = m;
+        if (table[m][n] != null) return table[m][n];
         if (s.charAt(m-1) == t.charAt(n-1))
-            return performOps(s,t,m-1,n-1);
+            return table[m][n] = performOps(s,t,m-1,n-1);
         int insert = performOps(s,t,m,n-1)+1; //the new character needs to be compared to the previous character in target string
         int delete = performOps(s,t,m-1,n)+1; //the previous character in input needs to be compared to the current character in target
         int replace = performOps(s,t,m-1,n-1)+1; //previous characters in both the strings need to be compared
-        return Math.min(insert,Math.min(replace,delete));
+        table[m][n] = Math.min(insert,Math.min(replace,delete));
+        return table[m][n];
     }
 }
 
@@ -48,3 +53,4 @@ class Solution {
         return dp[m][n];
     }
 }
+

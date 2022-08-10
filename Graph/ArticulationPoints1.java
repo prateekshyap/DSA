@@ -42,21 +42,21 @@ class Solution
         discovery[source] = low[source] = ++timer;
         for (Integer adjNode : graph.get(source))
         {
-            if (!visited[adjNode])
+            if (!visited[adjNode]) //tree edge
             {
                 ++children;
                 parent[adjNode] = source;
                 dfs(graph, adjNode);
                 low[source] = Math.min(low[source],low[adjNode]); //update the low value from the immediate child of dfs tree
-                if (parent[source] != -1 && low[adjNode] >= discovery[source])
+                if (parent[source] != -1 && low[adjNode] >= discovery[source]) //articulation point rule
                     isArtPoint[source] = true;
             }
-            else if (adjNode != parent[source]) //this condition ensures that we are not updating the low value for its immediate parent from which the dfs call started
+            else if (adjNode != parent[source]) //back edge //this condition ensures that we are not updating the low value for its immediate parent from which the dfs call started
             {
                 low[source] = Math.min(low[source],discovery[adjNode]); //update the low value of the previously visited adjacent node i.e. the destination node of a back edge
             }
         }
-        if (parent[source] == -1 && children > 1)
+        if (parent[source] == -1 && children > 1) //articulation point rule
             isArtPoint[source] = true;
     }
 }

@@ -102,3 +102,38 @@ class Solution
         return count;
     }
 }
+
+class Solution
+{
+    //Function to find the minimum number of swaps required to sort the array.
+    public int minSwaps(int nums[])
+    {
+        // Code here
+        HashMap<Integer,Integer> graph = new HashMap<Integer,Integer>();
+        int[] copy = nums.clone();
+        Arrays.sort(nums);
+        int i;
+        for (i = 0; i < nums.length; ++i)
+            graph.put(nums[i],i);
+        boolean[] visited = new boolean[nums.length];
+        int result = 0, start, curr, cycle = 0, ind;
+        for (i = 0; i < nums.length; ++i)
+        {
+            if (!visited[i])
+            {
+                ind = i;
+                start = nums[ind];
+                visited[ind] = true;
+                cycle = 1;
+                while (copy[ind] != start)
+                {
+                    ind = graph.get(copy[ind]);
+                    visited[ind] = true;
+                    ++cycle;
+                }
+                result += cycle-1;
+            }
+        }
+        return result;
+    }
+}

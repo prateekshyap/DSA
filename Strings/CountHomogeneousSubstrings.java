@@ -21,3 +21,22 @@ class Solution {
         return (int)(result%mod);
     }
 }
+
+class Solution {
+    public int countHomogenous(String s) {
+        char prev='\0';
+        long res=0;
+        int c=0;
+        for(char i:s.toCharArray())
+        {
+            if(i!=prev)
+            {
+                c=1;
+                prev=i;
+            }
+            else c++;
+            res+=c;
+        }
+        return (int)(res%(int)(1e9+7));
+    }
+}

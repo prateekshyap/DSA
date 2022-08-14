@@ -210,3 +210,27 @@ class Solution {
         return sb.toString();
     }
 }
+
+class Solution
+{
+    public String multiply(String num1, String num2)
+    {
+        if(num1.equals("0") || num2.equals("0")) return "0";
+        char[] chNum1 = num1.toCharArray();
+        char[] chNum2 = num2.toCharArray();
+        int[] ans = new int[chNum1.length + chNum2.length - 1];
+        for(int i = 0; i < chNum1.length; i++)
+            for(int j = 0; j < chNum2.length; j++)
+                ans[i+j] += (chNum1[i] - '0') * (chNum2[j] - '0');
+        for(int i = ans.length - 1; i >= 1; i--)
+        {
+            ans[i-1] += ans[i] / 10;
+            ans[i] %= 10;
+        }
+        StringBuilder sb = new StringBuilder();
+        for(int i : ans) {
+            sb.append(i);
+        }
+        return sb.toString();
+    }
+}

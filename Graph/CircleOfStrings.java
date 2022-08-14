@@ -73,3 +73,60 @@ class Solution
                 dfs(graph, visited, graph.get(src).get(i));
     }
 }
+
+class Solution
+{
+    static int[] parent;
+    static int[] rank;
+    static int isCircle(int N, String A[])
+    {
+        // code here
+        int i;
+        parent = new int[26];
+        for (i = 0; i < 26; ++i)
+            parent[i] = i;
+        rank = new int[26];
+        int[] in = new int[26], out = new int[26];
+        
+        for (String s : A)
+        {
+            ++in[s.charAt(0)-'a'];
+            ++out[s.charAt(s.length()-1)-'a'];
+            union(s.charAt(0)-'a',s.charAt(s.length()-1)-'a');
+        }
+        for (i = 0; i < 26; ++i)
+            if (in[i] != out[i])
+                return 0;
+            
+        int count = 0;
+        for (i = 0; i < 26; ++i)
+            if (in[i] != 0 && out[i] != 0 && parent[i] == i)
+                ++count;
+                
+        return count > 1 ? 0 : 1;
+    }
+    private static void union(int i, int j)
+    {
+        int pi = find(i);
+        int pj = find(j);
+        
+        if (pi != pj)
+        {
+            if (rank[pi] > rank[pj])
+            {
+                int temp = pi;
+                pi = pj;
+                pj = temp;
+            }
+            parent[pi] = pj;
+            if (rank[pi] == rank[pj])
+                ++rank[pj];
+        }
+    }
+    private static int find(int i)
+    {
+        if (parent[i] == i) return i;
+        parent[i] = find(parent[i]);
+        return parent[i];
+    }
+}

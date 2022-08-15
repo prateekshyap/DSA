@@ -1,5 +1,6 @@
 /*https://leetcode.com/problems/word-ladder/*/
 
+//unidirectional bfs
 class Solution {
     int result;
     HashSet<String> hash;
@@ -62,6 +63,7 @@ class Solution {
     }
 }
 
+//preprocessing the adjacency list
 class Solution {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
 
@@ -130,6 +132,7 @@ class Solution {
     }
 }
 
+//bidirectional bfs
 class Solution {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         if (wordList == null || wordList.size() == 0) return 0;
@@ -190,5 +193,82 @@ class Solution {
         }
         
         return 0;
+    }
+}
+
+//inspired from word ladder 2
+class Solution {
+    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        if (wordList.size() == 0) return 0;
+        HashSet<String> wordSet = new HashSet<String>(wordList);
+        if (!wordSet.contains(endWord)) return 0;
+        HashSet<String> visited = new HashSet<String>();
+        Queue<String> queue = new LinkedList<String>();
+        queue.add(beginWord);
+        int i, distance = 1;
+        StringBuilder build;
+        String key;
+        
+        Map<String,List<String>> graph = new HashMap<String,List<String>>();
+        for (String word : wordList)
+        {
+            build = new StringBuilder(word);
+            for (i = 0; i < word.length(); ++i)
+            {
+                build.replace(i,i+1,"*");
+                key = build.toString();
+                if (!graph.containsKey(key)) graph.put(key,new ArrayList<String>());
+                graph.get(key).add(word);
+                build.replace(i,i+1,Character.toString(word.charAt(i)));
+            }
+        }
+        
+        int len;
+        String word;
+        List<String> adjacents;
+        Set<String> explored = new HashSet<String>();
+        wordSet.remove(beginWord);
+        while (!queue.isEmpty())
+        {
+            len = queue.size();
+            explored = new HashSet<String>();
+            while (len-- > 0)
+            {
+                word = queue.poll();
+                if (visited.contains(word)) continue;
+                visited.add(word);
+                adjacents = getAdjacents(word,graph,wordSet);
+                for (String adj : adjacents)
+                {
+                    if (adj.equals(endWord)) return distance+1;
+                    
+                    explored.add(adj);
+                    queue.add(adj);
+                }
+            }
+            for (String w : explored)
+                wordSet.remove(w);
+            ++distance;
+        }
+        
+        return 0;
+    }
+    private List<String> getAdjacents(String word, Map<String,List<String>> graph, Set<String> wordSet)
+    {
+        String key;
+        StringBuilder build = new StringBuilder(word);
+        List<String> adjacents = new ArrayList<String>();
+        for (int i = 0; i < word.length(); ++i)
+        {
+            build.replace(i,i+1,"*");
+            key = build.toString();
+            for (String adj : graph.getOrDefault(key,new ArrayList<String>()))
+            {
+                if (wordSet.contains(adj))
+                    adjacents.add(adj);
+            }
+            build.replace(i,i+1,Character.toString(word.charAt(i)));
+        }
+        return adjacents;
     }
 }

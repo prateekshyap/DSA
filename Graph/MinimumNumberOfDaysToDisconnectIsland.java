@@ -1,5 +1,6 @@
 /*https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/*/
 
+//articulation point on a newly built graph
 class Solution {
     int timer, R, C;
     int[][] dirs = new int[][]{{1,0},{-1,0},{0,1},{0,-1}};
@@ -113,6 +114,92 @@ class Solution {
             c = col+dirs[i][1];
             if (r >= 0 && r < R && c >= 0 && c < C && grid[r][c] == 1) //if adjacent node is feasible
                 dfs(grid,r,c); //run dfs
+        }
+    }
+}
+
+//articulation point on the same matrix
+class Solution {
+    int timer, R, C;
+    int[][] dirs = new int[][]{{1,0},{-1,0},{0,1},{0,-1}};
+    int[][] disc, low;
+    boolean[][] isArticulationPoint;
+    int index;
+    Map<String,Integer> map;
+    public int minDays(int[][] grid) {
+        int i, j, count = 0;
+        R = grid.length;
+        C = grid[0].length;
+        index = 0;
+        map = new HashMap<String,Integer>();
+        for (i = 0; i < R; ++i)
+            for (j = 0; j < C; ++j)
+                if (grid[i][j] == 1)
+                {
+                    if (count == 1) return 0;
+                    dfs(grid,i,j);
+                    ++count;
+                }
+        if (count == 0) return 0;
+
+        disc = new int[R][C];
+        low = new int[R][C];
+        isArticulationPoint = new boolean[R][C];
+        timer = 1;
+        boolean done = false;
+        for (i = 0; i < R; ++i)
+        {
+            for (j = 0; j < C; ++j)
+                if (grid[i][j] == 2)
+                {
+                    findArticulationPoints(grid,i,j,-1,-1);
+                    done = true;
+                    break;
+                }
+            if (done) break;
+        }
+        for (boolean[] data : isArticulationPoint)
+            for (boolean found : data)
+                if (found)
+                    return 1;
+        return 2;
+    }
+    private void findArticulationPoints(int[][] graph, int row, int col, int parRow, int parCol)
+    {
+        int r, c;
+        disc[row][col] = timer++;
+        low[row][col] = disc[row][col];
+        int children = 0;
+        
+        for (int i = 0; i < 4; ++i)
+        {
+            r = row+dirs[i][0];
+            c = col+dirs[i][1];
+            if (r >= 0 && r < R && c >= 0 && c < C && graph[r][c] == 2 && disc[r][c] == 0)
+            {
+                ++children;
+                findArticulationPoints(graph,r,c,row,col);
+                low[row][col] = Math.min(low[row][col],low[r][c]);
+                if (parRow != -1 && low[r][c] >= disc[row][col])
+                    isArticulationPoint[row][col] = true;
+            }
+            else if (r >= 0 && r < R && c >= 0 && c < C && graph[r][c] == 2 && disc[r][c] != 0 && parRow != -1)
+                low[row][col] = Math.min(low[row][col],disc[r][c]);
+        }
+        
+        if (parRow == -1 && children != 1)
+            isArticulationPoint[row][col] = true;
+    }
+    private void dfs(int[][] grid, int row, int col)
+    {
+        grid[row][col] = 2;
+        int r, c;
+        for (int i = 0; i < 4; ++i)
+        {
+            r = row+dirs[i][0];
+            c = col+dirs[i][1];
+            if (r >= 0 && r < R && c >= 0 && c < C && grid[r][c] == 1)
+                dfs(grid,r,c);
         }
     }
 }

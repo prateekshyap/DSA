@@ -63,3 +63,5 @@ class Solution {
         return len == Integer.MAX_VALUE ? "" : s.substring(start,start+len);
     }
 }
+
+//filtered S approach

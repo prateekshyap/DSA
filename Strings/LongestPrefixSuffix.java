@@ -1,4 +1,5 @@
 /*https://practice.geeksforgeeks.org/problems/longest-prefix-suffix2527/1*/
+/*https://leetcode.com/problems/longest-happy-prefix/*/
 
 class Solution {
     int lps(String s) {
@@ -29,5 +30,22 @@ class Solution {
             }
         }
         return dp[n-1];
+    }
+}
+
+class Solution {
+    public String longestPrefix(String s) {
+        int i = 1, lpsLen = 0, pLen = s.length();
+        int[] lps = new int[pLen];
+        char[] p = s.toCharArray();
+        while (i < pLen)
+        {
+            if (p[i] == p[lpsLen])
+                lps[i++] = ++lpsLen;
+            else if (lpsLen != 0)
+                lpsLen = lps[lpsLen-1];
+            else lps[i++] = lpsLen;
+        }
+        return s.substring(0,lps[pLen-1]);
     }
 }

@@ -41,3 +41,31 @@ class Solution {
         return result;
     }
 }
+
+class Solution {
+    List<List<Integer>> result;
+    public List<List<Integer>> combinationSum3(int k, int n) {
+        result = new ArrayList<List<Integer>>();
+        generateCombinations(k,n,1,0,new ArrayList<Integer>());
+        return result;
+    }
+    private void generateCombinations(int n, int target, int elem, int sum, List<Integer> curr)
+    {
+        if (sum == target)
+        {
+            if (curr.size() == n)
+                result.add(new ArrayList<>(curr));
+            return;
+        }
+        if (curr.size() == n) return;
+        for (int i = elem; i <= 9; ++i)
+        {
+            if (sum+i <= target)
+            {
+                curr.add(i);
+                generateCombinations(n,target,i+1,sum+i,curr);
+                curr.remove(curr.size()-1);
+            }
+        }
+    }
+}

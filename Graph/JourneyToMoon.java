@@ -63,3 +63,198 @@ class Result {
         }
     }
 }
+
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+class Result {
+
+    /*
+     * Complete the 'journeyToMoon' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts following parameters:
+     *  1. INTEGER n
+     *  2. 2D_INTEGER_ARRAY astronaut
+     */
+    static boolean[] visited;
+    public static long journeyToMoon(int n, List<List<Integer>> astronaut) {
+    // Write your code here
+        ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
+        int i = 0;
+        visited = new boolean[n];
+        for (; i < n; ++i)
+            graph.add(new ArrayList<Integer>());
+        for (List<Integer> a : astronaut)
+        {
+            graph.get(a.get(0)).add(a.get(1));
+            graph.get(a.get(1)).add(a.get(0));
+        }
+        List<List<Integer>> connectedComponents = new ArrayList<List<Integer>>();
+        for (i = 0; i < n; ++i)
+        {
+            if (!visited[i])
+            {
+                List<Integer> newComponent = new ArrayList<Integer>();
+                dfs(graph,i,newComponent);
+                connectedComponents.add(newComponent);
+            }
+        }
+        long result = 0;
+        for (List<Integer> component : connectedComponents)
+        {
+            result = result+((long)(component.size()*(n-component.size())));
+            n -= component.size();
+        }
+        return result;
+    }
+    private static void dfs(ArrayList<ArrayList<Integer>> graph, int src, List<Integer> component)
+    {
+        visited[src] = true;
+        component.add(src);
+        
+        for (Integer adjNode : graph.get(src))
+            if (!visited[adjNode])
+                dfs(graph,adjNode,component);
+    }
+}
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        String[] firstMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
+
+        int n = Integer.parseInt(firstMultipleInput[0]);
+
+        int p = Integer.parseInt(firstMultipleInput[1]);
+
+        List<List<Integer>> astronaut = new ArrayList<>();
+
+        IntStream.range(0, p).forEach(i -> {
+            try {
+                astronaut.add(
+                    Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+                        .map(Integer::parseInt)
+                        .collect(toList())
+                );
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
+
+        long result = Result.journeyToMoon(n, astronaut);
+
+        bufferedWriter.write(String.valueOf(result));
+        bufferedWriter.newLine();
+
+        bufferedReader.close();
+        bufferedWriter.close();
+    }
+}
+
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+class Result {
+
+    /*
+     * Complete the 'journeyToMoon' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts following parameters:
+     *  1. INTEGER n
+     *  2. 2D_INTEGER_ARRAY astronaut
+     */
+    static int[] parent, size;
+    static HashSet<Integer> roots;
+    public static long journeyToMoon(int n, List<List<Integer>> astronaut) {
+    // Write your code here
+        parent = IntStream.rangeClosed(0, n-1).toArray();
+        size = new int[n]; Arrays.fill(size,1);
+        roots = new HashSet<Integer>();
+        for (int i = 0; i < n; ++i)
+            roots.add(i);
+        
+        for (List<Integer> a : astronaut)
+            union(a.get(0),a.get(1));
+            
+        long deduct = (long)n*(long)(n-1)/2;
+        for (Integer p : roots)
+            deduct -= ((long)size[p]*(long)(size[p]-1))/2;
+        
+        return deduct;
+    }
+    private static void union(int x, int y)
+    {
+        int xParent = find(x);
+        int yParent = find(y);
+        
+        if (xParent != yParent)
+        {
+            parent[yParent] = xParent;
+            roots.remove(yParent);
+            size[xParent] += size[yParent];
+        }
+    }
+    private static int find(int x)
+    {
+        if (parent[x] == x) return x;
+        parent[x] = find(parent[x]);
+        return parent[x];
+    }
+}
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        String[] firstMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
+
+        int n = Integer.parseInt(firstMultipleInput[0]);
+
+        int p = Integer.parseInt(firstMultipleInput[1]);
+
+        List<List<Integer>> astronaut = new ArrayList<>();
+
+        IntStream.range(0, p).forEach(i -> {
+            try {
+                astronaut.add(
+                    Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+                        .map(Integer::parseInt)
+                        .collect(toList())
+                );
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
+
+        long result = Result.journeyToMoon(n, astronaut);
+
+        bufferedWriter.write(String.valueOf(result));
+        bufferedWriter.newLine();
+
+        bufferedReader.close();
+        bufferedWriter.close();
+    }
+}

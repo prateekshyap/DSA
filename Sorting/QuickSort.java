@@ -42,3 +42,49 @@ class Solution
         return i+1;
     } 
 }
+
+//random pivot
+class Solution
+{
+    //Function to sort an array using quick sort algorithm.
+    static void quickSort(int arr[], int low, int high)
+    {
+        // code here
+        if (low < high)
+        {
+            int pivotIndex = partition(arr, low, high);
+            quickSort(arr,low,pivotIndex-1);
+            quickSort(arr,pivotIndex+1,high);
+        }
+    }
+    static int partition(int arr[], int low, int high)
+    {
+        // your code here
+        int pivotIndex = randomIndex(low,high);
+        int pivot = arr[pivotIndex];
+        
+        int[] a = new int[high-low+1];
+
+        int i = low, j = high, temp;
+        for (int k = low; k <= high; ++k)
+            a[k-low] = arr[k];
+        for (int k = low; k <= high; ++k)
+        {
+            if (k != pivotIndex)
+            {
+                if (a[k-low] <= pivot)
+                    arr[i++] = a[k-low];
+                else
+                    arr[j--] = a[k-low];
+            }
+        }
+        
+        arr[i] = pivot;
+        
+        return i;
+    }
+    static int randomIndex(int min, int max)
+    {
+        return (int)(Math.random()*(max-min+1)+min);
+    }
+}

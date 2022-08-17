@@ -1,4 +1,5 @@
 /*https://practice.geeksforgeeks.org/problems/capacity-to-ship-packages-within-d-days/1*/
+/*https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/*/
 
 class Solution {
     static int leastWeightCapacity(int[] arr, int N, int D) {
@@ -42,5 +43,45 @@ class Solution {
         if (currWeight > mid) //if current weight exceeds capacity
             daysCount += currWeight/mid; //ship everything according to capacity
         return daysCount; //return the number of days taken to ship everything
+    }
+}
+
+class Solution {
+    int[] weights;
+    int days;
+    public int shipWithinDays(int[] weights, int days) {
+        this.weights = weights;
+        this.days = days;
+        int n = weights.length, low = 0, high = 0, mid, result = -1;
+        for (int weight : weights)
+        {
+            low = Math.max(low,weight);
+            high += weight;
+        }
+        while (low <= high)
+        {
+            mid = low+(high-low)/2;
+            if (isFeasible(mid))
+            {
+                result = mid;
+                high = mid-1;
+            }
+            else low = mid+1;
+        }
+        return result;
+    }
+    private boolean isFeasible(int target)
+    {
+        int requiredDays = 1, ship = 0;
+        for (int weight : weights)
+        {
+            ship += weight;
+            if (ship > target)
+            {
+                ++requiredDays;
+                ship = weight;
+            }
+        }
+        return requiredDays <= days;
     }
 }

@@ -47,3 +47,30 @@ class Solution
         return result;
     }
 }
+
+class Solution {
+    List<List<Integer>> result;
+    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        result = new ArrayList<List<Integer>>();
+        generateCombinations(candidates,target,0,0,new ArrayList<Integer>());
+        return result;
+    }
+    private void generateCombinations(int[] candidates, int target, int index, int sum, List<Integer> curr)
+    {
+        if (sum == target)
+        {
+            List<Integer> newCombination = new ArrayList<>(curr);
+            result.add(newCombination);
+            return;
+        }
+        for (int i = index; i < candidates.length; ++i)
+        {
+            if (sum+candidates[i] <= target)
+            {
+                curr.add(candidates[i]);
+                generateCombinations(candidates,target,i,sum+candidates[i],curr);
+                curr.remove(curr.size()-1);
+            }
+        }
+    }
+}

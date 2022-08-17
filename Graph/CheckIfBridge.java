@@ -51,3 +51,31 @@ class Solution
         }
     }
 }
+
+// User function Template for Java
+
+class Solution
+{
+    static boolean[] visited;
+    //Function to find if the given edge is a bridge in graph.
+    static int isBridge(int V, ArrayList<ArrayList<Integer>> adj,int c,int d)
+    {
+        // code here
+        visited = new boolean[V];
+        
+        adj.get(c).remove(new Integer(d));
+        adj.get(d).remove(new Integer(c));
+        
+        dfs(adj,c);
+        
+        return visited[d] ? 0 : 1;
+    }
+    static void dfs(ArrayList<ArrayList<Integer>> graph, int src)
+    {
+        visited[src] = true;
+        
+        for (int adjNode : graph.get(src))
+            if (!visited[adjNode])
+                dfs(graph,adjNode);
+    }
+}

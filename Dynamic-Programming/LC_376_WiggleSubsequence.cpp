@@ -2,6 +2,9 @@
 https://leetcode.com/problems/wiggle-subsequence/
 376. Wiggle Subsequence
 
+https://practice.geeksforgeeks.org/problems/longest-alternating-subsequence5951/1/#
+
+https://binarysearch.com/problems/Longest-Sign-Alternating-Subsequence
 */
 class Solution {
 public:

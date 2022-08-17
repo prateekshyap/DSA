@@ -1,7 +1,7 @@
 /*
 https://leetcode.com/problems/4sum/
 18. 4Sum
-
+https://practice.geeksforgeeks.org/problems/find-all-four-sum-numbers1732/1
 */
 class Solution {
 public:

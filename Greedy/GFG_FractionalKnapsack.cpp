@@ -1,6 +1,8 @@
 /*
 https://practice.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1
 Fractional Knapsack 
+
+https://binarysearch.com/problems/Fractional-Knapsack
 */
 
 // { Driver Code Starts

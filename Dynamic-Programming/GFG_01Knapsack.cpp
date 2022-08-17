@@ -12,7 +12,32 @@ class Solution
 {
     public:
     //Function to return max value that can be put in knapsack of capacity W.
-    int knapSack1(int W, int wt[], int val[], int n) 
+    int knapSack(int W, int wt[], int val[], int n) 
+    { 
+        // vector<vector<int>> dp(n+1, vector<int>(W+1, -1));
+        // return knapSackRec(n, W, dp, wt, val);/
+        
+        // return knapSack2(W, wt, val, n);
+        return knapSack1(W, wt, val, n);
+        // return knapSackTab(W, wt, val, n);
+    }
+    
+    int knapSackRec(int idx, int W, vector<vector<int>>& dp, int *wt, int *val)
+    {
+        if(idx <= 0)
+            return 0;
+        if(W == 0)
+            return 0;
+        if(dp[idx][W] != -1)
+            return dp[idx][W];
+        
+        if(wt[idx-1] > W)
+            return dp[idx][W] = knapSackRec(idx-1, W, dp, wt, val);
+        else
+            return dp[idx][W] = max(knapSackRec(idx-1, W, dp, wt, val), knapSackRec(idx-1, W-wt[idx-1], dp, wt, val)+val[idx-1]);
+        
+    }
+    int knapSackTab(int W, int wt[], int val[], int n) 
     { 
     // Using array
     //   int dp[n+1][W+1];
@@ -23,7 +48,6 @@ class Solution
     
     // Using Recursion
       vector<vector<int>> dp(n+1, vector<int>(W+1, -1));
-      return knapSackRec( n-1,  W,  dp, wt,  val ) ;
        
        for(int i=1; i<=n; i++)
        {
@@ -38,16 +62,18 @@ class Solution
        return dp[n][W];
     }// end 
     
-    int knapSack(int W, int wt[], int val[], int n) 
+    int knapSack1(int W, int wt[], int val[], int n) 
     { 
       int dp[W+1]={0};
     
        for(int i=1; i<=n; i++)
        {
-           for(int w=W; w>=0; w--)
+        //   for(int w=1; w<=W; w++)
+          for(int w=W; w>=0; w--)
            {
                if(w >= wt[i-1]) // current weight of item is less than current knapsack capacity
                    dp[w] = max(dp[w] , val[i-1]+dp[w-wt[i-1]]);
+                // cout<<dp[w]<<" ";
            }
        }
        return dp[W];
@@ -77,22 +103,7 @@ class Solution
        return dp[n%2][W];
     }// end 
     
-    int knapSackRec(int i,  int W, vector<vector<int>>& dp, int wt[], int val[] ) 
-    { 
-       if(i<0) 
-            return 0;
-       
-       if(dp[i][W] != -1)
-            return dp[i][W];
-            
-       if(W < wt[i]) // if weight of item greater than knapsack capacity
-           dp[i][W] = knapSackRec(i-1, W, dp, wt, val);
-       else
-           dp[i][W] = max(knapSackRec(i-1, W, dp, wt, val) , val[i]+knapSackRec(i-1, W-wt[i], dp, wt, val));
-   
-       return dp[i][W];
-    }// end 
-
+    
 };
 
 // { Driver Code Starts.

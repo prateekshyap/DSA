@@ -2,14 +2,7 @@
 https://practice.geeksforgeeks.org/problems/strongly-connected-component-tarjanss-algo-1587115621/1/#
 Strongly connected component (Tarjans's Algo) 
 */
-
-// { Driver Code Starts
-#include<bits/stdc++.h>
-using namespace std;
-
- // } Driver Code Ends
-//User function template for C++
-
+ 
 class Solution
 {
 	public:
@@ -91,47 +84,4 @@ class Solution
         // dfs_rec[s] = false;
     }
 };
-
-// { Driver Code Starts.
-
-
-int main()
-{
-    
-    int t;
-    cin >> t;
-    while(t--)
-    {
-        int V, E;
-        cin >> V >> E;
-
-        vector<int> adj[V];
-
-        for(int i = 0; i < E; i++)
-        {
-            int u, v;
-            cin >> u >> v;
-            adj[u].push_back(v);
-        }
-
-        Solution obj;
-        vector<vector<int>> ptr = obj.tarjans(V, adj);
-
-        for(int i=0; i<ptr.size(); i++)
-        {
-            for(int j=0; j<ptr[i].size(); j++)
-            {
-                if(j==ptr[i].size()-1)
-                    cout<<ptr[i][j];
-                else
-                    cout<<ptr[i][j]<<" ";
-            }
-            cout<<',';
-        }
-        cout<<endl;
-    }
-
-    return 0;
-}
-
-  // } Driver Code Ends
+ 

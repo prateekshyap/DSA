@@ -2,6 +2,7 @@
 https://leetcode.com/problems/coin-change/
 322. Coin Change
 
+https://practice.geeksforgeeks.org/problems/number-of-coins1824/1
 https://practice.geeksforgeeks.org/problems/coin-change2448/1/
 */
 

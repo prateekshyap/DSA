@@ -1,6 +1,7 @@
 /*
 994. Rotting Oranges
 https://leetcode.com/problems/rotting-oranges/
+https://practice.geeksforgeeks.org/problems/rotten-oranges2536/1
 */
 class Solution {
 public:

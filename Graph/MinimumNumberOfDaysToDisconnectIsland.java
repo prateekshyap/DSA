@@ -148,23 +148,15 @@ class Solution {
         timer = 1;
         boolean done = false;
         for (i = 0; i < R; ++i)
-        {
             for (j = 0; j < C; ++j)
                 if (grid[i][j] == 2)
                 {
-                    findArticulationPoints(grid,i,j,-1,-1);
-                    done = true;
-                    break;
+                    if (findArticulationPoints(grid,i,j,-1,-1)) return 1;
+                    else return 2;
                 }
-            if (done) break;
-        }
-        for (boolean[] data : isArticulationPoint)
-            for (boolean found : data)
-                if (found)
-                    return 1;
         return 2;
     }
-    private void findArticulationPoints(int[][] graph, int row, int col, int parRow, int parCol)
+    private boolean findArticulationPoints(int[][] graph, int row, int col, int parRow, int parCol)
     {
         int r, c;
         disc[row][col] = timer++;
@@ -178,17 +170,18 @@ class Solution {
             if (r >= 0 && r < R && c >= 0 && c < C && graph[r][c] == 2 && disc[r][c] == 0)
             {
                 ++children;
-                findArticulationPoints(graph,r,c,row,col);
+                if (findArticulationPoints(graph,r,c,row,col)) return true;
                 low[row][col] = Math.min(low[row][col],low[r][c]);
                 if (parRow != -1 && low[r][c] >= disc[row][col])
-                    isArticulationPoint[row][col] = true;
+                    return true;
             }
             else if (r >= 0 && r < R && c >= 0 && c < C && graph[r][c] == 2 && disc[r][c] != 0 && parRow != -1)
                 low[row][col] = Math.min(low[row][col],disc[r][c]);
         }
         
         if (parRow == -1 && children != 1)
-            isArticulationPoint[row][col] = true;
+            return true;
+        return false;
     }
     private void dfs(int[][] grid, int row, int col)
     {

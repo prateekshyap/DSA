@@ -1,4 +1,5 @@
 /*https://practice.geeksforgeeks.org/problems/burning-tree/1*/
+/*https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/*/
 
 class Solution
 {

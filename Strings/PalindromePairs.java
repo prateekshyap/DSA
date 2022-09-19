@@ -69,3 +69,78 @@ class Solution {
     }
     
 }
+
+class TrieNode
+{
+    TrieNode[] hash;
+    int index;
+    List<Integer> palindromeIndices;
+    TrieNode()
+    {
+        hash = new TrieNode[26];
+        index = -1;
+        palindromeIndices = new ArrayList<Integer>();
+    }
+}
+
+class Trie
+{
+    TrieNode root;
+    Trie()
+    {
+        root = new TrieNode();
+    }
+    public void add(String s, int index)
+    {
+        TrieNode temp = root;
+        for (int j = s.length()-1; j >= 0; --j)
+        {
+            if (isPalindrome(s,0,j))
+                temp.palindromeIndices.add(index);
+            int ch = s.charAt(j)-'a';
+            if (temp.hash[ch] == null)
+                temp.hash[ch] = new TrieNode();
+            temp = temp.hash[ch];
+        }
+        temp.index = index;
+        temp.palindromeIndices.add(index);
+    }
+    public List<List<Integer>> getResult(String s, int index)
+    {
+        TrieNode temp = root;
+        List<List<Integer>> result = new ArrayList<List<Integer>>();
+        for (int i = 0; i < s.length() && temp != null; ++i)
+        {
+            if (temp.index != -1 && temp.index != index && isPalindrome(s,i,s.length()-1))
+                result.add(Arrays.asList(index,temp.index));
+            temp = temp.hash[s.charAt(i)-'a'];
+        }
+        if (temp == null) return result;
+        for (int i : temp.palindromeIndices)
+            if (i != index)
+                result.add(Arrays.asList(index,i));
+        return result;
+    }
+    private boolean isPalindrome(String s, int start, int end)
+    {
+        while (start < end)
+        {
+            if (s.charAt(start) != s.charAt(end))
+                return false;
+            ++start; --end;
+        }
+        return true;
+    }
+}
+
+class Solution {
+    public List<List<Integer>> palindromePairs(String[] words) {
+        int n = words.length;
+        Trie trie = new Trie();
+        for (int i = 0; i < n; ++i) trie.add(words[i], i);
+        List<List<Integer>> result = new ArrayList<List<Integer>>();
+        for (int i = 0; i < n; ++i)
+            result.addAll(trie.getResult(words[i],i));
+        return result;
+    }
+}

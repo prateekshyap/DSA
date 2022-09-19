@@ -91,3 +91,23 @@ class Solution {
         return water;
     }
 }
+
+class Solution {
+    public int trap(int[] height) {
+        int n = height.length, water = 0, index = 0;
+        Stack<Integer> stack = new Stack<Integer>();
+        while (index < n)
+        {
+            while (!stack.isEmpty() && height[index] > height[stack.peek()])
+            {
+                int stackTop = stack.pop();
+                if (stack.isEmpty()) break;
+                int distance = index-stack.peek()-1;
+                int boundedHeight = Math.min(height[index],height[stack.peek()])-height[stackTop];
+                water += distance*boundedHeight;
+            }
+            stack.push(index++);
+        }
+        return water;
+    }
+}

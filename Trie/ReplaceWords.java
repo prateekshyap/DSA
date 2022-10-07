@@ -27,49 +27,84 @@ class Solution {
         }
         StringBuilder build = new StringBuilder(), finalString = new StringBuilder();
         int index = 0, n = sentence.length();
-        for (char sh : sentence.toCharArray())
+        String[] sentenceWords = sentence.split(" +");
+        for (int i = 0; i < sentenceWords.length; ++i)
         {
-            if (sh == ' ')
+            if (i != 0) finalString.append(" ");
+            String word = sentenceWords[i];
+            StringBuilder root = new StringBuilder();
+            TrieNode temp = trie;
+            for (char ch : word.toCharArray())
             {
-                String word = build.toString();
-                build = new StringBuilder();
-                StringBuilder root = new StringBuilder();
-                boolean isRootFound = false;
-                TrieNode temp = trie;
-                for (char ch : word.toCharArray())
-                {
-                    if (temp.hash[ch-'a'] != null) temp = temp.hash[ch-'a'];
-                    else break;
-                    root.append(ch);
-                    if (temp.isEnd)
-                    {
-                        isRootFound = true;
-                        break;
-                    }
-                }
-                if (isRootFound) finalString.append(root);
-                else finalString.append(word);
-                finalString.append(' ');
+                if (temp.hash[ch-'a'] == null || temp.isEnd) break;
+                temp = temp.hash[ch-'a'];
+                root.append(ch);
             }
-            else build.append(sh);
+            if (temp.isEnd) finalString.append(root);
+            else finalString.append(word);
         }
-        String word = build.toString();
-        StringBuilder root = new StringBuilder();
-        boolean isRootFound = false;
-        TrieNode temp = trie;
-        for (char ch : word.toCharArray())
-        {
-            if (temp.hash[ch-'a'] != null) temp = temp.hash[ch-'a'];
-            else break;
-            root.append(ch);
-            if (temp.isEnd)
-            {
-                isRootFound = true;
-                break;
-            }
-        }
-        if (isRootFound) finalString.append(root);
-        else finalString.append(word);
         return finalString.toString();
+    }
+}
+
+class Solution {
+    
+    class TrieNode {
+        boolean isEnd;
+        TrieNode[] children;
+        
+        public TrieNode() {
+            children = new TrieNode[26];
+        }
+    }
+    
+    TrieNode root;
+
+    public void insert(String word) {
+        TrieNode curr = root;
+        for(int i = 0; i < word.length(); i++) {
+            char c = word.charAt(i);
+            if(curr.children[c-'a'] == null) {
+                curr.children[c-'a'] = new TrieNode();
+            }
+            curr = curr.children[c-'a'];
+        }
+        curr.isEnd = true;
+    }
+    
+    public String replaceWords(List<String> dictionary, String sentence) {
+        root = new TrieNode();
+        
+        for(String s : dictionary) {
+            insert(s);
+        }
+        
+        StringBuilder res = new StringBuilder();
+        
+        String[] all = sentence.split(" ");
+        
+        for(int k = 0; k < all.length; k++) {
+            String word = all[k];
+            StringBuilder replacement = new StringBuilder();
+            TrieNode curr = root;
+            
+            if(k != 0) res.append(" ");
+            
+            for(int i = 0; i < word.length(); i++) {
+                char c = word.charAt(i);
+                if(curr.children[c-'a'] == null || curr.isEnd) {
+                    break;
+                }
+                replacement.append(c);
+                curr = curr.children[c-'a'];
+            }
+            
+            if(curr.isEnd) {
+                res.append(replacement);
+            } else {
+                res.append(word);
+            }
+        }
+        return res.toString();
     }
 }

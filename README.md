@@ -36,34 +36,34 @@ For difficulty level, csv file is already updated. For other online information 
 
 ## Algorithms
 
-Number of Problems Solved (09-Apr-2023 11:58:23)
+Number of Problems Solved (16-Apr-2023 10:14:24)
 
-| Topic Name | Java | CPP | 
-| :--------: | :--------: | :--------: | 
-| [Arrays](https://github.com/prateekshyap/DSA#arrays) | 123 | 75 |
-| [BackTracking](https://github.com/prateekshyap/DSA#backtracking) | 35 | 16 |
-| [Bit-Magic](https://github.com/prateekshyap/DSA#bit-magic) | 32 | 23 |
-| [Codeforces](https://github.com/prateekshyap/DSA#codeforces) | 76 | 1 |
-| [Concurrency](https://github.com/prateekshyap/DSA#concurrency) | 6 | 0 |
-| [Disjoint-Set](https://github.com/prateekshyap/DSA#disjoint-set) | 6 | 1 |
-| [Dynamic-Programming](https://github.com/prateekshyap/DSA#dynamic-programming) | 171 | 87 |
-| [Graph](https://github.com/prateekshyap/DSA#graph) | 91 | 50 |
-| [Greedy](https://github.com/prateekshyap/DSA#greedy) | 60 | 19 |
-| [Hashing](https://github.com/prateekshyap/DSA#hashing) | 75 | 23 |
-| [Heap](https://github.com/prateekshyap/DSA#heap) | 35 | 13 |
-| [Linked-List](https://github.com/prateekshyap/DSA#linked-list) | 67 | 42 |
-| [Matrix](https://github.com/prateekshyap/DSA#matrix) | 56 | 27 |
-| [Miscellaneous](https://github.com/prateekshyap/DSA#miscellaneous) | 135 | 12 |
-| [Queue](https://github.com/prateekshyap/DSA#queue) | 12 | 6 |
-| [Recursion](https://github.com/prateekshyap/DSA#recursion) | 14 | 13 |
-| [Searching](https://github.com/prateekshyap/DSA#searching) | 55 | 36 |
-| [Segment-Tree](https://github.com/prateekshyap/DSA#segment-tree) | 4 | 0 |
-| [Sorting](https://github.com/prateekshyap/DSA#sorting) | 19 | 7 |
-| [Stack](https://github.com/prateekshyap/DSA#stack) | 32 | 18 |
-| [Strings](https://github.com/prateekshyap/DSA#strings) | 118 | 47 |
-| [Tree](https://github.com/prateekshyap/DSA#tree) | 177 | 88 |
-| [Trie](https://github.com/prateekshyap/DSA#trie) | 18 | 13 |
-| Total | 1417 | 617 |
+| Topic Name | Java | CPP | Python | 
+| :--------: | :--------: | :--------: | :--------: | 
+| [Arrays](https://github.com/prateekshyap/DSA#arrays) | 123 | 75 | 0 |
+| [BackTracking](https://github.com/prateekshyap/DSA#backtracking) | 35 | 16 | 0 |
+| [Bit-Magic](https://github.com/prateekshyap/DSA#bit-magic) | 32 | 23 | 0 |
+| [Codeforces](https://github.com/prateekshyap/DSA#codeforces) | 76 | 1 | 0 |
+| [Concurrency](https://github.com/prateekshyap/DSA#concurrency) | 6 | 0 | 0 |
+| [Disjoint-Set](https://github.com/prateekshyap/DSA#disjoint-set) | 6 | 1 | 0 |
+| [Dynamic-Programming](https://github.com/prateekshyap/DSA#dynamic-programming) | 172 | 87 | 2 |
+| [Graph](https://github.com/prateekshyap/DSA#graph) | 91 | 50 | 1 |
+| [Greedy](https://github.com/prateekshyap/DSA#greedy) | 60 | 19 | 0 |
+| [Hashing](https://github.com/prateekshyap/DSA#hashing) | 75 | 23 | 0 |
+| [Heap](https://github.com/prateekshyap/DSA#heap) | 35 | 13 | 0 |
+| [Linked-List](https://github.com/prateekshyap/DSA#linked-list) | 67 | 42 | 0 |
+| [Matrix](https://github.com/prateekshyap/DSA#matrix) | 56 | 27 | 0 |
+| [Miscellaneous](https://github.com/prateekshyap/DSA#miscellaneous) | 135 | 12 | 0 |
+| [Queue](https://github.com/prateekshyap/DSA#queue) | 12 | 6 | 0 |
+| [Recursion](https://github.com/prateekshyap/DSA#recursion) | 14 | 13 | 0 |
+| [Searching](https://github.com/prateekshyap/DSA#searching) | 55 | 36 | 0 |
+| [Segment-Tree](https://github.com/prateekshyap/DSA#segment-tree) | 4 | 0 | 0 |
+| [Sorting](https://github.com/prateekshyap/DSA#sorting) | 19 | 7 | 0 |
+| [Stack](https://github.com/prateekshyap/DSA#stack) | 33 | 18 | 1 |
+| [Strings](https://github.com/prateekshyap/DSA#strings) | 118 | 47 | 0 |
+| [Tree](https://github.com/prateekshyap/DSA#tree) | 177 | 88 | 0 |
+| [Trie](https://github.com/prateekshyap/DSA#trie) | 18 | 13 | 0 |
+| Total | 1419 | 617 | 4 |
 
 ## Reference
 
@@ -499,7 +499,7 @@ Number of Problems Solved (09-Apr-2023 11:58:23)
 |  92  |Longest Increasing Path In A Matrix|[LC](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) |[Java](./Dynamic-Programming/LongestIncreasingPathInAMatrix.java) ||O(n)||
 |  93  |Longest Increasing Subsequence|[LC](https://leetcode.com/problems/longest-increasing-subsequence/) |[CPP](./Dynamic-Programming/LC_300_LongestIncreasingSubsequence.cpp) ||O(1)||
 |  94  |Longest Increasing Subsequence 1587115620|[GFG](https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence-1587115620/1#) |[CPP](./Dynamic-Programming/GFG_LonestIncreasingSubsequence.cpp) |Medium|O(1)||
-|  95  |Longest Palindromic Subsequence|[LC](https://leetcode.com/problems/longest-palindromic-subsequence/) [GFG](https://practice.geeksforgeeks.org/problems/longest-palindromic-subsequence-1612327878/1) |[CPP](./Dynamic-Programming/GFG_LongestPalindromicSubsequence.cpp) [Java](./Dynamic-Programming/LongestPalindromicSubsequence.java) |Medium|O(1)||
+|  95  |Longest Palindromic Subsequence|[LC](https://leetcode.com/problems/longest-palindromic-subsequence/) [GFG](https://practice.geeksforgeeks.org/problems/longest-palindromic-subsequence-1612327878/1) |[CPP](./Dynamic-Programming/GFG_LongestPalindromicSubsequence.cpp) [Java](./Dynamic-Programming/LongestPalindromicSubsequence.java) [Python](./Dynamic-Programming/longest_palindromic_subsequence.py) |Medium|O(1)||
 |  96  |Longest Palindromic Substring|[LC](https://leetcode.com/problems/longest-palindromic-substring/) |[Java](./Dynamic-Programming/LongestPalindromicSubstring.java) ||O(n<sup>2</sup>)||
 |  97  |Longest Repeating Subsequence2004|[GFG](https://practice.geeksforgeeks.org/problems/longest-repeating-subsequence2004/1) |[CPP](./Dynamic-Programming/GFG_LongestRepeatingSubsequence.cpp) [Java](./Dynamic-Programming/LongestRepeatingSubsequence.java) |Easy|O(1)||
 |  98  |Longest String Chain|[LC](https://leetcode.com/problems/longest-string-chain/) |[CPP](./Dynamic-Programming/LC_1048_LongestStringChain.cpp) ||O(1)||
@@ -542,53 +542,54 @@ Number of Problems Solved (09-Apr-2023 11:58:23)
 |  135  |Number Of Paths In A Matrix With K Coins2728|[GFG](https://practice.geeksforgeeks.org/problems/number-of-paths-in-a-matrix-with-k-coins2728/1) |[Java](./Dynamic-Programming/NumberOfPathsInAMatrixWithKCoins.java) |null|O(1)||
 |  136  |Number Of People Aware Of A Secret|[LC](https://leetcode.com/problems/number-of-people-aware-of-a-secret/) |[Java](./Dynamic-Programming/NumberOfPeopleAwareOfASecret.java) ||O(n)||
 |  137  |Number Of Ways Of Cutting A Pizza|[LC](https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/) |[Java](./Dynamic-Programming/NumberOfWaysOfCuttingAPizza.java) ||O(n<sup>2</sup>)||
-|  138  |Number Of Ways To Paint N 3 Grid|[LC](https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/) |[Java](./Dynamic-Programming/NumberOfWaysToPaintNX3Grid.java) ||O(n<sup>3</sup>)||
-|  139  |Number Of Ways To Reach A Position After Exactly K Steps|[LC](https://leetcode.com/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/) |[Java](./Dynamic-Programming/NumberOfWaysToReachAPositionAfterExactlyKSteps.java) ||O(1)||
-|  140  |Number Of Ways To Stay In The Same Place After Some Steps|[LC](https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/) |[Java](./Dynamic-Programming/NumberOfWaysToStayInTheSamePlaceAfterSomeSteps.java) ||O(1)||
-|  141  |Number Of Ways2552|[GFG](https://practice.geeksforgeeks.org/problems/number-of-ways2552/1) |[Java](./Dynamic-Programming/NumberOfWays.java) |Medium|O(n)||
-|  142  |Numbers At Most N Given Digit Set|[LC](https://leetcode.com/problems/numbers-at-most-n-given-digit-set/) |[Java](./Dynamic-Programming/NumbersAtMostNGivenSet.java) ||O(n)||
-|  143  |Ones And Zeroes|[LC](https://leetcode.com/problems/ones-and-zeroes/) |[Java](./Dynamic-Programming/OnesAndZeros.java) ||O(n<sup>2</sup>)||
-|  144  |Out Of Boundary Paths|[LC](https://leetcode.com/problems/out-of-boundary-paths/) |[Java](./Dynamic-Programming/OutOfBoundaryPaths.java) ||O(n)||
-|  145  |Paint House Iii|[LC](https://leetcode.com/problems/paint-house-iii/) |[CPP](./Dynamic-Programming/LC_1473_PaintHouseIII.cpp) [Java](./Dynamic-Programming/PaintHouse3.java) ||O(1)||
-|  146  |Painting The Fence3727|[GFG](https://practice.geeksforgeeks.org/problems/painting-the-fence3727/1/#) |[CPP](./Dynamic-Programming/GFG_PaintingTheFence.cpp) [Java](./Dynamic-Programming/PaintTheFence.java) |Medium|O(1)||
-|  147  |Palindrome Partitioning Ii|[LC](https://leetcode.com/problems/palindrome-partitioning-ii/) [GFG](https://practice.geeksforgeeks.org/problems/palindromic-patitioning4845/1/#) |[CPP](./Dynamic-Programming/LC_132_PalindromePartitioningII.cpp) |null|O(1)||
-|  148  |Palindrome Partitioning Iv|[LC](https://leetcode.com/problems/palindrome-partitioning-iv/) |[Java](./Dynamic-Programming/PalindromePartitioning4.java) ||O(n)||
-|  149  |Palindromic Substrings|[LC](https://leetcode.com/problems/palindromic-substrings/) |[Java](./Dynamic-Programming/PalindromicSubstrings.java) ||O(n)||
-|  150  |Partition Array For Maximum Sum|[LC](https://leetcode.com/problems/partition-array-for-maximum-sum/) |[Java](./Dynamic-Programming/PartitionArrayForMaximumSum.java) ||O(n<sup>2</sup>)||
-|  151  |Partition To K Equal Sum Subsets|[LC](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/) |[Java](./Dynamic-Programming/PartitionToKEqualSumSubsets.java) ||O(n)||
-|  152  |Path In Matrix3805|[GFG](https://practice.geeksforgeeks.org/problems/path-in-matrix3805/1) |[Java](./Dynamic-Programming/MaxPathSum.java) |Medium|O(n)||
-|  153  |Paths In Matrix Whose Sum Is Divisible By K|[LC](https://leetcode.com/problems/paths-in-matrix-whose-sum-is-divisible-by-k/) |[Java](./Dynamic-Programming/PathsInMatrixWhoseSumIsDivisibleByK.java) ||O(1)||
-|  154  |Perfect Squares|[LC](https://leetcode.com/problems/perfect-squares/) |[Java](./Dynamic-Programming/PerfectSquare.java) ||O(n<sup>2</sup>)||
-|  155  |Perfect Sum Problem5633|[GFG](https://practice.geeksforgeeks.org/problems/perfect-sum-problem5633/1/) |[Java](./Dynamic-Programming/PerfectSumProblem.java) |Medium|O(1)||
-|  156  |Poor Pigs|[LC](https://leetcode.com/problems/poor-pigs/) |[CPP](./Dynamic-Programming/LC_458_PoorPigs.cpp) ||O(1)||
-|  157  |Predict The Winner|[LC](https://leetcode.com/problems/predict-the-winner/) |[Java](./Dynamic-Programming/PredictTheWinner.java) ||O(n<sup>2</sup>)||
-|  158  |Print All Lcs Sequences3413|[GFG](https://practice.geeksforgeeks.org/problems/print-all-lcs-sequences3413/1) |[CPP](./Dynamic-Programming/GFG_PrintAllLCSSequences.cpp) [Java](./Dynamic-Programming/PrintAllLCSSequences.java) |Hard|O(1)||
-|  159  |Range Sum Query 2d Immutable|[LC](https://leetcode.com/problems/range-sum-query-2d-immutable/) |[Java](./Dynamic-Programming/RangeSumQuery2D.java) ||O(n)||
-|  160  |Reach A Given Score 1587115621|[GFG](https://practice.geeksforgeeks.org/problems/reach-a-given-score-1587115621/1#) |[CPP](./Dynamic-Programming/GFG_ReachAGivenScore.cpp) [Java](./Dynamic-Programming/ReachAGivenScore.java) |Easy|O(1)||
-|  161  |Regular Expression Matching|[LC](https://leetcode.com/problems/regular-expression-matching/) |[Java](./Dynamic-Programming/RegularExpressionMatching.java) ||O(1)||
-|  162  |Remove Boxes|[LC](https://leetcode.com/problems/remove-boxes/) |[Java](./Dynamic-Programming/RemoveBoxes.java) ||O(n)||
-|  163  |Rotate Function|[LC](https://leetcode.com/problems/rotate-function/) |[Java](./Dynamic-Programming/RotateFunction.java) ||O(n)||
-|  164  |Russian Doll Envelopes|[LC](https://leetcode.com/problems/russian-doll-envelopes/) |[CPP](./Dynamic-Programming/LC_354_RussianDollEnvelopes.cpp) [Java](./Dynamic-Programming/RussianDollEnvelopes.java) ||O(1)||
-|  165  |Scramble String|[LC](https://leetcode.com/problems/scramble-string/) |[Java](./Dynamic-Programming/ScrambleString.java) ||O(n)||
-|  166  |Shortest Common Supersequence|[LC](https://leetcode.com/problems/shortest-common-supersequence/) |[CPP](./Dynamic-Programming/LC_1092_ShortestCommonSuperSequence.cpp) [Java](./Dynamic-Programming/ShortestCommonSupersequence.java) ||O(1)||
-|  167  |Sort Integers By The Power Value|[LC](https://leetcode.com/problems/sort-integers-by-the-power-value/) |[Java](./Dynamic-Programming/SortIntegersByThePowerValue.java) ||O(n)||
-|  168  |Special Keyboard3018|[GFG](https://practice.geeksforgeeks.org/problems/special-keyboard3018/1) |[Java](./Dynamic-Programming/SpecialKeyboard.java) |Medium|O(n<sup>2</sup>)||
-|  169  |Stickler Theif 1587115621|[GFG](https://practice.geeksforgeeks.org/problems/stickler-theif-1587115621/1) |[CPP](./Dynamic-Programming/GFG_SticklerThief.cpp) [Java](./Dynamic-Programming/SticklerThief.java) |Easy|O(1)||
-|  170  |Student Attendance Record Ii|[LC](https://leetcode.com/problems/student-attendance-record-ii/) |[Java](./Dynamic-Programming/StudentAttendanceRecord2.java) ||O(n<sup>2</sup>)||
-|  171  |Subset Sum Problem 1611555638|[GFG](https://practice.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1) |[CPP](./Dynamic-Programming/GFG_SubsetSum.cpp) [Java](./Dynamic-Programming/SubsetSum.java) |Medium|O(n<sup>2</sup>)||
-|  172  |Subset Sum Problem2014|[GFG](https://practice.geeksforgeeks.org/problems/subset-sum-problem2014/1) |[CPP](./Dynamic-Programming/GFG_PartitionEqualSubsetSum.cpp) [Java](./Dynamic-Programming/PartitionArray.java) |Medium|O(1)||
-|  173  |Sum Of Floored Pairs|[LC](https://leetcode.com/problems/sum-of-floored-pairs/) |[Java](./Dynamic-Programming/SumOfFlooredPairs.java) ||O(n<sup>3</sup>)||
-|  174  |Super Egg Drop|[LC](https://leetcode.com/problems/super-egg-drop/) [GFG](https://practice.geeksforgeeks.org/problems/egg-dropping-puzzle-1587115620/1) |[CPP](./Dynamic-Programming/LC_887_SuperEggDrop.cpp) [Java](./Dynamic-Programming/EggDrop.java) |Medium|O(n<sup>3</sup>)||
-|  175  |Super Ugly Number|[LC](https://leetcode.com/problems/super-ugly-number/) |[Java](./Dynamic-Programming/SuperUglyNumber.java) ||O(n<sup>2</sup>)||
-|  176  |Target Sum|[LC](https://leetcode.com/problems/target-sum/) |[CPP](./Dynamic-Programming/LC_494_TargetSum.cpp) [Java](./Dynamic-Programming/TargetSum.java) ||O(1)||
-|  177  |Total Appeal Of A String|[LC](https://leetcode.com/problems/total-appeal-of-a-string/) [LC](https://leetcode.com/problems/total-appeal-of-a-string/discuss/1996390/) [LC](https://leetcode.com/problems/total-appeal-of-a-string/discuss/2379420/C%2B%2B-Easy-intuitive-Approach-using-Hashing-and-DP) |[CPP](./Dynamic-Programming/LC_2262_TotalAppealOfAString.cpp) ||O(1)||
-|  178  |Triangle|[LC](https://leetcode.com/problems/triangle/) |[Java](./Dynamic-Programming/Triangle.java) ||O(n<sup>2</sup>)||
-|  179  |Unique Paths|[LC](https://leetcode.com/problems/unique-paths/) |[CPP](./Dynamic-Programming/LC_62_UniquePaths.cpp) [Java](./Dynamic-Programming/UniquePaths.java) ||O(1)||
-|  180  |Unique Paths Ii|[LC](https://leetcode.com/problems/unique-paths-ii/) |[CPP](./Dynamic-Programming/LC_63_UniquePathsII.cpp) [Java](./Dynamic-Programming/UniquePathsWithObstacles.java) ||O(1)||
-|  181  |Wildcard Matching|[LC](https://leetcode.com/problems/wildcard-matching/) [GFG](https://practice.geeksforgeeks.org/problems/wildcard-pattern-matching/1) |[CPP](./Dynamic-Programming/LC_44_WildCardMatching.cpp) [Java](./Dynamic-Programming/WildcardMatching.java) |Medium|O(1)||
-|  182  |Wildcard String Matching1126|[GFG](https://practice.geeksforgeeks.org/problems/wildcard-string-matching1126/1) |[Java](./Dynamic-Programming/WildCardStringMatching.java) |Hard|O(n<sup>2</sup>)||
-|  183  |Word Break|[LC](https://leetcode.com/problems/word-break/) [GFG](https://practice.geeksforgeeks.org/problems/word-break1352/1) |[CPP](./Dynamic-Programming/LC_139_WordBreak.cpp) [Java](./Dynamic-Programming/WordBreak.java) |Medium|O(1)||
-|  184  |Word Wrap1646|[GFG](https://practice.geeksforgeeks.org/problems/word-wrap1646/1) |[Java](./Dynamic-Programming/WordWrap.java) |Hard|O(n)||
+|  138  |Number Of Ways To Form A Target String Given A Dictionary|[LC](https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/) |[Java](./Dynamic-Programming/NumberOfWaysToFormATargetStringGivenADictionary.java) [Python](./Dynamic-Programming/number_of_ways_to_form_a_target_string_given_a_dictionary.py) ||O(n)||
+|  139  |Number Of Ways To Paint N 3 Grid|[LC](https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/) |[Java](./Dynamic-Programming/NumberOfWaysToPaintNX3Grid.java) ||O(n<sup>3</sup>)||
+|  140  |Number Of Ways To Reach A Position After Exactly K Steps|[LC](https://leetcode.com/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/) |[Java](./Dynamic-Programming/NumberOfWaysToReachAPositionAfterExactlyKSteps.java) ||O(1)||
+|  141  |Number Of Ways To Stay In The Same Place After Some Steps|[LC](https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/) |[Java](./Dynamic-Programming/NumberOfWaysToStayInTheSamePlaceAfterSomeSteps.java) ||O(1)||
+|  142  |Number Of Ways2552|[GFG](https://practice.geeksforgeeks.org/problems/number-of-ways2552/1) |[Java](./Dynamic-Programming/NumberOfWays.java) |Medium|O(n)||
+|  143  |Numbers At Most N Given Digit Set|[LC](https://leetcode.com/problems/numbers-at-most-n-given-digit-set/) |[Java](./Dynamic-Programming/NumbersAtMostNGivenSet.java) ||O(n)||
+|  144  |Ones And Zeroes|[LC](https://leetcode.com/problems/ones-and-zeroes/) |[Java](./Dynamic-Programming/OnesAndZeros.java) ||O(n<sup>2</sup>)||
+|  145  |Out Of Boundary Paths|[LC](https://leetcode.com/problems/out-of-boundary-paths/) |[Java](./Dynamic-Programming/OutOfBoundaryPaths.java) ||O(n)||
+|  146  |Paint House Iii|[LC](https://leetcode.com/problems/paint-house-iii/) |[CPP](./Dynamic-Programming/LC_1473_PaintHouseIII.cpp) [Java](./Dynamic-Programming/PaintHouse3.java) ||O(1)||
+|  147  |Painting The Fence3727|[GFG](https://practice.geeksforgeeks.org/problems/painting-the-fence3727/1/#) |[CPP](./Dynamic-Programming/GFG_PaintingTheFence.cpp) [Java](./Dynamic-Programming/PaintTheFence.java) |Medium|O(1)||
+|  148  |Palindrome Partitioning Ii|[LC](https://leetcode.com/problems/palindrome-partitioning-ii/) [GFG](https://practice.geeksforgeeks.org/problems/palindromic-patitioning4845/1/#) |[CPP](./Dynamic-Programming/LC_132_PalindromePartitioningII.cpp) |null|O(1)||
+|  149  |Palindrome Partitioning Iv|[LC](https://leetcode.com/problems/palindrome-partitioning-iv/) |[Java](./Dynamic-Programming/PalindromePartitioning4.java) ||O(n)||
+|  150  |Palindromic Substrings|[LC](https://leetcode.com/problems/palindromic-substrings/) |[Java](./Dynamic-Programming/PalindromicSubstrings.java) ||O(n)||
+|  151  |Partition Array For Maximum Sum|[LC](https://leetcode.com/problems/partition-array-for-maximum-sum/) |[Java](./Dynamic-Programming/PartitionArrayForMaximumSum.java) ||O(n<sup>2</sup>)||
+|  152  |Partition To K Equal Sum Subsets|[LC](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/) |[Java](./Dynamic-Programming/PartitionToKEqualSumSubsets.java) ||O(n)||
+|  153  |Path In Matrix3805|[GFG](https://practice.geeksforgeeks.org/problems/path-in-matrix3805/1) |[Java](./Dynamic-Programming/MaxPathSum.java) |Medium|O(n)||
+|  154  |Paths In Matrix Whose Sum Is Divisible By K|[LC](https://leetcode.com/problems/paths-in-matrix-whose-sum-is-divisible-by-k/) |[Java](./Dynamic-Programming/PathsInMatrixWhoseSumIsDivisibleByK.java) ||O(1)||
+|  155  |Perfect Squares|[LC](https://leetcode.com/problems/perfect-squares/) |[Java](./Dynamic-Programming/PerfectSquare.java) ||O(n<sup>2</sup>)||
+|  156  |Perfect Sum Problem5633|[GFG](https://practice.geeksforgeeks.org/problems/perfect-sum-problem5633/1/) |[Java](./Dynamic-Programming/PerfectSumProblem.java) |Medium|O(1)||
+|  157  |Poor Pigs|[LC](https://leetcode.com/problems/poor-pigs/) |[CPP](./Dynamic-Programming/LC_458_PoorPigs.cpp) ||O(1)||
+|  158  |Predict The Winner|[LC](https://leetcode.com/problems/predict-the-winner/) |[Java](./Dynamic-Programming/PredictTheWinner.java) ||O(n<sup>2</sup>)||
+|  159  |Print All Lcs Sequences3413|[GFG](https://practice.geeksforgeeks.org/problems/print-all-lcs-sequences3413/1) |[CPP](./Dynamic-Programming/GFG_PrintAllLCSSequences.cpp) [Java](./Dynamic-Programming/PrintAllLCSSequences.java) |Hard|O(1)||
+|  160  |Range Sum Query 2d Immutable|[LC](https://leetcode.com/problems/range-sum-query-2d-immutable/) |[Java](./Dynamic-Programming/RangeSumQuery2D.java) ||O(n)||
+|  161  |Reach A Given Score 1587115621|[GFG](https://practice.geeksforgeeks.org/problems/reach-a-given-score-1587115621/1#) |[CPP](./Dynamic-Programming/GFG_ReachAGivenScore.cpp) [Java](./Dynamic-Programming/ReachAGivenScore.java) |Easy|O(1)||
+|  162  |Regular Expression Matching|[LC](https://leetcode.com/problems/regular-expression-matching/) |[Java](./Dynamic-Programming/RegularExpressionMatching.java) ||O(1)||
+|  163  |Remove Boxes|[LC](https://leetcode.com/problems/remove-boxes/) |[Java](./Dynamic-Programming/RemoveBoxes.java) ||O(n)||
+|  164  |Rotate Function|[LC](https://leetcode.com/problems/rotate-function/) |[Java](./Dynamic-Programming/RotateFunction.java) ||O(n)||
+|  165  |Russian Doll Envelopes|[LC](https://leetcode.com/problems/russian-doll-envelopes/) |[CPP](./Dynamic-Programming/LC_354_RussianDollEnvelopes.cpp) [Java](./Dynamic-Programming/RussianDollEnvelopes.java) ||O(1)||
+|  166  |Scramble String|[LC](https://leetcode.com/problems/scramble-string/) |[Java](./Dynamic-Programming/ScrambleString.java) ||O(n)||
+|  167  |Shortest Common Supersequence|[LC](https://leetcode.com/problems/shortest-common-supersequence/) |[CPP](./Dynamic-Programming/LC_1092_ShortestCommonSuperSequence.cpp) [Java](./Dynamic-Programming/ShortestCommonSupersequence.java) ||O(1)||
+|  168  |Sort Integers By The Power Value|[LC](https://leetcode.com/problems/sort-integers-by-the-power-value/) |[Java](./Dynamic-Programming/SortIntegersByThePowerValue.java) ||O(n)||
+|  169  |Special Keyboard3018|[GFG](https://practice.geeksforgeeks.org/problems/special-keyboard3018/1) |[Java](./Dynamic-Programming/SpecialKeyboard.java) |Medium|O(n<sup>2</sup>)||
+|  170  |Stickler Theif 1587115621|[GFG](https://practice.geeksforgeeks.org/problems/stickler-theif-1587115621/1) |[CPP](./Dynamic-Programming/GFG_SticklerThief.cpp) [Java](./Dynamic-Programming/SticklerThief.java) |Easy|O(1)||
+|  171  |Student Attendance Record Ii|[LC](https://leetcode.com/problems/student-attendance-record-ii/) |[Java](./Dynamic-Programming/StudentAttendanceRecord2.java) ||O(n<sup>2</sup>)||
+|  172  |Subset Sum Problem 1611555638|[GFG](https://practice.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1) |[CPP](./Dynamic-Programming/GFG_SubsetSum.cpp) [Java](./Dynamic-Programming/SubsetSum.java) |Medium|O(n<sup>2</sup>)||
+|  173  |Subset Sum Problem2014|[GFG](https://practice.geeksforgeeks.org/problems/subset-sum-problem2014/1) |[CPP](./Dynamic-Programming/GFG_PartitionEqualSubsetSum.cpp) [Java](./Dynamic-Programming/PartitionArray.java) |Medium|O(1)||
+|  174  |Sum Of Floored Pairs|[LC](https://leetcode.com/problems/sum-of-floored-pairs/) |[Java](./Dynamic-Programming/SumOfFlooredPairs.java) ||O(n<sup>3</sup>)||
+|  175  |Super Egg Drop|[LC](https://leetcode.com/problems/super-egg-drop/) [GFG](https://practice.geeksforgeeks.org/problems/egg-dropping-puzzle-1587115620/1) |[CPP](./Dynamic-Programming/LC_887_SuperEggDrop.cpp) [Java](./Dynamic-Programming/EggDrop.java) |Medium|O(n<sup>3</sup>)||
+|  176  |Super Ugly Number|[LC](https://leetcode.com/problems/super-ugly-number/) |[Java](./Dynamic-Programming/SuperUglyNumber.java) ||O(n<sup>2</sup>)||
+|  177  |Target Sum|[LC](https://leetcode.com/problems/target-sum/) |[CPP](./Dynamic-Programming/LC_494_TargetSum.cpp) [Java](./Dynamic-Programming/TargetSum.java) ||O(1)||
+|  178  |Total Appeal Of A String|[LC](https://leetcode.com/problems/total-appeal-of-a-string/) [LC](https://leetcode.com/problems/total-appeal-of-a-string/discuss/1996390/) [LC](https://leetcode.com/problems/total-appeal-of-a-string/discuss/2379420/C%2B%2B-Easy-intuitive-Approach-using-Hashing-and-DP) |[CPP](./Dynamic-Programming/LC_2262_TotalAppealOfAString.cpp) ||O(1)||
+|  179  |Triangle|[LC](https://leetcode.com/problems/triangle/) |[Java](./Dynamic-Programming/Triangle.java) ||O(n<sup>2</sup>)||
+|  180  |Unique Paths|[LC](https://leetcode.com/problems/unique-paths/) |[CPP](./Dynamic-Programming/LC_62_UniquePaths.cpp) [Java](./Dynamic-Programming/UniquePaths.java) ||O(1)||
+|  181  |Unique Paths Ii|[LC](https://leetcode.com/problems/unique-paths-ii/) |[CPP](./Dynamic-Programming/LC_63_UniquePathsII.cpp) [Java](./Dynamic-Programming/UniquePathsWithObstacles.java) ||O(1)||
+|  182  |Wildcard Matching|[LC](https://leetcode.com/problems/wildcard-matching/) [GFG](https://practice.geeksforgeeks.org/problems/wildcard-pattern-matching/1) |[CPP](./Dynamic-Programming/LC_44_WildCardMatching.cpp) [Java](./Dynamic-Programming/WildcardMatching.java) |Medium|O(1)||
+|  183  |Wildcard String Matching1126|[GFG](https://practice.geeksforgeeks.org/problems/wildcard-string-matching1126/1) |[Java](./Dynamic-Programming/WildCardStringMatching.java) |Hard|O(n<sup>2</sup>)||
+|  184  |Word Break|[LC](https://leetcode.com/problems/word-break/) [GFG](https://practice.geeksforgeeks.org/problems/word-break1352/1) |[CPP](./Dynamic-Programming/LC_139_WordBreak.cpp) [Java](./Dynamic-Programming/WordBreak.java) |Medium|O(1)||
+|  185  |Word Wrap1646|[GFG](https://practice.geeksforgeeks.org/problems/word-wrap1646/1) |[Java](./Dynamic-Programming/WordWrap.java) |Hard|O(n)||
 ## Graph
 
 |  #  |Title            |Links            |Solution         |Difficulty       |Time Complexity  |Space Complexity |
@@ -639,7 +640,7 @@ Number of Problems Solved (09-Apr-2023 11:58:23)
 |  44  |Jump Game Iv|[LC](https://leetcode.com/problems/jump-game-iv/) |[Java](./Graph/JumpGame4.java) ||O(n<sup>2</sup>)||
 |  45  |Jump Game Vii|[LC](https://leetcode.com/problems/jump-game-vii/) |[Java](./Graph/JumpGame7.java) ||O(n)||
 |  46  |Keys And Rooms|[LC](https://leetcode.com/problems/keys-and-rooms/) |[Java](./Graph/KeysAndRooms.java) ||O(n)||
-|  47  |Largest Color Value In A Directed Graph|[LC](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/) |[Java](./Graph/LargestColorValueInADirectedGraph.java) ||O(n<sup>3</sup>)||
+|  47  |Largest Color Value In A Directed Graph|[LC](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/) |[Java](./Graph/LargestColorValueInADirectedGraph.java) [Python](./Graph/largest_color_value_in_a_directed_graph.py) ||O(n<sup>3</sup>)||
 |  48  |Length Of Largest Region Of 1s 1587115620|[GFG](https://practice.geeksforgeeks.org/problems/length-of-largest-region-of-1s-1587115620/1) |[CPP](./Graph/GFG_UnitAreaOfLargestRegionOf1.cpp) [Java](./Graph/MaxAreaOfOnes.java) |Medium|O(1)||
 |  49  |Longest Cycle In A Graph|[LC](https://leetcode.com/problems/longest-cycle-in-a-graph/) |[CPP](./Graph/LC_2360_longestCycleInGraph.cpp) [Java](./Graph/LongestCycleInAGraph.java) ||O(1)||
 |  50  |Maximum Xor After Operations|[LC](https://leetcode.com/problems/maximum-xor-after-operations/) |[CPP](./Graph/LC_2317_MaxXORAfterOperations.cpp) ||O(1)||
@@ -1351,8 +1352,9 @@ Number of Problems Solved (09-Apr-2023 11:58:23)
 |  31  |Steps To Make Array Non Decreasing|[LC](https://leetcode.com/problems/steps-to-make-array-non-decreasing/) |[Java](./Stack/StepsToMakeArrayNonDecreasing.java) ||O(1)||
 |  32  |Stock Span Problem 1587115621|[GFG](https://practice.geeksforgeeks.org/problems/stock-span-problem-1587115621/1#) |[CPP](./Stack/GFG_StockSpanP.cpp) [Java](./Stack/StockSpanProblem.java) |Medium|O(1)||
 |  33  |The Celebrity Problem|[GFG](https://practice.geeksforgeeks.org/problems/the-celebrity-problem/1) |[CPP](./Stack/GFG_TheCelebrityProblem.cpp) [Java](./Stack/CelebrityProblem.java) |Medium|O(n<sup>2</sup>)||
-|  34  |Using A Robot To Print The Lexicographically Smallest String|[LC](https://leetcode.com/problems/using-a-robot-to-print-the-lexicographically-smallest-string/) |[Java](./Stack/UsingARobotToPrintTheLexicographicallySmallestString.java) ||O(n)||
+|  34  |Using A Robot To Print The Lexicographically Smallest String|[LC](https://leetcode.com/problems/using-a-robot-to-print-the-lexicographically-smallest-string/) |[Java](./Stack/UsingARobotToPrintTheLexicographicallySmallestString.java) ||O(n<sup>2</sup>)||
 |  35  |Valid Parentheses|[LC](https://leetcode.com/problems/valid-parentheses/) |[CPP](./Stack/LC_20_ValidParentheses.cpp) [Java](./Stack/ValidParentheses.java) ||O(1)||
+|  36  |Validate Stack Sequences|[LC](https://leetcode.com/problems/validate-stack-sequences/) |[Java](./Stack/ValidateStackSequence.java) [Python](./Stack/validate_stack_sequence.py) ||O(n)||
 ## Strings
 
 |  #  |Title            |Links            |Solution         |Difficulty       |Time Complexity  |Space Complexity |

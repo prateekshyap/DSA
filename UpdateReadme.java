@@ -126,6 +126,8 @@ class Questions
 			this.solutionLinks.put("Java",sLink);
 		else if (sLink.charAt(sLink.length()-1) == 'p') //cpp
 			this.solutionLinks.put("CPP",sLink);
+		else if (sLink.charAt(sLink.length()-1) == 'y') //python
+			this.solutionLinks.put("Python",sLink);
 		this.difficulty = difficulty;
 	}
 
@@ -142,6 +144,8 @@ class Questions
 			this.solutionLinks.put("Java",sLink);
 		else if (sLink.charAt(sLink.length()-1) == 'p') //cpp
 			this.solutionLinks.put("CPP",sLink);
+		else if (sLink.charAt(sLink.length()-1) == 'y') //python
+			this.solutionLinks.put("Python",sLink);
 	}
 
 	public void printQuestion(BufferedWriter writer) throws IOException
@@ -169,6 +173,7 @@ class Topics
 	private String topic; //name of the topic/directory
 	private int javaCount; //total number of .java files
 	private int cppCount; //total number of .cpp files
+	private int pyCount; //total number of .py files
 	private TreeMap<String,Integer> questionIndexMap; //stores the question key and the index of indexDetailsMap array
 	protected Questions[] indexDetailsMap; //stores the details for each question in an array
 	protected int qIndex;
@@ -179,7 +184,7 @@ class Topics
 	Topics(String topic, int noq)
 	{
 		this.topic = topic;
-		javaCount = cppCount = 0;
+		javaCount = cppCount = pyCount = 0;
 		questionIndexMap = new TreeMap<String,Integer>();
 		indexDetailsMap = new Questions[noq];
 		qIndex = 0;
@@ -188,11 +193,13 @@ class Topics
 	//setter methods
 	public void setJavaCount(int count) { this.javaCount = count; }
 	public void setCppCount(int count) { this.cppCount = count; }
+	public void setPyCount(int count) { this.pyCount = count; }
 
 	//getter methods
 	public String getTopicName() { return this.topic; }
 	public int getJavaCount() { return this.javaCount; }
 	public int getCppCount() { return this.cppCount; }
+	public int getPyCount() { return this.pyCount; }
 	public TreeMap<String,Integer> getQuestionIndexMap() { return this.questionIndexMap; }
 	public Questions[] getIndexDetailsMap() { return this.indexDetailsMap; }
 
@@ -300,6 +307,7 @@ class Topics
 		writer.write("TOPIC NAME: "+this.topic); writer.newLine();
 		writer.write("Java files: "+this.javaCount); writer.newLine();
 		writer.write("CPP files: "+this.cppCount); writer.newLine();
+		writer.write("Python files: "+this.pyCount); writer.newLine();
 		writer.write("---------------------------------------------------------------------------------"); writer.newLine();
 		Iterator linkIterator = this.questionIndexMap.entrySet().iterator(); //question to index map iterator
 		int bullet = 1;
@@ -530,7 +538,7 @@ class UpdateReadme
 				File topicPath = new File(topicPathStr);
 
 				String[] programs = topicPath.list(); //list the files in that folder
-				int javaCount = 0, cppCount = 0;
+				int javaCount = 0, cppCount = 0, pyCount = 0;
 
 				topicDetails[index] = new Topics(topic,programs.length); //create a new topic
 				parseDetails[index] = new Parse(topicDetails[index]);
@@ -541,6 +549,7 @@ class UpdateReadme
 					if (program.equals("dummy.txt")) continue; //ignore txt files
 					if (program.charAt(program.length()-1) == 'p') ++cppCount; //increase cpp count
 					if (program.charAt(program.length()-1) == 'a') ++javaCount; //increase java count
+					if (program.charAt(program.length()-1) == 'y') ++pyCount; //increase py count
 					
 					//get the file path
 					String codeFileName = new String(topicPathStr);
@@ -612,6 +621,7 @@ class UpdateReadme
 				}
 				topicDetails[index].setJavaCount(javaCount);
 				topicDetails[index].setCppCount(cppCount);
+				topicDetails[index].setPyCount(pyCount);
 
 				++index;
 			}
@@ -636,15 +646,15 @@ class UpdateReadme
 		outputFileWriter.newLine();		outputFileWriter.newLine();		outputFileWriter.newLine();		outputFileWriter.close();
 
 		//write folder wise counts and total count
-		fileWriter.write("| Topic Name | Java | CPP | "); fileWriter.newLine();
-		fileWriter.write("| :--------: | :--------: | :--------: | "); fileWriter.newLine();
-		int totalJava = 0, totalCpp = 0;
+		fileWriter.write("| Topic Name | Java | CPP | Python | "); fileWriter.newLine();
+		fileWriter.write("| :--------: | :--------: | :--------: | :--------: | "); fileWriter.newLine();
+		int totalJava = 0, totalCpp = 0, totalPython = 0;
 		for (Topics topic : topicDetails)
 		{
-			fileWriter.write("| ["+topic.getTopicName()+"](https://github.com/prateekshyap/DSA#"+topic.getTopicName().toLowerCase()+") | "+topic.getJavaCount()+" | "+topic.getCppCount()+" |"); fileWriter.newLine();
-			totalJava += topic.getJavaCount(); totalCpp += topic.getCppCount();
+			fileWriter.write("| ["+topic.getTopicName()+"](https://github.com/prateekshyap/DSA#"+topic.getTopicName().toLowerCase()+") | "+topic.getJavaCount()+" | "+topic.getCppCount()+" | "+topic.getPyCount()+" |"); fileWriter.newLine();
+			totalJava += topic.getJavaCount(); totalCpp += topic.getCppCount(); totalPython += topic.getPyCount();
 		}
-		fileWriter.write("| Total | "+totalJava+" | "+totalCpp+" |"); fileWriter.newLine(); fileWriter.newLine();
+		fileWriter.write("| Total | "+totalJava+" | "+totalCpp+" | "+totalPython+" |"); fileWriter.newLine(); fileWriter.newLine();
 
 		//write next fixed segment
 		printFixedMessage(fileWriter,2);

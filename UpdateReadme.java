@@ -494,8 +494,8 @@ class UpdateReadme
 	public static void main(String[] args) throws IOException
 	{
 		//important declarations
-		//String mainPathStr = "E:\\DSA\\Coding"; //pp system
-		String mainPathStr = "C:\\PP\\coding\\DSA"; //iitg lab system
+		String mainPathStr = "E:\\DSA\\Coding"; //pp system
+		// String mainPathStr = "C:\\PP\\coding\\DSA"; //iitg lab system
 		File mainPath = new File(mainPathStr);
 		Topics[] topicDetails; //main arrat that stores all the details of the folder
 

@@ -66,3 +66,18 @@ class Solution {
         return false;
     }
 }
+
+class Solution {
+    public int minSubArrayLen(int target, int[] nums) {
+        int sum = 0, start = 0, end = 0, len = nums.length+1;
+        while (end < nums.length)
+        {
+            sum += nums[end];
+            while (sum-nums[start] >= target)
+                sum -= nums[start++];
+            if (sum >= target) len = Math.min(len,end-start+1);
+            ++end;
+        }
+        return len == nums.length+1 ? 0 : len;
+    }
+}
